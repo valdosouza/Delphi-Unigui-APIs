@@ -1,0 +1,407 @@
+//Anunciante
+CREATE TABLE tb_advertiser (
+  id int(11) NOT NULL,
+  tb_institution_id int(11) NOT NULL,
+  created_at datetime DEFAULT NULL,
+  updated_at datetime DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+//Agencia de Publicidade
+CREATE TABLE tb_agency (
+  id int(11) NOT NULL,
+  tb_institution_id int(11) NOT NULL,
+  dt_record date NOT NULL,
+  note blob,
+  enabled char(1) NOT NULL DEFAULT 'S',
+  created_at datetime DEFAULT NULL,
+  updated_at datetime DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+//Marca 
+CREATE TABLE tb_brand (
+  id int(11) NOT NULL,
+  tb_institution_id int(11) NOT NULL,
+  description varchar(100) NOT NULL,
+  tb_provider_id int(11) DEFAULT NULL,
+  created_at datetime DEFAULT NULL,
+  updated_at datetime DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+//Veiculo de comunicação
+CREATE TABLE tb_broadcaster (
+  id int(11) NOT NULL,
+  tb_institution_id int(11) NOT NULL,
+  created_at datetime DEFAULT NULL,
+  updated_at datetime DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+-- --------------------------------------------------------
+//Categoria
+CREATE TABLE tb_category (
+  id int(11) NOT NULL,
+  tb_institution_id int(11) NOT NULL,
+  description varchar(100) NOT NULL,
+  posit_level varchar(40) DEFAULT NULL,
+  kind char(1) DEFAULT NULL,
+  enabled varchar(1) NOT NULL DEFAULT 'S',
+  created_at datetime DEFAULT NULL,
+  updated_at datetime DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+Tabela de Cor
+-- Estrutura da tabela tb_color
+CREATE TABLE tb_color (
+  id int(11) NOT NULL,
+  description varchar(100) NOT NULL,
+  created_at datetime DEFAULT NULL,
+  updated_at datetime DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+TAbela de Cliente
+CREATE TABLE tb_customer (
+  id int(11) NOT NULL DEFAULT '0',
+  tb_institution_id int(11) NOT NULL DEFAULT '0',
+  tb_vendor_id int(11) NOT NULL DEFAULT '0',
+  tb_carrier_id int(11) NOT NULL DEFAULT '0',
+  credit_status char(1) NOT NULL DEFAULT 'N',
+  credit_value decimal(10,2) NOT NULL DEFAULT '0.00',
+  wallet char(1) DEFAULT NULL,
+  note blob,
+  consumer char(1) DEFAULT NULL,
+  dealer char(1) NOT NULL DEFAULT 'N',
+  state char(1) NOT NULL DEFAULT 'N',
+  created_at datetime DEFAULT NULL,
+  updated_at datetime DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+
+-- --------------------------------------------------------
+//Tabela de Frete
+CREATE TABLE tb_freight (
+  id int(11) NOT NULL,
+  tb_institution_id int(11) NOT NULL,
+  tb_entity_id int(11) NOT NULL,
+  description varchar(50) DEFAULT NULL,
+  dispatch_value decimal(10,2) DEFAULT NULL,
+  tas_value decimal(10,2) DEFAULT NULL,
+  gris_min decimal(10,2) DEFAULT NULL,
+  taxa_gris decimal(10,2) DEFAULT NULL,
+  toll_value decimal(10,2) DEFAULT NULL,
+  created_at datetime NOT NULL,
+  updated_at datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+//Tabela de Frete - Destino
+CREATE TABLE tb_freight_destiny (
+  id int(11) NOT NULL,
+  tb_freight_id int(11) NOT NULL,
+  tb_institution_id int(11) NOT NULL,
+  tb_city_id int(11) NOT NULL,
+  local varchar(60) DEFAULT NULL,
+  adv decimal(10,2) DEFAULT NULL,
+  created_at datetime NOT NULL,
+  updated_at datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+//Tabela de Frete - Peso
+
+CREATE TABLE tb_freight_weight (
+  id int(11) NOT NULL,
+  tb_freight_id int(11) NOT NULL,
+  tb_institution_id int(11) NOT NULL,
+  position_weight int(11) DEFAULT NULL,
+  width_weight int(11) DEFAULT NULL,
+  value_weight decimal(10,3) DEFAULT NULL,
+  created_at datetime NOT NULL,
+  updated_at datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+//Tabela de Frete - Destino x Peso
+CREATE TABLE tb_freight_weight_destiny (
+  tb_institution_id int(11) NOT NULL,
+  tb_freight_id int(11) NOT NULL,
+  tb_destiny_freight_id int(11) NOT NULL,
+  tb_weight_freight_id int(11) NOT NULL,
+  fwd_value decimal(10,2) DEFAULT NULL,
+  created_at datetime NOT NULL,
+  updated_at datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+-- --------------------------------------------------------
+//Instituição / Estabelecimento / Minha Empresa
+
+CREATE TABLE tb_institution (
+  id int(11) NOT NULL,
+  status char(1) DEFAULT NULL,
+  created_at datetime DEFAULT NULL,
+  updated_at datetime DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+//Entidades que estão registradas no estabelecimento
+CREATE TABLE tb_institution_has_entity (
+  tb_institution_id int(11) NOT NULL,
+  tb_entity_id int(11) NOT NULL,
+  created_at datetime NOT NULL,
+  updated_at datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+-- --------------------------------------------------------
+//Medida
+CREATE TABLE tb_measure (
+  id int(11) NOT NULL,
+  tb_institution_id int(11) NOT NULL,
+  description varchar(100) NOT NULL,
+  abbreviation varchar(3) DEFAULT NULL,
+  escale decimal(10,2) DEFAULT NULL,
+  created_at datetime DEFAULT NULL,
+  updated_at datetime DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+//Mercadoria
+CREATE TABLE tb_merchandise (
+  id int(11) NOT NULL,
+  tb_institution_id int(11) NOT NULL,
+  id_internal varchar(45) DEFAULT NULL,
+  id_provider int(11) DEFAULT NULL,
+  id_tributary int(11) DEFAULT NULL,
+  source char(1) DEFAULT NULL,
+  kind varchar(45) DEFAULT NULL,
+  tb_brand_id int(11) DEFAULT NULL,
+  print char(1) DEFAULT NULL,
+  controlseries varchar(1) DEFAULT NULL,
+  exclusive_dealer char(1) DEFAULT NULL,
+  application blob,
+  created_at datetime DEFAULT NULL,
+  updated_at datetime DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+//Ordem de Anuncio
+
+CREATE TABLE tb_order_advertise (
+  id int(11) NOT NULL,
+  tb_institution_id int(11) NOT NULL,
+  number varchar(25) DEFAULT NULL,
+  pi_original varchar(25) DEFAULT NULL,
+  dt_original date DEFAULT NULL,
+  dt_pay date DEFAULT NULL,
+  kind_broadcast char(1) DEFAULT NULL,
+  tb_agency_id int(11) DEFAULT NULL,
+  tb_advertiser_id int(11) DEFAULT NULL,
+  tb_broadcaster_id int(11) DEFAULT NULL,
+  kind_calculation char(1) DEFAULT NULL,
+  gross_value decimal(10,2) DEFAULT NULL,
+  agency_value decimal(10,2) DEFAULT NULL,
+  net_value decimal(10,2) DEFAULT NULL,
+  institution_value decimal(10,2) DEFAULT NULL,
+  extra_note longblob,
+  created_at datetime DEFAULT NULL,
+  updated_at datetime DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+//Ordem de Anuncio - Pedido de Inserção
+
+CREATE TABLE tb_order_advertise_insertion (
+  id varchar(45) NOT NULL,
+  tb_order_advertise_id int(11) NOT NULL,
+  tb_order_advertise_x varchar(45) NOT NULL,
+  tb_institution_id int(11) NOT NULL,
+  dt_adverts date DEFAULT NULL,
+  description_day varchar(45) DEFAULT NULL,
+  qtty int(11) DEFAULT NULL,
+  created_at datetime DEFAULT NULL,
+  updated_at datetime DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+//Ordem de Anuncio Impresso
+
+CREATE TABLE tb_order_advertise_printed (
+  id int(11) NOT NULL,
+  tb_institution_id int(11) NOT NULL,
+  tb_order_advertise_id int(11) NOT NULL,
+  title varchar(45) DEFAULT NULL,
+  tb_media_material_id int(11) DEFAULT NULL,
+  tb_media_position_id int(11) DEFAULT NULL,
+  kind_day varchar(9) DEFAULT NULL,
+  kind_print varchar(3) DEFAULT NULL,
+  sequences char(1) DEFAULT NULL,
+  value_original decimal(10,2) DEFAULT NULL,
+  columns varchar(5) DEFAULT NULL,
+  height varchar(5) DEFAULT NULL,
+  insertions_qtty int(11) DEFAULT NULL,
+  total_value decimal(10,2) DEFAULT NULL,
+  created_at datetime DEFAULT NULL,
+  updated_at datetime DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+//Ordem de venda
+
+CREATE TABLE tb_order_sale (
+  id int(11) NOT NULL,
+  tb_institution_id int(11) NOT NULL,
+  tb_salesman_id int(11) NOT NULL,
+  tb_customer_id int(11) DEFAULT NULL,
+  number int(11) DEFAULT NULL,
+  created_at datetime NOT NULL,
+  updated_at datetime NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+//Embalagem
+CREATE TABLE tb_package (
+  id int(11) NOT NULL,
+  tb_institution_id int(11) NOT NULL,
+  description varchar(100) NOT NULL,
+  abbreviation varchar(3) DEFAULT NULL,
+  created_at datetime DEFAULT NULL,
+  updated_at datetime DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+//Tipos de pagamentos
+
+CREATE TABLE tb_payment_types (
+  id int(11) NOT NULL,
+  tb_institution_id int(11) NOT NULL,  
+  description varchar(45) DEFAULT NULL,
+  finality char(1) DEFAULT NULL,
+  customer_locked_display char(1) DEFAULT NULL,
+  created_at datetime DEFAULT NULL,
+  updated_at datetime DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+
+
+
+-- --------------------------------------------------------
+//TAbela de Preco
+CREATE TABLE tb_price_list (
+  id int(11) NOT NULL,
+  tb_institution_id int(11) NOT NULL,
+  description varchar(45) NOT NULL,
+  validity date DEFAULT NULL,
+  modality varchar(1) DEFAULT NULL,
+  aliq_profit decimal(10,0) DEFAULT NULL,
+  created_at datetime DEFAULT NULL,
+  updated_at datetime DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+//Itens da TAbela de Preco
+
+CREATE TABLE tb_price (
+  tb_institution_id int(11) NOT NULL,
+  tb_price_list_id int(11) NOT NULL,
+  tb_product_id int(11) NOT NULL,
+  price_tag decimal(10,6) DEFAULT NULL,
+  aliq_profit decimal(10,3) DEFAULT NULL,
+  aliq_kickback decimal(10,2) DEFAULT NULL,
+  quantity decimal(10,3) DEFAULT NULL,
+  created_at timestamp NULL DEFAULT NULL,
+  updated_at timestamp NULL DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+//Produto
+
+CREATE TABLE tb_product (
+  id int(11) NOT NULL,
+  identifier varchar(50) NOT NULL,
+  tb_institution_id int(11) NOT NULL,
+  description varchar(100) NOT NULL,
+  tb_category_id int(11) NOT NULL,
+  promotion char(1) DEFAULT NULL,
+  highlights char(1) DEFAULT NULL,
+  enabled char(1) DEFAULT NULL,
+  published char(1) DEFAULT NULL,
+  note blob,
+  created_at datetime DEFAULT NULL,
+  updated_at datetime DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+//Produto
+
+CREATE TABLE tb_product_has_product (
+
+
+)
+-- --------------------------------------------------------
+
+//Fornecedor
+
+CREATE TABLE tb_provider (
+  tb_institute_id int(11) NOT NULL,
+  tb_entity_id int(11) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+//Lista de estoques
+CREATE TABLE tb_stockes (
+  id int(11) NOT NULL,
+  tb_institution_id int(11) NOT NULL,
+  description varchar(45) DEFAULT NULL,
+  kind char(1) DEFAULT NULL,
+  created_at datetime DEFAULT NULL,
+  updated_at datetime DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+-- --------------------------------------------------------
+//Estoque
+
+CREATE TABLE tb_stock (
+  tb_institution_id int(11) NOT NULL,
+  tb_stockes_id int(11) NOT NULL,
+  tb_merchandise_id int(11) NOT NULL DEFAULT '0',
+  tb_packing_id int(11) DEFAULT NULL,
+  tb_measure_id int(11) DEFAULT NULL,
+  tb_color_id int(11) DEFAULT NULL,
+  quantity decimal(10,4) DEFAULT NULL,
+  minimum decimal(10,4) DEFAULT NULL,
+  divisor int(11) DEFAULT NULL,
+  location varchar(100) DEFAULT NULL,
+  weight decimal(10,4) DEFAULT NULL,
+  width decimal(10,4) DEFAULT NULL,
+  length decimal(10,4) DEFAULT NULL,
+  height decimal(10,4) DEFAULT NULL,
+  cost_manufactures decimal(10,4) DEFAULT NULL,
+  actual_cost decimal(10,4) DEFAULT NULL,
+  cost_price decimal(10,4) DEFAULT NULL,
+  negative char(1) DEFAULT NULL,
+  created_at datetime DEFAULT NULL,
+  updated_at datetime DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+//Loja Virtual
+CREATE TABLE tb_virtual_shop (
+  tb_institution_id int(11) NOT NULL,
+  title varchar(100) NOT NULL,
+  enabled char(1) NOT NULL DEFAULT 'Y',
+  domain varchar(100) NOT NULL,
+  image_path varchar(100) NOT NULL,
+  vitrine char(1) NOT NULL DEFAULT 'N',
+  dealer char(1) NOT NULL DEFAULT 'N',
+  google_analytics_id varchar(30) NOT NULL,
+  tb_price_list_id int(11) NOT NULL,
+  tb_stockes_id int(11) NOT NULL,
+  created_at datetime DEFAULT NULL,
+  updated_at datetime DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;

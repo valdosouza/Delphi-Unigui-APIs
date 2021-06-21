@@ -1,0 +1,31 @@
+inherited FmBuscaCNPJ_LgXhdpiPh: TFmBuscaCNPJ_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 0
+  inherited Panel1: TPanel
+    Size.Width = 450.000000000000000000
+    Size.Height = 695.000000000000000000
+    inherited Pnl_Image: TPanel
+      Size.Width = 430.000000000000000000
+      inherited Img_captcha: TImage
+        Size.Width = 430.000000000000000000
+      end
+    end
+    inherited pnl_botao_captcha: TPanel
+      Size.Width = 430.000000000000000000
+      inherited Sb_Update_Captcha: TSpeedButton
+        Position.X = 377.000000000000000000
+        Size.Width = 48.000000000000000000
+        Size.Height = 48.000000000000000000
+      end
+      inherited Label1: TLabel
+        Position.X = 252.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+    end
+    inherited ImageViewer1: TImageViewer
+      Viewport.Width = 50.000000000000000000
+      Viewport.Height = 50.000000000000000000
+    end
+  end
+end

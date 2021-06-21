@@ -1,0 +1,2196 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{96B6E2BA-C907-4098-BB4E-74D88A5AE7AA}</ProjectGuid>
+        <MainSource>gestao.dpr</MainSource>
+        <Base>True</Base>
+        <Config Condition="'$(Config)'==''">Release</Config>
+        <TargetedPlatforms>1</TargetedPlatforms>
+        <AppType>Application</AppType>
+        <FrameworkType>VCL</FrameworkType>
+        <ProjectVersion>18.4</ProjectVersion>
+        <Platform Condition="'$(Platform)'==''">Win32</Platform>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Base)'=='true') or '$(Base_Win32)'!=''">
+        <Base_Win32>true</Base_Win32>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_1)'!=''">
+        <Cfg_1>true</Cfg_1>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Cfg_1)'=='true') or '$(Cfg_1_Win32)'!=''">
+        <Cfg_1_Win32>true</Cfg_1_Win32>
+        <CfgParent>Cfg_1</CfgParent>
+        <Cfg_1>true</Cfg_1>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_2)'!=''">
+        <Cfg_2>true</Cfg_2>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Cfg_2)'=='true') or '$(Cfg_2_Win32)'!=''">
+        <Cfg_2_Win32>true</Cfg_2_Win32>
+        <CfgParent>Cfg_2</CfgParent>
+        <Cfg_2>true</Cfg_2>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base)'!=''">
+        <DCC_ImageBase>00400000</DCC_ImageBase>
+        <DCC_Namespace>Vcl;Vcl.Imaging;Vcl.Touch;Vcl.Samples;Vcl.Shell;System;Xml;Data;Datasnap;Web;Soap;Winapi;$(DCC_Namespace)</DCC_Namespace>
+        <VerInfo_Locale>1046</VerInfo_Locale>
+        <DCC_F>false</DCC_F>
+        <DCC_N>false</DCC_N>
+        <VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=;CFBundleName=</VerInfo_Keys>
+        <SanitizedProjectName>gestao</SanitizedProjectName>
+        <DCC_E>false</DCC_E>
+        <DCC_K>false</DCC_K>
+        <DCC_S>false</DCC_S>
+        <DCC_DcpOutput>..\Bin\gestaoweb\temp\</DCC_DcpOutput>
+        <DCC_ExeOutput>..\Bin\gestaoweb\</DCC_ExeOutput>
+        <DCC_DcuOutput>c:\temp\gestaogeb\</DCC_DcuOutput>
+        <DCC_UnitSearchPath>controller;model;DataObjetcs;parameter;list;framework;function;share\function;repository;Classes;share\autentica;restClient\autentica;restClient\apiData;parameter/print;interface;restClient\apiReport;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
+        <DCC_GenerateStackFrames>true</DCC_GenerateStackFrames>
+        <DCC_Optimize>false</DCC_Optimize>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base_Win32)'!=''">
+        <DCC_Namespace>System.Win;Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;Bde;$(DCC_Namespace)</DCC_Namespace>
+        <VerInfo_Locale>1033</VerInfo_Locale>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
+        <VerInfo_Keys>CompanyName=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductVersion=1.0.0.0;Comments=;ProgramID=com.embarcadero.$(MSBuildProjectName);FileDescription=$(MSBuildProjectName);ProductName=$(MSBuildProjectName)</VerInfo_Keys>
+        <Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
+        <UWP_DelphiLogo44>$(BDS)\bin\Artwork\Windows\UWP\delphi_UwpDefault_44.png</UWP_DelphiLogo44>
+        <UWP_DelphiLogo150>$(BDS)\bin\Artwork\Windows\UWP\delphi_UwpDefault_150.png</UWP_DelphiLogo150>
+        <Icon_MainIcon>gestao_Icon2.ico</Icon_MainIcon>
+        <DCC_DebugInfoInExe>false</DCC_DebugInfoInExe>
+        <DCC_DebugInfoInTds>false</DCC_DebugInfoInTds>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_1)'!=''">
+        <DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
+        <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+        <DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
+        <DCC_DebugInformation>0</DCC_DebugInformation>
+        <DCC_RemoteDebug>true</DCC_RemoteDebug>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_1_Win32)'!=''">
+        <DCC_ImportedDataReferences>false</DCC_ImportedDataReferences>
+        <DCC_AssertionsAtRuntime>false</DCC_AssertionsAtRuntime>
+        <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
+        <PreBuildEventCancelOnError>false</PreBuildEventCancelOnError>
+        <PreBuildEvent><![CDATA[taskkill /f /im $(OUTPUTFILENAME) 2>
+1 || exit /B 0
+$(PreBuildEvent)]]></PreBuildEvent>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <VerInfo_Locale>1033</VerInfo_Locale>
+        <VerInfo_Keys>CompanyName=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductVersion=1.0.0.0;Comments=;ProgramID=com.embarcadero.$(MSBuildProjectName);FileDescription=$(MSBuildProjectName);ProductName=$(MSBuildProjectName)</VerInfo_Keys>
+        <BT_BuildType>Debug</BT_BuildType>
+        <DCC_DebugInfoInExe>false</DCC_DebugInfoInExe>
+        <DCC_RemoteDebug>false</DCC_RemoteDebug>
+        <DCC_DebugInfoInTds>false</DCC_DebugInfoInTds>
+        <DCC_GenerateStackFrames>false</DCC_GenerateStackFrames>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_2)'!=''">
+        <DCC_GenerateStackFrames>true</DCC_GenerateStackFrames>
+        <DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
+        <DCC_Optimize>false</DCC_Optimize>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_2_Win32)'!=''">
+        <VerInfo_Keys>CompanyName=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductVersion=1.0.0.0;Comments=;ProgramID=com.embarcadero.$(MSBuildProjectName);FileDescription=$(MSBuildProjectName);ProductName=$(MSBuildProjectName)</VerInfo_Keys>
+        <VerInfo_Locale>1033</VerInfo_Locale>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <BT_BuildType>Debug</BT_BuildType>
+        <Icon_MainIcon>favicon.ico</Icon_MainIcon>
+        <DCC_DebugDCUs>true</DCC_DebugDCUs>
+        <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
+        <PreBuildEvent><![CDATA[taskkill /f /im $(OUTPUTFILENAME) 2>
+1 || exit /B 0
+$(PreBuildEvent)]]></PreBuildEvent>
+        <PreBuildEventCancelOnError>false</PreBuildEventCancelOnError>
+        <DCC_OutputDRCFile>true</DCC_OutputDRCFile>
+        <DCC_DebugInfoInExe>true</DCC_DebugInfoInExe>
+        <DCC_DebugInfoInTds>true</DCC_DebugInfoInTds>
+    </PropertyGroup>
+    <ItemGroup>
+        <DelphiCompile Include="$(MainSource)">
+            <MainSource>MainSource</MainSource>
+        </DelphiCompile>
+        <DCCReference Include="ServerModule.pas">
+            <Form>USM</Form>
+            <DesignClass>TUniGUIServerModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="Main.pas">
+            <Form>MainForm</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="MainModule.pas">
+            <Form>UMM</Form>
+            <DesignClass>TUniGUIMainModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="LoginFrm.pas">
+            <Form>UniLogin</Form>
+            <DesignClass>TUniLoginForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="framework\CatribEntity.pas"/>
+        <DCCReference Include="framework\GenericDao.pas"/>
+        <DCCReference Include="Function\Md5.pas"/>
+        <DCCReference Include="repository\base_form.pas">
+            <Form>BaseForm</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="function\openForms.pas"/>
+        <DCCReference Include="repository\base_module.pas">
+            <Form>BaseModule</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="modules\midia_module.pas">
+            <Form>MidiaModule</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="repository\base_registry.pas">
+            <Form>BaseRegistry</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_BaseFrame.pas">
+            <Form>FmBaseFrame</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_CountryStateCity.pas">
+            <Form>FmCountryStateCity</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_Address.pas">
+            <Form>FmAddress</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_entity.pas">
+            <Form>CadEntity</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_country.pas">
+            <Form>CadCountry</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_state.pas">
+            <Form>CadState</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_country.pas">
+            <Form>FmCountry</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_state.pas">
+            <Form>FmState</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_city.pas">
+            <Form>FmCity</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_city.pas">
+            <Form>CadCity</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_linebusiness.pas">
+            <Form>CadLinebusiness</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_lineBusiness.pas">
+            <Form>fmLineBusiness</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="features\pes_cnpjOnLine.pas">
+            <Form>PesCnpjOnLine</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="features\pes_cepLogradouro.pas">
+            <Form>PesCepLogradouro</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_entity_fiscal.pas">
+            <Form>CadEntityFiscal</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="repository\msg_form.pas">
+            <Form>MsgForm</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="framework\GenericEntity.pas"/>
+        <DCCReference Include="files\cad_customer.pas">
+            <Form>CadCustomer</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_Salesman.pas">
+            <Form>FmSalesman</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="modules\adm_module.pas">
+            <Form>AdmModule</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="modules\purchase_module.pas">
+            <Form>PurchaseModule</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="modules\stock_module.pas">
+            <Form>StockModule</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="modules\builder_module.pas">
+            <Form>BuilderModule</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_carrier.pas">
+            <Form>FmCarrier</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_user.pas">
+            <Form>CadUser</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_provider.pas">
+            <Form>CadProvider</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_payment_types.pas">
+            <Form>CadPaymentTypes</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_brand.pas">
+            <Form>CadBrand</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_package.pas">
+            <Form>CadPackage</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_measure.pas">
+            <Form>CadMeasure</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_product.pas">
+            <Form>CadProduct</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_category.pas">
+            <Form>FmCategory</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_brand.pas">
+            <Form>FmBrand</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_merchandise.pas">
+            <Form>CadMerchandise</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_package.pas">
+            <Form>FmPackage</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_measure.pas">
+            <Form>FmMeasure</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_color.pas">
+            <Form>CadColor</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_color.pas">
+            <Form>FmColor</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\tas_changepassword.pas">
+            <Form>TasChangepassword</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="repository\base_search.pas">
+            <Form>BaseSearch</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_brand.pas">
+            <Form>SeaBrand</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_city.pas">
+            <Form>SeaCity</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_color.pas">
+            <Form>SeaColor</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_country.pas">
+            <Form>SeaCountry</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_linebusiness.pas">
+            <Form>SeaLinebusiness</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_measure.pas">
+            <Form>SeaMeasure</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_package.pas">
+            <Form>SeaPackage</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_payment_types.pas">
+            <Form>SeaPaymentTypes</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_state.pas">
+            <Form>SeaState</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_entity.pas">
+            <Form>SeaEntity</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_entity_fiscal.pas">
+            <Form>SeaEntityFiscal</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_product.pas">
+            <Form>SeaProduct</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_merchandise.pas">
+            <Form>SeaMerchandise</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_customer.pas">
+            <Form>SeaCustomer</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_provider.pas">
+            <Form>SeaProvider</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_carrier.pas">
+            <Form>SeaCarrier</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_carrier.pas">
+            <Form>CadCarrier</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_price_list.pas">
+            <Form>CadPriceList</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_stock_list.pas">
+            <Form>CadStockList</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_stock_list.pas">
+            <Form>SeaStockList</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_price_list.pas">
+            <Form>SeaPriceList</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\tas_order.pas">
+            <Form>TasOrder</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_order.pas">
+            <Form>SeaOrder</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\tas_xml_import_nfe.pas">
+            <Form>TasXmlImportNfe</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_module.pas">
+            <Form>CadModule</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_module.pas">
+            <Form>SeaModule</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="modules\super_module.pas">
+            <Form>SuperModule</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_interface.pas">
+            <Form>CadInterface</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_interface.pas">
+            <Form>SeaInterface</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_privilege.pas">
+            <Form>CadPrivilege</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_privilege.pas">
+            <Form>SeaPrivilege</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\tas_in_out_product.pas">
+            <Form>TasInOutProduct</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\tas_order_purchase.pas">
+            <Form>TasOrderPurchase</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\tas_nf.pas">
+            <Form>TasNf</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\tas_nf_55.pas">
+            <Form>TasNf1</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\tas_nf_65.pas">
+            <Form>TasNf65</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_cfop.pas">
+            <Form>FmCFOP</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_provider.pas">
+            <Form>FmProvider</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_payment_type.pas">
+            <Form>fmPaymentType</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\sea_order_purchase.pas">
+            <Form>SeaOrderPurchase</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_agency.pas">
+            <Form>CadAgency</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_broadcaster.pas">
+            <Form>CadBroadCaster</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_advertiser.pas">
+            <Form>CadAdvertiser</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_agency.pas">
+            <Form>SeaAgency</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_broadcaster.pas">
+            <Form>SeaBroadcaster</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_advertiser.pas">
+            <Form>SeaAdvertiser</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_med_pos_prog.pas">
+            <Form>CadMedPosProg</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_med_pos_prog.pas">
+            <Form>SeaMedPosProg</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_med_material.pas">
+            <Form>CadMedMaterial</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_med_material.pas">
+            <Form>SeaMedMaterial</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\tas_order_production_items_mp.pas">
+            <Form>TasOrderProductionItemsMp</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_tax_icms_nr.pas">
+            <Form>CadTaxIcmsNr</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_tax_icms_nr.pas">
+            <Form>SeaTaxIcmsNr</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_discharge_icms.pas">
+            <Form>SeadischargeIcms</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_discharge_icms.pas">
+            <Form>CadDischargeIcms</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_discharge_icms.pas">
+            <Form>FmDischargeIcms</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_tax_icms_sn.pas">
+            <Form>SeaTaxIcmsSn</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_tax_icms_sn.pas">
+            <Form>CadTaxIcmsSN</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_deter_base_tax_icms.pas">
+            <Form>SeaDeterBaseTaxIcms</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_deter_base_tax_icms.pas">
+            <Form>CadDeterBaseTaxIcms</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_deter_base_tax_icms.pas">
+            <Form>FmDeterBaseTaxIcms</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_tax_ipi.pas">
+            <Form>cadTaxIpi</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_tax_ipi.pas">
+            <Form>SeaTaxIpi</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_tax_ipi.pas">
+            <Form>FmTaxIpi</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_tax_pis.pas">
+            <Form>cadTaxPis</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_tax_pis.pas">
+            <Form>SeaTaxPis</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_tax_pis.pas">
+            <Form>FmTaxPis</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_observation.pas">
+            <Form>CadObservation</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_observation.pas">
+            <Form>SeaObservation</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_observation.pas">
+            <Form>FmObservation</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_deter_base_tax_icms_st.pas">
+            <Form>CadDeterBaseTaxIcmsST</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_deter_base_tax_icms_st.pas">
+            <Form>SeaDeterBaseTaxIcmsST</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_deter_base_tax_icms_st.pas">
+            <Form>FmDeterBaseTaxIcmsST</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_cfop.pas">
+            <Form>CadCfop</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_cfop.pas">
+            <Form>SeaCfop</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_tax_cofins.pas">
+            <Form>SeaTaxCofins</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_tax_ruler.pas">
+            <Form>CadTaxRuler</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_tax_icms_sn.pas">
+            <Form>FmTaxIcmsSn</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_tax_cofins.pas">
+            <Form>FmTaxCofins</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_tax_icms_nr.pas">
+            <Form>FmTaxIcmsNr</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_agency.pas">
+            <Form>FmAgency</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_broadcaster.pas">
+            <Form>FmBroadcaster</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_advertiser.pas">
+            <Form>FmAdvertiser</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\tas_order_pi_item.pas">
+            <Form>TasOrderPiItem</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_med_material.pas">
+            <Form>FmMedMaterial</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_med_pos_prog.pas">
+            <Form>FmMedPosProg</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\tas_order_pi_jr.pas">
+            <Form>TasOrderPiJr</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\tas_order_pi_rt.pas">
+            <Form>TasOrderPiRt</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="function\UnGestao.pas"/>
+        <DCCReference Include="files\sea_tax_ruler.pas">
+            <Form>SeaTaxRuler</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_collaborator.pas">
+            <Form>CadCollaborator</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_collaborator.pas">
+            <Form>SeaCollaborator</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\tas_to_invoice.pas">
+            <Form>TasToInvoice</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="modules\employee_module.pas">
+            <Form>EmployeeModule</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_salesman.pas">
+            <Form>SeaSalesman</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\tas_order_job.pas">
+            <Form>TasOrderJob</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\tas_order_packing.pas">
+            <Form>TasOrderPacking</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\tas_order_production.pas">
+            <Form>TasOrderProduction</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_entity.pas">
+            <Form>FmEntity</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_situation.pas">
+            <Form>FmSituation</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_customer.pas">
+            <Form>FmCustomer</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_order_packing.pas">
+            <Form>SeaOrderPacking</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_situation.pas">
+            <Form>SeaSituation</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_merchandise.pas">
+            <Form>FmMerchandise</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\tas_order_pi.pas">
+            <Form>TasOrderPi</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_order_pi.pas">
+            <Form>SeaOrderPi</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_order_production.pas">
+            <Form>SeaOrderProduction</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_order_job.pas">
+            <Form>SeaOrderJob</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_stock_list.pas">
+            <Form>FmStockList</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="repository\base_frame_List.pas">
+            <Form>BaseFrameList</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\tas_order_sale.pas">
+            <Form>TasOrderSale</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_order_sale.pas">
+            <Form>SeaOrderSale</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="modules\sale_module.pas">
+            <Form>SaleModule</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\tas_order_items_job.pas">
+            <Form>TasOrderItemsJob</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_order_items.pas">
+            <Form>FmOrderItems</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_order_items_job.pas">
+            <Form>FmOrderItemsJob</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_order_items_sale.pas">
+            <Form>FmOrderItemsSale</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_order_items_purchase.pas">
+            <Form>FmOrderItemsPurchase</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_order_items_packing.pas">
+            <Form>FmOrderItemsPacking</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_order_items_production.pas">
+            <Form>FmOrderItemsProduction</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_order_stock_transfer.pas">
+            <Form>SeaOrderStockTransfer</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_entity_fiscal.pas">
+            <Form>FmEntityFiscal</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_order_items_stock_adjust.pas">
+            <Form>FmOrderItemsStockAdjust</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_order_Stock_Adjust.pas">
+            <Form>SeaOrderStockAdjust</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\tas_order_stock_adjust.pas">
+            <Form>TasOrderStockAdjust</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\tas_order_stock_transfer.pas">
+            <Form>TasOrderStockTransfer</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\tas_config_nfe_55.pas">
+            <Form>TasConfigNfe55</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\tas_config_nfe_65.pas">
+            <Form>TasConfigNfe65</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_invoice_merchandise.pas">
+            <Form>SeaInvoiceMerchandise</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_institution.pas">
+            <Form>CadInstitution</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_institution.pas">
+            <Form>SeaInstitution</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_ncm.pas">
+            <Form>SeaNcm</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_cest.pas">
+            <Form>SeaCest</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_address_delivery.pas">
+            <Form>SeaAddressDelivery</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="repository\base_list_Registry.pas">
+            <Form>BaseListRegistry</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_merchandise_has_self.pas">
+            <Form>CadMerchandiseHasSelf</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_address_delivery.pas">
+            <Form>FmAdressDelivery</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_contact.pas">
+            <Form>CadContact</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_financial_plans.pas">
+            <Form>CadFinancialPlans</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_category.pas">
+            <Form>CadCategory</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\tas_order_list_to_buy.pas">
+            <Form>TasOrderListToBuy</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_contact.pas">
+            <Form>SeaContact</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="reports\rep_viewer.pas">
+            <Form>RepViewer</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="function\openReports.pas"/>
+        <DCCReference Include="frames\fm_order_items_stock_transfer.pas">
+            <Form>FmOrderItemsStockTransfer</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_Installment_open.pas">
+            <Form>FmInstallmentOpen</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\tas_order_list_to_delivery.pas">
+            <Form>TasOrderListToDelivery</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\tas_order_budget_item_jr.pas">
+            <Form>TasOrderBudgetItemJr</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\tas_order_budget_item_pi_rt.pas">
+            <Form>TasOrderBudgetItemPiRt</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_extintor.pas">
+            <Form>CadExtintor</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_extintor.pas">
+            <Form>SeaExtintor</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\tas_financial.pas">
+            <Form>TasFinancial</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\tas_financial_bills.pas">
+            <Form>TasFinancialBills</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="modules\financial_bills_module.pas">
+            <Form>FinancialBillsModule</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="modules\financial_payment_module.pas">
+            <Form>FinancialPaymentModule</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\tas_financial_payment.pas">
+            <Form>TasFinancialPayment</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="modules\extintor_module.pas">
+            <Form>ExtintorModule</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="modules\bank_module.pas">
+            <Form>BankModule</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_bank.pas">
+            <Form>CadBank</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_bank.pas">
+            <Form>SeaBank</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_bank.pas">
+            <Form>FmBank</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_bank_account.pas">
+            <Form>CadBankAccount</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_bank_account.pas">
+            <Form>SeaBankAccount</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="restClient\apiReport\uReportCC.pas"/>
+        <DCCReference Include="restClient\report\uReportCM.pas">
+            <Form>CM</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_freight_mode.pas">
+            <Form>fmFreightMode</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_bank_historic.pas">
+            <Form>CadBankHistoric</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_bank_historic.pas">
+            <Form>SeaBankHistoric</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="restClient\nfe\ClientProxy.pas"/>
+        <DCCReference Include="tasks\tas_msg_process.pas">
+            <Form>TasMsgProcess</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_bank_charge_ticket.pas">
+            <Form>CadBankChargeTicket</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_bank_charge_ticket.pas">
+            <Form>SeaBankChargeTicket</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_bank_charge_kind.pas">
+            <Form>CadBankChargeKind</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_bank_charge_kind.pas">
+            <Form>SeaBankChargeKind</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_bank_account.pas">
+            <Form>FmBankAccount</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_bank_charge_ticket.pas">
+            <Form>FmBankChargeTicket</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_bank_charge_kind.pas">
+            <Form>FmBankChargeKind</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_bank_charge_slip.pas">
+            <Form>CadBankChargeSlip</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_bank_charge_slip.pas">
+            <Form>SeaBankChargeSlip</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_accounting.pas">
+            <Form>CadAccounting</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_accounting.pas">
+            <Form>SeaAccounting</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_order_budget_pi.pas">
+            <Form>SeaOrderBudgetPi</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\tas_order_budget_pi.pas">
+            <Form>TasOrderBudgetPi</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\tas_cashier.pas">
+            <Form>TasCashier</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="modules\cashier_module.pas">
+            <Form>CashierModule</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\tas_order_budget_item_pi_jr.pas">
+            <Form>TasOrderBudgetItemPiJr</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\tas_check_ctrl.pas">
+            <Form>TasCheckCtrl</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\sea_check_ctrl.pas">
+            <Form>SeaCheckCtrl</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\tas_useful_phone.pas">
+            <Form>TasUsefulPhone</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_financial_statement.pas">
+            <Form>SeaFinancialStatement</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\tas_technical_assistance.pas">
+            <Form>TasTechnicalAssistance</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\sea_technical_assistance.pas">
+            <Form>SeaTechnicalAssistance</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\tas_set_price.pas">
+            <Form>TasSetPrice</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_price_list.pas">
+            <Form>FmPriceList</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_ext_agent.pas">
+            <Form>CadExtAgent</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_ext_agent.pas">
+            <Form>SeaExtAgent</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_product.pas">
+            <Form>FmProduct</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_ext_agent.pas">
+            <Form>FmExtAgent</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_ext_kind.pas">
+            <Form>CadExtKind</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_ext_kind.pas">
+            <Form>SeaExtKind</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_ext_tester.pas">
+            <Form>CadExtTester</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_ext_tester.pas">
+            <Form>SeaExtTester</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_ext_motive.pas">
+            <Form>CadExtMotive</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_ext_motive.pas">
+            <Form>SeaExtMotive</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_ext_seal.pas">
+            <Form>CadExtSeal</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_ext_seal.pas">
+            <Form>SeaExtSeal</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_service.pas">
+            <Form>CadService</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\sea_ext_maintenance.pas">
+            <Form>SeaExtMaintenance</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\tas_ext_maintenance.pas">
+            <Form>TasExtMaintenance</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_address_list.pas">
+            <Form>FmAddressList</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_ext_level.pas">
+            <Form>FmExtLevel</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\tas_ext_maintenance_items.pas">
+            <Form>TasExtMaintenanceItems</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\fm_ext_motive.pas">
+            <Form>FmExtMotive</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\tas_generate_nfe.pas">
+            <Form>TasGenerateNfe</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\tas_generate_nfe_55.pas">
+            <Form>TasGenerateNfe55</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\sea_ext_operating_test.pas">
+            <Form>SeaExtOperatingTest</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_collaborator.pas">
+            <Form>FmCollaborator</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_service.pas">
+            <Form>SeaService</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="modules\auto_center_module.pas">
+            <Form>AutoCenterModule</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\tas_ext_operating_test.pas">
+            <Form>TasExtOperatingTest</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_veh_brand_model.pas">
+            <Form>CadVehBrandModel</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\tas_bank_activity.pas">
+            <Form>TasBankActivity</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\tas_config_order_sale.pas"/>
+        <DCCReference Include="tasks\tas_config_g_product.pas"/>
+        <DCCReference Include="tasks\tas_config.pas">
+            <Form>TasConfig</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_shipping.pas">
+            <Form>FmShipping</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_tax_cofins.pas">
+            <Form>CadTaxCofins</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\sea_veh_maintenance.pas">
+            <Form>SeaVehMaintenance</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\tas_lot_ctrl.pas">
+            <Form>TasLotCtrl</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_serie_ctrl.pas">
+            <Form>SeaSerieCtrl</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\tas_virtual_shop.pas">
+            <Form>TasVirtualShop</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\tas_send_email_marketing.pas">
+            <Form>TasSendEmailMarketing</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_veh_kind.pas">
+            <Form>CadVehKind</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_veh_kind.pas">
+            <Form>SeaVehKind</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_veh_brand_model.pas">
+            <Form>SeaVehBrandModel</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\tas_copy_invoice.pas">
+            <Form>TasCopyInvoice</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\edi_financial.pas">
+            <Form>EdiFinancial</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_financial.pas">
+            <Form>FmFinancial</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_financial_bills.pas">
+            <Form>CadFinancialBills</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_financial_payment.pas">
+            <Form>CadFinancialPayment</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_financial.pas">
+            <Form>CadFinancial</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="repository\base_impressao.pas">
+            <Form>BaseImpressao</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="reports\print_product.pas">
+            <Form>PrintProduct</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="reports\print_entities.pas">
+            <Form>PrintEntities</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="reports\print_financial_bills.pas">
+            <Form>PrintFinancialBills</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="reports\print_financial_payment.pas">
+            <Form>PrintFinancialPayment</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="reports\print_invoice.pas">
+            <Form>PrintInvoice</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="reports\print_order_list.pas">
+            <Form>PrintOrderList</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_product_has_self.pas">
+            <Form>CadProductHasSelf</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_work_front.pas">
+            <Form>SeaWorkFront</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_work_front.pas">
+            <Form>CadWorkFront</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_work_front.pas">
+            <Form>FmWorkFront</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\tas_order_job_scope.pas">
+            <Form>TasOrderJobScope</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_med_price_list_jr.pas">
+            <Form>CadMedPriceListJR</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_med_price_list_rt.pas">
+            <Form>CadMedPriceListRt</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_med_price_list_ol.pas">
+            <Form>CadMedPriceListOl</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\sea_order_sale_salesman.pas">
+            <Form>SeaOrderSaleSalesman</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\tas_order_production_v2.pas">
+            <Form>TasOrderProductionV2</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\sea_order_production_v2.pas">
+            <Form>SeaOrderProductionV2</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\tas_order_items.pas">
+            <Form>TasOrderItems</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_su_institution.pas">
+            <Form>CadSuInstitution</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\tas_config_nfe.pas">
+            <Form>TasConfigNfe</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_nfe_events.pas">
+            <Form>FmNfeEvents</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="reports\print_financial_manager.pas">
+            <Form>PrintFinancialManager</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="model\tblOrderItemIpi .pas">
+            <ModuleName>tblOrderItemIpi</ModuleName>
+        </DCCReference>
+        <DCCReference Include="files\cad_salesman.pas">
+            <Form>CadSalesman</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_devices.pas">
+            <Form>FmDEvices</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\sea_med_parts.pas">
+            <Form>SeaMedParts</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\tas_financial_bills_media.pas">
+            <Form>TasFinancialBillsMedia</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_financial_edit.pas">
+            <Form>CadFinancialEdit</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_financial_baixa.pas">
+            <Form>CadFinancialBaixa</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\sea_interation.pas">
+            <Form>SeaInteration</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\sea_iteration.pas">
+            <Form>SeaIteration</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="modules\project_module.pas">
+            <Form>ProjectModule</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="D:\Gestao2016\module\tblDskPromotion.pas"/>
+        <DCCReference Include="D:\Gestao2016\module\tblDskPromotionItems.pas"/>
+        <DCCReference Include="files\cad_interation_proposal.pas">
+            <Form>CadInterationProposal</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_interation_task.pas">
+            <Form>CadinterationTask</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_interation.pas">
+            <Form>CadInteration</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_priority.pas">
+            <Form>CadPriority</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_user.pas">
+            <Form>SeaUser</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_priority.pas">
+            <Form>SeaPriority</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_project.pas">
+            <Form>CadProject</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_kind.pas">
+            <Form>SeaKind</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_project.pas">
+            <Form>SeaProject</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_kind.pas">
+            <Form>CadKind</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_situation.pas">
+            <Form>CadSituation</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_priority.pas">
+            <Form>FmPriority</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_User.pas">
+            <Form>FmUser</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_project.pas">
+            <Form>FmProject</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_kind.pas">
+            <Form>FmKind</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_interation_progress.pas">
+            <Form>CadInterationProgress</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\Sea_promotion.pas">
+            <Form>SeaPromotion</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\Cad_Promotion.pas">
+            <Form>CadPromotion</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\das_sale.pas">
+            <Form>DasSale</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\tas_financial_bills_general.pas">
+            <Form>TasFinancialBillsGeneral</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="modules\test_module.pas">
+            <Form>TestModule</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="modules\clinic_module.pas">
+            <Form>ClinicModule</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="model\tblClinModule.pas"/>
+        <DCCReference Include="controller\ControllerClinModule.pas"/>
+        <DCCReference Include="files\cad_clin_module.pas">
+            <Form>CadClinModule</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_clin_module.pas">
+            <Form>SeaClinModule</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_clin_professional.pas">
+            <Form>SeaClinProfessional</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_clin_professional.pas">
+            <Form>CadClinProfessional</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="controller\ControllerClinProfessional.pas"/>
+        <DCCReference Include="model\tblClinProfessional.pas"/>
+        <DCCReference Include="files\sea_clin_patient.pas">
+            <Form>SeaClinPatient</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_clin_module.pas">
+            <Form>FmClinModule</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="controller\ControllerClinPatient.pas"/>
+        <DCCReference Include="model\tblClinPatient.pas"/>
+        <DCCReference Include="files\cad_clin_patient.pas">
+            <Form>CadClinPatient</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="model\tblClinProfessionalHasPatient.pas"/>
+        <DCCReference Include="controller\ControllerClinProfessionalHasPatient.pas"/>
+        <DCCReference Include="frames\fm_clin_patient.pas">
+            <Form>FmClinPatient</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_clin_questionnaire.pas">
+            <Form>SeaClinQuestionnaire</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_clin_questionnaire.pas">
+            <Form>CadClinQuestionnaire</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_clin_professional.pas">
+            <Form>FmClinProfessional</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="model\tblClinQuestionnaire.pas"/>
+        <DCCReference Include="controller\ControllerClinQuestionnaire.pas"/>
+        <DCCReference Include="model\tblClinQuestion.pas"/>
+        <DCCReference Include="controller\ControllerClinQuestion.pas"/>
+        <DCCReference Include="tasks\sea_clin_quiz.pas">
+            <Form>SeaClinQuiz</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="controller\ControllerClinQuiz.pas"/>
+        <DCCReference Include="model\tblClinQuiz.pas"/>
+        <DCCReference Include="model\tblClinAnwer.pas"/>
+        <DCCReference Include="controller\ControllerClinAnwer.pas"/>
+        <DCCReference Include="tasks\tas_clin_quiz.pas">
+            <Form>TasClinQuiz</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="model\tblLogOperation.pas"/>
+        <DCCReference Include="frames\fm_clin_question.pas">
+            <Form>FmClinQuestion</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="model\tblUserHasPrivilege.pas"/>
+        <DCCReference Include="controller\ControllerUserHasPrivilege.pas"/>
+        <DCCReference Include="tasks\tas_user_has_privilege.pas">
+            <Form>TasUserHasPrivilege</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="controller\ControllerLogOperation.pas"/>
+        <DCCReference Include="tasks\sea_log_operation.pas">
+            <Form>SeaLogOperation</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="model\tblMedCopyEdition.pas"/>
+        <DCCReference Include="controller\ControllerMedCopyEdition.pas"/>
+        <DCCReference Include="files\cad_med_copy_edition.pas">
+            <Form>CadMedCopyEdition</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="frames\fm_StateCity.pas">
+            <Form>FmStateCity</Form>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="model\TblBroacasterHasCirculaton.pas"/>
+        <DCCReference Include="controller\ControllerBroacasterHasCirculation.pas"/>
+        <DCCReference Include="files\cad_med_broadcaster_circulation.pas">
+            <Form>CadMedBroadcasterCirculation</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="Interface\intBroadcasterHasCirculation.pas"/>
+        <DCCReference Include="tasks\img_view.pas">
+            <Form>ImgView</Form>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="model\tblUserSendEmail.pas"/>
+        <DCCReference Include="controller\ControllerUserSendEmail.pas"/>
+        <DCCReference Include="restClient\apiReport\uReportFinancialCC.pas"/>
+        <DCCReference Include="restClient\apiReport\uReportGeneralCC.pas"/>
+        <DCCReference Include="tasks\sea_order_budg_advertise.pas">
+            <Form>SeaOrderBudgAdvertise</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\tas_order_budg_advertise.pas">
+            <Form>TasOrderBudgAdvertise</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="tasks\tas_whatsapp_web.pas">
+            <Form>TasWhatsappWeb</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="model\tblWhatsapp.pas"/>
+        <DCCReference Include="controller\ControllerWhatsapp.pas"/>
+        <DCCReference Include="model\tblWhatsappHasContact.pas"/>
+        <DCCReference Include="controller\ControllerWhatsappHasContact.pas"/>
+        <DCCReference Include="model\tblWhatsappHasTalk.pas"/>
+        <DCCReference Include="controller\ControllerWhatsappHasTalk.pas"/>
+        <DCCReference Include="tasks\tas_whatsapp_talk.pas">
+            <Form>TasWhatsappTalk</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\cad_rest_menu.pas">
+            <Form>CadRestMenu</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_rest_menu.pas">
+            <Form>SeaRestMenu</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_rest_menu_pizza.pas">
+            <Form>SeaRestMenuPizza</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="files\sea_rest_menu_beverage.pas">
+            <Form>SeaRestMenuBeverage</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="modules\pizzaria_module.pas">
+            <Form>PizzariaModule</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TUniFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="controller\ControllerRestMenu.pas"/>
+        <DCCReference Include="files\cad_delivery_range.pas">
+            <Form>CadDeliveryRange</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TUniForm</DesignClass>
+        </DCCReference>
+        <DCCReference Include="model\tblDeliveryRange.pas"/>
+        <DCCReference Include="controller\ControllerDeliveryRange.pas"/>
+        <DCCReference Include="function\whatsAppWeb.pas"/>
+        <None Include="ModelSupport_gestao\default.txaPackage"/>
+        <None Include="ModelSupport_gestao\default.txvpck"/>
+        <None Include="ModelSupport_gestao\adm_module\default.txvpck"/>
+        <None Include="ModelSupport_gestao\gestao\default.txvpck"/>
+        <BuildConfiguration Include="Debug">
+            <Key>Cfg_2</Key>
+            <CfgParent>Base</CfgParent>
+        </BuildConfiguration>
+        <BuildConfiguration Include="Base">
+            <Key>Base</Key>
+        </BuildConfiguration>
+        <BuildConfiguration Include="Release">
+            <Key>Cfg_1</Key>
+            <CfgParent>Base</CfgParent>
+        </BuildConfiguration>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Delphi.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Delphi.Personality>
+                <Source>
+                    <Source Name="MainSource">gestao.dpr</Source>
+                </Source>
+                <Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dcloffice2k250.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dclofficexp250.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
+                </Excluded_Packages>
+            </Delphi.Personality>
+            <Platforms>
+                <Platform value="Win32">True</Platform>
+            </Platforms>
+            <Deployment Version="3">
+                <DeployFile LocalName="ModelSupport_gestao\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_gestao\adm_module\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_gestao\default.txvpck" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="ModelSupport_gestao\default.txvpck" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="D:\Bin\gestaoweb\gestao.exe" Configuration="Release" Class="ProjectOutput">
+                    <Platform Name="Win32">
+                        <RemoteName>gestao.exe</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_gestao\default.txaPackage" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="ModelSupport_gestao\gestao\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="D:\Bin\gestaoweb\gestao.exe" Configuration="Debug" Class="ProjectOutput">
+                    <Platform Name="Win32">
+                        <RemoteName>gestao.exe</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="gestao.exe" Configuration="Debug" Class="ProjectOutput"/>
+                <DeployFile LocalName="ModelSupport_gestao\adm_module\default.txvpck" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="C:\Bin\gestaoweb\gestao.exe" Configuration="Debug" Class="ProjectOutput"/>
+                <DeployFile LocalName="gestao.exe" Configuration="Release" Class="ProjectOutput"/>
+                <DeployFile LocalName="ModelSupport_gestao\default.txaPackage" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_gestao\default.txaPackage" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_gestao\gestao\default.txvpck" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_gestao\adm_module\default.txvpck" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_gestao\gestao\default.txvpck" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="ModelSupport_gestao\default.txaPackage" Configuration="Release" Class="ProjectFile"/>
+                <DeployClass Name="AdditionalDebugSymbols">
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Win32">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>0</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidClassesDexFile">
+                    <Platform Name="Android">
+                        <RemoteDir>classes</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidGDBServer">
+                    <Platform Name="Android">
+                        <RemoteDir>library\lib\armeabi-v7a</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidLibnativeArmeabiFile">
+                    <Platform Name="Android">
+                        <RemoteDir>library\lib\armeabi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidLibnativeMipsFile">
+                    <Platform Name="Android">
+                        <RemoteDir>library\lib\mips</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidServiceOutput">
+                    <Platform Name="Android">
+                        <RemoteDir>library\lib\armeabi-v7a</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidSplashImageDef">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidSplashStyles">
+                    <Platform Name="Android">
+                        <RemoteDir>res\values</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_DefaultAppIcon">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_LauncherIcon144">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-xxhdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_LauncherIcon36">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-ldpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_LauncherIcon48">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-mdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_LauncherIcon72">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-hdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_LauncherIcon96">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-xhdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_SplashImage426">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-small</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_SplashImage470">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-normal</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_SplashImage640">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-large</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_SplashImage960">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-xlarge</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="DebugSymbols">
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="DependencyFramework">
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>1</Operation>
+                        <Extensions>.framework</Extensions>
+                    </Platform>
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="DependencyModule">
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                        <Extensions>.dll;.bpl</Extensions>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Required="true" Name="DependencyPackage">
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                        <Extensions>.bpl</Extensions>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="File">
+                    <Platform Name="Android">
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice32">
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\Resources\StartUp\</RemoteDir>
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPad_Launch1024">
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPad_Launch1536">
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPad_Launch2048">
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPad_Launch768">
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPhone_Launch320">
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPhone_Launch640">
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPhone_Launch640x1136">
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectAndroidManifest">
+                    <Platform Name="Android">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectiOSDeviceDebug">
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>..\$(PROJECTNAME).app.dSYM\Contents\Resources\DWARF</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <RemoteDir>..\$(PROJECTNAME).app.dSYM\Contents\Resources\DWARF</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectiOSDeviceResourceRules">
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectiOSEntitlements">
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>..\</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <RemoteDir>..\</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectiOSInfoPList">
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectiOSResource">
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectOSXEntitlements">
+                    <Platform Name="OSX32">
+                        <RemoteDir>..\</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectOSXInfoPList">
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectOSXResource">
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\Resources</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Required="true" Name="ProjectOutput">
+                    <Platform Name="Android">
+                        <RemoteDir>library\lib\armeabi-v7a</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Linux64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectUWPManifest">
+                    <Platform Name="Win32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Win64">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="UWP_DelphiLogo150">
+                    <Platform Name="Win32">
+                        <RemoteDir>Assets</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Win64">
+                        <RemoteDir>Assets</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="UWP_DelphiLogo44">
+                    <Platform Name="Win32">
+                        <RemoteDir>Assets</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Win64">
+                        <RemoteDir>Assets</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <ProjectRoot Platform="iOSDevice64" Name="$(PROJECTNAME).app"/>
+                <ProjectRoot Platform="Win64" Name="$(PROJECTNAME)"/>
+                <ProjectRoot Platform="iOSDevice32" Name="$(PROJECTNAME).app"/>
+                <ProjectRoot Platform="Win32" Name="$(PROJECTNAME)"/>
+                <ProjectRoot Platform="Linux64" Name="$(PROJECTNAME)"/>
+                <ProjectRoot Platform="OSX32" Name="$(PROJECTNAME).app"/>
+                <ProjectRoot Platform="Android" Name="$(PROJECTNAME)"/>
+                <ProjectRoot Platform="iOSSimulator" Name="$(PROJECTNAME).app"/>
+            </Deployment>
+            <DataSnapProxyLookup>
+                <uReporCC>{CD6A43F1-F93B-4240-ADA2-287E190915A6}</uReporCC>
+                <uReportGeneralCC>{475B6014-045C-4613-A5FE-ABD8F68498B9}</uReportGeneralCC>
+            </DataSnapProxyLookup>
+            <ModelSupport>True</ModelSupport>
+        </BorlandProject>
+        <ProjectFileVersion>12</ProjectFileVersion>
+    </ProjectExtensions>
+    <Import Project="$(BDS)\Bin\CodeGear.Delphi.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')"/>
+    <Import Project="$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj" Condition="Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj')"/>
+    <Import Project="$(MSBuildProjectName).deployproj" Condition="Exists('$(MSBuildProjectName).deployproj')"/>
+    <PropertyGroup Condition="'$(Config)'=='Release' And '$(Platform)'=='Win32'">
+        <PreBuildEvent>taskkill /f /im $(OUTPUTFILENAME) 2&gt;&amp;1 || exit /B 0</PreBuildEvent>
+        <PreBuildEventIgnoreExitCode>True</PreBuildEventIgnoreExitCode>
+        <PreLinkEvent/>
+        <PreLinkEventIgnoreExitCode>False</PreLinkEventIgnoreExitCode>
+        <PostBuildEvent/>
+        <PostBuildEventIgnoreExitCode>False</PostBuildEventIgnoreExitCode>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Debug' And '$(Platform)'=='Win32'">
+        <PreBuildEvent>taskkill /f /im $(OUTPUTFILENAME) 2&gt;&amp;1 || exit /B 0</PreBuildEvent>
+        <PreBuildEventIgnoreExitCode>True</PreBuildEventIgnoreExitCode>
+        <PreLinkEvent/>
+        <PreLinkEventIgnoreExitCode>False</PreLinkEventIgnoreExitCode>
+        <PostBuildEvent/>
+        <PostBuildEventIgnoreExitCode>False</PostBuildEventIgnoreExitCode>
+    </PropertyGroup>
+</Project>

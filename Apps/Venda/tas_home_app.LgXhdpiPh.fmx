@@ -1,0 +1,58 @@
+inherited TasHomeApp_LgXhdpiPh: TTasHomeApp_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 3
+  inherited LayoutMain: TLayout
+    Size.Width = 450.000000000000000000
+    Size.Height = 695.000000000000000000
+    inherited Rc_process_out: TRectangle
+      inherited Rc_process_frame: TRectangle
+        inherited Rc_process_tittle: TRectangle
+          inherited img_cloud: TImage
+            MultiResBitmap.Height = 72
+            MultiResBitmap.Width = 72
+          end
+        end
+      end
+    end
+    inherited Rectangle1: TRectangle
+      Size.Width = 440.000000000000000000
+      inherited Lb_Name_Institution: TLabel
+        Size.Width = 362.000000000000000000
+      end
+      inherited Sb_change_institurion: TSpeedButton
+        Position.X = 387.000000000000000000
+      end
+    end
+    inherited Rectangle5: TRectangle
+      inherited Rectangle6: TRectangle
+        inherited Label5: TLabel
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+        end
+      end
+      inherited Label6: TLabel
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+    end
+    inherited Rectangle3: TRectangle
+      inherited Rectangle4: TRectangle
+        inherited Label3: TLabel
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+        end
+      end
+      inherited Label4: TLabel
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+    end
+    inherited Rectangle7: TRectangle
+      inherited Rectangle8: TRectangle
+        inherited Label7: TLabel
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+        end
+      end
+      inherited Label8: TLabel
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+    end
+  end
+end

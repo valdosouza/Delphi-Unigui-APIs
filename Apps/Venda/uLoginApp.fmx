@@ -1,0 +1,46 @@
+inherited LoginApp: TLoginApp
+  Caption = 'Login Vendas'
+  ClientHeight = 480
+  DesignerMasterStyle = 3
+  inherited LayoutMain: TLayout
+    Size.Height = 480.000000000000000000
+    inherited Rc_process_Show: TRectangle
+      Size.Height = 121.000000000000000000
+      inherited Rc_process_frame: TRectangle
+        inherited Rc_process_tittle: TRectangle
+          inherited img_cloud: TImage
+            MultiResBitmap.Height = 72
+            MultiResBitmap.Width = 72
+          end
+        end
+      end
+    end
+    inherited LayoutLogin: TLayout
+      Size.Height = 460.000000000000000000
+      inherited Ly_logo: TLayout
+        inherited Im_logo: TImage
+          MultiResBitmap.Height = 70
+          MultiResBitmap.Width = 225
+        end
+      end
+      inherited Ly_login_area: TLayout
+        inherited Ly_login: TLayout
+          inherited Rc_login: TRectangle
+            inherited Image1: TImage
+              MultiResBitmap.Height = 36
+              MultiResBitmap.Width = 36
+            end
+          end
+        end
+        inherited Ly_password: TLayout
+          inherited Rc_password: TRectangle
+            inherited Image2: TImage
+              MultiResBitmap.Height = 36
+              MultiResBitmap.Width = 36
+            end
+          end
+        end
+      end
+    end
+  end
+end

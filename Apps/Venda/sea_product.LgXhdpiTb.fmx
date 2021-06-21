@@ -1,0 +1,77 @@
+inherited SeaProduct_LgXhdpiTb: TSeaProduct_LgXhdpiTb
+  ClientHeight = 829
+  ClientWidth = 480
+  DesignerMasterStyle = 0
+  inherited LayoutMain: TLayout
+    Size.Width = 480.000000000000000000
+    Size.Height = 829.000000000000000000
+    inherited lsv_Search: TListView
+      Size.Width = 480.000000000000000000
+      Size.Height = 700.000000000000000000
+    end
+    inherited Ly_Result_top: TLayout
+      Size.Width = 480.000000000000000000
+      inherited Rc_result_top: TRectangle
+        Size.Width = 480.000000000000000000
+        inherited Ly_list_titlle: TLayout
+          Size.Width = 480.000000000000000000
+          inherited Lb_name_tittle: TLabel
+            Size.Width = 422.000000000000000000
+          end
+          inherited Sb_search: TSpeedButton
+            Position.X = 432.000000000000000000
+            Position.Y = 1.000000000000000000
+            Size.Height = 48.000000000000000000
+            StyleLookup = 'searchtoolbutton'
+          end
+          inherited Sb_Insert: TSpeedButton
+            Position.X = 432.000000000000000000
+          end
+        end
+        inherited Ly_quick_search: TLayout
+          Size.Width = 480.000000000000000000
+          inherited E_busca: TEdit
+            Size.Width = 432.000000000000000000
+          end
+        end
+      end
+    end
+    inherited Ly_selected: TLayout
+      Size.Width = 480.000000000000000000
+      inherited Rc_selected: TRectangle
+        Size.Width = 470.000000000000000000
+        inherited Lb_selected: TLabel
+          Size.Width = 460.000000000000000000
+        end
+        inherited Ly_sb_row_top: TLayout
+          Size.Width = 470.000000000000000000
+          inherited Ly_sb_cont_top: TLayout
+            inherited Sb_tab_01: TSpeedButton
+              Size.Height = 48.000000000000000000
+            end
+            inherited Sb_tab_02: TSpeedButton
+              Size.Height = 48.000000000000000000
+            end
+            inherited Sb_tab_03: TSpeedButton
+              Size.Height = 48.000000000000000000
+            end
+          end
+        end
+        inherited Ly_sb_row_botton: TLayout
+          Size.Width = 470.000000000000000000
+          inherited Ly_sb_cont_botton: TLayout
+            inherited Sb_tab_04: TSpeedButton
+              Size.Height = 48.000000000000000000
+            end
+            inherited Sb_tab_05: TSpeedButton
+              Size.Height = 48.000000000000000000
+            end
+            inherited Sb_tab_06: TSpeedButton
+              Size.Height = 48.000000000000000000
+            end
+          end
+        end
+      end
+    end
+  end
+end

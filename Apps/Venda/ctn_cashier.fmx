@@ -1,0 +1,70 @@
+inherited CtnCashier: TCtnCashier
+  Caption = 'ContainerCaixa'
+  DesignerMasterStyle = 0
+  inherited MultiViewMain: TMultiView
+    inherited ListBoxMenu: TListBox
+      Viewport.Width = 185.000000000000000000
+      Viewport.Height = 392.000000000000000000
+      object MnuNew: TListBoxItem [0]
+        TextSettings.Font.Size = 14.000000000000000000
+        StyledSettings = [Family, Style, FontColor, Other]
+        Padding.Left = 10.000000000000000000
+        Padding.Top = 5.000000000000000000
+        Padding.Bottom = 5.000000000000000000
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 10.000000000000000000
+        Size.Width = 171.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        Text = 'Novo'
+      end
+      object MnuSearch: TListBoxItem [1]
+        TextSettings.Font.Size = 14.000000000000000000
+        StyledSettings = [Family, Style, FontColor, Other]
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 64.000000000000000000
+        Size.Width = 171.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Consultar'
+      end
+      object MnuResumo: TListBoxItem [2]
+        TextSettings.Font.Size = 14.000000000000000000
+        StyledSettings = [Family, Style, FontColor, Other]
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 118.000000000000000000
+        Size.Width = 171.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'Resumo'
+      end
+      object MnuClose: TListBoxItem [3]
+        TextSettings.Font.Size = 14.000000000000000000
+        StyledSettings = [Family, Style, FontColor, Other]
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 172.000000000000000000
+        Size.Width = 171.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Text = 'Fechar'
+        OnClick = MnuCloseClick
+      end
+    end
+  end
+end

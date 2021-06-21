@@ -1,0 +1,33 @@
+inherited ListaComboInstitution: TListaComboInstitution
+  Caption = 'Lista de Estabelecimentos'
+  DesignerMasterStyle = 3
+  inherited LayoutMain: TLayout
+    inherited Rc_process_Show: TRectangle
+      Size.Height = 50.000000000000000000
+      inherited Rc_process_frame: TRectangle
+        inherited Rc_process_tittle: TRectangle
+          inherited img_cloud: TImage
+            MultiResBitmap.Height = 72
+            MultiResBitmap.Width = 72
+          end
+        end
+      end
+    end
+    inherited Ly_Result_top: TLayout
+      Size.Height = 49.000000000000000000
+      inherited Rc_result_top: TRectangle
+        inherited Ly_list_titlle: TLayout
+          inherited Lb_name_tittle: TLabel
+            Text = 'Lista de Estabelecimentos'
+          end
+        end
+      end
+      inherited Ly_quick_search: TLayout
+        Visible = False
+      end
+    end
+    inherited lsv_Search: TListView
+      Size.Height = 524.000000000000000000
+    end
+  end
+end

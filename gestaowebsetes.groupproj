@@ -1,0 +1,60 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{E3EA7041-F6E8-4BFA-A531-C70A1209A9F9}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Apps\Vendas\Vendas.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="ApiAuth\ApiAuth.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="ApiData\ApiData.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Vendas">
+        <MSBuild Projects="Apps\Vendas\Vendas.dproj"/>
+    </Target>
+    <Target Name="Vendas:Clean">
+        <MSBuild Projects="Apps\Vendas\Vendas.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Vendas:Make">
+        <MSBuild Projects="Apps\Vendas\Vendas.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ApiAuth">
+        <MSBuild Projects="ApiAuth\ApiAuth.dproj"/>
+    </Target>
+    <Target Name="ApiAuth:Clean">
+        <MSBuild Projects="ApiAuth\ApiAuth.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ApiAuth:Make">
+        <MSBuild Projects="ApiAuth\ApiAuth.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ApiData">
+        <MSBuild Projects="ApiData\ApiData.dproj"/>
+    </Target>
+    <Target Name="ApiData:Clean">
+        <MSBuild Projects="ApiData\ApiData.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ApiData:Make">
+        <MSBuild Projects="ApiData\ApiData.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Vendas;ApiAuth;ApiData"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Vendas:Clean;ApiAuth:Clean;ApiData:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Vendas:Make;ApiAuth:Make;ApiData:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

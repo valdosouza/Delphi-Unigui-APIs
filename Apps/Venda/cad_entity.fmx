@@ -1,0 +1,809 @@
+inherited CadEntity: TCadEntity
+  Caption = 'Cadastro de Clientes'
+  ClientHeight = 548
+  ClientWidth = 428
+  DesignerMasterStyle = 3
+  inherited LayoutMain: TLayout
+    Size.Width = 428.000000000000000000
+    Size.Height = 548.000000000000000000
+    inherited Ly_Result_top: TLayout
+      Size.Width = 428.000000000000000000
+      TabOrder = 2
+      inherited Rc_result_top: TRectangle
+        Size.Width = 418.000000000000000000
+        inherited Ly_list_titlle: TLayout
+          Size.Width = 418.000000000000000000
+          inherited img_top: TImage
+            MultiResBitmap.Height = 96
+            MultiResBitmap.Width = 96
+          end
+          inherited Lb_title: TLabel
+            Size.Width = 246.000000000000000000
+            Text = 'Cliente'
+          end
+          inherited Sb_Cancel: TSpeedButton
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Position.X = 365.000000000000000000
+            Position.Y = 5.000000000000000000
+          end
+          inherited Sb_Save: TSpeedButton
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Position.X = 307.000000000000000000
+            Position.Y = 5.000000000000000000
+          end
+        end
+      end
+    end
+    object tab_dados: TTabControl
+      Align = Client
+      Size.Width = 428.000000000000000000
+      Size.Height = 498.000000000000000000
+      Size.PlatformDefault = False
+      TabHeight = 49.000000000000000000
+      TabIndex = 0
+      TabOrder = 0
+      TabPosition = PlatformDefault
+      Sizes = (
+        428s
+        449s
+        428s
+        449s
+        428s
+        449s)
+      object tbs_tittle_entity: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = True
+        Size.Width = 142.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'Identifica'#231#227'o'
+        ExplicitSize.cx = 102.000000000000000000
+        ExplicitSize.cy = 26.000000000000000000
+        object Ly_Entity: TVertScrollBox
+          Align = Top
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 10.000000000000000000
+          Position.X = 10.000000000000000000
+          Position.Y = 10.000000000000000000
+          Size.Width = 407.999847412109400000
+          Size.Height = 429.000640869140600000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Viewport.Width = 408.000000000000000000
+          Viewport.Height = 429.000000000000000000
+          object Ly_kind_person: TRectangle
+            Align = Top
+            Margins.Left = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Size.Width = 397.999847412109400000
+            Size.Height = 55.000000000000000000
+            Size.PlatformDefault = False
+            XRadius = 5.000000000000000000
+            YRadius = 5.000000000000000000
+            object Grp_kind_person: TGroupBox
+              Align = Client
+              StyledSettings = [Style, FontColor, Other]
+              Margins.Left = 5.000000000000000000
+              Margins.Top = 5.000000000000000000
+              Margins.Right = 5.000000000000000000
+              Margins.Bottom = 5.000000000000000000
+              Size.Width = 387.999847412109400000
+              Size.Height = 45.000000000000000000
+              Size.PlatformDefault = False
+              StyleLookup = 'Grp_kind_personStyle1'
+              Text = 'Tipo de Pessoa'
+              TextSettings.Font.Family = 'Arial'
+              TabOrder = 0
+              object rb_Juridica: TRadioButton
+                Align = Left
+                StyledSettings = [Style, FontColor]
+                GroupName = 'Pessoa'
+                IsChecked = True
+                Margins.Left = 5.000000000000000000
+                Margins.Top = 10.000000000000000000
+                Position.X = 5.000000000000000000
+                Position.Y = 10.000000000000000000
+                Size.Width = 100.000000000000000000
+                Size.Height = 35.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 1
+                Text = 'Jur'#237'dica'
+                TextSettings.Font.Family = 'Arial'
+                TextSettings.Font.Size = 14.000000000000000000
+                OnChange = rb_JuridicaChange
+              end
+              object RB_fisica: TRadioButton
+                Align = Left
+                StyledSettings = [Style, FontColor]
+                GroupName = 'Pessoa'
+                Margins.Top = 10.000000000000000000
+                Position.X = 105.000000000000000000
+                Position.Y = 10.000000000000000000
+                Size.Width = 120.000000000000000000
+                Size.Height = 35.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 0
+                Text = 'F'#237'sica'
+                TextSettings.Font.Family = 'Arial'
+                TextSettings.Font.Size = 14.000000000000000000
+                OnChange = RB_fisicaChange
+              end
+            end
+          end
+          object Ly_name_company: TRectangle
+            Align = Top
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 120.000000000000000000
+            Size.Width = 397.999847412109400000
+            Size.Height = 55.000000000000000000
+            Size.PlatformDefault = False
+            XRadius = 5.000000000000000000
+            YRadius = 5.000000000000000000
+            object Lb_Name: TLabel
+              Align = Top
+              StyledSettings = [Style, FontColor]
+              Margins.Left = 5.000000000000000000
+              Position.X = 5.000000000000000000
+              Size.Width = 392.999847412109400000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Family = 'Arial'
+              Text = 'Nome/Raz'#227'o Social'
+              TabOrder = 0
+            end
+            object E_Name: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Client
+              TabOrder = 1
+              Margins.Left = 5.000000000000000000
+              Margins.Right = 5.000000000000000000
+              Size.Width = 387.999847412109400000
+              Size.Height = 32.000000000000000000
+              Size.PlatformDefault = False
+            end
+          end
+          object Ly_nick_trade: TRectangle
+            Align = Top
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 180.000000000000000000
+            Size.Width = 397.999847412109400000
+            Size.Height = 55.000000000000000000
+            Size.PlatformDefault = False
+            XRadius = 5.000000000000000000
+            YRadius = 5.000000000000000000
+            object E_Nick: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Client
+              TabOrder = 0
+              Margins.Left = 5.000000000000000000
+              Margins.Right = 5.000000000000000000
+              Size.Width = 387.999847412109400000
+              Size.Height = 32.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object Lb_Nick: TLabel
+              Align = Top
+              StyledSettings = [Style, FontColor]
+              Margins.Left = 5.000000000000000000
+              Position.X = 5.000000000000000000
+              Size.Width = 392.999847412109400000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Family = 'Arial'
+              Text = 'Apelido / Fantasia'
+              TabOrder = 1
+            end
+          end
+          object Ly_doc_fiscal: TRectangle
+            Align = Top
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 60.000000000000000000
+            Size.Width = 397.999847412109400000
+            Size.Height = 55.000000000000000000
+            Size.PlatformDefault = False
+            XRadius = 5.000000000000000000
+            YRadius = 5.000000000000000000
+            object Lb_Doc: TLabel
+              Align = Top
+              StyledSettings = [Style, FontColor]
+              Margins.Left = 5.000000000000000000
+              Position.X = 5.000000000000000000
+              Size.Width = 392.999847412109400000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Family = 'Arial'
+              Text = 'C.N.P.J'
+              TabOrder = 0
+            end
+            object E_Doc: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Client
+              TabOrder = 1
+              KeyboardType = NumberPad
+              Margins.Left = 5.000000000000000000
+              Margins.Right = 5.000000000000000000
+              Size.Width = 387.999847412109400000
+              Size.Height = 32.000000000000000000
+              Size.PlatformDefault = False
+              OnKeyUp = E_DocKeyUp
+              object Sb_CNPJ: TSearchEditButton
+                CanFocus = False
+                Cursor = crArrow
+                Size.Width = 32.000000000000000000
+                Size.Height = 32.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 0
+                OnClick = Sb_CNPJClick
+              end
+            end
+          end
+          object Ly_doc_id: TRectangle
+            Align = Top
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 240.000000000000000000
+            Size.Width = 397.999847412109400000
+            Size.Height = 55.000000000000000000
+            Size.PlatformDefault = False
+            XRadius = 5.000000000000000000
+            YRadius = 5.000000000000000000
+            object Lb_IE_RG: TLabel
+              Align = Top
+              StyledSettings = [Style, FontColor]
+              Margins.Left = 5.000000000000000000
+              Position.X = 5.000000000000000000
+              Size.Width = 392.999847412109400000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Family = 'Arial'
+              Text = 'Inscri'#231#227'o Estadual'
+              TabOrder = 0
+            end
+            object E_IE_RG: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Client
+              TabOrder = 1
+              Margins.Left = 5.000000000000000000
+              Margins.Right = 5.000000000000000000
+              Size.Width = 387.999847412109400000
+              Size.Height = 32.000000000000000000
+              Size.PlatformDefault = False
+            end
+          end
+          object Ly_email: TRectangle
+            Align = Top
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 300.000000000000000000
+            Size.Width = 397.999847412109400000
+            Size.Height = 55.000000000000000000
+            Size.PlatformDefault = False
+            XRadius = 5.000000000000000000
+            YRadius = 5.000000000000000000
+            object lb_email: TLabel
+              Align = Top
+              StyledSettings = [Style, FontColor]
+              Margins.Left = 5.000000000000000000
+              Position.X = 5.000000000000000000
+              Size.Width = 392.999847412109400000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Family = 'Arial'
+              Text = 'e-mail'
+              TabOrder = 0
+            end
+            object E_email: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Client
+              TabOrder = 1
+              KeyboardType = EmailAddress
+              Margins.Left = 5.000000000000000000
+              Margins.Right = 5.000000000000000000
+              Size.Width = 387.999847412109400000
+              Size.Height = 32.000000000000000000
+              Size.PlatformDefault = False
+            end
+          end
+          object Ly_Kind_customer: TRectangle
+            Align = Top
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 360.000000000000000000
+            Size.Width = 397.999847412109400000
+            Size.Height = 55.000000000000000000
+            Size.PlatformDefault = False
+            XRadius = 5.000000000000000000
+            YRadius = 5.000000000000000000
+            object Grp_kind_customer: TGroupBox
+              Align = Client
+              StyledSettings = [Style, FontColor, Other]
+              Margins.Left = 5.000000000000000000
+              Margins.Top = 5.000000000000000000
+              Margins.Right = 5.000000000000000000
+              Margins.Bottom = 5.000000000000000000
+              Size.Width = 387.999847412109400000
+              Size.Height = 45.000000000000000000
+              Size.PlatformDefault = False
+              StyleLookup = 'Grp_kind_customerStyle1'
+              Text = 'Consumidor Final'
+              TextSettings.Font.Family = 'Arial'
+              TabOrder = 0
+              object Rb_Dealer: TRadioButton
+                Align = Left
+                StyledSettings = [Family, Style, FontColor]
+                GroupName = 'Consumidor'
+                IsChecked = True
+                Margins.Left = 5.000000000000000000
+                Margins.Top = 10.000000000000000000
+                Position.X = 5.000000000000000000
+                Position.Y = 10.000000000000000000
+                Size.Width = 68.000000000000000000
+                Size.Height = 35.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 1
+                Text = 'N'#227'o'
+                TextSettings.Font.Size = 16.000000000000000000
+              end
+              object Rb_Consumer: TRadioButton
+                Align = Left
+                StyledSettings = [Family, Style, FontColor]
+                GroupName = 'Consumidor'
+                Margins.Left = 5.000000000000000000
+                Margins.Top = 10.000000000000000000
+                Position.X = 78.000000000000000000
+                Position.Y = 10.000000000000000000
+                Size.Width = 109.000000000000000000
+                Size.Height = 35.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 0
+                Text = 'Sim'
+                TextSettings.Font.Size = 16.000000000000000000
+              end
+            end
+          end
+        end
+      end
+      object tbs_tittle_address: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Size.Width = 142.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'Endere'#231'o'
+        ExplicitSize.cx = 70.000000000000000000
+        ExplicitSize.cy = 26.000000000000000000
+        object Ly_address: TVertScrollBox
+          Align = Top
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 10.000000000000000000
+          Position.X = 10.000000000000000000
+          Position.Y = 10.000000000000000000
+          Size.Width = 408.000213623046900000
+          Size.Height = 429.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          ShowScrollBars = False
+          Viewport.Width = 408.000000000000000000
+          Viewport.Height = 429.000000000000000000
+          object ly_zip_code: TRectangle
+            Align = Top
+            Size.Width = 408.000000000000000000
+            Size.Height = 52.000000000000000000
+            Size.PlatformDefault = False
+            XRadius = 5.000000000000000000
+            YRadius = 5.000000000000000000
+            object Lb_zip_code: TLabel
+              Align = Top
+              StyledSettings = [Style, FontColor]
+              Margins.Left = 5.000000000000000000
+              Position.X = 5.000000000000000000
+              Size.Width = 403.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Family = 'Arial'
+              Text = 'C.E.P.'
+              TabOrder = 1
+            end
+            object E_ZipCode: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Client
+              TabOrder = 0
+              KeyboardType = NumberPad
+              Margins.Left = 5.000000000000000000
+              Margins.Right = 5.000000000000000000
+              Size.Width = 398.000000000000000000
+              Size.Height = 35.000000000000000000
+              Size.PlatformDefault = False
+              OnKeyUp = E_ZipCodeKeyUp
+              object Sb_zip_code: TSearchEditButton
+                CanFocus = False
+                Cursor = crArrow
+                Size.Width = 32.000000000000000000
+                Size.Height = 32.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 0
+                OnClick = Sb_zip_codeClick
+              end
+            end
+          end
+          object Ly_state: TRectangle
+            Align = Top
+            Margins.Top = 5.000000000000000000
+            Position.Y = 57.000000000000000000
+            Size.Width = 408.000000000000000000
+            Size.Height = 54.000000000000000000
+            Size.PlatformDefault = False
+            XRadius = 5.000000000000000000
+            YRadius = 5.000000000000000000
+            object Lb_state: TLabel
+              Align = Top
+              StyledSettings = [Style, FontColor]
+              Margins.Left = 4.000000000000000000
+              Position.X = 4.000000000000000000
+              Size.Width = 404.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Family = 'Arial'
+              Text = 'U.F.'
+              TabOrder = 1
+            end
+            object E_state: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Client
+              TabOrder = 0
+              ReadOnly = True
+              Margins.Left = 5.000000000000000000
+              Margins.Right = 5.000000000000000000
+              Size.Width = 398.000000000000000000
+              Size.Height = 37.000000000000000000
+              Size.PlatformDefault = False
+              object Sb_search_state: TSearchEditButton
+                CanFocus = False
+                Cursor = crArrow
+                Size.Width = 32.000000000000000000
+                Size.Height = 32.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 0
+                OnClick = Sb_search_stateClick
+              end
+            end
+          end
+          object Ly_city: TRectangle
+            Align = Top
+            Margins.Top = 5.000000000000000000
+            Position.Y = 116.000000000000000000
+            Size.Width = 408.000000000000000000
+            Size.Height = 57.000000000000000000
+            Size.PlatformDefault = False
+            XRadius = 5.000000000000000000
+            YRadius = 5.000000000000000000
+            object Lb_city: TLabel
+              Align = Top
+              StyledSettings = [Style, FontColor]
+              Margins.Left = 4.000000000000000000
+              Position.X = 4.000000000000000000
+              Size.Width = 404.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Family = 'Arial'
+              Text = 'Cidade'
+              TabOrder = 1
+            end
+            object E_City: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Client
+              TabOrder = 0
+              ReadOnly = True
+              Margins.Left = 5.000000000000000000
+              Margins.Right = 5.000000000000000000
+              Size.Width = 398.000000000000000000
+              Size.Height = 40.000000000000000000
+              Size.PlatformDefault = False
+              object Sb_search_city: TSearchEditButton
+                CanFocus = False
+                Cursor = crArrow
+                Size.Width = 32.000000000000000000
+                Size.Height = 32.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 0
+                OnClick = Sb_search_cityClick
+              end
+            end
+          end
+          object Ly_street: TRectangle
+            Align = Top
+            Margins.Top = 5.000000000000000000
+            Position.Y = 178.000000000000000000
+            Size.Width = 408.000000000000000000
+            Size.Height = 55.000000000000000000
+            Size.PlatformDefault = False
+            XRadius = 5.000000000000000000
+            YRadius = 5.000000000000000000
+            object Lb_street: TLabel
+              Align = Top
+              StyledSettings = [Style, FontColor]
+              Margins.Left = 4.000000000000000000
+              Position.X = 4.000000000000000000
+              Size.Width = 404.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Family = 'Arial'
+              Text = 'Logradouro'
+              TabOrder = 1
+            end
+            object E_Street: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Client
+              TabOrder = 0
+              Margins.Left = 5.000000000000000000
+              Margins.Right = 5.000000000000000000
+              Size.Width = 398.000000000000000000
+              Size.Height = 38.000000000000000000
+              Size.PlatformDefault = False
+            end
+          end
+          object Ly_number: TRectangle
+            Align = Top
+            Margins.Top = 5.000000000000000000
+            Position.Y = 238.000000000000000000
+            Size.Width = 408.000000000000000000
+            Size.Height = 52.000000000000000000
+            Size.PlatformDefault = False
+            XRadius = 5.000000000000000000
+            YRadius = 5.000000000000000000
+            object Lb_Number: TLabel
+              Align = Top
+              StyledSettings = [Style, FontColor]
+              Margins.Left = 5.000000000000000000
+              Position.X = 5.000000000000000000
+              Size.Width = 403.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Family = 'Arial'
+              Text = 'N'#250'mero'
+              TabOrder = 1
+            end
+            object E_number: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Client
+              TabOrder = 0
+              Margins.Left = 5.000000000000000000
+              Margins.Right = 5.000000000000000000
+              Size.Width = 398.000000000000000000
+              Size.Height = 35.000000000000000000
+              Size.PlatformDefault = False
+            end
+          end
+          object Ly_complem: TRectangle
+            Align = Top
+            Margins.Top = 5.000000000000000000
+            Position.Y = 295.000000000000000000
+            Size.Width = 408.000000000000000000
+            Size.Height = 55.000000000000000000
+            Size.PlatformDefault = False
+            XRadius = 5.000000000000000000
+            YRadius = 5.000000000000000000
+            object lb_Complement: TLabel
+              Align = Top
+              StyledSettings = [Style, FontColor]
+              Margins.Left = 5.000000000000000000
+              Position.X = 5.000000000000000000
+              Size.Width = 403.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Family = 'Arial'
+              Text = 'Complemento'
+              TabOrder = 1
+            end
+            object E_complem: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Client
+              TabOrder = 0
+              Margins.Left = 5.000000000000000000
+              Margins.Right = 5.000000000000000000
+              Size.Width = 398.000000000000000000
+              Size.Height = 38.000000000000000000
+              Size.PlatformDefault = False
+            end
+          end
+          object Ly_neighborhood: TRectangle
+            Align = Top
+            Margins.Top = 5.000000000000000000
+            Position.Y = 355.000000000000000000
+            Size.Width = 408.000000000000000000
+            Size.Height = 55.000000000000000000
+            Size.PlatformDefault = False
+            XRadius = 5.000000000000000000
+            YRadius = 5.000000000000000000
+            object Lb_neighborhood: TLabel
+              Align = Top
+              StyledSettings = [Style, FontColor]
+              Margins.Left = 5.000000000000000000
+              Position.X = 5.000000000000000000
+              Size.Width = 403.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Family = 'Arial'
+              Text = 'Bairro'
+              TabOrder = 1
+            end
+            object E_Neighborhood: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Client
+              TabOrder = 0
+              Margins.Left = 5.000000000000000000
+              Margins.Right = 5.000000000000000000
+              Size.Width = 398.000000000000000000
+              Size.Height = 38.000000000000000000
+              Size.PlatformDefault = False
+            end
+          end
+        end
+      end
+      object tbs_tittle_Phone: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Size.Width = 144.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'Fones'
+        ExplicitSize.cx = 52.000000000000000000
+        ExplicitSize.cy = 26.000000000000000000
+        object Ly_fones: TVertScrollBox
+          Align = Top
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 10.000000000000000000
+          Position.X = 10.000000000000000000
+          Position.Y = 10.000000000000000000
+          Size.Width = 408.000000000000000000
+          Size.Height = 452.000366210937500000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Viewport.Width = 408.000000000000000000
+          Viewport.Height = 452.000000000000000000
+          object Ly_Fone: TRectangle
+            Align = Top
+            Size.Width = 408.000000000000000000
+            Size.Height = 55.000000000000000000
+            Size.PlatformDefault = False
+            XRadius = 5.000000000000000000
+            YRadius = 5.000000000000000000
+            object e_Phone: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Client
+              TabOrder = 0
+              KeyboardType = NumberPad
+              Margins.Left = 5.000000000000000000
+              Margins.Right = 5.000000000000000000
+              Size.Width = 398.000000000000000000
+              Size.Height = 38.000000000000000000
+              Size.PlatformDefault = False
+              OnKeyUp = e_PhoneKeyUp
+            end
+            object Lb_Phone_Principal: TLabel
+              Align = Top
+              StyledSettings = [Style, FontColor]
+              Margins.Left = 4.000000000000000000
+              Position.X = 4.000000000000000000
+              Size.Width = 404.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Family = 'Arial'
+              Text = 'Principal'
+              TabOrder = 1
+            end
+          end
+          object Ly_Celular: TRectangle
+            Align = Top
+            Margins.Top = 5.000000000000000000
+            Position.Y = 60.000000000000000000
+            Size.Width = 408.000000000000000000
+            Size.Height = 55.000000000000000000
+            Size.PlatformDefault = False
+            XRadius = 5.000000000000000000
+            YRadius = 5.000000000000000000
+            object Lb_Phone_Celular: TLabel
+              Align = Top
+              StyledSettings = [Style, FontColor]
+              Margins.Left = 4.000000000000000000
+              Position.X = 4.000000000000000000
+              Size.Width = 404.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Family = 'Arial'
+              Text = 'Celular'
+              TabOrder = 0
+            end
+            object E_Celular: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Client
+              TabOrder = 1
+              KeyboardType = NumberPad
+              Margins.Left = 5.000000000000000000
+              Margins.Right = 5.000000000000000000
+              Size.Width = 398.000000000000000000
+              Size.Height = 38.000000000000000000
+              Size.PlatformDefault = False
+              OnKeyUp = E_CelularKeyUp
+            end
+          end
+        end
+      end
+    end
+  end
+  inherited Rc_process_Show: TRectangle
+    Position.Y = 50.000000000000000000
+    Size.Width = 428.000000000000000000
+    Size.Height = 0.000000000000000000
+    inherited Rc_process_frame: TRectangle
+      inherited Rc_process_tittle: TRectangle
+        inherited img_cloud: TImage
+          MultiResBitmap.Height = 72
+          MultiResBitmap.Width = 72
+        end
+      end
+    end
+  end
+  object Bds_city: TBindSourceDB
+    ScopeMappings = <>
+    Left = 480
+    Top = 312
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 508
+    Top = 197
+    object LinkListControlToField2: TLinkListControlToField
+      Category = 'Quick Bindings'
+      DataSource = Bds_city
+      FieldName = 'name'
+      Control = E_City
+      FillExpressions = <>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+  end
+end

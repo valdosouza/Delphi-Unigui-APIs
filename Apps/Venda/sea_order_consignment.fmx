@@ -1,0 +1,109 @@
+inherited SeaOrderConsignment: TSeaOrderConsignment
+  Caption = 'Consigna'#231#227'o'
+  ClientHeight = 613
+  DesignerMasterStyle = 3
+  inherited LayoutMain: TLayout
+    Size.Height = 613.000000000000000000
+    inherited TabControl: TTabControl
+      Size.Height = 613.000000000000000000
+      Sizes = (
+        485s
+        564s
+        485s
+        564s)
+      inherited tbs_search: TTabItem
+        ExplicitSize.cx = 242.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+        object Ly_Result_top: TLayout
+          TabOrder = 0
+          object Rc_result_top: TRectangle
+            Size.Width = 50.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            object Ly_list_titlle: TLayout
+              object Lb_name_tittle: TLabel
+                StyledSettings = [Style, FontColor]
+                Size.Width = 369.000000000000000000
+                Size.Height = 23.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Family = 'Arial'
+                TextSettings.Font.Size = 14.000000000000000000
+                Text = 'Lista de Consigna'#231#245'es'
+              end
+              object Sb_search: TSpeedButton
+                Position.X = 379.000000000000000000
+              end
+              object Sb_Insert: TSpeedButton
+                OnClick = Sb_InsertClick
+              end
+              object Sb_filter: TSpeedButton
+                Visible = False
+              end
+            end
+          end
+        end
+        object lsv_Search: TListView
+          ItemAppearanceClassName = 'TListItemAppearance'
+          ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+          HeaderAppearanceClassName = 'TListHeaderObjects'
+          FooterAppearanceClassName = 'TListHeaderObjects'
+          Align = Client
+          Size.Width = 485.000000000000000000
+          Size.Height = 564.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          inline FmSeaOrderSale: TFmSeaOrderSale
+            Align = Client
+            Size.Width = 485.000000000000000000
+            Size.Height = 564.000000000000000000
+            Size.PlatformDefault = False
+            inherited LayoutFmMain: TLayout
+              Size.Width = 485.000000000000000000
+              Size.Height = 564.000000000000000000
+              inherited lsv_Search: TListView
+                Size.Width = 485.000000000000000000
+                Size.Height = 514.000000000000000000
+              end
+              inherited Ly_Result_top: TLayout
+                Size.Width = 485.000000000000000000
+                inherited Rc_result_top: TRectangle
+                  Size.Width = 475.000000000000000000
+                  inherited Ly_list_titlle: TLayout
+                    Size.Width = 475.000000000000000000
+                    inherited Lb_name_tittle: TLabel
+                      Size.Width = 369.000000000000000000
+                    end
+                    inherited Sb_search: TSpeedButton
+                      Position.X = 379.000000000000000000
+                      Position.Y = 1.000000000000000000
+                      Size.Height = 48.000000000000000000
+                    end
+                    inherited Sb_Insert: TSpeedButton
+                      Position.X = 427.000000000000000000
+                      Position.Y = 1.000000000000000000
+                      Size.Height = 48.000000000000000000
+                    end
+                  end
+                end
+              end
+            end
+          end
+        end
+      end
+      inherited tbs_parametro: TTabItem
+        ExplicitSize.cx = 243.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+      end
+    end
+  end
+  inherited Rc_process_Show: TRectangle
+    inherited Rc_process_frame: TRectangle
+      inherited Rc_process_tittle: TRectangle
+        inherited img_cloud: TImage
+          MultiResBitmap.Height = 72
+          MultiResBitmap.Width = 72
+        end
+      end
+    end
+  end
+end

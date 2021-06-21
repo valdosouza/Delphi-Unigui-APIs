@@ -1,0 +1,16 @@
+inherited TasSincronize: TTasSincronize
+  Caption = 'BaseForm1'
+  DesignerMasterStyle = 0
+  inherited LayoutMain: TLayout
+    inherited Rc_process_out: TRectangle
+      inherited Rc_process_frame: TRectangle
+        inherited Rc_process_tittle: TRectangle
+          inherited img_cloud: TImage
+            MultiResBitmap.Height = 72
+            MultiResBitmap.Width = 72
+          end
+        end
+      end
+    end
+  end
+end

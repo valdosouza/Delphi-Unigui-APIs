@@ -1,0 +1,145 @@
+inherited TasSincronize_LgXhdpiPh: TTasSincronize_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 0
+  inherited LayoutMain: TLayout
+    Size.Width = 450.000000000000000000
+    Size.Height = 695.000000000000000000
+    inherited Ly_Result_top: TLayout
+      Size.Width = 450.000000000000000000
+      inherited Rc_result_top: TRectangle
+        Size.Width = 440.000000000000000000
+        inherited Ly_list_titlle: TLayout
+          Size.Width = 440.000000000000000000
+          inherited Lb_name_tittle: TLabel
+            Size.Width = 382.000000000000000000
+          end
+          inherited Sb_Sync: TSpeedButton
+            Position.X = 392.000000000000000000
+          end
+        end
+      end
+    end
+    inherited tbc_geral: TTabControl
+      Margins.Bottom = 5.000000000000000000
+      Size.Width = 450.000000000000000000
+      Size.Height = 635.000000000000000000
+      Sizes = (
+        450s
+        586s
+        450s
+        586s)
+      inherited tab_sincronizacao: TTabItem
+        Size.Width = 225.000000000000000000
+        ExplicitSize.cx = 93.000000000000000000
+        ExplicitSize.cy = 26.000000000000000000
+        inherited Lst_Proc_log: TListBox
+          Size.Width = 450.000000000000000000
+          Size.Height = 564.000000000000000000
+          Viewport.Width = 450.000000000000000000
+          Viewport.Height = 564.000000000000000000
+        end
+        inherited Label1: TLabel
+          Size.Width = 450.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+        end
+      end
+      inherited tab_opcoes: TTabItem
+        Size.Width = 225.000000000000000000
+        ExplicitSize.cx = 61.000000000000000000
+        ExplicitSize.cy = 26.000000000000000000
+        inherited VertScrollBox1: TVertScrollBox
+          Size.Width = 450.000000000000000000
+          Size.Height = 586.000000000000000000
+          Viewport.Width = 450.000000000000000000
+          Viewport.Height = 586.000000000000000000
+          inherited Label2: TLabel
+            Size.Width = 450.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+          end
+          inherited Label7: TLabel
+            Size.Width = 450.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+          end
+          inherited Rc_row_1: TRectangle
+            Size.Width = 440.000000000000000000
+            inherited Label3: TLabel
+              Size.Width = 381.000000000000000000
+            end
+          end
+          inherited Rc_row_2: TRectangle
+            Size.Width = 440.000000000000000000
+            inherited Label4: TLabel
+              Size.Width = 381.000000000000000000
+            end
+          end
+          inherited Rc_row_3: TRectangle
+            Size.Width = 440.000000000000000000
+            inherited Label5: TLabel
+              Size.Width = 381.000000000000000000
+              Text = 'Reiniciar dados de clientes para recebimento'
+            end
+          end
+          inherited Rc_row_4: TRectangle
+            Size.Width = 440.000000000000000000
+            inherited Ly_row_4_1: TLayout
+              Size.Width = 440.000000000000000000
+              inherited Label6: TLabel
+                Size.Width = 381.000000000000000000
+              end
+            end
+            inherited GridPanelLayout1: TGridPanelLayout
+              Size.Width = 440.000000000000000000
+              inherited E_DataTime_Sincronia: TDateEdit
+                Size.Width = 208.000000000000000000
+              end
+              inherited E_Time_Sincronia: TTimeEdit
+                Size.Width = 112.000000000000000000
+              end
+            end
+          end
+          inherited Rc_row_6: TRectangle
+            Size.Width = 440.000000000000000000
+            inherited Label8: TLabel
+              Size.Width = 381.000000000000000000
+            end
+          end
+          inherited Rc_row_7: TRectangle
+            Size.Width = 440.000000000000000000
+            inherited Label10: TLabel
+              Size.Width = 381.000000000000000000
+            end
+          end
+          inherited Rc_row_8: TRectangle
+            Size.Width = 440.000000000000000000
+            inherited Label9: TLabel
+              Size.Width = 381.000000000000000000
+            end
+          end
+          inherited Rc_row_5: TRectangle
+            Size.Width = 440.000000000000000000
+            inherited Label11: TLabel
+              Size.Width = 381.000000000000000000
+            end
+          end
+          inherited Rc_row_9: TRectangle
+            Size.Width = 440.000000000000000000
+            inherited Label12: TLabel
+              Size.Width = 381.000000000000000000
+            end
+          end
+        end
+      end
+    end
+  end
+  inherited Rc_process_Show: TRectangle
+    inherited Rc_process_frame: TRectangle
+      inherited Rc_process_tittle: TRectangle
+        inherited img_cloud: TImage
+          MultiResBitmap.Height = 72
+          MultiResBitmap.Width = 72
+        end
+      end
+    end
+  end
+end

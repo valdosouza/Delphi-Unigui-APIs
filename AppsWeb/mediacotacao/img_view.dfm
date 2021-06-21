@@ -1,0 +1,55 @@
+object ImgView: TImgView
+  Left = 0
+  Top = 0
+  ClientHeight = 360
+  ClientWidth = 360
+  Caption = 'ImgView'
+  BorderIcons = []
+  AutoHeight = False
+  ShowTitle = False
+  FullScreen = False
+  TitleButtons = <>
+  ShowAnimation = 'slide'
+  PixelsPerInch = 96
+  TextHeight = 13
+  ScrollPosition = 0
+  ScrollHeight = 0
+  PlatformData = {}
+  object img_view: TUnimImage
+    Left = 0
+    Top = 0
+    Width = 360
+    Height = 307
+    Hint = ''
+    Align = alClient
+    ExplicitLeft = 128
+    ExplicitTop = 112
+    ExplicitWidth = 128
+    ExplicitHeight = 128
+  end
+  object pnl_button: TUnimPanel
+    AlignWithMargins = True
+    Left = 3
+    Top = 310
+    Width = 354
+    Height = 47
+    Hint = ''
+    Align = alBottom
+    ExplicitTop = 112
+    ExplicitWidth = 314
+    object btn_ok: TUnimButton
+      AlignWithMargins = True
+      Left = 51
+      Top = 4
+      Width = 252
+      Height = 39
+      Hint = ''
+      Margins.Left = 50
+      Margins.Right = 50
+      Align = alClient
+      Caption = 'OK'
+      OnClick = btn_okClick
+      ExplicitWidth = 212
+    end
+  end
+end

@@ -1,0 +1,25 @@
+inherited splash_LgXhdpiPh: Tsplash_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 3
+  inherited LayoutMain: TLayout
+    Size.Width = 430.000000000000000000
+    Size.Height = 675.000000000000000000
+    inherited Image1: TImage
+      MultiResBitmap.Height = 70
+      MultiResBitmap.Width = 225
+      Size.Width = 346.000000000000000000
+      Size.Height = 104.000000000000000000
+    end
+  end
+  inherited Rc_process_Show: TRectangle
+    inherited Rc_process_frame: TRectangle
+      inherited Rc_process_tittle: TRectangle
+        inherited img_cloud: TImage
+          MultiResBitmap.Height = 72
+          MultiResBitmap.Width = 72
+        end
+      end
+    end
+  end
+end

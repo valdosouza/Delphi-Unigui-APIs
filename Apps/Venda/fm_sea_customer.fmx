@@ -1,0 +1,191 @@
+object FmSeaCustomer: TFmSeaCustomer
+  Size.Width = 349.000000000000000000
+  Size.Height = 577.000000000000000000
+  Size.PlatformDefault = False
+  object LayoutMain: TLayout
+    Align = Client
+    Size.Width = 349.000000000000000000
+    Size.Height = 577.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object Ly_Result_top: TLayout
+      Align = Top
+      Size.Width = 349.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object Rc_result_top: TRectangle
+        Align = Client
+        Fill.Color = xFFB7DDEE
+        Margins.Left = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Size.Width = 339.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        XRadius = 5.000000000000000000
+        YRadius = 5.000000000000000000
+        object Ly_list_titlle: TLayout
+          Align = Client
+          Size.Width = 339.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object Lb_name_tittle: TLabel
+            Align = Client
+            Margins.Left = 10.000000000000000000
+            Size.Width = 233.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Nome da Pesquisa'
+            TabOrder = 0
+          end
+          object Sb_search: TSpeedButton
+            Align = Right
+            Position.X = 243.000000000000000000
+            Size.Width = 48.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'searchtoolbuttonbordered'
+            Text = 'SpeedButton1'
+            OnClick = Sb_searchClick
+          end
+          object Sb_Insert: TSpeedButton
+            Align = Right
+            Position.X = 291.000000000000000000
+            Size.Width = 48.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'addtoolbutton'
+            Text = 'Sb_operation'
+          end
+          object Sb_filter: TSpeedButton
+            Align = Right
+            Position.X = 283.000000000000000000
+            Size.Width = 48.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'Sb_Filter'
+            Visible = False
+          end
+          object Sb_back_callback: TSpeedButton
+            Align = Left
+            Size.Width = 48.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'priortoolbutton'
+            Text = 'Sb_back_callback'
+            Visible = False
+            OnClick = Sb_back_callbackClick
+          end
+        end
+        object Ly_quick_search: TLayout
+          Align = Client
+          Size.Width = 379.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          Visible = False
+          TabOrder = 1
+          object E_busca: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = VertCenter
+            StyleLookup = 'E_buscaStyle1'
+            TabOrder = 0
+            Position.X = 48.000000000000000000
+            Position.Y = 9.000000000000000000
+            Size.Width = 331.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            OnChangeTracking = E_buscaChangeTracking
+          end
+          object Sb_back: TSpeedButton
+            Align = Left
+            Size.Width = 48.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'priortoolbutton'
+            OnClick = Sb_backClick
+          end
+        end
+        object ShadowEffect1: TShadowEffect
+          Distance = 3.000000000000000000
+          Direction = 45.000000000000000000
+          Softness = 0.300000011920929000
+          Opacity = 0.600000023841857900
+          ShadowColor = claBlack
+        end
+      end
+    end
+    object lsv_Search: TListView
+      ItemAppearanceClassName = 'TDynamicAppearance'
+      ItemEditAppearanceClassName = 'TDynamicAppearance'
+      HeaderAppearanceClassName = 'TListHeaderObjects'
+      FooterAppearanceClassName = 'TListHeaderObjects'
+      OnUpdateObjects = lsv_SearchUpdateObjects
+      AlternatingColors = True
+      Align = Client
+      Size.Width = 349.000000000000000000
+      Size.Height = 527.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      ItemAppearance.ItemHeight = 72
+      ItemAppearanceObjects.ItemObjects.ObjectsCollection = <
+        item
+          AppearanceObjectName = 'Nome'
+          AppearanceClassName = 'TTextObjectAppearance'
+          Appearance.Font.Family = 'Arial'
+          Appearance.Font.Size = 11.000000000000000000
+          Appearance.TextAlign = Leading
+          Appearance.Width = 274.000000000000000000
+          Appearance.Height = 22.000000000000000000
+          Appearance.PlaceOffset.X = 45.000000000000000000
+          Appearance.PlaceOffset.Y = 3.000000000000000000
+        end
+        item
+          AppearanceObjectName = 'Fantasia'
+          AppearanceClassName = 'TTextObjectAppearance'
+          Appearance.Font.Family = 'Arial'
+          Appearance.Font.Size = 11.000000000000000000
+          Appearance.TextAlign = Leading
+          Appearance.Width = 316.000000000000000000
+          Appearance.Height = 22.000000000000000000
+          Appearance.PlaceOffset.X = 3.000000000000000000
+          Appearance.PlaceOffset.Y = 25.000000000000000000
+        end
+        item
+          AppearanceObjectName = 'Endereco'
+          AppearanceClassName = 'TTextObjectAppearance'
+          Appearance.Font.Family = 'Arial'
+          Appearance.Font.Size = 11.000000000000000000
+          Appearance.TextAlign = Leading
+          Appearance.Width = 316.000000000000000000
+          Appearance.Height = 22.000000000000000000
+          Appearance.PlaceOffset.X = 3.000000000000000000
+          Appearance.PlaceOffset.Y = 49.000000000000000000
+        end
+        item
+          AppearanceObjectName = 'Codigo'
+          AppearanceClassName = 'TTextObjectAppearance'
+          Appearance.Font.Family = 'Arial'
+          Appearance.Font.Size = 11.000000000000000000
+          Appearance.Font.StyleExt = {00070000000000000004000000}
+          Appearance.TextAlign = Leading
+          Appearance.Width = 42.000000000000000000
+          Appearance.Height = 22.000000000000000000
+          Appearance.PlaceOffset.Y = 3.000000000000000000
+        end>
+      ItemAppearanceObjects.ItemEditObjects.ObjectsCollection = <
+        item
+          AppearanceObjectName = 'Text1'
+          AppearanceClassName = 'TTextObjectAppearance'
+          Appearance.Width = 575.000000000000000000
+          Appearance.Height = 44.000000000000000000
+        end>
+      ItemAppearanceObjects.HeaderObjects.Text.Width = 319.000000000000000000
+      ItemAppearanceObjects.HeaderObjects.Text.Height = 24.000000000000000000
+      ItemAppearanceObjects.FooterObjects.Text.Width = 319.000000000000000000
+      ItemAppearanceObjects.FooterObjects.Text.Height = 24.000000000000000000
+      CanSwipeDelete = False
+      SearchAlwaysOnTop = False
+    end
+  end
+end

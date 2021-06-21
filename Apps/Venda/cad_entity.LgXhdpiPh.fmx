@@ -1,0 +1,265 @@
+inherited CadEntity_LgXhdpiPh: TCadEntity_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 0
+  inherited LayoutMain: TLayout
+    Size.Width = 450.000000000000000000
+    Size.Height = 695.000000000000000000
+    inherited Ly_Result_top: TLayout
+      Size.Width = 450.000000000000000000
+      inherited Rc_result_top: TRectangle
+        Size.Width = 440.000000000000000000
+        inherited Ly_list_titlle: TLayout
+          Size.Width = 440.000000000000000000
+          inherited img_top: TImage
+            MultiResBitmap.Height = 96
+            MultiResBitmap.Width = 96
+          end
+          inherited Lb_title: TLabel
+            Size.Width = 268.000000000000000000
+          end
+          inherited Sb_Cancel: TSpeedButton
+            Position.X = 387.000000000000000000
+            StyleLookup = 'deletetoolbutton'
+          end
+          inherited Sb_Save: TSpeedButton
+            Position.X = 329.000000000000000000
+            StyleLookup = 'donetoolbutton'
+          end
+        end
+      end
+    end
+    inherited tab_dados: TTabControl
+      Size.Width = 450.000000000000000000
+      Size.Height = 645.000000000000000000
+      TabIndex = 1
+      Sizes = (
+        450s
+        596s
+        450s
+        596s
+        450s
+        596s)
+      inherited tbs_tittle_entity: TTabItem
+        IsSelected = False
+        Margins.Left = 10.000000000000000000
+        Size.Width = 140.000000000000000000
+        ExplicitSize.cx = 102.000000000000000000
+        ExplicitSize.cy = 26.000000000000000000
+        inherited Ly_Entity: TVertScrollBox
+          Size.Width = 430.000000000000000000
+          Size.Height = 3557.000488281250000000
+          Viewport.Width = 430.000000000000000000
+          Viewport.Height = 3116.000000000000000000
+          inherited Ly_kind_person: TRectangle
+            Size.Width = 419.999847412109400000
+            inherited Grp_kind_person: TGroupBox
+              Size.Width = 409.999847412109400000
+              inherited rb_Juridica: TRadioButton
+                Margins.Top = 15.000000000000000000
+                Position.Y = 15.000000000000000000
+                Size.Height = 30.000000000000000000
+              end
+              inherited RB_fisica: TRadioButton
+                Margins.Top = 15.000000000000000000
+                Position.Y = 15.000000000000000000
+                Size.Height = 30.000000000000000000
+              end
+            end
+          end
+          inherited Ly_name_company: TRectangle
+            Size.Width = 419.999847412109400000
+            inherited Lb_Name: TLabel
+              Size.Width = 414.999847412109400000
+            end
+            inherited E_Name: TEdit
+              Size.Width = 409.999847412109400000
+              Size.Height = 38.000000000000000000
+            end
+          end
+          inherited Ly_nick_trade: TRectangle
+            Size.Width = 419.999847412109400000
+            inherited E_Nick: TEdit
+              Size.Width = 409.999847412109400000
+              Size.Height = 38.000000000000000000
+            end
+            inherited Lb_Nick: TLabel
+              Size.Width = 414.999847412109400000
+            end
+          end
+          inherited Ly_doc_fiscal: TRectangle
+            Size.Width = 419.999847412109400000
+            inherited Lb_Doc: TLabel
+              Size.Width = 414.999847412109400000
+            end
+            inherited E_Doc: TEdit
+              Size.Width = 409.999847412109400000
+              Size.Height = 38.000000000000000000
+              inherited Sb_CNPJ: TSearchEditButton
+                Size.Height = 50.000000000000000000
+              end
+            end
+          end
+          inherited Ly_doc_id: TRectangle
+            Size.Width = 419.999847412109400000
+            inherited Lb_IE_RG: TLabel
+              Size.Width = 414.999847412109400000
+            end
+            inherited E_IE_RG: TEdit
+              Size.Width = 409.999847412109400000
+              Size.Height = 38.000000000000000000
+            end
+          end
+          inherited Ly_email: TRectangle
+            Size.Width = 419.999847412109400000
+            inherited lb_email: TLabel
+              Size.Width = 414.999847412109400000
+            end
+            inherited E_email: TEdit
+              Size.Width = 409.999847412109400000
+              Size.Height = 38.000000000000000000
+            end
+          end
+          inherited Ly_Kind_customer: TRectangle
+            Size.Width = 419.999847412109400000
+            inherited Grp_kind_customer: TGroupBox
+              Size.Width = 409.999847412109400000
+              inherited Rb_Dealer: TRadioButton
+                Margins.Top = 15.000000000000000000
+                Position.Y = 15.000000000000000000
+                Size.Height = 30.000000000000000000
+              end
+              inherited Rb_Consumer: TRadioButton
+                Margins.Top = 15.000000000000000000
+                Position.Y = 15.000000000000000000
+                Size.Height = 30.000000000000000000
+              end
+            end
+          end
+        end
+      end
+      inherited tbs_tittle_address: TTabItem
+        IsSelected = True
+        Size.Width = 150.000000000000000000
+        ExplicitSize.cx = 70.000000000000000000
+        ExplicitSize.cy = 26.000000000000000000
+        inherited Ly_address: TVertScrollBox
+          Size.Width = 430.000000000000000000
+          Size.Height = 3557.000000000000000000
+          Viewport.Width = 430.000000000000000000
+          Viewport.Height = 3557.000000000000000000
+          inherited ly_zip_code: TRectangle
+            Size.Width = 430.000000000000000000
+            inherited Lb_zip_code: TLabel
+              Size.Width = 425.000000000000000000
+            end
+            inherited E_ZipCode: TEdit
+              Size.Width = 420.000000000000000000
+              Size.Height = 32.000000000000000000
+            end
+          end
+          inherited Ly_state: TRectangle
+            Size.Width = 430.000000000000000000
+            inherited Lb_state: TLabel
+              Size.Width = 426.000000000000000000
+            end
+            inherited E_state: TEdit
+              Size.Width = 420.000000000000000000
+              Size.Height = 32.000000000000000000
+            end
+          end
+          inherited Ly_city: TRectangle
+            Size.Width = 430.000000000000000000
+            inherited Lb_city: TLabel
+              Size.Width = 426.000000000000000000
+            end
+            inherited E_City: TEdit
+              Size.Width = 420.000000000000000000
+              Size.Height = 32.000000000000000000
+            end
+          end
+          inherited Ly_street: TRectangle
+            Size.Width = 430.000000000000000000
+            inherited Lb_street: TLabel
+              Size.Width = 426.000000000000000000
+            end
+            inherited E_Street: TEdit
+              Size.Width = 420.000000000000000000
+              Size.Height = 32.000000000000000000
+            end
+          end
+          inherited Ly_number: TRectangle
+            Size.Width = 430.000000000000000000
+            inherited Lb_Number: TLabel
+              Size.Width = 425.000000000000000000
+            end
+            inherited E_number: TEdit
+              Size.Width = 420.000000000000000000
+              Size.Height = 32.000000000000000000
+            end
+          end
+          inherited Ly_complem: TRectangle
+            Size.Width = 430.000000000000000000
+            inherited lb_Complement: TLabel
+              Size.Width = 425.000000000000000000
+            end
+            inherited E_complem: TEdit
+              Size.Width = 420.000000000000000000
+              Size.Height = 32.000000000000000000
+            end
+          end
+          inherited Ly_neighborhood: TRectangle
+            Size.Width = 430.000000000000000000
+            inherited Lb_neighborhood: TLabel
+              Size.Width = 425.000000000000000000
+            end
+            inherited E_Neighborhood: TEdit
+              Size.Width = 420.000000000000000000
+              Size.Height = 32.000000000000000000
+            end
+          end
+        end
+      end
+      inherited tbs_tittle_Phone: TTabItem
+        Margins.Right = 10.000000000000000000
+        Size.Width = 140.000000000000000000
+        ExplicitSize.cx = 52.000000000000000000
+        ExplicitSize.cy = 26.000000000000000000
+        inherited Ly_fones: TVertScrollBox
+          Size.Width = 430.000000000000000000
+          Viewport.Width = 430.000000000000000000
+          Viewport.Height = 452.000000000000000000
+          inherited Ly_Fone: TRectangle
+            Size.Width = 430.000000000000000000
+            inherited e_Phone: TEdit
+              Size.Width = 420.000000000000000000
+            end
+            inherited Lb_Phone_Principal: TLabel
+              Size.Width = 426.000000000000000000
+            end
+          end
+          inherited Ly_Celular: TRectangle
+            Size.Width = 430.000000000000000000
+            inherited Lb_Phone_Celular: TLabel
+              Size.Width = 426.000000000000000000
+            end
+            inherited E_Celular: TEdit
+              Size.Width = 420.000000000000000000
+            end
+          end
+        end
+      end
+    end
+  end
+  inherited Rc_process_Show: TRectangle
+    Size.Height = 50.000000000000000000
+    inherited Rc_process_frame: TRectangle
+      inherited Rc_process_tittle: TRectangle
+        inherited img_cloud: TImage
+          MultiResBitmap.Height = 72
+          MultiResBitmap.Width = 72
+        end
+      end
+    end
+  end
+end

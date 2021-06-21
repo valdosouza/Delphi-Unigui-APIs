@@ -1,0 +1,373 @@
+inherited TasOrderSale_LgXhdpiTb: TTasOrderSale_LgXhdpiTb
+  ClientHeight = 829
+  ClientWidth = 480
+  DesignerMasterStyle = 3
+  inherited LayoutMain: TLayout
+    Size.Width = 480.000000000000000000
+    Size.Height = 829.000000000000000000
+    inherited TabControl: TTabControl
+      Size.Width = 480.000000000000000000
+      Size.Height = 829.000000000000000000
+      Sizes = (
+        480s
+        780s
+        480s
+        780s
+        480s
+        780s
+        480s
+        780s
+        480s
+        780s)
+      inherited tbs_order: TTabItem
+        Size.Width = 96.000000000000000000
+        ExplicitSize.cx = 57.000000000000000000
+        ExplicitSize.cy = 26.000000000000000000
+        inherited Ly_Order: TLayout
+          Size.Width = 460.000000000000000000
+          inherited Rc_order: TRectangle
+            Size.Width = 460.000000000000000000
+            inherited Ly_order_img: TLayout
+              inherited im_order: TImage
+                MultiResBitmap.Height = 96
+                MultiResBitmap.Width = 96
+              end
+            end
+            inherited Ly_order_text: TLayout
+              Size.Width = 387.000000000000000000
+              inherited Ly_order_text_tittle: TLayout
+                Size.Width = 387.000000000000000000
+                inherited E_numero_pedido: TLabel
+                  Size.Width = 382.000000000000000000
+                end
+              end
+              inherited Ly_order_text_body: TLayout
+                Size.Width = 387.000000000000000000
+                inherited E_valor_pedido: TLabel
+                  Size.Width = 382.000000000000000000
+                end
+              end
+            end
+          end
+        end
+        inherited Ly_Result_top: TLayout
+          Size.Width = 480.000000000000000000
+          inherited Rc_result_top: TRectangle
+            Size.Width = 480.000000000000000000
+            inherited Ly_list_titlle: TLayout
+              Size.Width = 480.000000000000000000
+              inherited Sb_Save: TSpeedButton
+                Position.X = 369.000000000000000000
+                Size.Height = 40.000000000000000000
+              end
+              inherited img_top: TImage
+                MultiResBitmap.Height = 96
+                MultiResBitmap.Width = 96
+              end
+              inherited Lb_title: TLabel
+                Size.Width = 260.000000000000000000
+              end
+              inherited Sb_Cancel: TSpeedButton
+                Position.X = 427.000000000000000000
+                Size.Height = 45.000000000000000000
+              end
+              inherited Sb_imprimir: TSpeedButton
+                Position.X = 316.000000000000000000
+                Size.Height = 50.000000000000000000
+              end
+            end
+          end
+        end
+        inherited Ly_customer: TLayout
+          Size.Width = 460.000000000000000000
+          inherited Rc_customer: TRectangle
+            Size.Width = 460.000000000000000000
+            inherited Ly_customer_img: TLayout
+              inherited im_customer: TImage
+                MultiResBitmap.Height = 96
+                MultiResBitmap.Width = 96
+              end
+            end
+            inherited Ly_customer_text: TLayout
+              Size.Width = 387.000000000000000000
+              inherited Ly_customer_text_tittle: TLayout
+                Size.Width = 387.000000000000000000
+                inherited lb_Customer: TLabel
+                  Size.Width = 382.000000000000000000
+                end
+              end
+              inherited Ly_customer_text_body: TLayout
+                Size.Width = 387.000000000000000000
+                inherited E_customer_name: TLabel
+                  Size.Width = 382.000000000000000000
+                end
+                inherited E_customer_nick: TLabel
+                  Size.Width = 382.000000000000000000
+                end
+              end
+            end
+          end
+        end
+        inherited Ly_product: TLayout
+          Size.Width = 460.000000000000000000
+          inherited Rc_product: TRectangle
+            Size.Width = 460.000000000000000000
+            inherited Ly_product_img: TLayout
+              inherited im_Itens: TImage
+                MultiResBitmap.Height = 96
+                MultiResBitmap.Width = 96
+              end
+            end
+            inherited Ly_product_text: TLayout
+              Size.Width = 387.000000000000000000
+              inherited Ly_product_text_tittle: TLayout
+                Size.Width = 387.000000000000000000
+                inherited Lb_product: TLabel
+                  Size.Width = 382.000000000000000000
+                end
+              end
+              inherited Ly_product_text_body: TLayout
+                Size.Width = 387.000000000000000000
+                inherited Lb_selected_products: TLabel
+                  Size.Width = 382.000000000000000000
+                end
+              end
+            end
+          end
+        end
+        inherited Ly_pay: TLayout
+          Size.Width = 460.000000000000000000
+          inherited Rc_pay: TRectangle
+            Size.Width = 460.000000000000000000
+            inherited Ly_pay_img: TLayout
+              inherited im_pay: TImage
+                MultiResBitmap.Height = 96
+                MultiResBitmap.Width = 96
+              end
+            end
+            inherited Ly_pay_text: TLayout
+              Size.Width = 387.000000000000000000
+              inherited Ly_pay_text_tittle: TLayout
+                Size.Width = 387.000000000000000000
+                inherited lb_paymnet: TLabel
+                  Size.Width = 382.000000000000000000
+                end
+              end
+              inherited Ly_pay_text_body: TLayout
+                Size.Width = 387.000000000000000000
+                inherited E_payment_types: TLabel
+                  Size.Width = 382.000000000000000000
+                end
+              end
+            end
+          end
+        end
+      end
+      inherited tbs_item: TTabItem
+        Size.Width = 96.000000000000000000
+        ExplicitSize.cx = 46.000000000000000000
+        ExplicitSize.cy = 26.000000000000000000
+        inherited Ly_top_order_items: TLayout
+          Size.Width = 480.000000000000000000
+          inherited Rectangle1: TRectangle
+            Size.Width = 480.000000000000000000
+            inherited Ly_order_items: TLayout
+              Size.Width = 480.000000000000000000
+              inherited Lb_name_tittle: TLabel
+                Size.Width = 374.000000000000000000
+                TextSettings.Font.StyleExt = {00070000000000000004000000}
+              end
+              inherited Sb_Insert_item: TSpeedButton
+                Position.X = 432.000000000000000000
+                Size.Height = 50.000000000000000000
+              end
+              inherited Sb_items_order_back: TSpeedButton
+                Size.Height = 50.000000000000000000
+              end
+            end
+          end
+        end
+        inherited lsv_Search: TListView
+          Size.Width = 480.000000000000000000
+          Size.Height = 691.000000000000000000
+        end
+        inherited Ly_selected: TLayout
+          Size.Width = 480.000000000000000000
+          inherited Rc_selected: TRectangle
+            Size.Width = 470.000000000000000000
+            inherited E_valor_sub_total: TLabel
+              Size.Width = 460.000000000000000000
+            end
+          end
+        end
+      end
+      inherited tbs_payment: TTabItem
+        Size.Width = 96.000000000000000000
+        ExplicitSize.cx = 81.000000000000000000
+        ExplicitSize.cy = 26.000000000000000000
+        inherited Ly_top_payment_types: TLayout
+          Size.Width = 480.000000000000000000
+          inherited Rectangle2: TRectangle
+            Size.Width = 480.000000000000000000
+            inherited Ly_payment_types: TLayout
+              Size.Width = 480.000000000000000000
+              inherited Label1: TLabel
+                Size.Width = 422.000000000000000000
+                TextSettings.Font.StyleExt = {00070000000000000004000000}
+              end
+              inherited Sp_payment_oder_back: TSpeedButton
+                Size.Height = 50.000000000000000000
+              end
+            end
+          end
+        end
+        inherited Ly_paymnet_type: TLayout
+          Size.Width = 480.000000000000000000
+          inherited Lb_payment_type: TLabel
+            Size.Width = 476.000000000000000000
+          end
+          inherited Cb_payment_type: TComboBox
+            Size.Width = 471.000000000000000000
+          end
+        end
+        inherited Ly_plots: TLayout
+          Size.Width = 480.000000000000000000
+          inherited Lb_Plots: TLabel
+            Size.Width = 476.000000000000000000
+          end
+        end
+        inherited Ly_dead_line: TLayout
+          Size.Width = 480.000000000000000000
+          inherited Grp_dead_line: TGroupBox
+            Size.Width = 470.000000000000000000
+          end
+        end
+        inherited Ly_installment: TLayout
+          Size.Width = 480.000000000000000000
+          inherited E_installment: TEdit
+            Size.Width = 472.000244140625000000
+          end
+          inherited Lb_installment: TLabel
+            Size.Width = 476.000000000000000000
+          end
+        end
+      end
+      inherited tbs_detail: TTabItem
+        Size.Width = 96.000000000000000000
+        ExplicitSize.cx = 61.000000000000000000
+        ExplicitSize.cy = 26.000000000000000000
+        inherited Layout1: TLayout
+          Size.Width = 480.000000000000000000
+          inherited Rectangle3: TRectangle
+            Size.Width = 480.000000000000000000
+            inherited Layout2: TLayout
+              Size.Width = 480.000000000000000000
+              inherited Label2: TLabel
+                Size.Width = 422.000000000000000000
+                TextSettings.Font.StyleExt = {00070000000000000004000000}
+              end
+              inherited SpeedButton1: TSpeedButton
+                Size.Height = 50.000000000000000000
+              end
+            end
+          end
+        end
+        inherited Layout3: TLayout
+          Size.Width = 480.000000000000000000
+          inherited Label3: TLabel
+            Size.Width = 476.000000000000000000
+          end
+          inherited M_Obs: TMemo
+            Size.Width = 470.000000000000000000
+            Viewport.Width = 470.000000000000000000
+            Viewport.Height = 132.000000000000000000
+          end
+        end
+      end
+      inherited tbs_search: TTabItem
+        Size.Width = 96.000000000000000000
+        ExplicitSize.cx = 66.000000000000000000
+        ExplicitSize.cy = 26.000000000000000000
+        inherited Ly_search_product: TLayout
+          Size.Width = 480.000000000000000000
+          Size.Height = 780.000000000000000000
+          inherited lsv_search_product: TListView
+            Size.Width = 480.000000000000000000
+            Size.Height = 645.000000000000000000
+          end
+          inherited Ly_Result_top_search_product: TLayout
+            Size.Width = 480.000000000000000000
+            inherited Rc_Result_top_search_product: TRectangle
+              Size.Width = 480.000000000000000000
+              inherited Ly_list_titlle_product: TLayout
+                Size.Width = 480.000000000000000000
+                inherited Lb_name_tittle_product: TLabel
+                  Size.Width = 374.000000000000000000
+                end
+                inherited Sb_search_product: TSpeedButton
+                  Position.X = 432.000000000000000000
+                end
+              end
+              inherited Ly_quick_search_product: TLayout
+                inherited Sb_back_search_product: TSpeedButton
+                  Size.Height = 50.000000000000000000
+                end
+              end
+            end
+          end
+          inherited Ly_search_product_selected: TLayout
+            Size.Width = 480.000000000000000000
+            inherited Rectangle5: TRectangle
+              Size.Width = 470.000000000000000000
+              inherited Ly_id_produto: TLayout
+                Size.Width = 470.000000000000000000
+                inherited Lb_des_product_selected: TLabel
+                  Size.Width = 379.000000000000000000
+                end
+              end
+              inherited Ly_vl_preco: TLayout
+                Size.Width = 470.000000000000000000
+                inherited Gpl_botao: TGridPanelLayout
+                  Size.Width = 470.000000000000000000
+                  inherited Sb_tab_01: TButton
+                    Size.Width = 152.651000976562500000
+                  end
+                  inherited Sb_tab_03: TButton
+                    Size.Width = 152.651000976562500000
+                  end
+                  inherited Sb_tab_04: TButton
+                    Size.Width = 152.697998046875000000
+                  end
+                  inherited Sb_tab_05: TButton
+                    Size.Width = 152.651000976562500000
+                  end
+                  inherited Sb_tab_06: TButton
+                    Size.Width = 152.651000976562500000
+                  end
+                  inherited Sb_tab_07: TButton
+                    Size.Width = 152.697998046875000000
+                  end
+                end
+              end
+            end
+          end
+        end
+      end
+    end
+    inherited Rc_ins_product: TRectangle
+      inherited Rc_proc_tittle: TRectangle
+        inherited Lb_edit_product: TLabel
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+        end
+      end
+      inherited Gpl_edit_product: TGridPanelLayout
+        inherited Lb_vl_unit_product: TLabel
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+        end
+        inherited Lb_qtde_product: TLabel
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+        end
+      end
+    end
+  end
+end

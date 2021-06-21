@@ -1,0 +1,158 @@
+inherited BaseSearch: TBaseSearch
+  Caption = 'Pesquisa Base'
+  ClientHeight = 423
+  ClientWidth = 485
+  OnCreate = FormCreate
+  DesignerMasterStyle = 3
+  inherited LayoutMain: TLayout
+    Size.Width = 485.000000000000000000
+    Size.Height = 423.000000000000000000
+    object lsv_Search: TListView
+      ItemAppearanceClassName = 'TDynamicAppearance'
+      ItemEditAppearanceClassName = 'TDynamicAppearance'
+      HeaderAppearanceClassName = 'TListHeaderObjects'
+      FooterAppearanceClassName = 'TListHeaderObjects'
+      Align = Client
+      Size.Width = 485.000000000000000000
+      Size.Height = 373.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      ItemAppearance.ItemHeight = 70
+      ItemAppearanceObjects.ItemObjects.ObjectsCollection = <
+        item
+          AppearanceObjectName = 'Nome'
+          AppearanceClassName = 'TTextObjectAppearance'
+          Appearance.Font.StyleExt = {00070000000000000004000000}
+          Appearance.TextAlign = Leading
+          Appearance.Width = 579.000000000000000000
+          Appearance.Height = 22.000000000000000000
+          Appearance.PlaceOffset.X = 4.000000000000000000
+        end
+        item
+          AppearanceObjectName = 'Fantasia'
+          AppearanceClassName = 'TTextObjectAppearance'
+          Appearance.TextAlign = Leading
+          Appearance.Width = 580.000000000000000000
+          Appearance.Height = 22.000000000000000000
+          Appearance.PlaceOffset.X = 3.000000000000000000
+          Appearance.PlaceOffset.Y = 22.000000000000000000
+        end
+        item
+          AppearanceObjectName = 'Endere'#231'o'
+          AppearanceClassName = 'TTextObjectAppearance'
+          Appearance.TextAlign = Leading
+          Appearance.Width = 580.000000000000000000
+          Appearance.Height = 22.000000000000000000
+          Appearance.PlaceOffset.X = 3.000000000000000000
+          Appearance.PlaceOffset.Y = 44.000000000000000000
+        end>
+      ItemAppearanceObjects.ItemEditObjects.ObjectsCollection = <
+        item
+          AppearanceObjectName = 'Text1'
+          AppearanceClassName = 'TTextObjectAppearance'
+          Appearance.Width = 575.000000000000000000
+          Appearance.Height = 44.000000000000000000
+        end>
+      OnItemClick = lsv_SearchItemClick
+    end
+    object Ly_Result_top: TLayout
+      Align = Top
+      Size.Width = 485.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object Rc_result_top: TRectangle
+        Align = Client
+        Fill.Color = xFFB7DDEE
+        Size.Width = 485.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        object Ly_list_titlle: TLayout
+          Align = Client
+          Size.Width = 485.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object Lb_name_tittle: TLabel
+            Align = Client
+            Margins.Left = 10.000000000000000000
+            Size.Width = 379.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Nome da Pesquisa'
+            TabOrder = 0
+          end
+          object Sb_search: TSpeedButton
+            Align = Right
+            Position.X = 389.000000000000000000
+            Position.Y = 1.000000000000000000
+            Size.Width = 48.000000000000000000
+            Size.Height = 48.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'searchtoolbuttonbordered'
+            Text = 'SpeedButton1'
+            OnClick = Sb_searchClick
+          end
+          object Sb_Insert: TSpeedButton
+            Align = Right
+            Position.X = 437.000000000000000000
+            Position.Y = 1.000000000000000000
+            Size.Width = 48.000000000000000000
+            Size.Height = 48.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'addtoolbutton'
+            Text = 'Sb_operation'
+          end
+        end
+        object Ly_quick_search: TLayout
+          Align = Client
+          Size.Width = 485.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          Visible = False
+          TabOrder = 1
+          object E_busca: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = VertCenter
+            StyleLookup = 'E_buscaStyle1'
+            TabOrder = 0
+            Position.X = 48.000000000000000000
+            Position.Y = 9.000000000000000000
+            Size.Width = 437.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            OnChangeTracking = E_buscaChangeTracking
+          end
+          object Sb_back: TSpeedButton
+            Align = Left
+            Size.Width = 48.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'priortoolbutton'
+            OnClick = Sb_backClick
+          end
+        end
+      end
+    end
+  end
+  object Lang1: TLang [1]
+    Lang = 'pt'
+    Left = 64
+    Top = 100
+  end
+  object GestureManager1: TGestureManager
+    Sensitivity = 80.000000000000000000
+    Left = 248
+    Top = 224
+  end
+  object ActionList: TActionList
+    Left = 144
+    Top = 168
+    object ChangeTabAction1: TChangeTabAction
+      Category = 'Tab'
+    end
+    object ChangeTabAction2: TChangeTabAction
+      Category = 'Tab'
+    end
+  end
+end

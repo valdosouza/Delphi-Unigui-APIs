@@ -1,0 +1,47 @@
+inherited TasHomeApp: TTasHomeApp
+  Caption = 'TasHome1'
+  DesignerMasterStyle = 0
+  inherited LayoutMain: TLayout
+    inherited Rc_process_out: TRectangle
+      Size.Height = 50.000000000000000000
+      inherited Rc_process_frame: TRectangle
+        inherited Rc_process_tittle: TRectangle
+          inherited img_cloud: TImage
+            MultiResBitmap.Height = 72
+            MultiResBitmap.Width = 72
+          end
+        end
+      end
+    end
+    inherited Rectangle5: TRectangle
+      inherited Rectangle6: TRectangle
+        inherited Label5: TLabel
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+        end
+      end
+      inherited Label6: TLabel
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+    end
+    inherited Rectangle3: TRectangle
+      inherited Rectangle4: TRectangle
+        inherited Label3: TLabel
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+        end
+      end
+      inherited Label4: TLabel
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+    end
+    inherited Rectangle7: TRectangle
+      inherited Rectangle8: TRectangle
+        inherited Label7: TLabel
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+        end
+      end
+      inherited Label8: TLabel
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+    end
+  end
+end

@@ -1,0 +1,103 @@
+inherited TasConfig: TTasConfig
+  Caption = 'BaseRegistry1'
+  DesignerMasterStyle = 0
+  inherited LayoutMain: TLayout
+    inherited Ly_Result_top: TLayout
+      inherited Rc_result_top: TRectangle
+        inherited Ly_list_titlle: TLayout
+          inherited img_top: TImage
+            MultiResBitmap.Height = 96
+            MultiResBitmap.Width = 96
+            MultiResBitmap = <
+              item
+                Width = 40
+                Height = 40
+                PNG = {
+                  89504E470D0A1A0A0000000D49484452000000280000002808060000008CFEB8
+                  6D000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                  024D494441545847ED98C98A14411086DB1DDCF0095C2E2A88BE810741448511
+                  041FC3E51514F128BE87070F8A08DE3CBBDC3DE8453DBB81FBF67D8E098D4456
+                  654DC5740DE20F1F5DDDD3544645C61F193DB3B5AE757F5EFBB4110EC06ED806
+                  1FE0053C852F309936C13530984FF00D7EC077F80CAFE006EC85D6874D958B5E
+                  0283FBD9C17BB8023B60E1DA0017C0CC45C115CCEA7DD80593C820FB322906B9
+                  1D5264765AF518DEC17158EF0715ED036BF5C1EF7789D2107D85EEDFCFC35788
+                  B257B026F7C068CD67F02A1C8247E022353D84B7700C6C3F91368335EB76A7C8
+                  856C251FC15AEB930F7611BA8CF312DC951499B9620017751BBBEAB3C5D9F649
+                  EF9BA253609B28373758FB5F5493ADBDD1FB9D84149D83BFB3A111CCE47C90AD
+                  2611EF771652741AE633583010B3E5968AD72DC189ADE604A4E830D4B6CCCFAD
+                  B7D6465DF0BB0E1829B22D78F0470B89DBD565888867D0D5D09B546EE0C87473
+                  F93294B51719A64BF6CA9DCB97397264F20488B2B152EEC0A80967BED7F9C45B
+                  E0280CCD564DFBE120DC03FBE2683985783C45D918C35D48DB6EE739838CDACE
+                  186E41DA40EB8D2EC36AD464DA406B1D3A325D070F7EFB5AF94DE2ABEF9FC313
+                  8882A931DA38919C4A3CF83D5B3DBE3C216CC2B62933E2A2513035DCEED416D4
+                  2733E2A2513035528DD3221773D128981AA9C66991410ECD64AA715A644686D6
+                  E4AA18A74BFF8D93A57FD638B7612B2C4C438DE31CB0040BD510E3BC8623B070
+                  B518C7FFFFA4FD5C5D89BA8CF306CEC0E48A8C63E6D64470456EB76ED510D6DC
+                  A4DB5A93AD44B74E628804CD66BF00F2C4BD4097EFCCE50000000049454E44AE
+                  426082}
+              end>
+          end
+          inherited Lb_title: TLabel
+            Size.Width = 376.000000000000000000
+            Text = 'Confgura'#231#245'es'
+          end
+          inherited Sb_Cancel: TSpeedButton
+            Visible = False
+          end
+          inherited Sb_Save: TSpeedButton
+            Position.X = 442.000000000000000000
+          end
+        end
+      end
+    end
+    object Ly_device_print: TLayout
+      Align = Top
+      Margins.Top = 5.000000000000000000
+      Position.Y = 55.000000000000000000
+      Size.Width = 492.000000000000000000
+      Size.Height = 52.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 17
+      object Lb_device_print: TLabel
+        Align = Top
+        Margins.Left = 4.000000000000000000
+        Position.X = 4.000000000000000000
+        Size.Width = 488.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Impressora Bluetooth'
+        TabOrder = 0
+      end
+      object Cb_device_print: TComboBox
+        Anchors = [akLeft, akTop, akRight]
+        Position.X = 4.000000000000000000
+        Position.Y = 17.000000000000000000
+        Size.Width = 483.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+      end
+    end
+    object Ly_Buttons: TLayout
+      Align = Top
+      Position.Y = 107.000000000000000000
+      Size.Width = 492.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 18
+      object Sb_device_test: TSpeedButton
+        Align = Left
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 5.000000000000000000
+        Position.Y = 5.000000000000000000
+        Size.Width = 108.000000000000000000
+        Size.Height = 31.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'buttonstyle'
+        Text = 'Testar Dispositivo'
+      end
+    end
+  end
+end

@@ -1,0 +1,94 @@
+inherited SeaCustomer_LgXhdpiPh: TSeaCustomer_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 3
+  inherited LayoutMain: TLayout
+    Size.Width = 450.000000000000000000
+    Size.Height = 695.000000000000000000
+    inherited FmSeaCustomer: TFmSeaCustomer
+      Size.Width = 450.000000000000000000
+      Size.Height = 695.000000000000000000
+      inherited LayoutMain: TLayout
+        Size.Width = 450.000000000000000000
+        Size.Height = 695.000000000000000000
+        inherited Ly_Result_top: TLayout
+          Size.Width = 450.000000000000000000
+          inherited Rc_result_top: TRectangle
+            Size.Width = 440.000000000000000000
+            inherited Ly_list_titlle: TLayout
+              Size.Width = 440.000000000000000000
+              inherited Lb_name_tittle: TLabel
+                Size.Width = 334.000000000000000000
+              end
+              inherited Sb_search: TSpeedButton
+                Position.X = 344.000000000000000000
+              end
+              inherited Sb_Insert: TSpeedButton
+                Position.X = 392.000000000000000000
+              end
+            end
+          end
+        end
+        inherited lsv_Search: TListView
+          Size.Width = 450.000000000000000000
+          Size.Height = 645.000000000000000000
+          ItemAppearanceObjects.ItemObjects.ObjectsCollection = <
+            item
+              AppearanceObjectName = 'Nome'
+              AppearanceClassName = 'TTextObjectAppearance'
+              Appearance.Font.Family = 'Arial'
+              Appearance.Font.Size = 11.000000000000000000
+              Appearance.TextAlign = Leading
+              Appearance.Width = 378.000000000000000000
+              Appearance.Height = 22.000000000000000000
+              Appearance.PlaceOffset.X = 45.000000000000000000
+              Appearance.PlaceOffset.Y = 3.000000000000000000
+            end
+            item
+              AppearanceObjectName = 'Fantasia'
+              AppearanceClassName = 'TTextObjectAppearance'
+              Appearance.Font.Family = 'Arial'
+              Appearance.Font.Size = 11.000000000000000000
+              Appearance.TextAlign = Leading
+              Appearance.Width = 420.000000000000000000
+              Appearance.Height = 22.000000000000000000
+              Appearance.PlaceOffset.X = 3.000000000000000000
+              Appearance.PlaceOffset.Y = 25.000000000000000000
+            end
+            item
+              AppearanceObjectName = 'Endereco'
+              AppearanceClassName = 'TTextObjectAppearance'
+              Appearance.Font.Family = 'Arial'
+              Appearance.Font.Size = 11.000000000000000000
+              Appearance.TextAlign = Leading
+              Appearance.Width = 420.000000000000000000
+              Appearance.Height = 22.000000000000000000
+              Appearance.PlaceOffset.X = 3.000000000000000000
+              Appearance.PlaceOffset.Y = 49.000000000000000000
+            end
+            item
+              AppearanceObjectName = 'Codigo'
+              AppearanceClassName = 'TTextObjectAppearance'
+              Appearance.Font.Family = 'Arial'
+              Appearance.Font.Size = 11.000000000000000000
+              Appearance.Font.StyleExt = {00070000000000000004000000}
+              Appearance.TextAlign = Leading
+              Appearance.Width = 42.000000000000000000
+              Appearance.Height = 22.000000000000000000
+              Appearance.PlaceOffset.Y = 3.000000000000000000
+            end>
+        end
+      end
+    end
+  end
+  inherited Rc_process_Show: TRectangle
+    inherited Rc_process_frame: TRectangle
+      inherited Rc_process_tittle: TRectangle
+        inherited img_cloud: TImage
+          MultiResBitmap.Height = 72
+          MultiResBitmap.Width = 72
+        end
+      end
+    end
+  end
+end

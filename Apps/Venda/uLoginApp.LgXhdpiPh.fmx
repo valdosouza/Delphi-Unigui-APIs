@@ -1,0 +1,88 @@
+inherited LoginApp_LgXhdpiPh: TLoginApp_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 3
+  inherited LayoutMain: TLayout
+    Size.Width = 450.000000000000000000
+    Size.Height = 695.000000000000000000
+    inherited Rc_process_Show: TRectangle
+      Enabled = False
+      inherited Rc_process_frame: TRectangle
+        inherited Rc_process_tittle: TRectangle
+          inherited img_cloud: TImage
+            MultiResBitmap.Height = 72
+            MultiResBitmap.Width = 72
+          end
+        end
+      end
+    end
+    inherited LayoutLogin: TLayout
+      Size.Width = 430.000000000000000000
+      Size.Height = 675.000000000000000000
+      inherited Ly_logo: TLayout
+        Size.Width = 390.000000000000000000
+        inherited Im_logo: TImage
+          MultiResBitmap.Height = 70
+          MultiResBitmap.Width = 225
+        end
+      end
+      inherited Ly_tittle: TLayout
+        Size.Width = 390.000000000000000000
+      end
+      inherited Ly_login_area: TLayout
+        Size.Width = 430.000000000000000000
+        inherited Ly_btn_login: TLayout
+          Size.Width = 430.000000000000000000
+          inherited sb_Login: TSpeedButton
+            Size.Width = 430.000000000000000000
+          end
+        end
+        inherited Ly_forgot_pass: TLayout
+          Size.Width = 430.000000000000000000
+        end
+        inherited Ly_label_Login: TLayout
+          Size.Width = 430.000000000000000000
+          inherited lb_email: TLabel
+            Size.Width = 415.000000000000000000
+          end
+        end
+        inherited Ly_Label_password: TLayout
+          Size.Width = 430.000000000000000000
+        end
+        inherited Ly_login: TLayout
+          Size.Width = 430.000000000000000000
+          inherited Rc_login: TRectangle
+            Size.Width = 420.000000000000000000
+            inherited Image1: TImage
+              MultiResBitmap.Height = 36
+              MultiResBitmap.Width = 36
+            end
+            inherited E_Email: TEdit
+              Size.Width = 379.000000000000000000
+            end
+          end
+        end
+        inherited Ly_password: TLayout
+          Size.Width = 430.000000000000000000
+          inherited Rc_password: TRectangle
+            Size.Width = 420.000000000000000000
+            inherited E_Password: TEdit
+              Size.Width = 379.000000000000000000
+              Size.Height = 33.000000000000000000
+            end
+            inherited Image2: TImage
+              MultiResBitmap.Height = 36
+              MultiResBitmap.Width = 36
+            end
+          end
+        end
+        inherited Ly_thrus_device: TLayout
+          Size.Width = 430.000000000000000000
+          inherited chbx_trust_it: TCheckBox
+            Size.Width = 416.000000000000000000
+          end
+        end
+      end
+    end
+  end
+end

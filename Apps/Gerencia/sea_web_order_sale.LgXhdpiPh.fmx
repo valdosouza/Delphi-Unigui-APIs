@@ -1,0 +1,107 @@
+inherited SeaWebOrderSale_LgXhdpiPh: TSeaWebOrderSale_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 0
+  inherited LayoutMain: TLayout
+    Size.Width = 450.000000000000000000
+    Size.Height = 695.000000000000000000
+    inherited Rc_process_out: TRectangle
+      inherited Rc_process_frame: TRectangle
+        inherited Rc_process_tittle: TRectangle
+          inherited img_cloud: TImage
+            MultiResBitmap.Height = 72
+            MultiResBitmap.Width = 72
+          end
+        end
+      end
+    end
+    inherited TabControl: TTabControl
+      Size.Width = 450.000000000000000000
+      Size.Height = 695.000000000000000000
+      Sizes = (
+        450s
+        646s
+        450s
+        646s)
+      inherited tbs_search: TTabItem
+        Size.Width = 225.000000000000000000
+        ExplicitSize.cx = 242.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+        inherited Ly_Result_top: TLayout
+          Size.Width = 450.000000000000000000
+          inherited Rc_result_top: TRectangle
+            Size.Width = 440.000000000000000000
+            inherited Ly_list_titlle: TLayout
+              Size.Width = 440.000000000000000000
+              inherited Lb_name_tittle: TLabel
+                Size.Width = 286.000000000000000000
+              end
+              inherited Sb_search: TSpeedButton
+                Position.X = 296.000000000000000000
+                Position.Y = 1.000000000000000000
+                Size.Height = 48.000000000000000000
+              end
+              inherited Sb_Insert: TSpeedButton
+                Position.X = 392.000000000000000000
+                Position.Y = 1.000000000000000000
+                Size.Height = 48.000000000000000000
+              end
+              inherited Sb_filter: TSpeedButton
+                Position.X = 344.000000000000000000
+              end
+            end
+          end
+        end
+        inherited lsv_Search: TListView
+          Size.Width = 450.000000000000000000
+          Size.Height = 589.000000000000000000
+        end
+      end
+      inherited tbs_parametro: TTabItem
+        Size.Width = 225.000000000000000000
+        ExplicitSize.cx = 243.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+        inherited Layout1: TLayout
+          Size.Width = 450.000000000000000000
+          inherited Rc_Param_top: TRectangle
+            Size.Width = 440.000000000000000000
+            inherited Layout2: TLayout
+              Size.Width = 440.000000000000000000
+              inherited Label1: TLabel
+                Size.Width = 382.000000000000000000
+              end
+              inherited Sb_Apply: TSpeedButton
+                Position.X = 392.000000000000000000
+                Position.Y = 1.000000000000000000
+                Size.Height = 48.000000000000000000
+              end
+            end
+          end
+        end
+        inherited Ly_dt_Initial: TLayout
+          Size.Width = 450.000000000000000000
+          inherited E_dt_initial: TDateEdit
+            Margins.Top = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Position.Y = 40.000000000000000000
+            Size.Width = 440.000000000000000000
+          end
+          inherited Lb_dt_Initial: TLabel
+            Size.Width = 440.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+          end
+        end
+        inherited Ly_dt_Final: TLayout
+          Size.Width = 450.000000000000000000
+          inherited E_dt_final: TDateEdit
+            Size.Width = 440.000000000000000000
+          end
+          inherited Lb_dt_final: TLabel
+            Size.Width = 440.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+          end
+        end
+      end
+    end
+  end
+end

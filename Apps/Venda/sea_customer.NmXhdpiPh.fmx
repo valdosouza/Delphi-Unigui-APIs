@@ -1,0 +1,34 @@
+inherited SeaCustomer_NmXhdpiPh: TSeaCustomer_NmXhdpiPh
+  ClientHeight = 615
+  ClientWidth = 400
+  DesignerMasterStyle = 0
+  inherited LayoutMain: TLayout
+    Size.Width = 400.000000000000000000
+    Size.Height = 615.000000000000000000
+    inherited lsv_Search: TListView
+      Size.Width = 400.000000000000000000
+      Size.Height = 565.000000000000000000
+    end
+    inherited Ly_Result_top: TLayout
+      Size.Width = 400.000000000000000000
+      inherited Rc_result_top: TRectangle
+        Size.Width = 400.000000000000000000
+        inherited Ly_list_titlle: TLayout
+          Size.Width = 400.000000000000000000
+          inherited Lb_name_tittle: TLabel
+            Size.Width = 284.000000000000000000
+          end
+          inherited Sb_search: TSpeedButton
+            Position.X = 299.000000000000000000
+            Size.Height = 48.000000000000000000
+          end
+          inherited Sb_Insert: TSpeedButton
+            Position.X = 352.000000000000000000
+            Position.Y = 1.000000000000000000
+            Size.Height = 48.000000000000000000
+          end
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,40 @@
+inherited ContainerForm_LgXhdpiPh: TContainerForm_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 0
+  inherited LayoutMain: TLayout
+    Size.Width = 265.000000000000000000
+    Size.Height = 695.000000000000000000
+    inherited ToolBar: TToolBar
+      Size.Width = 265.000000000000000000
+      Size.Height = 48.000000000000000000
+      inherited btn_main: TButton
+        Size.Width = 48.000000000000000000
+        Size.Height = 38.000000000000000000
+      end
+      inherited Lb_Menu: TLabel
+        StyledSettings = [Style, FontColor]
+        Position.X = 58.000000000000000000
+        Size.Height = 48.000000000000000000
+        TextSettings.Font.Family = 'Arial'
+        TextSettings.Font.Size = 14.000000000000000000
+      end
+    end
+    inherited LayoutContainer: TLayout
+      Size.Width = 265.000000000000000000
+      Size.Height = 647.000000000000000000
+    end
+  end
+  inherited MultiViewMain: TMultiView
+    Size.Height = 695.000000000000000000
+    Visible = False
+    inherited ListBoxMenu: TListBox
+      Size.Height = 695.000000000000000000
+      Viewport.Width = 185.000000000000000000
+      Viewport.Height = 695.000000000000000000
+      inherited ListBoxHeader1: TListBoxHeader
+        Size.Width = 185.000000000000000000
+      end
+    end
+  end
+end

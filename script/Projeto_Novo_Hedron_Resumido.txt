@@ -1,0 +1,111 @@
+tb_entity - ok
+-----------------------------------
+tb_institution
+tb_institution_has_entity - ok
+-----------------------------------
+tb_virtual_shop
+-----------------------------------
+tb_mailing - ok
+tb_user - ok
+-----------------------------------
+tb_linebusiness - ok
+tb_person - ok
+tb_company - ok
+-----------------------------------
+tb_country - ok
+tb_state - ok
+tb_city - ok
+tb_phone - ok
+tb_address - ok
+-----------------------------------
+tb_social_media - ok
+-----------------------------------
+tb_customer
+tb_provider
+-----------------------------------
+tb_images
+-----------------------------------
+tb_plots
+-----------------------------------
+tb_category
+tb_brand
+tb_package
+tb_measure
+tb_color
+-----------------------------------
+tb_product
+tb_merchandise
+-----------------------------------
+tb_stock
+tb_stockes
+-----------------------------------
+tb_price
+tb_price_list
+-----------------------------------
+tb_payment_types
+-----------------------------------
+tb_order
+tb_order_advertise
+tb_order_advertise_insertion
+tb_order_advertise_printed
+tb_order_sale
+tb_order_sale_item
+-----------------------------------
+tb_freight
+tb_freight_destiny
+tb_freight_weight
+tb_freight_weight_destiny
+-----------------------------------
+
+tb_pi
+tb_advertiser
+tb_agency
+tb_broadcaster
+-----------------------------------
+tb_vehicle
+tb_vehicle_checklist
+tb_vehicle_kind
+tb_vehicle_mark
+tb_vehicle_model
+tb_vehicle_so
+tb_vehicle_type
+-----------------------------------
+tb_order_job
+tb_order_packing
+tb_order_purchase
+tb_order_item 
+tb_invoice 
+tb_invoice_merchandise 
+tb_invoice_shipping 
+tb_shipping 
+tb_invoce_ctrl_flow_
+tb_invoice_service
+tb_invoice_return_service
+tb_invoice_return_55
+tb_invoice_return_65
+tb_tax_icms_nr 
+tb_tax_icms_sn 
+tb_deter_base_tax_icms 
+tb_deter_base_tax_icms_st 
+tb_discharge_icms 
+tb_tax_ipi 
+tb_tax_pis 
+tb_tax_cofins 
+tb_observation
+tb_cfop 
+tb_tax_ruler 
+tb_order_item_icms     
+tb_order_item_ipi 
+tb_order_item_pis 
+tb_order_item_cofins 
+tb_order_item_ii 
+tb_order_item_issqn 
+tb_chart_accounts
+tb_financial 
+tb_financial_bills 
+tb_financial_payment
+---------------------------------------------------------------------
+tb_ext_fin_oper
+
+
+

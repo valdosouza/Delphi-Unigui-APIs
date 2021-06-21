@@ -1,0 +1,64 @@
+ConsultaCNPJ.exe: 00001B04: 16:48:11 []:>--------------------------------------------------------------<
+ConsultaCNPJ.exe: 00001B04: 16:48:11 [TUniServerModule]:Server First Init.
+ConsultaCNPJ.exe: 00001B04: 16:48:11 [TUniServerModule]:Debug Mode = ON
+ConsultaCNPJ.exe: 00001B04: 16:48:11 [TUniServerModule]:Global Cache Folder Erased. <4> Files deleted.
+ConsultaCNPJ.exe: 00001B04: 16:48:12 [TUniServerModule]:Starting HTTP Server on Port: 8077...
+ConsultaCNPJ.exe: 00001B04: 16:48:12 [TUniServerModule]:HTTP Server Started on Port: 8077
+ConsultaCNPJ.exe: 00005270: 16:54:10 []:>--------------------------------------------------------------<
+ConsultaCNPJ.exe: 00005270: 16:54:10 [TUniServerModule]:Server First Init.
+ConsultaCNPJ.exe: 00005270: 16:54:10 [TUniServerModule]:Debug Mode = ON
+ConsultaCNPJ.exe: 00005270: 16:54:10 [TUniServerModule]:Global Cache Folder Erased. <4> Files deleted.
+ConsultaCNPJ.exe: 00005270: 16:54:10 [TUniServerModule]:Starting HTTP Server on Port: 8077...
+ConsultaCNPJ.exe: 00005270: 16:54:10 [TUniServerModule]:HTTP Server Started on Port: 8077
+ConsultaCNPJ.exe: 00003A80: 16:54:23 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. : Addr: $0078CD62
+ConsultaCNPJ.exe: 00004E40: 16:54:57 []:>--------------------------------------------------------------<
+ConsultaCNPJ.exe: 00004E40: 16:54:57 [TUniServerModule]:Server First Init.
+ConsultaCNPJ.exe: 00004E40: 16:54:57 [TUniServerModule]:Debug Mode = ON
+ConsultaCNPJ.exe: 00004E40: 16:54:57 [TUniServerModule]:Global Cache Folder Erased. <5> Files deleted.
+ConsultaCNPJ.exe: 00004E40: 16:54:58 [TUniServerModule]:Starting HTTP Server on Port: 8077...
+ConsultaCNPJ.exe: 00004E40: 16:54:58 [TUniServerModule]:HTTP Server Started on Port: 8077
+ConsultaCNPJ.exe: 00004BD4: 16:55:01 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. : Addr: $0078CD62
+ConsultaCNPJ.exe: 00002B94: 16:55:27 [127.0.0.1]:EAccessViolation : Access violation at address 00846F8C in module 'ConsultaCNPJ.exe'. Read of address 00000000 : Addr: $00846F8C
+ConsultaCNPJ.exe: 00003EFC: 16:55:48 []:>--------------------------------------------------------------<
+ConsultaCNPJ.exe: 00003EFC: 16:55:48 [TUniServerModule]:Server First Init.
+ConsultaCNPJ.exe: 00003EFC: 16:55:48 [TUniServerModule]:Debug Mode = ON
+ConsultaCNPJ.exe: 00003EFC: 16:55:48 [TUniServerModule]:Global Cache Folder Erased. <4> Files deleted.
+ConsultaCNPJ.exe: 00003EFC: 16:55:48 [TUniServerModule]:Starting HTTP Server on Port: 8077...
+ConsultaCNPJ.exe: 00003EFC: 16:55:48 [TUniServerModule]:HTTP Server Started on Port: 8077
+ConsultaCNPJ.exe: 00004498: 16:56:08 []:>--------------------------------------------------------------<
+ConsultaCNPJ.exe: 00004498: 16:56:08 [TUniServerModule]:Server First Init.
+ConsultaCNPJ.exe: 00004498: 16:56:08 [TUniServerModule]:Debug Mode = ON
+ConsultaCNPJ.exe: 00004498: 16:56:08 [TUniServerModule]:Global Cache Folder Erased. <1> Files deleted.
+ConsultaCNPJ.exe: 00004498: 16:56:08 [TUniServerModule]:Starting HTTP Server on Port: 8077...
+ConsultaCNPJ.exe: 00004498: 16:56:08 [TUniServerModule]:HTTP Server Started on Port: 8077
+ConsultaCNPJ.exe: 00004F54: 16:58:34 []:>--------------------------------------------------------------<
+ConsultaCNPJ.exe: 00004F54: 16:58:34 [TUniServerModule]:Server First Init.
+ConsultaCNPJ.exe: 00004F54: 16:58:34 [TUniServerModule]:Debug Mode = ON
+ConsultaCNPJ.exe: 00004F54: 16:58:34 [TUniServerModule]:Global Cache Folder Erased. <4> Files deleted.
+ConsultaCNPJ.exe: 00004F54: 16:58:34 [TUniServerModule]:Starting HTTP Server on Port: 8077...
+ConsultaCNPJ.exe: 00004F54: 16:58:34 [TUniServerModule]:HTTP Server Started on Port: 8077
+ConsultaCNPJ.exe: 000022F4: 17:12:39 []:>--------------------------------------------------------------<
+ConsultaCNPJ.exe: 000022F4: 17:12:39 [TUniServerModule]:Server First Init.
+ConsultaCNPJ.exe: 000022F4: 17:12:39 [TUniServerModule]:Debug Mode = ON
+ConsultaCNPJ.exe: 000022F4: 17:12:39 [TUniServerModule]:Global Cache Folder Erased. <5> Files deleted.
+ConsultaCNPJ.exe: 000022F4: 17:12:39 [TUniServerModule]:Starting HTTP Server on Port: 8077...
+ConsultaCNPJ.exe: 000022F4: 17:12:39 [TUniServerModule]:HTTP Server Started on Port: 8077
+ConsultaCNPJ.exe: 00004BA8: 17:12:55 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. : Addr: $0078CD62
+ConsultaCNPJ.exe: 00004AD8: 17:14:10 [HandleFileRequest[127.0.0.1]]:File not found: D:\gestaoweb\ApiUnigui\ConsultaCNPJ\Win32\Debug\favicon.ico
+ConsultaCNPJ.exe: 0000124C: 17:22:29 []:>--------------------------------------------------------------<
+ConsultaCNPJ.exe: 0000124C: 17:22:29 [TUniServerModule]:Server First Init.
+ConsultaCNPJ.exe: 0000124C: 17:22:29 [TUniServerModule]:Debug Mode = ON
+ConsultaCNPJ.exe: 0000124C: 17:22:29 [TUniServerModule]:Global Cache Folder Erased. <9> Files deleted.
+ConsultaCNPJ.exe: 0000124C: 17:22:29 [TUniServerModule]:Starting HTTP Server on Port: 8077...
+ConsultaCNPJ.exe: 0000124C: 17:22:29 [TUniServerModule]:HTTP Server Started on Port: 8077
+ConsultaCNPJ.exe: 00004EB4: 17:22:51 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. : Addr: $0078CD62
+ConsultaCNPJ.exe: 00004EF4: 17:26:56 []:>--------------------------------------------------------------<
+ConsultaCNPJ.exe: 00004EF4: 17:26:56 [TUniServerModule]:Server First Init.
+ConsultaCNPJ.exe: 00004EF4: 17:26:56 [TUniServerModule]:Debug Mode = ON
+ConsultaCNPJ.exe: 00004EF4: 17:26:56 [TUniServerModule]:Global Cache Folder Erased. <6> Files deleted.
+ConsultaCNPJ.exe: 00004EF4: 17:26:56 [TUniServerModule]:Starting HTTP Server on Port: 8077...
+ConsultaCNPJ.exe: 00004EF4: 17:26:56 [TUniServerModule]:HTTP Server Started on Port: 8077
+ConsultaCNPJ.exe: 000026AC: 17:27:30 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. : Addr: $0078CD62
+ConsultaCNPJ.exe: 000025BC: 17:28:10 [127.0.0.1]:EACBrConsultaCNPJException : CNPJ não pode ser vazio. : Addr: $00843921
+ConsultaCNPJ.exe: 000036EC: 17:28:22 [127.0.0.1]:EACBrConsultaCNPJException : Erro na Consulta. Atualize o Captcha : Addr: $00843A97
+ConsultaCNPJ.exe: 00004A78: 17:28:36 [127.0.0.1]:EACBrConsultaCNPJException : Erro na Consulta. Atualize o Captcha : Addr: $00843A97

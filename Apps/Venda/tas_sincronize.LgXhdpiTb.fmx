@@ -1,0 +1,67 @@
+inherited TasSincronize_LgXhdpiTb: TTasSincronize_LgXhdpiTb
+  ClientHeight = 829
+  ClientWidth = 480
+  DesignerMasterStyle = 0
+  inherited LayoutMain: TLayout
+    Size.Width = 480.000000000000000000
+    Size.Height = 829.000000000000000000
+    inherited Ly_Result_top: TLayout
+      Size.Width = 480.000000000000000000
+      Size.Height = 49.000000000000000000
+      inherited Rc_result_top: TRectangle
+        Size.Width = 480.000000000000000000
+        Size.Height = 49.000000000000000000
+        inherited Ly_list_titlle: TLayout
+          Size.Width = 480.000000000000000000
+          Size.Height = 49.000000000000000000
+          inherited Lb_name_tittle: TLabel
+            Size.Width = 374.000000000000000000
+            Size.Height = 49.000000000000000000
+          end
+          inherited Sb_Sync: TSpeedButton
+            Position.X = 432.000000000000000000
+            Size.Height = 48.000000000000000000
+          end
+          inherited Sb_Close: TSpeedButton
+            Position.X = 384.000000000000000000
+            Size.Height = 48.000000000000000000
+          end
+        end
+      end
+    end
+    inherited Lst_Proc_log: TListBox
+      Size.Width = 480.000000000000000000
+      Size.Height = 758.000000000000000000
+      Viewport.Width = 480.000000000000000000
+      Viewport.Height = 758.000000000000000000
+      inherited Rc_proc_out: TRectangle
+        Position.X = 115.000000000000000000
+        Position.Y = 164.000000000000000000
+        Size.Width = 249.000000000000000000
+        Size.Height = 122.000000000000000000
+        inherited Rc_proc_tittle: TRectangle
+          Size.Width = 239.000000000000000000
+          inherited img_cloud: TImage
+            MultiResBitmap.Height = 72
+            MultiResBitmap.Width = 72
+          end
+          inherited Lb_proc_msg: TLabel
+            Size.Width = 174.000000000000000000
+          end
+        end
+        inherited FA_in: TFloatAnimation
+          Interpolation = Circular
+        end
+        inherited AniIndicator: TAniIndicator
+          Enabled = True
+          Size.Width = 249.000000000000000000
+        end
+      end
+    end
+    inherited Label1: TLabel
+      Position.Y = 49.000000000000000000
+      Size.Width = 480.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+    end
+  end
+end

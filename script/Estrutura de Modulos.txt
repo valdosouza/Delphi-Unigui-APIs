@@ -1,0 +1,61 @@
+Super Usuario
+	Cadastros
+		Módulos
+		Interfaces
+		Privilégios
+		Taxa de ICMS
+		Desoneração ICMS
+		Determinação Base ICMS
+		Determinação Base ICMS ST
+		Codigo de situação Tributária do Regime Normal
+		Codigo de situação Tributária do Simples Nacional
+		Codigo de situação Tributária do IPI
+		Codigo de situação Tributária do PIS
+		Codigo de situação Tributária do Confins
+		Observações Gerais
+		Regra de Tributação
+	
+
+Administração	
+	Tarefas
+		Permissão
+	
+Compras	
+	Arquivo		
+		Movimentação de produtos
+		Transportadora
+	Tarefas
+		Ordem de Compra
+		XML
+		
+Estoque	
+	Arquivos
+		Cores
+		mercadoria	
+		Lista de estoque 
+		Lista de preco
+	
+Mídia	
+	Arquivo
+		Agencia de publicidade
+		Veiculo de Comunicação 
+		Anunciante (usar o icone do cliente)
+		Tabela de Preço
+		Material (material utilizado para a publicidade)		
+		Posição/Programação (posição no jornal ou revista e/ou programação da Radio ou Jornal)
+	
+	Tarefas
+		Pedidode inserção de Mídia
+		
+Obras
+	Tarefas
+		Movimentação de Obras
+		Romaneio
+	
+Pessoal
+	Tarefas
+		Colaborador 
+		Vendedor
+
+
+

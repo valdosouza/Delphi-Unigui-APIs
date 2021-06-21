@@ -1,0 +1,195 @@
+.ui-ribbonbar 
+{
+    background: transparent;
+	background-color: #dfe8f6 !important;
+	box-shadow: 0px 0px 14px 4px rgba(217, 217, 221, 0.7);
+   -moz-box-shadow: 0px 0px 14px 4px rgba(217, 217, 221, 0.7);
+   -webkit-box-shadow: 0px 0px 14px 4px rgba(217, 217, 221, 0.7);	
+}
+
+.ui-ribbonbar .x-panel-body-default
+{
+    border-color: #99BBE8 !important;
+    background-image: -webkit-gradient(linear,50% 0,50% 100%,color-stop(0%,#DFE9F5), color-stop(60%,#ccdbec)) !important;
+    background-image: -moz-linear-gradient(top,#DFE9F5 5%,#ccdbec 60%) !important;
+    background-image: linear-gradient(top,#DFE9F5 5%,#ccdbec 60%) !important;
+    border-radius: 2px 2px 0px 0px;
+   -moz-border-radius: 2px 2px 0px 0px;
+   -webkit-border-radius: 2px 2px 0px 0px;
+   -o-border-radius: 2px 2px 0px 0px;
+   -ms-border-radius: 2px 2px 0px 0px;
+   -khtml-border-radius: 2px 2px 0px 0px;
+}
+
+.ui-ribbonbar .x-panel-body-default 
+{
+    border-color: #a9bfd3 !important;
+    border-bottom-color: #a9bfd3 !important;
+    background-color: transparent !important;
+}
+
+.ui-ribbonbar .x-tab-bar-strip 
+{
+    border-top: 0px;
+    padding-right: 10px;
+}
+
+.ui-ribbonbar .x-tab-bar-strip-default-plain-horizontal
+{
+    height: 0px !important;
+}
+
+.ui-ribbonbar .x-tab-bar-strip-default
+{
+    background-color: transparent;
+	border: none;
+}
+
+.ui-ribbonbar .x-tab-default-top
+{
+    background-image: none;
+    background-color: transparent;
+    box-shadow: none !important;
+    border: 1px solid transparent;
+   -moz-box-shadow: none !important;
+   -webkit-box-shadow: none !important;
+   -o-box-shadow: white 0 1px 0 0 inset,white -1px 0 0 0 inset,white 1px 0 0 0 inset;
+}
+
+.ui-ribbonbar .x-tab-default-top
+{
+    margin-left: 2px !important;
+}
+
+.ui-ribbonbar .x-tab-default-closable
+{
+    padding-right: 10px;
+}
+
+.ui-ribbonbar .x-tab-bar-body
+{
+	top: 3px !important;
+    border-bottom: 0px !important;
+}
+
+.ui-ribbonbar .x-tab-top-active
+{
+    border: 1px solid #8DB2E3;
+    background-color: #DFE9F5;
+    background-image: url(../images/ribbon-tab-sprite.png);
+    background-image: -webkit-gradient(linear,50% 0,50% 100%,color-stop(5%,white),color-stop(80%,#DFE9F5));
+    background-image: -moz-linear-gradient(top,white,#F5F9FE 5%,#DFE9F5 80%);
+    background-image: linear-gradient(top,white,#F5F9FE 5%,#DEECFD 80%);
+}
+
+.ui-ribbonbar .x-tab-default-top-active
+{
+    border-bottom-color: #DFE9F5 !important;
+}
+
+.ui-ribbonbar .x-tab em
+{
+    padding: 0 10px;
+}
+
+.ui-ribbonbar .x-tab em button
+{
+    font-weight: normal !important;
+}
+
+.ui-ribbonbar .x-tab-inner
+{
+    font-weight: normal !important;
+}
+
+.ui-ribbonbar .x-panel 
+{
+	padding: 2px 2px 2px 2px; 
+}
+
+.ui-ribbonbar .x-panel-header-default
+{
+    background: transparent !important;
+	background-color: rgb(194, 216, 240) !important;
+}
+
+.ui-ribbonbar .ui-ribbongroup .x-panel-body-default
+{
+	border-bottom: none !important;	
+	background-color: rgb(208, 222, 240) !important;
+}
+
+.ui-ribbonbar .x-toolbar-default
+{
+    background: transparent !important;
+}
+
+.ui-ribbonbar .x-panel-header-text-default
+{
+	line-height: 15px;
+	color: rgb(62, 106, 170);
+	font-weight: normal !important;
+}
+
+.ui-ribbonbar .x-tab-inner
+{
+	text-align: left !important;
+	color: rgb(30, 57, 91);
+	font-weight: bold !important;
+}
+
+.ui-ribbonbar  .x-tab-default-disabled .x-tab-inner 
+{
+  color: rgb(195, 179, 179) !important;
+}
+
+.ui-ribbonbar .x-panel-header-bottom
+{
+	padding: 0px 5px 2px 5px !important;
+	box-shadow: none;
+}
+
+.ui-ribbonbar .x-header-text 
+{
+	white-space: normal !important;
+}
+ 
+.ui-ribbonbar  .ribbon-config-button
+{
+	float: right; 
+	cursor: pointer; 
+	padding-top: 5px; 
+	padding-right: 0px;
+	opacity: 0.65;
+	filter: alpha(opacity=65);
+}
+
+.ui-ribbonbar  .ribbon-config-button:hover
+{
+  opacity:1;
+  filter:alpha(opacity=100);
+}
+
+.ui-ribbonbar  .ribbon-config-button:active 
+{
+	position: relative;
+	top: 1px;
+}
+
+.ui-ribbonbar  .x-btn-glyph
+{
+  font-size: 14px;
+  color: rgb(87, 114, 144);
+  opacity: 1;
+}
+
+.ui-ribbonbar  .x-btn-default-toolbar-small-icon-text-left .x-btn-inner
+{
+	/*text-align: left;*/
+}
+
+.ui-ribbonbar  .x-btn-default-toolbar-small-icon-text-right .x-btn-inner
+{
+	text-align: left;
+}
+

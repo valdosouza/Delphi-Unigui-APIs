@@ -1,0 +1,58 @@
+inherited SeaCashier_LgXhdpiPh: TSeaCashier_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 0
+  inherited LayoutMain: TLayout
+    Size.Width = 450.000000000000000000
+    Size.Height = 695.000000000000000000
+    inherited Rc_process_Show: TRectangle
+      inherited Rc_process_frame: TRectangle
+        inherited Rc_process_tittle: TRectangle
+          inherited img_cloud: TImage
+            MultiResBitmap.Height = 72
+            MultiResBitmap.Width = 72
+          end
+        end
+      end
+    end
+    inherited TabControl: TTabControl
+      Size.Width = 450.000000000000000000
+      Size.Height = 695.000000000000000000
+      Sizes = (
+        450s
+        646s
+        450s
+        646s)
+      inherited tbs_search: TTabItem
+        Size.Width = 225.000000000000000000
+        ExplicitSize.cx = 242.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+        inherited lsv_search: TListView
+          Size.Width = 450.000000000000000000
+          Size.Height = 646.000000000000000000
+        end
+      end
+      inherited tbs_parametro: TTabItem
+        Size.Width = 225.000000000000000000
+        ExplicitSize.cx = 243.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+        inherited Layout1: TLayout
+          Size.Width = 450.000000000000000000
+          inherited Rc_Param_top: TRectangle
+            Size.Width = 440.000000000000000000
+            inherited Layout2: TLayout
+              Size.Width = 440.000000000000000000
+              inherited Label1: TLabel
+                Size.Width = 382.000000000000000000
+              end
+              inherited Sb_Apply: TSpeedButton
+                Position.X = 392.000000000000000000
+                Size.Height = 50.000000000000000000
+              end
+            end
+          end
+        end
+      end
+    end
+  end
+end

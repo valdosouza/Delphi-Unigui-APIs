@@ -1,0 +1,458 @@
+
+
+
+---Nota fiscal geral
+
+
+--Nota fiscal de produto
+
+
+--Nota fiscal dados da entrega 	
+
+
+--Nota Fiscal Dados do entregador
+
+--Nota Fiscal - Controle de retorno/Fluxo
+create table tb_invoce_ctrl_flow(
+  id         		INTEGER NOT NULL,  id int(11) NOT NULL,
+  tb_institution_id int(11) NOT NULL,
+  tb_invoice_id 	integer not null,
+  kind 				varchar(1),
+  bond_id    		VARCHAR(10) COLLATE WIN_PTBR,
+  created_at 		datetime DEFAULT NULL,
+  updated_at 		datetime DEFAULT NULL	
+)
+
+--Nota Fiscal de Serviço
+create table tb_invoice_service(
+  id 					int(11) NOT NULL,
+  tb_institution_id 	int(11) NOT NULL,
+  tb_order_id         	INTEGER,
+  tb_invoice_id 		integer not null,
+  iss_value        		NUMERIC(10,2),
+  iss_withheld_value	NUMERIC(10,2),
+  total_value     		NUMERIC(10,2),  
+  created_at 			datetime DEFAULT NULL,
+  updated_at 			datetime DEFAULT NULL	  
+)
+
+--Nota Fiscal Retorno Serviço
+create table tb_invoice_return_service(
+  id 				int(11) NOT NULL,
+  tb_institution_id	int(11) NOT NULL,
+  tb_invoice_id 	integer not null
+  verif_code  		VARCHAR(15),
+  kind       		VARCHAR(1),
+  dtm_return   		TIMESTAMP,
+  synchronous   	CHAR(1),
+  status_cod     	INTEGER,
+  file_name    		VARCHAR(255) COLLATE WIN_PTBR,
+  motive     		VARCHAR(25) COLLATE WIN_PTBR, 
+  created_at 		datetime DEFAULT NULL,
+  updated_at 		datetime DEFAULT NULL	  
+)
+
+--Nota Fiscal Retorno modelo 55
+create table tb_invoice_return_55(
+  id 				int(11) NOT NULL,
+  tb_institution_id	int(11) NOT NULL,
+  tb_invoice_id 	integer not null
+  status_cod     	INTEGER,
+  file_name    		VARCHAR(255) COLLATE WIN_PTBR,
+  motive     		VARCHAR(25) COLLATE WIN_PTBR,     
+  created_at 		datetime DEFAULT NULL,
+  updated_at 		datetime DEFAULT NULL	  
+);
+
+--Nota Fiscal Retorno 65
+create table tb_invoice_return_65(
+  id 				int(11) NOT NULL,
+  tb_institution_id int(11) NOT NULL,
+  tb_invoice_id 	integer not null
+  lote        		INTEGER NOT NULL,
+  dtm_return   		TIMESTAMP,  
+  synchronous   	CHAR(1),
+  kind_emission 	CHAR(1),
+  kind_format   	CHAR(1),
+  status_cod    	INTEGER,
+  file_name    		VARCHAR(255) COLLATE WIN_PTBR,
+  motive     		VARCHAR(25) COLLATE WIN_PTBR,
+  created_at 		datetime DEFAULT NULL,
+  updated_at 		datetime DEFAULT NULL	  
+);
+
+--Codigo situação tributaria - ICMS Normal - ok
+CREATE TABLE tb_tax_icms_nr (
+  id     		INTEGER NOT NULL,
+  group_tax     CHAR(2),
+  description 		varchar(100),
+  created_at 	datetime DEFAULT NULL,
+  updated_at 	datetime DEFAULT NULL	
+);
+
+--Codigo situação tributaria - ICMS Simples Nacional - ok
+CREATE TABLE tb_tax_icms_sn (
+  id     		INTEGER NOT NULL,
+  group_tax     CHAR(2),
+  description 		varchar(100),
+  created_at 	datetime DEFAULT NULL,
+  updated_at 	datetime DEFAULT NULL	
+);
+
+--Determinação da base do ICMS - ok
+CREATE TABLE tb_deter_base_tax_icms (
+  id     		INTEGER NOT NULL,
+  group_tax     CHAR(2),
+  description 		varchar(100),
+  created_at 	datetime DEFAULT NULL,
+  updated_at 	datetime DEFAULT NULL	
+);
+
+--Determinação da base do ICMS ST - ok
+CREATE TABLE tb_deter_base_tax_icms_st (
+  id     		INTEGER NOT NULL,
+  group_tax     CHAR(2),
+  description 		varchar(100),
+  created_at 	datetime DEFAULT NULL,
+  updated_at 	datetime DEFAULT NULL	
+);
+
+--Desoneração do ICMS - ok
+CREATE TABLE tb_discharge_icms (
+  id     		INTEGER NOT NULL,
+  description 	varchar(100),
+  created_at 	datetime DEFAULT NULL,
+  updated_at 	datetime DEFAULT NULL		
+);
+
+--Situação Triutaria IPI - ok
+CREATE TABLE tb_tax_ipi (
+  id     		INTEGER NOT NULL,
+  group_tax     CHAR(2),
+  description 		varchar(100),
+  created_at 	datetime DEFAULT NULL,
+  updated_at 	datetime DEFAULT NULL	
+);
+
+--Situação Triutaria PIS - ok
+CREATE TABLE tb_tax_pis (
+  id     		INTEGER NOT NULL primary key,
+  group_tax     CHAR(2),
+  description 		varchar(100),
+  created_at 	datetime DEFAULT NULL,
+  updated_at 	datetime DEFAULT NULL	
+);
+
+--Situação Triutaria COFINS - ok
+CREATE TABLE tb_tax_cofins (
+  id     		INTEGER NOT NULL primary key,
+  group_tax     CHAR(2),
+  description 		varchar(100),
+  created_at 	datetime DEFAULT NULL,
+  updated_at 	datetime DEFAULT NULL	
+);
+
+--Observaçao - ok
+create table tb_observation(
+  id     			INTEGER NOT NULL,
+  tb_institution_id int(11) NOT NULL,  
+  description 		varchar(100),
+  note   			BLOB SUB_TYPE 1 SEGMENT SIZE 80 CHARACTER SET WIN1252 COLLATE WIN_PTBR,
+  general      		CHAR(1) CHARACTER SET WIN1252 COLLATE WIN_PTBR,
+  created_at 		datetime DEFAULT NULL,
+  updated_at 		datetime DEFAULT NULL	  
+)
+
+--NAtureza da operação  - ok
+CREATE TABLE tb_cfop (
+  id       			VARCHAR(10) COLLATE WIN_PTBR,
+  description 		varchar(100),
+  concise   		VARCHAR(60) COLLATE WIN_PTBR,
+  enabled      		CHAR(1),
+  register 			int(11),
+  way    			VARCHAR(1),
+  jurisdiction     	VARCHAR(1),
+  note 				BLOB SUB_TYPE 1 SEGMENT SIZE 80,  
+  created_at 		datetime DEFAULT NULL,
+  updated_at 		datetime DEFAULT NULL	
+);
+
+--Regras de Tributação - ok
+CREATE TABLE tb_tax_ruler (
+  id     						int(11) NOT NULL,  
+  tb_institution_id 			int(11) NOT NULL,  
+  tb_product_id 				INTEGER NOT NULL,
+  origem          				CHAR(1), 
+  tb_deter_base_tax_icms_id  	INTEGER NOT NULL,
+  tb_deter_base_tax_icms_st_id  INTEGER NOT NULL,
+  tb_discharge_icms_id     		INTEGER NOT NULL,
+  icms_aliq           			NUMERIC(10,2),
+  icms_aliq_withheld      		NUMERIC(10,2),
+  icms_base_withheld      		NUMERIC(10,2),
+  tb_tax_ipi_id      			INTEGER NOT NULL,
+  ipi_aliq          			NUMERIC(10,2),
+  tb_tax_pis_id      			INTEGER NOT NULL,
+  pis_aliq            			NUMERIC(10,2),
+  tb_tax_cofins_id      		INTEGER NOT NULL,
+  cofins_aliq       			NUMERIC(10,2),
+  irrj_aliq         			NUMERIC(10,2),
+  csll_aqli         			NUMERIC(10,2),
+  ii_aliq           			NUMERIC(10,2),
+  icms_st         				CHAR(1),
+  consumer     					CHAR(1),
+  chosser_sn           			CHAR(1),
+  Deferred        				CHAR(1),
+  highlight        				CHAR(1),
+  tb_observation          		INTEGER,
+  tb_cfop_id  					INTEGER NOT NULL,
+  tb_state_id          			INTEGER,
+  tax_substitute  				VARCHAR(1),  
+  product_transaction   		CHAR(1),
+  afrmm_aliq        			NUMERIC(10,5),
+  siscomex_aliq    				NUMERIC(10,5),
+  ncm_code      				VARCHAR(50) CHARACTER SET WIN1252 COLLATE WIN_PTBR,
+  icms_withheld_propag    		CHAR(1),
+  way 					        CHAR(1),
+  created_at 					datetime DEFAULT NULL,
+  updated_at 					datetime DEFAULT NULL	  
+);
+
+-- Itens ICMS da Nota - ok
+CREATE table tb_order_item_icms (    
+  tb_order_item_id  		int(11) NOT NULL,
+  tb_institution_id 		int(11) NOT NULL,
+  tb_taxation_nr_icms_id	int(11),
+  tb_taxation_sn_icms_id    int(11),
+  origem        			CHAR(1),
+  tb_determ_bc_icms_id      CHAR(1),
+  rd_base_nr_aliq   		DECIMAL(10,2),
+  base_nr_value      		DECIMAL(10,6),
+  nr_aliq         			DECIMAL(10,2),
+  rd_rn_aliq      			DECIMAL(10,2),
+  nr_value         			DECIMAL(10,6),
+  tb_determ_bc_st_icms_id   CHAR(1),
+  rd_base_st_aliq   		DECIMAL(10,2),
+  mva_st      				DECIMAL(10,6),
+  base_st_value      		DECIMAL(10,6),
+  st_aliq         			DECIMAL(10,2),
+  red_st_aliq     			DECIMAL(10,2),
+  st_value         			DECIMAL(10,6),
+  tb_discharge_icms_id      int(11),
+  base_st_withheld_value  	DECIMAL(10,6),
+  st_withheld_value     	DECIMAL(10,6),
+  sharing      				CHAR(1),
+  pass_through       		CHAR(1),
+  base_withheld_value     	DECIMAL(10,6),
+  withheld_value        	DECIMAL(10,6),
+  cred_calc_aliq  			DECIMAL(10,2),
+  cred_expl_value  			DECIMAL(10,6),
+  freight_value      		DECIMAL(10,2),
+  insurance_Value     		DECIMAL(10,2),
+  expenses_value     		DECIMAL(10,2),
+  tb_cfop_id        		int(11),
+  tb_observation_id     	INTEGER,
+  created_at 				datetime DEFAULT NULL,
+  updated_at 				datetime DEFAULT NULL
+);
+
+-- Itens IPI da Nota - OK
+CREATE TABLE tb_order_item_ipi (
+  tb_order_item_id  INTEGER NOT NULL,
+  tb_institution_id int(11) NOT NULL,
+  tb_tax_ipi_id  	INTEGER,
+  class_frame    	VARCHAR(5) CHARACTER SET WIN1252,
+  producer_cnpj  	VARCHAR(14),
+  stamp_ctrl    	VARCHAR(60),
+  stamp_qtty    	NUMERIC(10,2),
+  class_frame_code	VARCHAR(3),
+  base_value      	NUMERIC(15,2),
+  aliq_value      	NUMERIC(5,2),
+  unit_qtty    		NUMERIC(16,4),
+  unit_value    	NUMERIC(15,4),
+  created_at 				datetime DEFAULT NULL,
+  updated_at 				datetime DEFAULT NULL  
+);
+
+-- Itens PIS da Nota - OK
+CREATE TABLE tb_order_item_pis (
+  tb_order_item_id  INTEGER NOT NULL,
+  tb_institution_id int(11) NOT NULL,
+  tb_tax_pis_id  	INTEGER,
+  base_value   		NUMERIC(10,2),
+  aliq_value   		NUMERIC(10,2),
+  tag_value   		NUMERIC(10,2),
+  qt_sale_qtty  	NUMERIC(16,4),
+  qt_aliq_value   	NUMERIC(15,4),
+  tag_value   		NUMERIC(15,4),
+  created_at 				datetime DEFAULT NULL,
+  updated_at 				datetime DEFAULT NULL  
+);
+
+-- Itens COFINS da Nota - OK
+CREATE TABLE tb_order_item_cofins (
+  tb_order_item_id  INTEGER NOT NULL,
+  tb_institution_id int(11) NOT NULL,
+  tb_tax_cofis_id  	INTEGER,
+  base_value  		NUMERIC(15,2),
+  aliq_value    	NUMERIC(5,2),
+  tag_value  		NUMERIC(15,2),
+  qt_sale_qtty  	NUMERIC(16,4),
+  qt_aliq_value    	NUMERIC(15,4),
+  created_at 				datetime DEFAULT NULL,
+  updated_at 				datetime DEFAULT NULL  
+);
+
+-- Itens II da Nota - ok
+CREATE TABLE tb_order_item_ii (
+  tb_order_item_id  INTEGER NOT NULL,
+  tb_institution_id int(11) NOT NULL,  
+  base_value   		NUMERIC(10,2),
+  customs_expense  	NUMERIC(10,2),
+  tag_value      	NUMERIC(10,2),
+  iof_value      	NUMERIC(10,2),
+  created_at 				datetime DEFAULT NULL,
+  updated_at 				datetime DEFAULT NULL  
+);
+
+-- Itens ISSQN da Nota - ok
+CREATE TABLE tb_order_item_issqn (
+  tb_order_item_id  INTEGER NOT NULL,
+  tb_institution_id int(11) NOT NULL,
+  base_value		NUMERIC(10,2),
+  aliq_value		NUMERIC(10,2),
+  tag_value			NUMERIC(10,2),
+  listservice       VARCHAR(50),
+  tax_code          VARCHAR(1),
+  created_at 		datetime DEFAULT NULL,
+  updated_at 		datetime DEFAULT NULL  
+);
+
+--Plano de contas
+create table tb_chart_accounts(
+  id 					integer not null,
+  tb_institution_id		int(11) NOT NULL,
+  code					VARCHAR(23) CHARACTER SET WIN1252 COLLATE WIN_PTBR,
+  description 		varchar(100),
+  nature				VARCHAR(1) CHARACTER SET WIN1252 COLLATE WIN_PTBR,
+  kind					VARCHAR(1) CHARACTER SET WIN1252 COLLATE WIN_PTBR,
+  level					VARCHAR(1),
+  created_at datetime 	DEFAULT NULL,
+  updated_at datetime 	DEFAULT NULL  
+);  
+
+//PArcelamento de pedidos tanto faz pagar ou receber - ok
+CREATE TABLE tb_financial (
+  tb_institution_id		int(11) NOT NULL,
+  tb_order_id 			integer not null,
+  parcel 				integer not null   
+  dt_expiration  		DATE,
+  tb_payment_types_id	integer not null,
+  tag_value				NUMERIC(10,2),
+  created_at datetime 	DEFAULT NULL,
+  updated_at datetime 	DEFAULT NULL
+);
+
+//Pagamentos Registrados, tanto faz pagar ou receber - ok
+CREATE TABLE tb_financial_bills (
+  tb_institution_id		int(11) NOT NULL,
+  tb_financial_id 		int(11) NOT NULL,
+  tb_invoice_id 		int(11) NOT NULL,
+  parcel 				integer not null,
+  tb_chart_accounts_id  int(11) not null,
+  number 				varchar(60) DEFAULT NULL, 
+  chart_accounts 		int(11) NOT NULL,
+  kind 					varchar(2),
+  situation             varchar(1),
+  operation 			varchar(1),
+  stage					varchar(1),
+  created_at datetime 	DEFAULT NULL,
+  updated_at datetime 	DEFAULT NULL
+); 
+
+//Pagamentos efetuados, tanto faz pagar ou receber - ok
+create table tb_financial_payment(
+  id					int(11) NOT NULL,
+  tb_institution_id		int(11) NOT NULL,
+  tb_financial_id 		int(11) NOT NULL,
+  tb_invoice_id 		int(11) NOT NULL,
+  parcel 				integer not null,
+  interest_value 		decimal(10,2),
+  late_value     		NUMERIC(10,2),
+  discount_aliquot    	NUMERIC(10,2), 
+  paid_value          	NUMERIC(10,2),
+  dt_payment          	DATE,
+  dt_real_payment       DATE,
+  settled           	VARCHAR(1) CHARACTER SET WIN1252 COLLATE WIN_PTBR,
+  tb_chart_accounts_id	int(11) not null,
+  settled_code			int(11),
+  
+  created_at datetime 	DEFAULT NULL,
+  updated_at datetime 	DEFAULT NULL  
+)
+
+//pENSANDO EM COMO FAZER ESTES VINCULOS
+    FIN_CODCHQ          INTEGER,
+    FIN_DT_LIMIT_DESC   DATE,
+    FIN_ALIQ_DESC       NUMERIC(10,2),
+    FIN_COND_ESPECIAIS  VARCHAR(100) CHARACTER SET WIN1252 COLLATE WIN_PTBR
+
+
+----------------------------------
+//Pecas do sistema de Media - ok
+CREATE table tb_med_parts (
+    id 					int(11) not null,
+	tb_institution_id 	int(11) NOT NULL,	
+	tb_order_id 		int(11) NOT NULL,
+	tittle			    VARCHAR(30),
+	tb_med_material_id 	int(11) not null,
+    tb_med_pos_prog_id 	int(11) not null,
+	insertion           int(11) not null,
+	nr_repetition       int(11) not null,
+	table_value			decimal(10,2),
+	unit_value			decimal(10,2),
+	total_value			decimal(10,2),
+	aliq_desc			decimal(10,2),
+	created_at 			datetime 	DEFAULT NULL,
+	updated_at 			datetime 	DEFAULT NULL  	
+);
+
+//Pecas Jornal e Revista do sistema de Media - ok
+CREATE table tb_med_parts_jr (
+    id 					int(11) not null,
+	tb_institution_id 	int(11) NOT NULL,	
+	tb_order_id 		int(11) NOT NULL,
+	nr_column 			varchar(5),
+	nr_height 			varchar(5),
+	color				varchar(3),
+	day 		        VARCHAR(9),
+	created_at 			datetime 	DEFAULT NULL,
+	updated_at 			datetime 	DEFAULT NULL  	
+	
+);
+	
+//Pecas Radio e TV do sistema de Media - ok	
+CREATE table tb_med_parts_rt (
+    id 					int(11) not null,
+	tb_institution_id 	int(11) NOT NULL,	
+	tb_order_id 		int(11) NOT NULL,
+	tm_duration			VARCHAR(5),
+	testimonial         varchar(1),
+	increase_testemonial decimal(10,2),
+	created_at 			datetime 	DEFAULT NULL,
+	updated_at 			datetime 	DEFAULT NULL  		
+);
+    
+//Datas das Inserções do sistema de Media - ok
+CREATE TABLE tb_med_insert_date (
+    id 					int(11) not null,
+	tb_institution_id 	int(11) NOT NULL,	
+	tb_med_parts_id  	int(11) NOT NULL,
+	dt_insertion 		Date,
+    week_day 			varchar(20),
+	qt_insertion 		int(11),
+	created_at 			datetime 	DEFAULT NULL,
+	updated_at 			datetime 	DEFAULT NULL  	
+);
+    
+	
+	

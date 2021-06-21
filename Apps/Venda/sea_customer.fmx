@@ -1,0 +1,65 @@
+inherited SeaCustomer: TSeaCustomer
+  Caption = 'SeaCustomer'
+  ClientHeight = 552
+  OnCreate = FormCreate
+  DesignerMasterStyle = 3
+  inherited LayoutMain: TLayout
+    Size.Height = 552.000000000000000000
+    inline FmSeaCustomer: TFmSeaCustomer
+      Align = Client
+      Size.Width = 307.000000000000000000
+      Size.Height = 552.000000000000000000
+      Size.PlatformDefault = False
+      inherited LayoutMain: TLayout
+        Size.Width = 307.000000000000000000
+        Size.Height = 552.000000000000000000
+        inherited Ly_Result_top: TLayout
+          Size.Width = 307.000000000000000000
+          inherited Rc_result_top: TRectangle
+            Size.Width = 297.000000000000000000
+            inherited Ly_list_titlle: TLayout
+              Size.Width = 297.000000000000000000
+              inherited Lb_name_tittle: TLabel
+                Size.Width = 191.000000000000000000
+              end
+              inherited Sb_search: TSpeedButton
+                Position.X = 201.000000000000000000
+                Position.Y = 1.000000000000000000
+                Size.Height = 48.000000000000000000
+              end
+              inherited Sb_Insert: TSpeedButton
+                Position.X = 249.000000000000000000
+                Position.Y = 1.000000000000000000
+                Size.Height = 48.000000000000000000
+                OnClick = FmSeaCustomerSb_InsertClick
+              end
+              inherited Sb_back_callback: TSpeedButton
+                Size.Height = 48.000000000000000000
+                OnClick = FmSeaCustomerSb_back_callbackClick
+              end
+            end
+          end
+        end
+        inherited lsv_Search: TListView
+          Size.Width = 307.000000000000000000
+          Size.Height = 502.000000000000000000
+          OnItemClick = FmSeaCustomerlsv_SearchItemClick
+        end
+      end
+    end
+  end
+  inherited Rc_process_Show: TRectangle
+    inherited Rc_process_frame: TRectangle
+      inherited Rc_process_tittle: TRectangle
+        inherited img_cloud: TImage
+          MultiResBitmap.Height = 72
+          MultiResBitmap.Width = 72
+        end
+      end
+    end
+  end
+  inherited ImageList: TImageList
+    Left = 24
+    Top = 48
+  end
+end

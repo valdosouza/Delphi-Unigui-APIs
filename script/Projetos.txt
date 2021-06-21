@@ -1,0 +1,107 @@
+CREATE TABLE tb_kind (
+    id                  int(11) not null,
+    tb_institution_id   int(11) not null,
+    description  		Varchar(50),
+    detail    			Blob,
+    cost_owner     		char(1),
+     created_at datetime NOT NULL,
+    updated_at datetime NOT NULL
+);
+
+
+CREATE TABLE tb_priority (
+    id                  int(11) not null,
+    tb_institution_id   int(11) not null,
+    description  		Varchar(50),    
+	created_at datetime NOT NULL,
+	updated_at datetime NOT NULL	
+);
+
+CREATE TABLE tb_project (
+    id                  int(11) not null,
+    tb_institution_id   int(11) not null,
+    number 				int(11) not null,	
+    dt_record			date,
+	tb_entity_id        int(11) not null,
+	tb_situation_id     int(11) not null,
+    description  		Varchar(50),
+    detail    			Blob, 
+    dt_initi_forecast  Date,
+    dt_final_forecast  Date,
+    created_at datetime NOT NULL  ,
+    updated_at datetime NOT NULL	
+);
+
+
+CREATE TABLE tb_iteration (
+    id                  int(11) not null,
+    tb_institution_id   int(11) not null,  
+    tb_order_id   int(11) not null,  	
+    description  		Varchar(50),
+	detail    			Blob,		
+	kind    			char(1),
+	tb_situation_id  int(11),
+	path_attachament varchar(100),
+    created_at datetime NOT NULL  ,
+    updated_at datetime NOT NULL	
+);
+
+
+create table tb_task(
+    tb_iteration_id        	int(11) not null,
+    tb_institution_id   	int(11) not null,
+	tb_order_id   int(11) not null,  		
+	tb_customer_id      	int(11) not null,	
+	tb_project_id        int(11) not null,
+    tb_performer_id			int(11) not null,
+    dt_initi  DateTime,
+    dt_final  DateTime,
+	tb_priority_id int(11),
+	tb_kind_id  int(11),	
+    created_at datetime NOT NULL  ,
+    updated_at datetime NOT NULL		
+);
+
+create table tb_proposal (
+  tb_iteration_id int(11) not null,
+  tb_institution_id int(11) not null,  
+  tb_order_id int(11) not null,  
+  forecast_time Time,
+  tag_value numeric(10,2),  
+  created_at datetime NOT NULL  ,
+  updated_at datetime NOT NULL		  
+);
+
+
+
+create table tb_progress(
+    tb_iteration_id        	int(11) not null,
+    tb_institution_id   	int(11) not null,
+    tb_order_id int(11) not null,  
+	tb_performer_id			int(11) not null,	
+    dt_initi  Datetime,
+    dt_final  Datetime,
+    created_at datetime NOT NULL  ,
+    updated_at datetime NOT NULL		
+);
+
+create table tb_iteration_has_iteration (
+    tb_institution_id   	int(11) not null,
+    tb_order_id 			int(11) not null,  
+	tb_iteration_id_master	int(11) not null,  
+	tb_iteration_id_detail	int(11) not null,
+    created_at datetime NOT NULL  ,
+    updated_at datetime NOT NULL	
+);
+
+
+
+Iteraçao 
+Iteraçao Tipo Comentario C 
+Iteraçao Tipo Proposal   P
+Iteraçao Tipo Task		 T
+Iteraçao Tipo Progress   G
+
+
+
+

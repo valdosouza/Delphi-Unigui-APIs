@@ -1,0 +1,5 @@
+ConsultaCNPJ.exe: 00005328: 17:40:04 []:>--------------------------------------------------------------<
+ConsultaCNPJ.exe: 00005328: 17:40:04 [TUniServerModule]:Server First Init.
+ConsultaCNPJ.exe: 00005328: 17:40:04 [TUniServerModule]:Debug Mode = ON
+ConsultaCNPJ.exe: 00005328: 17:40:04 [TUniServerModule]:Starting HTTP Server on Port: 8069...
+ConsultaCNPJ.exe: 00005328: 17:40:04 [TUniServerModule]:HTTP Server Started on Port: 8069

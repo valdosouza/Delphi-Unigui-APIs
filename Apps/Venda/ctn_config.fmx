@@ -1,0 +1,26 @@
+inherited CtnConfig: TCtnConfig
+  Caption = 'Configura'#231#245'es'
+  DesignerMasterStyle = 0
+  inherited MultiViewMain: TMultiView
+    Size.Height = 392.000000000000000000
+    inherited ListBoxMenu: TListBox
+      Viewport.Width = 37.000000000000000000
+      Viewport.Height = 521.000000000000000000
+      object MnuClose: TListBoxItem [0]
+        TextSettings.Font.Size = 14.000000000000000000
+        StyledSettings = [Family, Style, FontColor, Other]
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 5.000000000000000000
+        Size.Width = 27.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Fechar'
+        OnClick = MnuCloseClick
+      end
+    end
+  end
+end

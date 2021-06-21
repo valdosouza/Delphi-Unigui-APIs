@@ -1,0 +1,267 @@
+inherited CadUser: TCadUser
+  Caption = 'Cadastro de Usu'#225'rios'
+  ClientHeight = 542
+  ClientWidth = 456
+  DesignerMasterStyle = 3
+  inherited LayoutMain: TLayout
+    Size.Width = 456.000000000000000000
+    Size.Height = 542.000000000000000000
+    inherited Rc_process_Show: TRectangle
+      inherited Rc_process_frame: TRectangle
+        inherited Rc_process_tittle: TRectangle
+          inherited img_cloud: TImage
+            MultiResBitmap.Height = 72
+            MultiResBitmap.Width = 72
+          end
+        end
+      end
+    end
+    inherited Ly_Result_top: TLayout
+      Size.Width = 456.000000000000000000
+      TabOrder = 2
+      inherited Rc_result_top: TRectangle
+        Size.Width = 446.000000000000000000
+        inherited Ly_list_titlle: TLayout
+          Size.Width = 446.000000000000000000
+          inherited img_top: TImage
+            MultiResBitmap.Height = 96
+            MultiResBitmap.Width = 96
+          end
+          inherited Lb_title: TLabel
+            StyledSettings = [FontColor]
+            Size.Width = 254.000000000000000000
+            TextSettings.Font.Family = 'Arial'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            Text = 'Usu'#225'rio'
+          end
+          inherited Sb_Cancel: TSpeedButton
+            Position.X = 388.000000000000000000
+          end
+          inherited Sb_Save: TSpeedButton
+            Position.X = 320.000000000000000000
+          end
+        end
+      end
+    end
+    object Pnl_Dados: TLayout
+      Align = Top
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 60.000000000000000000
+      Size.Width = 436.000000000000000000
+      Size.Height = 143.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      object Rrc_Name: TLayout
+        Align = Top
+        Position.Y = 17.000000000000000000
+        Size.Width = 436.000000000000000000
+        Size.Height = 55.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        object E_Name: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Anchors = [akLeft, akTop, akRight]
+          TabOrder = 0
+          TextSettings.Font.Family = 'Arial'
+          Position.X = 6.000000000000000000
+          Position.Y = 20.000000000000000000
+          Margins.Left = 4.000000000000000000
+          Size.Width = 426.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = [Size, Style, FontColor]
+        end
+        object Lb_Nome: TLabel
+          Align = Top
+          StyledSettings = [Style, FontColor]
+          Margins.Left = 5.000000000000000000
+          Position.X = 5.000000000000000000
+          Size.Width = 431.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Arial'
+          Text = 'Nome'
+          TabOrder = 1
+        end
+      end
+      object Rrc_Email: TLayout
+        Align = Top
+        Position.Y = 72.000000000000000000
+        Size.Width = 436.000000000000000000
+        Size.Height = 55.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        object e_Email: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Anchors = [akLeft, akTop, akRight]
+          TabOrder = 0
+          KeyboardType = EmailAddress
+          TextSettings.Font.Family = 'Arial'
+          Position.X = 5.000000000000000000
+          Position.Y = 21.000000000000000000
+          Margins.Left = 4.000000000000000000
+          Size.Width = 426.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = [Size, Style, FontColor]
+        end
+        object Lb_Email: TLabel
+          Align = Top
+          StyledSettings = [Style, FontColor]
+          Margins.Left = 5.000000000000000000
+          Position.X = 5.000000000000000000
+          Size.Width = 431.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Arial'
+          Text = 'e-mail'
+          TabOrder = 1
+        end
+      end
+      object Lb_Dados: TLabel
+        Align = Top
+        StyledSettings = [FontColor]
+        Margins.Left = 5.000000000000000000
+        Position.X = 5.000000000000000000
+        Size.Width = 431.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Arial'
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Text = 'Dados Pessoais'
+        TabOrder = 5
+      end
+    end
+    object Pnl_Change_Pass: TLayout
+      Align = Top
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 213.000000000000000000
+      Size.Width = 436.000000000000000000
+      Size.Height = 190.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object Lb_ChangePass: TLabel
+        Align = Top
+        StyledSettings = [FontColor]
+        Margins.Left = 5.000000000000000000
+        Position.X = 5.000000000000000000
+        Size.Width = 431.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Arial'
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Text = 'Troca de Senha'
+      end
+      object Rrc_Current_Pass: TLayout
+        Align = Top
+        Position.Y = 17.000000000000000000
+        Size.Width = 436.000000000000000000
+        Size.Height = 55.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 7
+        object E_Current_pass: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Anchors = [akLeft, akTop, akRight]
+          TabOrder = 0
+          Password = True
+          TextSettings.Font.Family = 'Arial'
+          Position.X = 5.000000000000000000
+          Position.Y = 21.000000000000000000
+          Margins.Left = 4.000000000000000000
+          Size.Width = 426.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = [Size, Style, FontColor]
+        end
+        object Lb_Current_pass: TLabel
+          Align = Top
+          StyledSettings = [Style, FontColor]
+          Margins.Left = 5.000000000000000000
+          Position.X = 5.000000000000000000
+          Size.Width = 431.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Arial'
+          Text = 'Senha Atual'
+          TabOrder = 1
+        end
+      end
+      object Rrc_New_Pass: TLayout
+        Align = Top
+        Position.Y = 72.000000000000000000
+        Size.Width = 436.000000000000000000
+        Size.Height = 55.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 8
+        object E_New_Pass: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Anchors = [akLeft, akTop, akRight]
+          TabOrder = 0
+          Password = True
+          TextSettings.Font.Family = 'Arial'
+          Position.X = 5.000000000000000000
+          Position.Y = 21.000000000000000000
+          Margins.Left = 4.000000000000000000
+          Size.Width = 426.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = [Size, Style, FontColor]
+        end
+        object Lb_New_Pass: TLabel
+          Align = Top
+          StyledSettings = [Style, FontColor]
+          Margins.Left = 5.000000000000000000
+          Position.X = 5.000000000000000000
+          Size.Width = 431.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Arial'
+          Text = 'Nova Senha'
+          TabOrder = 1
+        end
+      end
+      object Rrc_Confirm_Pass: TLayout
+        Align = Top
+        Position.Y = 127.000000000000000000
+        Size.Width = 436.000000000000000000
+        Size.Height = 55.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 9
+        object E_Confim_Pass: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Anchors = [akLeft, akTop, akRight]
+          TabOrder = 0
+          Password = True
+          TextSettings.Font.Family = 'Arial'
+          Position.X = 5.000000000000000000
+          Position.Y = 21.000000000000000000
+          Margins.Left = 4.000000000000000000
+          Size.Width = 426.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = [Size, Style, FontColor]
+        end
+        object Lb_Confim_Pass: TLabel
+          Align = Top
+          StyledSettings = [Style, FontColor]
+          Margins.Left = 5.000000000000000000
+          Position.X = 5.000000000000000000
+          Size.Width = 431.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Arial'
+          Text = 'Confirme a Senha'
+          TabOrder = 1
+        end
+      end
+    end
+  end
+end

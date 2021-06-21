@@ -1,0 +1,114 @@
+inherited BaseListaCombo: TBaseListaCombo
+  Caption = 'BaseForm1'
+  OnCreate = FormCreate
+  OnShow = FormShow
+  DesignerMasterStyle = 3
+  inherited LayoutMain: TLayout
+    inherited Rc_process_Show: TRectangle
+      Size.Height = 0.000000000000000000
+      inherited Rc_process_frame: TRectangle
+        inherited Rc_process_tittle: TRectangle
+          inherited img_cloud: TImage
+            MultiResBitmap.Height = 72
+            MultiResBitmap.Width = 72
+          end
+        end
+      end
+    end
+    object Ly_Result_top: TLayout
+      Align = Top
+      Size.Width = 307.000000000000000000
+      Size.Height = 80.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object Rc_result_top: TRectangle
+        Align = Top
+        Fill.Color = xFFB7DDEE
+        Margins.Left = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Position.X = 5.000000000000000000
+        Size.Width = 297.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        XRadius = 5.000000000000000000
+        YRadius = 5.000000000000000000
+        object Ly_list_titlle: TLayout
+          Align = Top
+          Size.Width = 297.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object Lb_name_tittle: TLabel
+            Align = Client
+            Margins.Left = 10.000000000000000000
+            Size.Width = 287.000000000000000000
+            Size.Height = 40.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Nome da Lista'
+            TabOrder = 0
+          end
+        end
+        object ShadowEffect3: TShadowEffect
+          Distance = 3.000000000000000000
+          Direction = 90.000000000000000000
+          Softness = 0.300000011920929000
+          Opacity = 0.600000023841857900
+          ShadowColor = claBlack
+        end
+      end
+      object Ly_quick_search: TLayout
+        Align = Top
+        Position.Y = 40.000000000000000000
+        Size.Width = 307.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object E_busca: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = VertCenter
+          StyleLookup = 'E_buscaStyle1'
+          TabOrder = 0
+          Position.Y = 4.000000000000000000
+          Size.Width = 307.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          OnChangeTracking = E_buscaChangeTracking
+        end
+      end
+    end
+    object lsv_Search: TListView
+      ItemAppearanceClassName = 'TDynamicAppearance'
+      ItemEditAppearanceClassName = 'TDynamicAppearance'
+      HeaderAppearanceClassName = 'TListHeaderObjects'
+      FooterAppearanceClassName = 'TListHeaderObjects'
+      OnUpdateObjects = lsv_SearchUpdateObjects
+      Align = Client
+      Size.Width = 307.000000000000000000
+      Size.Height = 493.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      ItemAppearance.ItemHeight = 35
+      ItemAppearance.ItemEditHeight = 35
+      ItemAppearanceObjects.ItemObjects.ObjectsCollection = <
+        item
+          AppearanceObjectName = 'description'
+          AppearanceClassName = 'TTextObjectAppearance'
+          Appearance.TextAlign = Leading
+        end>
+      ItemAppearanceObjects.ItemEditObjects.ObjectsCollection = <
+        item
+          AppearanceObjectName = 'Text1'
+          AppearanceClassName = 'TTextObjectAppearance'
+          Appearance.Font.Family = 'Arial'
+          Appearance.Width = 575.000000000000000000
+          Appearance.Height = 44.000000000000000000
+        end>
+      CanSwipeDelete = False
+      OnItemClick = lsv_SearchItemClick
+    end
+  end
+  inherited ImageList: TImageList
+    Left = 24
+    Top = 224
+  end
+end

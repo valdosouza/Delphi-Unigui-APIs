@@ -1,0 +1,1814 @@
+inherited TasOrderSale: TTasOrderSale
+  Caption = 'Pedido de Venda'
+  ClientHeight = 560
+  ClientWidth = 379
+  OnCreate = FormCreate
+  OnShow = FormShow
+  DesignerMasterStyle = 3
+  inherited LayoutMain: TLayout
+    Size.Width = 379.000000000000000000
+    Size.Height = 560.000000000000000000
+    inherited Rc_process_Show: TRectangle
+      inherited Rc_process_frame: TRectangle
+        inherited Rc_process_tittle: TRectangle
+          inherited img_cloud: TImage
+            MultiResBitmap.Height = 72
+            MultiResBitmap.Width = 72
+          end
+        end
+      end
+    end
+    object TabControl: TTabControl
+      Align = Client
+      Size.Width = 379.000000000000000000
+      Size.Height = 560.000000000000000000
+      Size.PlatformDefault = False
+      TabHeight = 49.000000000000000000
+      TabIndex = 0
+      TabOrder = 1
+      TabPosition = PlatformDefault
+      Sizes = (
+        379s
+        511s
+        379s
+        511s
+        379s
+        511s
+        379s
+        511s
+        379s
+        511s)
+      object tbs_order: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = True
+        Size.Width = 75.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'Ordem'
+        ExplicitSize.cx = 57.000000000000000000
+        ExplicitSize.cy = 26.000000000000000000
+        object Ly_Order: TLayout
+          Align = Top
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 5.000000000000000000
+          Position.X = 10.000000000000000000
+          Position.Y = 60.000000000000000000
+          Size.Width = 359.000000000000000000
+          Size.Height = 75.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          object Rc_order: TRectangle
+            Align = Client
+            Size.Width = 359.000000000000000000
+            Size.Height = 75.000000000000000000
+            Size.PlatformDefault = False
+            XRadius = 5.000000000000000000
+            YRadius = 5.000000000000000000
+            object Ly_order_img: TLayout
+              Align = Left
+              Size.Width = 73.000000000000000000
+              Size.Height = 75.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              object im_order: TImage
+                MultiResBitmap.Height = 96
+                MultiResBitmap.Width = 96
+                MultiResBitmap = <
+                  item
+                    Width = 96
+                    Height = 96
+                    PNG = {
+                      89504E470D0A1A0A0000000D4948445200000060000000600806000000E29877
+                      38000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                      022D49444154785EED9D4D4A63411446A32D286E45844637E816445169ECA5A8
+                      1357E0407022B80467FE74B77D2F3E2148A93155F0D5BD750E1C2A6420AFDE31
+                      65BD045F660000000000000DF8691E9B37E6A3F92276CF1C820DF397F9CF2C9D
+                      08A5E923F8C9BF304B93EFC5D4118ECCD2A47B3365842DB3C765E723D345D837
+                      4B13EDD95411AECCD22455FAC92D3DFFDE3411EECDD204553A434578304B9353
+                      F9C630117AB8D89A779E2122F41CC0491FA1F7004EEA0811023869234409E0A4
+                      8C102980932E42B4004EAA0811033869223C99A50357F91D5244881CC0091F21
+                      7A002774840C019CB011B204704246C814C00917215B002754848C019C4523C8
+                      79364B07A6B2258B4490933980F3550439D903389F45A862651A6BF0006BAF0F
+                      87A4EA1CAE4E2388208018028821809816015AFC211F165E0162082086006208
+                      208600620820A6C516F28FF9E3F5E152A8B7B1B56FA8C9DF0BE23AA002962031
+                      041043003104104300310410D3620BF9D71C3924D70191610912430031041043
+                      003104104300312DB6907EBFB89A9FA3DEC6F279C0C8B0048921801802882180
+                      180288218098165BC8EA7F540B8EFC3A002A2080180288218018028821801802
+                      886911C0EF17342A7ECFD42A5A04B89BC611B99DC6A56911E07C1A47E46C1AA5
+                      EC986FF7CE1949FF2876DBEC8253B37490993D34BB61D3BC344B079A515F76D7
+                      CDAEF008BFCDD20167D1971DFFCDEFEEE4CFB36B9E98BD7C9D6DADFE355DD7E6
+                      81D9CD9A0F00000000005199CDFE03ABB20C3E160E42A00000000049454E44AE
+                      426082}
+                    FileName = 
+                      'C:\gestaoweb\Apps\MaterialDesigner\action\2x_web\ic_description_' +
+                      'black_48dp.png'
+                  end>
+                Align = Center
+                OnClick = im_orderClick
+              end
+            end
+            object Ly_order_text: TLayout
+              Align = Client
+              Size.Width = 286.000000000000000000
+              Size.Height = 75.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+              object Ly_order_text_tittle: TLayout
+                Align = Top
+                Size.Width = 286.000000000000000000
+                Size.Height = 33.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 0
+                object E_numero_pedido: TLabel
+                  Align = Client
+                  StyledSettings = [Family, FontColor]
+                  Margins.Left = 5.000000000000000000
+                  Size.Width = 281.000000000000000000
+                  Size.Height = 33.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.Size = 14.000000000000000000
+                  Text = 'N'#250'mero Pedido:'
+                  TabOrder = 0
+                end
+              end
+              object Ly_order_text_body: TLayout
+                Align = Client
+                Size.Width = 286.000000000000000000
+                Size.Height = 42.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 1
+                object E_valor_pedido: TLabel
+                  Align = Client
+                  StyledSettings = [Family, FontColor]
+                  Margins.Left = 5.000000000000000000
+                  Size.Width = 281.000000000000000000
+                  Size.Height = 42.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.Size = 14.000000000000000000
+                  Text = 'Valor do Pedido'
+                  TabOrder = 0
+                end
+              end
+            end
+          end
+        end
+        object Ly_Result_top: TLayout
+          Align = Top
+          Size.Width = 379.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 4
+          object Rc_result_top: TRectangle
+            Align = Client
+            Fill.Color = xFFB7DDEE
+            Margins.Left = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Size.Width = 369.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            XRadius = 5.000000000000000000
+            YRadius = 5.000000000000000000
+            object Ly_list_titlle: TLayout
+              Align = Client
+              Size.Width = 369.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              object img_top: TImage
+                MultiResBitmap.Height = 96
+                MultiResBitmap.Width = 96
+                MultiResBitmap = <
+                  item
+                    Width = 96
+                    Height = 96
+                    PNG = {
+                      89504E470D0A1A0A0000000D4948445200000060000000600806000000E29877
+                      38000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                      038749444154785EED9BCBCB4D5118C63F4A9921B9E51A85222365200346A284
+                      E43651A25C26CA400A2303332213060CE436F01FF017A01413E51A0694BBDC2F
+                      CFF3395FF97CEF397BADBDF77BDEFD9D9E5FFDDA06F67AF63AEF77F65E7BAD75
+                      FA841042082184104208218410420821841042F42C235AC76E310B6E81CBE102
+                      38019257F01EBC0E2FC1A7D083E8FC3066C2CBF027FC5DE00F78014E8375119D
+                      1FCA56F8115A9DEDE43BB80156253A3F94FDD0EA5CAABFE05E5896E8FC50F897
+                      67752A577E08EB602ED1F9A1F09E5BE66BDFCE3770324C253A3F1C3EF0AC8E54
+                      F12C4C253A3F140EF552461BB97E83136111D1F9598C6C1DEB84E36C8F7647C1
+                      945149747E161E17CA971C2F56B48E9D88CECFC2A3007CC3F422A5EDE8FC2C3C
+                      0A30F07AEF41CA3D383A3F0B8F02880C3C0AC0892D2F5EB68E9D88CECFC2A300
+                      9C55F422A5EDE8FC2C3C0A70A375F480D3C54544E787C369008F17A1AF30E501
+                      1B9DDF082E42AB13553C035389CE0F673AFC00AD8E94F135CC190246E73782CD
+                      D0EA4CAEBC9DAC81B944E737827D90F3E956C752E4B9BB6059A2F31BC146F81E
+                      5A1DECE45BB81656253ABF1170819B0BDD5CF0B63AFBAFFC3FE7E1145817D1F9
+                      6DE9F6B694197013E4ACE24238F060E31BE65DC8713617539E410FA2F3851042
+                      08218410C2FD456C125C04B99B602EE4A6A9A990F3EA63E068C8B74FCEB57337
+                      3297139FC3C7F03EE40AD41D58E752E07A78128E87CCE7645B37F35D990FB99B
+                      F82A7C02FF7FCD2F2B3F902B700F9C07ABB20AE64C57D79D5F1BFC062D8327E0
+                      23685DBC870FE071B814966531E43CBFD57E9175E45782B79623F021B42EB09B
+                      F2C3380C794DB92C819FA0D56EAA55F2B399033953C87BA67531917E81E7E06C
+                      9803A7ABADF6722D9B9FC458781A7E87567893E42EE653900FF954B8F5DC6AAB
+                      8C65F23BB21ABE80565893E56866254C817F601C0159ED943527BF2D87609525
+                      BD6839C43C08533800AD36AA98933F8463D06A74387A1416310E7E86D6F9554D
+                      C91FC4766835349CDD068BB806AD73EB3025BF1FFE188D0BD25623C359FED0AE
+                      686FCF6E689D5B8766BEB5377427ACED09DE20F8A0DDF1F79F6DB9D53A7A9092
+                      DFCF6D6855B017BC093BC1392AEBBCBA1C926F4DC6F1F6D38BDF00C2BEF161DB
+                      0EFE108FE3782F86E45B0560A57A99A21960EFFE0FCAD74F9482510182510182
+                      5101825101825101825101825101825101841042082184104208218410420821
+                      8410420817FAFAFE005B51E9B6A263E2F70000000049454E44AE426082}
+                    FileName = 'C:\gestaoweb\Apps\MaterialDesigner\used\ic_group_black_48dp.png'
+                  end>
+                Align = Left
+                Margins.Left = 5.000000000000000000
+                Margins.Top = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Margins.Bottom = 5.000000000000000000
+                Position.X = 5.000000000000000000
+                Position.Y = 5.000000000000000000
+                Size.Width = 46.000000000000000000
+                Size.Height = 40.000000000000000000
+                Size.PlatformDefault = False
+              end
+              object Lb_title: TLabel
+                Align = Client
+                AutoSize = True
+                StyledSettings = [Family, FontColor]
+                Size.Width = 139.000000000000000000
+                Size.Height = 50.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Size = 26.000000000000000000
+                Text = 'Ordem'
+                TabOrder = 1
+              end
+              object Sb_Cancel: TSpeedButton
+                Align = Right
+                Margins.Left = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Margins.Bottom = 5.000000000000000000
+                Position.X = 316.000000000000000000
+                Size.Width = 48.000000000000000000
+                Size.Height = 48.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'stoptoolbuttonbordered'
+                Text = 'Sb_Cancel'
+                OnClick = Sb_CancelClick
+              end
+              object Sb_imprimir: TSpeedButton
+                Align = Right
+                Margins.Left = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Margins.Bottom = 5.000000000000000000
+                Position.X = 200.000000000000000000
+                Size.Width = 48.000000000000000000
+                Size.Height = 48.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'bookmarkstoolbutton'
+                Text = 'Sb_Cancel'
+                OnClick = Sb_imprimirClick
+              end
+              object Sb_Save: TSpeedButton
+                Align = Right
+                Margins.Left = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Margins.Bottom = 5.000000000000000000
+                Position.X = 258.000000000000000000
+                Size.Width = 48.000000000000000000
+                Size.Height = 48.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'donetoolbutton'
+                Text = 'Sb_Save'
+                OnClick = Sb_SaveClick
+              end
+            end
+          end
+        end
+        object Ly_customer: TLayout
+          Align = Top
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 5.000000000000000000
+          Position.X = 10.000000000000000000
+          Position.Y = 150.000000000000000000
+          Size.Width = 359.000000000000000000
+          Size.Height = 75.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          object Rc_customer: TRectangle
+            Align = Client
+            Size.Width = 359.000000000000000000
+            Size.Height = 75.000000000000000000
+            Size.PlatformDefault = False
+            XRadius = 5.000000000000000000
+            YRadius = 5.000000000000000000
+            object Ly_customer_img: TLayout
+              Align = Left
+              Size.Width = 73.000000000000000000
+              Size.Height = 75.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              object im_customer: TImage
+                MultiResBitmap.Height = 96
+                MultiResBitmap.Width = 96
+                MultiResBitmap = <
+                  item
+                    Width = 96
+                    Height = 96
+                    PNG = {
+                      89504E470D0A1A0A0000000D4948445200000060000000600806000000E29877
+                      38000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                      035A49444154785EED9C498BD4401886C77D5F0E8288077745DCD08317517039
+                      A9FF403C29FE13454511845144F1A6FF406F8A072F2A8882CB415C515C4070C7
+                      05D4E79DCE402335637727E9AA24EF030F95C34092FAD295FABEAACC8031C618
+                      638C31C618638C31C618636ACF98ACAD023370376EC375B81867A2F8884FF12E
+                      5EC14BF8194D012CC7F3F80DFF74E8573C874BD1F4C8143C86BF30D4C99DF813
+                      8FE264345DB00CEF61A8537B5143D312341DB01EDF61A823F3F816F5EE30A3A0
+                      27BF8CCE1F5641F02F6104A66291C3CE486A38F23B21805EB8A10E2BC32368DA
+                      D05433CF6CA75B353BF250D486E6F9A18E2AD3B36840D96C374956517EC1E918
+                      95B1591B935DA8A4ABDF4CC39DADC378A41000D5766211F3DC43A4108098C951
+                      F4C42C8500A8AA198B98E71E228572B4A684135A877D47E79ED43A8C430ABF80
+                      46934200B498128B0F591B8D1402A095AC583CC9DA68A410803B591B0315E6A2
+                      924200AE666D0CB47EDC78540ED01A6EA85C50A65AB457361C95147E01AAC95C
+                      6C1DF6950BA8C01BD0EE05CDC9434F6A19FEC04568DAD02249A8B3CAF0209A7F
+                      D032A16625A10E2BD2DB1835FB4D19AD5269E13CD47145F81A17A219055528DF
+                      60A803F3A8CE5F83A60354A5548216EAC85ED4B0E3976E97E89D7018F3CC8E34
+                      DB39841EF373A0F78216D0952F843A39A4FEF60C46AFF7FF8F2A6D4F57C6AC35
+                      DCF6EDE9B351A8AAA9C2DAF0F6F4CBE824CB18638C31C6189324292762137105
+                      AE427D3FA05ACE029C8B735089994A0CE35025874FF81E55747B898FF111DEC7
+                      87A8924672A4148079A82C77136EC4B558D48E397DFCA1CF9F6EE075BC86AFB0
+                      D1E8C9DD8CFA34E901866A3A65AA731EC72D98C2DA78DFD067A827B0CC85976E
+                      D5FAC349DC80B54443C91EBC89A10E48C95BB817636D182E140D33FBF005866E
+                      36659FE3011C8F9544636B8CB1BD68750F5BB1326825EB34FEC6D00D55D55398
+                      FC07DEF3B10AE37CAF6A6D59F79824BA306D350F5D789D7C864A089342FFCD4A
+                      1967E882EBA8DE0BBAE76418C4D085D6D964BEB45F89757BE176A2EE7935E6A2
+                      88147C3F5669774551E89E9527E4A288006CCFDA26B2236B7BA68827577B7266
+                      B50E1BC777CCF57F2E8A0880C6C32693AB0F1B55864D110720320E40641C80C8
+                      380091710022E30018638C31C618638C31C618638C31C694CAC0C05FC3501558
+                      A891CD4A0000000049454E44AE426082}
+                    FileName = 
+                      'C:\gestaoweb\Apps\MaterialDesigner\social\2x_web\ic_person_black' +
+                      '_48dp.png'
+                  end>
+                Align = Center
+                OnClick = im_customerClick
+              end
+            end
+            object Ly_customer_text: TLayout
+              Align = Client
+              Size.Width = 286.000000000000000000
+              Size.Height = 75.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+              object Ly_customer_text_tittle: TLayout
+                Align = Top
+                Size.Width = 286.000000000000000000
+                Size.Height = 23.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 0
+                object lb_Customer: TLabel
+                  Align = Client
+                  StyledSettings = [Family, FontColor]
+                  Margins.Left = 5.000000000000000000
+                  Size.Width = 281.000000000000000000
+                  Size.Height = 23.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.Size = 14.000000000000000000
+                  Text = 'Cliente'
+                  TabOrder = 0
+                end
+              end
+              object Ly_customer_text_body: TLayout
+                Align = Client
+                Size.Width = 286.000000000000000000
+                Size.Height = 52.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 1
+                object E_customer_name: TLabel
+                  Align = Top
+                  Margins.Left = 5.000000000000000000
+                  Position.X = 5.000000000000000000
+                  Size.Width = 281.000000000000000000
+                  Size.Height = 26.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.WordWrap = False
+                  Text = 'Selecione o cliente'
+                  TabOrder = 1
+                end
+                object E_customer_nick: TLabel
+                  Align = Client
+                  Margins.Left = 5.000000000000000000
+                  Size.Width = 281.000000000000000000
+                  Size.Height = 26.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.WordWrap = False
+                  TabOrder = 0
+                end
+              end
+            end
+          end
+        end
+        object Ly_product: TLayout
+          Align = Top
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 5.000000000000000000
+          Position.X = 10.000000000000000000
+          Position.Y = 240.000000000000000000
+          Size.Width = 359.000000000000000000
+          Size.Height = 75.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object Rc_product: TRectangle
+            Align = Client
+            Size.Width = 359.000000000000000000
+            Size.Height = 75.000000000000000000
+            Size.PlatformDefault = False
+            XRadius = 5.000000000000000000
+            YRadius = 5.000000000000000000
+            object Ly_product_img: TLayout
+              Align = Left
+              Size.Width = 73.000000000000000000
+              Size.Height = 75.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              object im_Itens: TImage
+                MultiResBitmap.Height = 96
+                MultiResBitmap.Width = 96
+                MultiResBitmap = <
+                  item
+                    Width = 96
+                    Height = 96
+                    PNG = {
+                      89504E470D0A1A0A0000000D4948445200000060000000600806000000E29877
+                      38000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                      055349444154785EED9D47A8254514869F392770404514045DE81816823ABA52
+                      14155C99C0850A8A828C116402288820868D60C48408222E04511054CCE042C4
+                      042A06CC0B31202AE6F8FFCE2D385CFEF7BA6E7755F5A9B63EF8E837F3A8EA73
+                      FADEEEAEAED3DD6FA9D168341AFF5B369B2D6BE29FD97239AACA69F3D9B23112
+                      ED031899F6018C8CFA00788C5DD4136123116A0377F9022C855ABFB57A545231
+                      AE812550EBB6568F4A2AC6C76109D4BAADD5A3928AF16F7830CC8D5AB7B57A54
+                      52B13E0873A3D66BAD1E9554AC7FC2FD604ED47AAD5591FA3A600B78E5A61F1B
+                      B97809AA6F5EF057B8078C45F551D23EDC076F84BBFEF7AFC29C0C5522560617
+                      8B6A5FD245391C72C0C1B6DFC22BE0D6B0286FC0F944AC3FC0DD600CAA7D4917
+                      E57938DFC7C7F02C586C26F64C381FC4BC57C11854DB922EC22950F5117C151E
+                      09B3C393F7FB500511FC1A6E0FBB506D4B1A0B0718EF40D587B5D8BCD8F95005
+                      60BD0C76A1DA9534960BA16A6F7D1A1683279E2FA00A24F839EC3A41A976258D
+                      6147F82554ED833C311F068B723954C158CF832BA1DA9434866BA06A6B7D0016
+                      6707F80D540105DF83292FF8D43AACA9D90BFE04D5BA82BFC07DE0285C0D5550
+                      D633602A54FFD6D4DC03D57AACD7C3D1E078FF47A8020BBE0E53A1FAB7A66435
+                      FC0BAAF50439DADB058ECA4D5005673D09A640F56D4DC91350ADC37A091C9D3D
+                      21E780548041CE21A540F56D4DC57150F56FFD006E055D702754415A8F814351
+                      FD5A53C041030F9BAA7FEB69D00DAC03B01EA0020D72971E8AEAD79A82B3A1EA
+                      DBFA3274072B622A58EBD08B15D5A77528DBC2CFA0EADB5AEA268485604D384C
+                      D52EE7C37008AA4FEB50D643D5AFF511E896C7A00A3AC861DDFEB02FAA4FEB10
+                      7687DF43D56FF00F3824FEEC1C0555E0D67B615F547FD621DC02559FD65BA17B
+                      54D1C2FA3BDC1BF641F567ED0BBFD58C4BF519E4DEB10ABAE704A812B0DE0C3D
+                      C1E3BA8AD3BA115603AB432A892027B878CCF5C0D150C568E5D4FA76B01A4E85
+                      2A11EBB5D0031CD3ABF8ACE7C2AAE0D5E4BB502513FC0EEE04C7E474A862B3BE
+                      0953DF4355047E6B5442D675702C58ADFB10AAB8AC3CA7550927AA3E852AA920
+                      4B7DBCFA1C834BA18AC9FA24AC9A8BA14ACC7A112C0DE7F0BBAA79BC683C0456
+                      0D470E5F4195609037366D094B720354B158EF879380E36795A0677F867D2F16
+                      DDC1DDBD6B8EC59BD7C149F12254897A9487CC9DE1643816AA44BDBA164E06DE
+                      31FC1A54897AF415C8FB4027434C79CF8B1C8D4DE6C44B62CB7B1E7C0A2EF264
+                      4F156C802A590FF206027E391E82C7C3C9C1C245D7D0930510D7E5BD9A61E94E
+                      6D742B4B808D0C1C0059BC561B3DC8BDC34B4166723C0AD546B7F2FCD0C8C011
+                      506D706B75E5BD9AB81BAA8D6E3D073632D155617A1B5659DECB418E0DB1EF6C
+                      B91C5CE7D8756037E478B2FB3758FCD1FD8224DD6639F6804F66CB4604393E80
+                      6767CB4604390E4187423E5D52ECC51585717F08E24D4C776DFAB131169C86EE
+                      BA43BA56AB811F021FDCEB7A62A636AB83E784DB20EF13ED7A94B5061B8D46A3
+                      D1A8063E987D07E47B83384F44F933FF8F27E8B1F11E5F6F380CE505D94AC350
+                      FE8E43D5319E0FF01EDF2018F0735025A5E4455BC924BDC73798DBA14A6425B9
+                      CB97C27B7C833808F6B9FA659B12C75C57F1E5988CBB00F69931641BB6CD8DF7
+                      F806F31654DFA018395D911BEFF10D66C893309C2BCA8DABF8721C821A0B90E3
+                      03E073C17DF968B6CC89ABF8BCD5849F992D73E23DBEC11C08BB5E76AAE430AF
+                      C49FC1F21E5F1262DE3C356FC93751798F6F30DB40EEAE2A11250F0B6C530AEF
+                      F1258101B314B9D255277FC76FD618C9798F2F197CD90593083561CA3F05C2C3
+                      808763AAF7F81A8D46A3D168341A8DC6A4585AFA17EC82331BF302CC54000000
+                      0049454E44AE426082}
+                    FileName = 
+                      'C:\gestaoweb\Apps\MaterialDesigner\action\2x_web\ic_add_shopping' +
+                      '_cart_black_48dp.png'
+                  end>
+                Align = Center
+                OnClick = im_ItensClick
+              end
+            end
+            object Ly_product_text: TLayout
+              Align = Client
+              Size.Width = 286.000000000000000000
+              Size.Height = 75.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+              object Ly_product_text_tittle: TLayout
+                Align = Top
+                Size.Width = 286.000000000000000000
+                Size.Height = 33.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 0
+                object Lb_product: TLabel
+                  Align = Client
+                  StyledSettings = [Family, FontColor]
+                  Margins.Left = 5.000000000000000000
+                  Size.Width = 281.000000000000000000
+                  Size.Height = 33.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.Size = 14.000000000000000000
+                  Text = 'Produtos'
+                  TabOrder = 0
+                end
+              end
+              object Ly_product_text_body: TLayout
+                Align = Client
+                Size.Width = 286.000000000000000000
+                Size.Height = 42.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 1
+                object Lb_selected_products: TLabel
+                  Align = Client
+                  AutoSize = True
+                  Margins.Left = 5.000000000000000000
+                  Size.Width = 281.000000000000000000
+                  Size.Height = 42.000000000000000000
+                  Size.PlatformDefault = False
+                  Text = 'Seleciondo(s) : 0'
+                  TabOrder = 0
+                end
+              end
+            end
+          end
+        end
+        object Ly_pay: TLayout
+          Align = Top
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 5.000000000000000000
+          Position.X = 10.000000000000000000
+          Position.Y = 330.000000000000000000
+          Size.Width = 359.000000000000000000
+          Size.Height = 75.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object Rc_pay: TRectangle
+            Align = Client
+            Size.Width = 359.000000000000000000
+            Size.Height = 75.000000000000000000
+            Size.PlatformDefault = False
+            XRadius = 5.000000000000000000
+            YRadius = 5.000000000000000000
+            object Ly_pay_img: TLayout
+              Align = Left
+              Size.Width = 73.000000000000000000
+              Size.Height = 75.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              object im_pay: TImage
+                MultiResBitmap.Height = 96
+                MultiResBitmap.Width = 96
+                MultiResBitmap = <
+                  item
+                    Width = 96
+                    Height = 96
+                    PNG = {
+                      89504E470D0A1A0A0000000D4948445200000060000000600806000000E29877
+                      38000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                      046649444154785EED9D5BA8666318C7378319729C916329876986994639DE48
+                      94C80D225C92992B3335359AE1666EA6911B4A399448C9051744C4952224124D
+                      8388849043E47C3EFEFEEDB56BB57AF6F7BDEBF8EEBDD7FF57BFDEAF5D7B7DED
+                      E759EB5DEF7ADEF75D7BC618638C31C618638C31C68C867D8A76A1B21FFE35FB
+                      31897F50BFB368D8B7684D269C80CC380199710232E30464C609C88C13909985
+                      9C8003F182D98FB538BE684D0396E3B5F814FE86FF35F44DDC862BD1247010DE
+                      825F6214D0A6FE84B7E1A168E6E12AFC1CA30076A58E7F099A122BF0418C02D6
+                      87AA13DD8C06D425BC8851A0FA76178E9A033057F0E7DC840B821CE5E87BF0C6
+                      D98FB5F80ADFC52FF017FD000E460D3BD7E311FA4122BFE319A8E38D8AF3313A
+                      23E7F31DDC8A27E22474229D857761EAF0F5791C1D2F63148CAA3FE00DD8E40A
+                      3D05F76074DCAA17E168D0251F05A1AABA9AD3B00D87A3AE9EE8F865F5C0371A
+                      6EC5280865FFC526E587883351C78BBE674E4D77D6B9772C6A52463E4F63973C
+                      83D1F794BD1AB33164316E6DD14EE2B1A2ED8AC78B7612E7166D16864C404A61
+                      ECBDA2ED8AD78A76126B8A360B4326206544A32EA14B3E4295202679248E82EF
+                      B1DAFF56BD0E4D4FA8461F05BDEC73687AE2018C825EF57A343DA0BA7F14F0AA
+                      1A9B6F44D3319A6ED4536E14F4C827F024341DB21DA360CFA7AE8687F01C341D
+                      A0B980B7310AF634F57B3B711D9A169C8AAA7646414E55E3FBFBF04A54E1CDD4
+                      44F3029A5489825BD7BFF12554F776329A44CE46CD6E45416DE3EBB8190F4333
+                      85A3F1598C02D9D69FF16E3C01CD14B41AEE138C02D9D63FF04EF4BD620A1A21
+                      A9EBF810A340B655CF2097A199C23254A0345DA8E78028986DBC1DBD2A3C9155
+                      A8353C4A4657A326F9282AD1A6062A655C88BBF1156C7B75DC8FA6055ADEA8F9
+                      DC47B0E9D5E1A25F471C824D6EE0DFE151683A42BBE4B7609D52C71D683A464B
+                      19F76214F0AA4A963688988ED12A0C2DBE8D825EF50A343D703A6AE54314F4B2
+                      5AB16D7AE2498C825E56ABF6B2308627C294E58ED396BFF7C650095010A233AF
+                      6C5FB5FC0F8A7612D94AD74325E0B3A29D84FAEB3EF8B36827B17FD10ECE5009
+                      D090701A7D552A53BA971F8B76C9A23D5C51B753565B8BFA78CD804A15D1F795
+                      7D15973CEA8BA33FBEACAA9E5D6E1CDC802945BB7B71C9B303A33FBEAA82D145
+                      D7780CBE8FD177541DC5448DAA97DF601480AA2FA096AF3445AF25F814A36357
+                      D54C59B69BF0D06872250A42A49E60F510750DA6ACE13F0EB5B3327527E69C37
+                      6136726CD456502F9FFD580B9DD12A377F8DBFA2BA2915D1B4B26235AACBA9CB
+                      5BA8CD7CBA4F8C06D5EEDFC0E86C1C52554153F6AD2D4934D7ABA15F149821D4
+                      7B84CEC351A357920DF9BA9A39D58D69786A0A743FE86B515659DDD435C45517
+                      682A68C5835ECAF13146C16BA36EB05A86E265ED0968ADCEA5F8307E8B514053
+                      D48A690D47F5E2BE63D13440C34CBD82260AF07CAA9BB91817CD4BFA723C07D4
+                      C1FF3FC0F48B1390192720334E40669C80CC38019971028C31C618638C31C618
+                      638C19849999FF0104FEA9D61D3577C50000000049454E44AE426082}
+                    FileName = 
+                      'C:\gestaoweb\Apps\MaterialDesigner\editor\2x_web\ic_attach_money' +
+                      '_black_48dp.png'
+                  end>
+                Align = Center
+                OnClick = im_payClick
+              end
+            end
+            object Ly_pay_text: TLayout
+              Align = Client
+              Size.Width = 286.000000000000000000
+              Size.Height = 75.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+              object Ly_pay_text_tittle: TLayout
+                Align = Top
+                Size.Width = 286.000000000000000000
+                Size.Height = 33.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 0
+                object lb_paymnet: TLabel
+                  Align = Client
+                  StyledSettings = [Family, FontColor]
+                  Margins.Left = 5.000000000000000000
+                  Size.Width = 281.000000000000000000
+                  Size.Height = 33.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.Size = 14.000000000000000000
+                  Text = 'Pagamentos'
+                  TabOrder = 0
+                end
+              end
+              object Ly_pay_text_body: TLayout
+                Align = Client
+                Size.Width = 286.000000000000000000
+                Size.Height = 42.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 1
+                object E_payment_types: TLabel
+                  Align = Client
+                  AutoSize = True
+                  Margins.Left = 5.000000000000000000
+                  Size.Width = 281.000000000000000000
+                  Size.Height = 42.000000000000000000
+                  Size.PlatformDefault = False
+                  Text = 'Informe os dados de pagamentos.'
+                  TabOrder = 0
+                end
+              end
+            end
+          end
+        end
+      end
+      object tbs_item: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Size.Width = 75.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'Itens'
+        ExplicitSize.cx = 46.000000000000000000
+        ExplicitSize.cy = 26.000000000000000000
+        object Ly_top_order_items: TLayout
+          Align = Top
+          Size.Width = 379.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object Rectangle1: TRectangle
+            Align = Client
+            Fill.Color = xFFB7DDEE
+            Margins.Left = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Size.Width = 369.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            XRadius = 5.000000000000000000
+            YRadius = 5.000000000000000000
+            object Ly_order_items: TLayout
+              Align = Client
+              Size.Width = 369.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              object Lb_name_tittle: TLabel
+                Align = Client
+                StyledSettings = [FontColor]
+                Margins.Left = 10.000000000000000000
+                Size.Width = 263.000000000000000000
+                Size.Height = 50.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Family = 'Arial'
+                TextSettings.Font.Size = 14.000000000000000000
+                TextSettings.Font.StyleExt = {00070000000000000004000000}
+                Text = 'Lista de Itens do Pedido'
+                TabOrder = 0
+              end
+              object Sb_Insert_item: TSpeedButton
+                Align = Right
+                CanFocus = True
+                Position.X = 321.000000000000000000
+                Position.Y = 1.000000000000000000
+                Size.Width = 48.000000000000000000
+                Size.Height = 48.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'addtoolbutton'
+                Text = 'Sb_operation'
+                OnClick = Sb_Insert_itemClick
+              end
+              object Sb_items_order_back: TSpeedButton
+                Align = Left
+                Position.Y = 1.000000000000000000
+                Size.Width = 48.000000000000000000
+                Size.Height = 48.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'priortoolbutton'
+                OnClick = Sb_items_order_backClick
+              end
+            end
+          end
+        end
+        object lsv_Search: TListView
+          ItemAppearanceClassName = 'TDynamicAppearance'
+          ItemEditAppearanceClassName = 'TDynamicAppearance'
+          HeaderAppearanceClassName = 'TListHeaderObjects'
+          FooterAppearanceClassName = 'TListHeaderObjects'
+          OnUpdateObjects = lsv_SearchUpdateObjects
+          Align = Client
+          Size.Width = 379.000000000000000000
+          Size.Height = 422.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          ItemAppearance.ItemHeight = 45
+          ItemAppearanceObjects.ItemObjects.ObjectsCollection = <
+            item
+              AppearanceObjectName = 'produto'
+              AppearanceClassName = 'TTextObjectAppearance'
+              Appearance.Font.Family = 'Arial'
+              Appearance.Font.StyleExt = {00070000000000000004000000}
+              Appearance.TextAlign = Leading
+              Appearance.Width = 298.000000000000000000
+              Appearance.Height = 20.000000000000000000
+              Appearance.PlaceOffset.X = 50.000000000000000000
+              Appearance.PlaceOffset.Y = 3.000000000000000000
+            end
+            item
+              AppearanceObjectName = 'quantidade'
+              AppearanceClassName = 'TTextObjectAppearance'
+              Appearance.Font.Family = 'Arial'
+              Appearance.Width = 68.000000000000000000
+              Appearance.Height = 20.000000000000000000
+              Appearance.PlaceOffset.X = 3.000000000000000000
+              Appearance.PlaceOffset.Y = 23.000000000000000000
+            end
+            item
+              AppearanceObjectName = 'valorunitario'
+              AppearanceClassName = 'TTextObjectAppearance'
+              Appearance.Font.Family = 'Arial'
+              Appearance.Width = 68.000000000000000000
+              Appearance.Height = 20.000000000000000000
+              Appearance.PlaceOffset.X = 110.000000000000000000
+              Appearance.PlaceOffset.Y = 23.000000000000000000
+            end
+            item
+              AppearanceObjectName = 'valortotal'
+              AppearanceClassName = 'TTextObjectAppearance'
+              Appearance.Font.Family = 'Arial'
+              Appearance.Width = 97.000000000000000000
+              Appearance.Height = 20.000000000000000000
+              Appearance.PlaceOffset.X = 216.000000000000000000
+              Appearance.PlaceOffset.Y = 23.000000000000000000
+            end
+            item
+              AppearanceObjectName = 'codigo'
+              AppearanceClassName = 'TTextObjectAppearance'
+              Appearance.Font.Family = 'Arial'
+              Appearance.Font.StyleExt = {00070000000000000004000000}
+              Appearance.TextAlign = Leading
+              Appearance.TextColor = claCadetblue
+              Appearance.Width = 43.000000000000000000
+              Appearance.Height = 20.000000000000000000
+              Appearance.PlaceOffset.X = 4.000000000000000000
+              Appearance.PlaceOffset.Y = 3.000000000000000000
+            end
+            item
+              AppearanceObjectName = 'vezes'
+              AppearanceClassName = 'TTextObjectAppearance'
+              Appearance.Font.Family = 'Arial'
+              Appearance.Font.Size = 14.000000000000000000
+              Appearance.Font.StyleExt = {00070000000000000004000000}
+              Appearance.Width = 33.000000000000000000
+              Appearance.Height = 20.000000000000000000
+              Appearance.PlaceOffset.X = 74.000000000000000000
+              Appearance.PlaceOffset.Y = 23.000000000000000000
+            end
+            item
+              AppearanceObjectName = 'igual'
+              AppearanceClassName = 'TTextObjectAppearance'
+              Appearance.Font.Family = 'Arial'
+              Appearance.Font.Size = 14.000000000000000000
+              Appearance.Font.StyleExt = {00070000000000000004000000}
+              Appearance.Width = 33.000000000000000000
+              Appearance.Height = 20.000000000000000000
+              Appearance.PlaceOffset.X = 181.000000000000000000
+              Appearance.PlaceOffset.Y = 23.000000000000000000
+            end>
+          ItemAppearanceObjects.ItemEditObjects.ObjectsCollection = <
+            item
+              AppearanceObjectName = 'Text1'
+              AppearanceClassName = 'TTextObjectAppearance'
+              Appearance.Width = 575.000000000000000000
+              Appearance.Height = 44.000000000000000000
+            end>
+          OnItemClick = lsv_SearchItemClick
+          OnDeleteItem = lsv_SearchDeleteItem
+        end
+        object Ly_selected: TLayout
+          Align = Top
+          Position.Y = 50.000000000000000000
+          Size.Width = 379.000000000000000000
+          Size.Height = 39.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          object Rc_selected: TRectangle
+            Align = Client
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Size.Width = 369.000000000000000000
+            Size.Height = 29.000000000000000000
+            Size.PlatformDefault = False
+            XRadius = 5.000000000000000000
+            YRadius = 5.000000000000000000
+            object E_valor_sub_total: TLabel
+              Align = Client
+              Margins.Left = 5.000000000000000000
+              Margins.Right = 5.000000000000000000
+              Size.Width = 359.000000000000000000
+              Size.Height = 29.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Valor total dos itens:'
+              TabOrder = 0
+            end
+          end
+        end
+      end
+      object tbs_payment: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Size.Width = 75.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'Pagamento'
+        ExplicitSize.cx = 81.000000000000000000
+        ExplicitSize.cy = 26.000000000000000000
+        object Ly_top_payment_types: TLayout
+          Align = Top
+          Size.Width = 379.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object Rectangle2: TRectangle
+            Align = Client
+            Fill.Color = xFFB7DDEE
+            Margins.Left = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Size.Width = 369.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            XRadius = 5.000000000000000000
+            YRadius = 5.000000000000000000
+            object Ly_payment_types: TLayout
+              Align = Client
+              Size.Width = 369.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              object Label1: TLabel
+                Align = Client
+                StyledSettings = [FontColor]
+                Margins.Left = 10.000000000000000000
+                Size.Width = 311.000000000000000000
+                Size.Height = 50.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Family = 'Arial'
+                TextSettings.Font.Size = 14.000000000000000000
+                TextSettings.Font.StyleExt = {00070000000000000004000000}
+                Text = 'Pagamentos / Negocia'#231#227'o'
+                TabOrder = 0
+              end
+              object Sp_payment_oder_back: TSpeedButton
+                Align = Left
+                Position.Y = 1.000000000000000000
+                Size.Width = 48.000000000000000000
+                Size.Height = 48.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'priortoolbutton'
+                OnClick = Sp_payment_oder_backClick
+              end
+            end
+          end
+        end
+        object Ly_paymnet_type: TRectangle
+          Align = Top
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Position.X = 10.000000000000000000
+          Position.Y = 55.000000000000000000
+          Size.Width = 359.000000000000000000
+          Size.Height = 54.000000000000000000
+          Size.PlatformDefault = False
+          XRadius = 5.000000000000000000
+          YRadius = 5.000000000000000000
+          object Lb_payment_type: TLabel
+            Align = Top
+            StyledSettings = [Style, FontColor]
+            Margins.Left = 4.000000000000000000
+            Position.X = 4.000000000000000000
+            Size.Width = 355.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Family = 'Arial'
+            Text = 'Formas de Pagamentos'
+            TabOrder = 0
+          end
+          object Cb_payment_type: TComboBox
+            Anchors = [akLeft, akTop, akRight]
+            Margins.Left = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Position.X = 4.000000000000000000
+            Position.Y = 17.000000000000000000
+            Size.Width = 350.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+          end
+        end
+        object Ly_plots: TRectangle
+          Align = Top
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Position.X = 10.000000000000000000
+          Position.Y = 174.000000000000000000
+          Size.Width = 359.000000000000000000
+          Size.Height = 55.000000000000000000
+          Size.PlatformDefault = False
+          XRadius = 5.000000000000000000
+          YRadius = 5.000000000000000000
+          object Lb_Plots: TLabel
+            Align = Top
+            StyledSettings = [Style, FontColor]
+            Margins.Left = 4.000000000000000000
+            Position.X = 4.000000000000000000
+            Size.Width = 355.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Family = 'Arial'
+            Text = 'Numero de parcelas'
+            TabOrder = 0
+          end
+          object Sp_plots: TSpinBox
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            TabOrder = 1
+            Cursor = crIBeam
+            Position.X = 5.000000000000000000
+            Position.Y = 16.000000000000000000
+            TextSettings.Font.Family = 'Arial'
+            TextSettings.Font.Size = 20.000000000000000000
+            Margins.Left = 5.000000000000000000
+            Size.Width = 130.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            StyledSettings = [Style, FontColor]
+          end
+        end
+        object Ly_dead_line: TRectangle
+          Align = Top
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Position.X = 10.000000000000000000
+          Position.Y = 114.000000000000000000
+          Size.Width = 359.000000000000000000
+          Size.Height = 55.000000000000000000
+          Size.PlatformDefault = False
+          XRadius = 5.000000000000000000
+          YRadius = 5.000000000000000000
+          object Grp_dead_line: TGroupBox
+            Align = Client
+            StyledSettings = [Style, FontColor, Other]
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Size.Width = 349.000000000000000000
+            Size.Height = 45.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'Grp_dead_lineStyle1'
+            Text = 'Tipo de Pagamento'
+            TextSettings.Font.Family = 'Arial'
+            TabOrder = 0
+            object rb_vista: TRadioButton
+              Align = Left
+              StyledSettings = [Style, FontColor]
+              Margins.Left = 5.000000000000000000
+              Margins.Top = 20.000000000000000000
+              Position.X = 5.000000000000000000
+              Position.Y = 20.000000000000000000
+              Size.Width = 100.000000000000000000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+              Text = #192' VISTA'
+              TextSettings.Font.Family = 'Arial'
+              OnChange = rb_vistaChange
+            end
+            object RB_prazo: TRadioButton
+              Align = Left
+              StyledSettings = [Style, FontColor]
+              Margins.Top = 20.000000000000000000
+              Position.X = 105.000000000000000000
+              Position.Y = 20.000000000000000000
+              Size.Width = 120.000000000000000000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              Text = #192' PRAZO'
+              TextSettings.Font.Family = 'Arial'
+              OnChange = RB_prazoChange
+            end
+          end
+        end
+        object Ly_installment: TRectangle
+          Align = Top
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Position.X = 10.000000000000000000
+          Position.Y = 234.000000000000000000
+          Size.Width = 359.000000000000000000
+          Size.Height = 55.000000000000000000
+          Size.PlatformDefault = False
+          XRadius = 5.000000000000000000
+          YRadius = 5.000000000000000000
+          object E_installment: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Anchors = [akLeft, akRight]
+            TabOrder = 0
+            Position.X = 4.000000000000000000
+            Position.Y = 17.000000000000000000
+            Margins.Left = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Size.Width = 351.000244140625000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+          end
+          object Lb_installment: TLabel
+            Align = Top
+            StyledSettings = [FontColor]
+            Margins.Left = 4.000000000000000000
+            Position.X = 4.000000000000000000
+            Size.Width = 355.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Family = 'Arial'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            Text = 'Parcelamento - ( Ex: 030/060/090/120 )'
+            TabOrder = 1
+          end
+        end
+      end
+      object tbs_detail: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Size.Width = 75.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'Detalhe'
+        ExplicitSize.cx = 61.000000000000000000
+        ExplicitSize.cy = 26.000000000000000000
+        object Layout1: TLayout
+          Align = Top
+          Size.Width = 379.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object Rectangle3: TRectangle
+            Align = Client
+            Fill.Color = xFFB7DDEE
+            Margins.Left = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Size.Width = 369.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            XRadius = 5.000000000000000000
+            YRadius = 5.000000000000000000
+            object Layout2: TLayout
+              Align = Client
+              Size.Width = 369.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              object Label2: TLabel
+                Align = Client
+                StyledSettings = [FontColor]
+                Margins.Left = 10.000000000000000000
+                Size.Width = 311.000000000000000000
+                Size.Height = 50.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Family = 'Arial'
+                TextSettings.Font.Size = 14.000000000000000000
+                TextSettings.Font.StyleExt = {00070000000000000004000000}
+                Text = 'Outras Informa'#231#245'es'
+                TabOrder = 0
+              end
+              object SpeedButton1: TSpeedButton
+                Align = Left
+                Position.Y = 1.000000000000000000
+                Size.Width = 48.000000000000000000
+                Size.Height = 48.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'priortoolbutton'
+                OnClick = SpeedButton1Click
+              end
+            end
+          end
+        end
+        object Ly_Obs: TRectangle
+          Align = Top
+          Margins.Left = 5.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 5.000000000000000000
+          Position.X = 5.000000000000000000
+          Position.Y = 55.000000000000000000
+          Size.Width = 369.000000000000000000
+          Size.Height = 154.000000000000000000
+          Size.PlatformDefault = False
+          XRadius = 5.000000000000000000
+          YRadius = 5.000000000000000000
+          object Label3: TLabel
+            Align = Top
+            StyledSettings = [Style, FontColor]
+            Margins.Left = 4.000000000000000000
+            Position.X = 4.000000000000000000
+            Size.Width = 365.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Family = 'Arial'
+            Text = 'Observa'#231#245'es'
+            TabOrder = 0
+          end
+          object M_Obs: TMemo
+            Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+            DataDetectorTypes = []
+            Align = Client
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Size.Width = 359.000000000000000000
+            Size.Height = 127.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            Viewport.Width = 359.000000000000000000
+            Viewport.Height = 127.000000000000000000
+          end
+        end
+      end
+      object tbs_search: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Size.Width = 79.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'Pesquisa'
+        ExplicitSize.cx = 66.000000000000000000
+        ExplicitSize.cy = 26.000000000000000000
+        object Ly_search_product: TLayout
+          Align = Client
+          Size.Width = 379.000000000000000000
+          Size.Height = 511.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object lsv_search_product: TListView
+            ItemAppearanceClassName = 'TDynamicAppearance'
+            ItemEditAppearanceClassName = 'TDynamicAppearance'
+            HeaderAppearanceClassName = 'TListHeaderObjects'
+            FooterAppearanceClassName = 'TListHeaderObjects'
+            OnUpdateObjects = lsv_search_productUpdateObjects
+            Align = Client
+            Size.Width = 379.000000000000000000
+            Size.Height = 376.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            ItemAppearance.ItemHeight = 50
+            ItemAppearanceObjects.ItemObjects.ObjectsCollection = <
+              item
+                AppearanceObjectName = 'Produto'
+                AppearanceClassName = 'TTextObjectAppearance'
+                Appearance.Font.StyleExt = {00070000000000000004000000}
+                Appearance.TextAlign = Leading
+                Appearance.Width = 303.000000000000000000
+                Appearance.Height = 22.000000000000000000
+                Appearance.PlaceOffset.X = 43.000000000000000000
+                Appearance.PlaceOffset.Y = 3.000000000000000000
+              end
+              item
+                AppearanceObjectName = 'Embalagem'
+                AppearanceClassName = 'TTextObjectAppearance'
+                Appearance.TextAlign = Leading
+                Appearance.Width = 228.000000000000000000
+                Appearance.Height = 22.000000000000000000
+                Appearance.PlaceOffset.X = 3.000000000000000000
+                Appearance.PlaceOffset.Y = 25.000000000000000000
+              end
+              item
+                AppearanceObjectName = 'Estoque'
+                AppearanceClassName = 'TTextObjectAppearance'
+                Appearance.TextAlign = Leading
+                Appearance.Width = 199.000000000000000000
+                Appearance.Height = 22.000000000000000000
+                Appearance.PlaceOffset.X = 230.000000000000000000
+                Appearance.PlaceOffset.Y = 25.000000000000000000
+              end
+              item
+                AppearanceObjectName = 'Codigo'
+                AppearanceClassName = 'TTextObjectAppearance'
+                Appearance.TextAlign = Leading
+                Appearance.Width = 42.000000000000000000
+                Appearance.Height = 22.000000000000000000
+                Appearance.PlaceOffset.Y = 3.000000000000000000
+              end>
+            ItemAppearanceObjects.ItemEditObjects.ObjectsCollection = <
+              item
+                AppearanceObjectName = 'Text1'
+                AppearanceClassName = 'TTextObjectAppearance'
+                Appearance.Width = 575.000000000000000000
+                Appearance.Height = 44.000000000000000000
+              end>
+            CanSwipeDelete = False
+            OnItemClick = lsv_search_productItemClick
+          end
+          object Ly_Result_top_search_product: TLayout
+            Align = Top
+            Size.Width = 379.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            object Rc_Result_top_search_product: TRectangle
+              Align = Client
+              Fill.Color = xFFB7DDEE
+              Margins.Left = 5.000000000000000000
+              Margins.Right = 5.000000000000000000
+              Size.Width = 369.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              XRadius = 5.000000000000000000
+              YRadius = 5.000000000000000000
+              object Ly_list_titlle_product: TLayout
+                Align = Client
+                Size.Width = 369.000000000000000000
+                Size.Height = 50.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 0
+                object Lb_name_tittle_product: TLabel
+                  Align = Client
+                  Margins.Left = 10.000000000000000000
+                  Size.Width = 263.000000000000000000
+                  Size.Height = 50.000000000000000000
+                  Size.PlatformDefault = False
+                  Text = 'Lista de Produtos'
+                  TabOrder = 0
+                end
+                object Sb_search_product: TSpeedButton
+                  Align = Right
+                  Position.X = 321.000000000000000000
+                  Position.Y = 1.000000000000000000
+                  Size.Width = 48.000000000000000000
+                  Size.Height = 48.000000000000000000
+                  Size.PlatformDefault = False
+                  StyleLookup = 'searchtoolbuttonbordered'
+                  Text = 'SpeedButton1'
+                  OnClick = Sb_search_productClick
+                end
+                object Sb_back_product_callback: TSpeedButton
+                  Align = Left
+                  Position.Y = 1.000000000000000000
+                  Size.Width = 48.000000000000000000
+                  Size.Height = 48.000000000000000000
+                  Size.PlatformDefault = False
+                  StyleLookup = 'priortoolbutton'
+                  Text = 'Sb_back_product_callback'
+                  OnClick = Sb_back_product_callbackClick
+                end
+              end
+              object Ly_quick_search_product: TLayout
+                Align = Client
+                Size.Width = 379.000000000000000000
+                Size.Height = 50.000000000000000000
+                Size.PlatformDefault = False
+                Visible = False
+                TabOrder = 1
+                object E_Search_product: TEdit
+                  Touch.InteractiveGestures = [LongTap, DoubleTap]
+                  Align = VertCenter
+                  StyleLookup = 'E_buscaStyle1'
+                  TabOrder = 0
+                  Position.X = 48.000000000000000000
+                  Position.Y = 9.000000000000000000
+                  Size.Width = 331.000000000000000000
+                  Size.Height = 32.000000000000000000
+                  Size.PlatformDefault = False
+                  OnChangeTracking = E_Search_productChangeTracking
+                end
+                object Sb_back_search_product: TSpeedButton
+                  Align = Left
+                  Position.Y = 1.000000000000000000
+                  Size.Width = 48.000000000000000000
+                  Size.Height = 48.000000000000000000
+                  Size.PlatformDefault = False
+                  StyleLookup = 'priortoolbutton'
+                  OnClick = Sb_back_search_productClick
+                end
+              end
+            end
+          end
+          object Ly_search_product_selected: TLayout
+            Align = Top
+            Position.Y = 50.000000000000000000
+            Size.Width = 379.000000000000000000
+            Size.Height = 85.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+            object Rectangle5: TRectangle
+              Align = Client
+              Margins.Left = 5.000000000000000000
+              Margins.Top = 5.000000000000000000
+              Margins.Right = 5.000000000000000000
+              Margins.Bottom = 5.000000000000000000
+              Size.Width = 369.000000000000000000
+              Size.Height = 75.000000000000000000
+              Size.PlatformDefault = False
+              XRadius = 5.000000000000000000
+              YRadius = 5.000000000000000000
+              object Ly_id_produto: TLayout
+                Align = Top
+                Size.Width = 369.000000000000000000
+                Size.Height = 18.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 0
+                object Lb_des_product_selected: TLabel
+                  Align = Client
+                  StyledSettings = [Style, FontColor]
+                  Margins.Left = 5.000000000000000000
+                  Margins.Right = 5.000000000000000000
+                  Size.Width = 278.000000000000000000
+                  Size.Height = 18.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.Family = 'Arial'
+                  TextSettings.WordWrap = False
+                  Text = 'Produto Selecionado'
+                  TabOrder = 0
+                end
+                object Lb_cod_product_selected: TLabel
+                  Align = Left
+                  StyledSettings = [Style, FontColor]
+                  Size.Width = 81.000000000000000000
+                  Size.Height = 18.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.Family = 'Arial'
+                  TextSettings.HorzAlign = Center
+                  Text = '0000'
+                  TabOrder = 1
+                end
+              end
+              object Ly_vl_preco: TLayout
+                Align = Client
+                Size.Width = 369.000000000000000000
+                Size.Height = 57.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 1
+                object Gpl_botao: TGridPanelLayout
+                  Align = Client
+                  Size.Width = 369.000000000000000000
+                  Size.Height = 57.000000000000000000
+                  Size.PlatformDefault = False
+                  TabOrder = 0
+                  ColumnCollection = <
+                    item
+                      Value = 33.330000000000000000
+                    end
+                    item
+                      Value = 33.330000000000000000
+                    end
+                    item
+                      Value = 33.340000000000010000
+                    end>
+                  ControlCollection = <
+                    item
+                      Column = 0
+                      Control = Sb_tab_01
+                      Row = 0
+                    end
+                    item
+                      Column = 1
+                      Control = Sb_tab_03
+                      Row = 0
+                    end
+                    item
+                      Column = 2
+                      Control = Sb_tab_04
+                      Row = 0
+                    end
+                    item
+                      Column = 0
+                      Control = Sb_tab_05
+                      Row = 1
+                    end
+                    item
+                      Column = 1
+                      Control = Sb_tab_06
+                      Row = 1
+                    end
+                    item
+                      Column = 2
+                      Control = Sb_tab_07
+                      Row = 1
+                    end>
+                  RowCollection = <
+                    item
+                      Value = 50.000000000000000000
+                    end
+                    item
+                      Value = 50.000000000000000000
+                    end
+                    item
+                      SizeStyle = Auto
+                    end>
+                  object Sb_tab_01: TButton
+                    Align = Client
+                    StyledSettings = [Style, FontColor]
+                    HelpContext = 1
+                    Margins.Left = 2.000000000000000000
+                    Margins.Top = 2.000000000000000000
+                    Margins.Right = 2.000000000000000000
+                    Margins.Bottom = 2.000000000000000000
+                    Size.Width = 118.987701416015600000
+                    Size.Height = 24.500000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 6
+                    Text = '0,00'
+                    TextSettings.Font.Family = 'Arial'
+                    TextSettings.Font.Size = 14.000000000000000000
+                    OnClick = Sb_tab_01Click
+                  end
+                  object Sb_tab_03: TButton
+                    Align = Client
+                    StyledSettings = [Style, FontColor]
+                    HelpContext = 1
+                    Margins.Left = 2.000000000000000000
+                    Margins.Top = 2.000000000000000000
+                    Margins.Right = 2.000000000000000000
+                    Margins.Bottom = 2.000000000000000000
+                    Size.Width = 118.987701416015600000
+                    Size.Height = 24.500000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 5
+                    Text = '0,00'
+                    TextSettings.Font.Family = 'Arial'
+                    TextSettings.Font.Size = 14.000000000000000000
+                    OnClick = Sb_tab_03Click
+                  end
+                  object Sb_tab_04: TButton
+                    Align = Client
+                    StyledSettings = [Style, FontColor]
+                    HelpContext = 1
+                    Margins.Left = 2.000000000000000000
+                    Margins.Top = 2.000000000000000000
+                    Margins.Right = 2.000000000000000000
+                    Margins.Bottom = 2.000000000000000000
+                    Size.Width = 119.024597167968800000
+                    Size.Height = 24.500000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 4
+                    Text = '0,00'
+                    TextSettings.Font.Family = 'Arial'
+                    TextSettings.Font.Size = 14.000000000000000000
+                    OnClick = Sb_tab_04Click
+                  end
+                  object Sb_tab_05: TButton
+                    Align = Client
+                    StyledSettings = [Style, FontColor]
+                    HelpContext = 1
+                    Margins.Left = 2.000000000000000000
+                    Margins.Top = 2.000000000000000000
+                    Margins.Right = 2.000000000000000000
+                    Margins.Bottom = 2.000000000000000000
+                    Size.Width = 118.987701416015600000
+                    Size.Height = 24.500000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 3
+                    Text = '0,00'
+                    TextSettings.Font.Family = 'Arial'
+                    TextSettings.Font.Size = 14.000000000000000000
+                    OnClick = Sb_tab_05Click
+                  end
+                  object Sb_tab_06: TButton
+                    Align = Client
+                    StyledSettings = [Style, FontColor]
+                    HelpContext = 1
+                    Margins.Left = 2.000000000000000000
+                    Margins.Top = 2.000000000000000000
+                    Margins.Right = 2.000000000000000000
+                    Margins.Bottom = 2.000000000000000000
+                    Size.Width = 118.987701416015600000
+                    Size.Height = 24.500000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 2
+                    Text = '0,00'
+                    TextSettings.Font.Family = 'Arial'
+                    TextSettings.Font.Size = 14.000000000000000000
+                    OnClick = Sb_tab_06Click
+                  end
+                  object Sb_tab_07: TButton
+                    Align = Client
+                    StyledSettings = [Style, FontColor]
+                    HelpContext = 1
+                    Margins.Left = 2.000000000000000000
+                    Margins.Top = 2.000000000000000000
+                    Margins.Right = 2.000000000000000000
+                    Margins.Bottom = 2.000000000000000000
+                    Size.Width = 119.024597167968800000
+                    Size.Height = 24.500000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 1
+                    Text = '0,00'
+                    TextSettings.Font.Family = 'Arial'
+                    TextSettings.Font.Size = 14.000000000000000000
+                    OnClick = Sb_tab_07Click
+                  end
+                end
+              end
+            end
+          end
+        end
+      end
+    end
+    object Rc_ins_product: TRectangle
+      Fill.Color = claWhite
+      Position.X = 24.000000000000000000
+      Position.Y = 340.000000000000000000
+      Size.Width = 345.000000000000000000
+      Size.Height = 161.000000000000000000
+      Size.PlatformDefault = False
+      XRadius = 5.000000000000000000
+      YRadius = 5.000000000000000000
+      object Rc_proc_tittle: TRectangle
+        Align = Top
+        Fill.Color = xFFB7DDEE
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 5.000000000000000000
+        Position.Y = 5.000000000000000000
+        Size.Width = 335.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        XRadius = 5.000000000000000000
+        YRadius = 5.000000000000000000
+        object Lb_edit_product: TLabel
+          Align = Client
+          StyledSettings = [FontColor]
+          Padding.Left = 10.000000000000000000
+          Margins.Left = 5.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Size.Width = 320.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Arial'
+          TextSettings.Font.Size = 11.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          Text = 'Descri'#231#227'o do produto'
+          TabOrder = 1
+        end
+      end
+      object FA_in: TFloatAnimation
+        Enabled = True
+        Duration = 0.200000002980232200
+        Interpolation = Sinusoidal
+        PropertyName = 'Position.Y'
+        StartValue = -200.000000000000000000
+        StopValue = 160.000000000000000000
+        Trigger = 'IsVisible=true'
+      end
+      object Ly_botao_edit_product: TLayout
+        Align = Bottom
+        Position.Y = 111.000000000000000000
+        Size.Width = 345.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Sb_canc_edit_product: TButton
+          Align = Right
+          StyledSettings = [Style, FontColor]
+          Margins.Left = 5.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 20.000000000000000000
+          Margins.Bottom = 5.000000000000000000
+          Position.X = 245.000000000000000000
+          Position.Y = 5.000000000000000000
+          Size.Width = 80.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = 'Cancelar'
+          TextSettings.Font.Family = 'Arial'
+          TextSettings.Font.Size = 14.000000000000000000
+          OnClick = Sb_canc_edit_productClick
+        end
+        object Sb_conf_edit_product: TButton
+          Align = Right
+          StyledSettings = [Style, FontColor]
+          Margins.Left = 5.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 5.000000000000000000
+          Margins.Bottom = 5.000000000000000000
+          Position.X = 155.000000000000000000
+          Position.Y = 5.000000000000000000
+          Size.Width = 80.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          Text = 'Confirmar'
+          TextSettings.Font.Family = 'Arial'
+          TextSettings.Font.Size = 14.000000000000000000
+          OnClick = Sb_conf_edit_productClick
+        end
+      end
+      object GPL_Ins_Product: TGridPanelLayout
+        Align = Client
+        Size.Width = 345.000000000000000000
+        Size.Height = 71.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        ColumnCollection = <
+          item
+            Value = 50.000000000000000000
+          end
+          item
+            Value = 50.000000000000000000
+          end>
+        ControlCollection = <
+          item
+            Column = 0
+            Control = Lb_vl_unit_product
+            Row = 0
+          end
+          item
+            Column = 1
+            Control = Lb_qtde_product
+            Row = 0
+          end
+          item
+            Column = 0
+            Control = e_vl_unit_product
+            Row = 1
+          end
+          item
+            Column = 1
+            Control = Sp_Qtde
+            Row = 1
+          end>
+        RowCollection = <
+          item
+            Value = 30.000000000000000000
+          end
+          item
+            Value = 70.000000000000000000
+          end
+          item
+            SizeStyle = Auto
+          end>
+        object Lb_vl_unit_product: TLabel
+          Align = Center
+          StyledSettings = [FontColor]
+          Size.Width = 161.000000000000000000
+          Size.Height = 19.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Arial'
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.HorzAlign = Center
+          Text = 'Valor Unit'#225'rio'
+          TabOrder = 0
+        end
+        object Lb_qtde_product: TLabel
+          Align = Center
+          StyledSettings = [FontColor]
+          Size.Width = 161.000000000000000000
+          Size.Height = 19.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Arial'
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.HorzAlign = Center
+          Text = 'Quantidade'
+          TabOrder = 1
+        end
+        object e_vl_unit_product: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Center
+          StyleLookup = 'e_vl_unit_productStyle1'
+          TabOrder = 2
+          KeyboardType = NumberPad
+          Text = '0,00'
+          TextSettings.Font.Family = 'Arial'
+          TextSettings.Font.Size = 18.000000000000000000
+          TextSettings.HorzAlign = Trailing
+          Size.Width = 120.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = [Style, FontColor]
+          OnClick = e_vl_unit_productClick
+          OnEnter = e_vl_unit_productEnter
+        end
+        object Sp_Qtde: TSpinBox
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Center
+          TabOrder = 3
+          Cursor = crIBeam
+          Min = 1.000000000000000000
+          Max = 1000.000000000000000000
+          Value = 1.000000000000000000
+          TextSettings.Font.Family = 'Arial'
+          TextSettings.Font.Size = 20.000000000000000000
+          Size.Width = 100.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = [Style, FontColor]
+          OnEnter = Sp_QtdeEnter
+        end
+      end
+    end
+  end
+  inherited ImageList: TImageList
+    Left = 16
+    Top = 504
+  end
+  object GestureManager1: TGestureManager
+    Sensitivity = 80.000000000000000000
+    Left = 416
+    Top = 216
+  end
+  object ActionList: TActionList
+    Left = 32
+    Top = 8
+    object ChangeTabCustomer: TChangeTabAction
+      Category = 'Tab'
+    end
+    object ChangeTabItem: TChangeTabAction
+      Category = 'Tab'
+      Tab = tbs_item
+    end
+    object ChangeTabPayment: TChangeTabAction
+      Category = 'Tab'
+      Tab = tbs_payment
+    end
+    object ChangeTabOrder: TChangeTabAction
+      Category = 'Tab'
+      Tab = tbs_order
+    end
+    object ChangeTabDetail: TChangeTabAction
+      Category = 'Tab'
+      Tab = tbs_detail
+    end
+    object ChangeTabSearch: TChangeTabAction
+      Category = 'Tab'
+      Tab = tbs_search
+    end
+  end
+end

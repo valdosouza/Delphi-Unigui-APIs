@@ -1,0 +1,87 @@
+inherited SendEmail: TSendEmail
+  Caption = 'BaseForm1'
+  DesignerMasterStyle = 0
+  inherited LayoutMain: TLayout
+    inherited Rc_process_out: TRectangle
+      inherited Rc_process_frame: TRectangle
+        inherited Rc_process_tittle: TRectangle
+          inherited img_cloud: TImage
+            MultiResBitmap.Height = 72
+            MultiResBitmap.Width = 72
+          end
+        end
+      end
+    end
+    object Layout1: TLayout
+      Align = Center
+      Size.Width = 258.000000000000000000
+      Size.Height = 224.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object Memo1: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        DataDetectorTypes = []
+        Align = Client
+        Margins.Left = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Size.Width = 248.000000000000000000
+        Size.Height = 157.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Viewport.Width = 248.000000000000000000
+        Viewport.Height = 157.000000000000000000
+      end
+      object Lb_Progresso: TLabel
+        Align = Top
+        StyledSettings = [FontColor]
+        Margins.Left = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Position.X = 5.000000000000000000
+        Size.Width = 248.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Arial'
+        TextSettings.Font.Size = 11.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Text = 'Progresso de Envio de e-mail'
+        TabOrder = 1
+      end
+      object Layout2: TLayout
+        Align = Bottom
+        Position.Y = 174.000000000000000000
+        Size.Width = 258.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object Sb_Cancelar: TSpeedButton
+          Align = Right
+          Margins.Left = 5.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 5.000000000000000000
+          Margins.Bottom = 5.000000000000000000
+          Position.X = 153.000000000000000000
+          Position.Y = 5.000000000000000000
+          Size.Width = 100.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Cancelar'
+          OnClick = Sb_CancelarClick
+        end
+        object Sb_Send: TSpeedButton
+          Align = Left
+          Margins.Left = 5.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 5.000000000000000000
+          Margins.Bottom = 5.000000000000000000
+          Position.X = 5.000000000000000000
+          Position.Y = 5.000000000000000000
+          Size.Width = 100.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Enviar'
+          OnClick = Sb_SendClick
+        end
+      end
+    end
+  end
+end

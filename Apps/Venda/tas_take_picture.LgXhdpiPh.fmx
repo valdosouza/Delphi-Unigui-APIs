@@ -1,0 +1,40 @@
+inherited TasTakePicture_LgXhdpiPh: TTasTakePicture_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 0
+  inherited LayoutMain: TLayout
+    Size.Width = 450.000000000000000000
+    Size.Height = 695.000000000000000000
+    inherited Rc_process_Show: TRectangle
+      inherited Rc_process_frame: TRectangle
+        inherited Rc_process_tittle: TRectangle
+          inherited img_cloud: TImage
+            MultiResBitmap.Height = 72
+            MultiResBitmap.Width = 72
+          end
+        end
+      end
+    end
+    inherited Imagem: TImage
+      Size.Width = 450.000000000000000000
+      Size.Height = 645.000000000000000000
+    end
+    inherited Ly_picture_top: TLayout
+      Size.Width = 450.000000000000000000
+      inherited Rc_picture_top: TRectangle
+        Size.Width = 440.000000000000000000
+        inherited Sb_Picture: TSpeedButton
+          Position.X = 296.000000000000000000
+        end
+        inherited Sb_Save: TSpeedButton
+          Position.X = 344.000000000000000000
+          OnClick = nil
+        end
+        inherited Sb_Exit: TSpeedButton
+          Position.X = 392.000000000000000000
+          OnClick = nil
+        end
+      end
+    end
+  end
+end

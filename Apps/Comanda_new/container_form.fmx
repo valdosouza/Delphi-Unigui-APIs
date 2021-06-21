@@ -1,0 +1,84 @@
+inherited ContainerForm: TContainerForm
+  Caption = 'BaseForm1'
+  ClientWidth = 589
+  OnCreate = FormCreate
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  inherited LayoutMain: TLayout
+    Margins.Left = 185.000000000000000000
+    Size.Width = 404.000000000000000000
+    inherited StyleBook1: TStyleBook
+      Left = 8
+      Top = 48
+    end
+    object ToolBar: TToolBar
+      Size.Width = 404.000000000000000000
+      Size.Height = 54.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object btn_main: TButton
+        Align = Left
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 5.000000000000000000
+        Position.Y = 5.000000000000000000
+        Size.Width = 51.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'drawertoolbutton'
+        TabOrder = 0
+        Text = 'btn_main'
+      end
+      object Lb_Menu: TLabel
+        Align = Left
+        AutoSize = True
+        Position.X = 61.000000000000000000
+        Size.Width = 264.000000000000000000
+        Size.Height = 54.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Menu de Op'#231#245'es'
+        TabOrder = 1
+      end
+    end
+    object LayoutContainer: TLayout
+      Align = Client
+      Size.Width = 404.000000000000000000
+      Size.Height = 519.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+    end
+  end
+  object MultiViewMain: TMultiView [1]
+    TargetControl = LayoutMain
+    MasterButton = btn_main
+    NavigationPaneOptions.CollapsedWidth = 185.000000000000000000
+    Size.Width = 185.000000000000000000
+    Size.Height = 392.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object ListBoxMenu: TListBox
+      Align = Client
+      Size.Width = 185.000000000000000000
+      Size.Height = 573.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      DisableFocusEffect = True
+      DefaultItemStyles.ItemStyle = ''
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      Viewport.Width = 181.000000000000000000
+      Viewport.Height = 521.000000000000000000
+      object ListBoxHeader1: TListBoxHeader
+        ControlType = Platform
+        Locked = True
+        Size.Width = 181.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        TintColor = claGainsboro
+      end
+    end
+  end
+end

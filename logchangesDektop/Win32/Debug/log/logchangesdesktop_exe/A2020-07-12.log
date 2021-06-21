@@ -1,0 +1,98 @@
+LogChangesDesktop.exe: 00001494: 22:35:16 []:>--------------------------------------------------------------<
+LogChangesDesktop.exe: 00001494: 22:35:16 [TUniServerModule]:Server First Init.
+LogChangesDesktop.exe: 00001494: 22:35:16 [TUniServerModule]:Debug Mode = ON
+LogChangesDesktop.exe: 00001494: 22:35:17 [TUniServerModule]:Starting HTTP Server on Port: 8077...
+LogChangesDesktop.exe: 00001494: 22:35:17 [TUniServerModule]:HTTP Server Started on Port: 8077
+LogChangesDesktop.exe: 00001494: 22:35:51 [TUniServerModule]:Shutting Down Server.
+LogChangesDesktop.exe: 00001494: 22:35:51 [TUniServerModule]:Stopping HTTP Server.
+LogChangesDesktop.exe: 00001494: 22:35:51 [TUniServerModule]:HTTP Server Stopped.
+LogChangesDesktop.exe: 00001494: 22:35:51 [TUniGUISessionManager]:Terminating Session manager.
+LogChangesDesktop.exe: 00001494: 22:35:51 [TUniGUISessionManager]:Stopping Cache Eraser...
+LogChangesDesktop.exe: 00001494: 22:35:51 [TUniGUISessionManager]:Cache Eraser Stopped.
+LogChangesDesktop.exe: 00001494: 22:35:51 [TUniGUISessionManager]:Destroying Worker Threads.
+LogChangesDesktop.exe: 00001494: 22:35:51 [TUniGUISessionManager]:Session manager terminated.
+LogChangesDesktop.exe: 00001494: 22:35:51 [TUniServerModule]:Server Shutdown Completed.
+LogChangesDesktop.exe: 00001494: 22:35:51 []:<-------------------------------------------------------------->
+LogChangesDesktop.exe: 00001494: 22:35:51 [Terminated]:Exit Code: 0
+LogChangesDesktop.exe: 00004BE0: 22:35:56 []:>--------------------------------------------------------------<
+LogChangesDesktop.exe: 00004BE0: 22:35:56 [TUniServerModule]:Server First Init.
+LogChangesDesktop.exe: 00004BE0: 22:35:56 [TUniServerModule]:Debug Mode = ON
+LogChangesDesktop.exe: 00004BE0: 22:35:56 [TUniServerModule]:Starting HTTP Server on Port: 8077...
+LogChangesDesktop.exe: 00004BE0: 22:35:56 [TUniServerModule]:HTTP Server Started on Port: 8077
+LogChangesDesktop.exe: 00004F64: 22:37:01 []:>--------------------------------------------------------------<
+LogChangesDesktop.exe: 00004F64: 22:37:01 [TUniServerModule]:Server First Init.
+LogChangesDesktop.exe: 00004F64: 22:37:01 [TUniServerModule]:Debug Mode = ON
+LogChangesDesktop.exe: 00004F64: 22:37:01 [TUniServerModule]:Global Cache Folder Erased. <2> Files deleted.
+LogChangesDesktop.exe: 00004F64: 22:37:02 [TUniServerModule]:Starting HTTP Server on Port: 8077...
+LogChangesDesktop.exe: 00004F64: 22:37:02 [TUniServerModule]:HTTP Server Started on Port: 8077
+LogChangesDesktop.exe: 0000197C: 22:38:48 []:>--------------------------------------------------------------<
+LogChangesDesktop.exe: 0000197C: 22:38:48 [TUniServerModule]:Server First Init.
+LogChangesDesktop.exe: 0000197C: 22:38:48 [TUniServerModule]:Debug Mode = ON
+LogChangesDesktop.exe: 0000197C: 22:38:48 [TUniServerModule]:Global Cache Folder Erased. <2> Files deleted.
+LogChangesDesktop.exe: 0000197C: 22:38:48 [TUniServerModule]:Starting HTTP Server on Port: 8074...
+LogChangesDesktop.exe: 0000197C: 22:38:48 [TUniServerModule]:HTTP Server Started on Port: 8074
+LogChangesDesktop.exe: 00002990: 22:40:29 []:>--------------------------------------------------------------<
+LogChangesDesktop.exe: 00002990: 22:40:29 [TUniServerModule]:Server First Init.
+LogChangesDesktop.exe: 00002990: 22:40:29 [TUniServerModule]:Debug Mode = ON
+LogChangesDesktop.exe: 00002990: 22:40:29 [TUniServerModule]:Global Cache Folder Erased. <2> Files deleted.
+LogChangesDesktop.exe: 00002990: 22:40:29 [TUniServerModule]:Starting HTTP Server on Port: 8074...
+LogChangesDesktop.exe: 00002990: 22:40:29 [TUniServerModule]:HTTP Server Started on Port: 8074
+LogChangesDesktop.exe: 00000F4C: 23:01:49 []:>--------------------------------------------------------------<
+LogChangesDesktop.exe: 00000F4C: 23:01:49 [TUniServerModule]:Server First Init.
+LogChangesDesktop.exe: 00000F4C: 23:01:49 [TUniServerModule]:Debug Mode = ON
+LogChangesDesktop.exe: 00000F4C: 23:01:49 [TUniServerModule]:Global Cache Folder Erased. <4> Files deleted.
+LogChangesDesktop.exe: 00000F4C: 23:01:49 [TUniServerModule]:Starting HTTP Server on Port: 8074...
+LogChangesDesktop.exe: 00000F4C: 23:01:49 [TUniServerModule]:HTTP Server Started on Port: 8074
+LogChangesDesktop.exe: 00004C90: 23:14:57 []:>--------------------------------------------------------------<
+LogChangesDesktop.exe: 00004C90: 23:14:57 [TUniServerModule]:Server First Init.
+LogChangesDesktop.exe: 00004C90: 23:14:57 [TUniServerModule]:Debug Mode = ON
+LogChangesDesktop.exe: 00004C90: 23:14:57 [TUniServerModule]:Global Cache Folder Erased. <1> Files deleted.
+LogChangesDesktop.exe: 00004C90: 23:14:57 [TUniServerModule]:Starting HTTP Server on Port: 8074...
+LogChangesDesktop.exe: 00004C90: 23:14:57 [TUniServerModule]:HTTP Server Started on Port: 8074
+LogChangesDesktop.exe: 00001324: 23:16:29 []:>--------------------------------------------------------------<
+LogChangesDesktop.exe: 00001324: 23:16:29 [TUniServerModule]:Server First Init.
+LogChangesDesktop.exe: 00001324: 23:16:29 [TUniServerModule]:Debug Mode = ON
+LogChangesDesktop.exe: 00001324: 23:16:29 [TUniServerModule]:Global Cache Folder Erased. <1> Files deleted.
+LogChangesDesktop.exe: 00001324: 23:16:30 [TUniServerModule]:Starting HTTP Server on Port: 8074...
+LogChangesDesktop.exe: 00001324: 23:16:30 [TUniServerModule]:HTTP Server Started on Port: 8074
+LogChangesDesktop.exe: 000029DC: 23:17:42 []:>--------------------------------------------------------------<
+LogChangesDesktop.exe: 000029DC: 23:17:42 [TUniServerModule]:Server First Init.
+LogChangesDesktop.exe: 000029DC: 23:17:42 [TUniServerModule]:Debug Mode = ON
+LogChangesDesktop.exe: 000029DC: 23:17:42 [TUniServerModule]:Global Cache Folder Erased. <1> Files deleted.
+LogChangesDesktop.exe: 000029DC: 23:17:43 [TUniServerModule]:Starting HTTP Server on Port: 8074...
+LogChangesDesktop.exe: 000029DC: 23:17:43 [TUniServerModule]:HTTP Server Started on Port: 8074
+LogChangesDesktop.exe: 000022AC: 23:26:49 []:>--------------------------------------------------------------<
+LogChangesDesktop.exe: 000022AC: 23:26:50 [TUniServerModule]:Server First Init.
+LogChangesDesktop.exe: 000022AC: 23:26:50 [TUniServerModule]:Debug Mode = ON
+LogChangesDesktop.exe: 000022AC: 23:26:50 [TUniServerModule]:Global Cache Folder Erased. <4> Files deleted.
+LogChangesDesktop.exe: 000022AC: 23:26:50 [TUniServerModule]:Starting HTTP Server on Port: 8074...
+LogChangesDesktop.exe: 000022AC: 23:26:50 [TUniServerModule]:HTTP Server Started on Port: 8074
+LogChangesDesktop.exe: 00000020: 23:26:53 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. : Addr: $0079A352
+LogChangesDesktop.exe: 00004458: 23:52:51 []:>--------------------------------------------------------------<
+LogChangesDesktop.exe: 00004458: 23:52:51 [TUniServerModule]:Server First Init.
+LogChangesDesktop.exe: 00004458: 23:52:51 [TUniServerModule]:Debug Mode = ON
+LogChangesDesktop.exe: 00004458: 23:52:51 [TUniServerModule]:Global Cache Folder Erased. <12> Files deleted.
+LogChangesDesktop.exe: 00004458: 23:52:51 [TUniServerModule]:Starting HTTP Server on Port: 8074...
+LogChangesDesktop.exe: 00004458: 23:52:51 [TUniServerModule]:HTTP Server Started on Port: 8074
+LogChangesDesktop.exe: 0000127C: 23:52:54 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. : Addr: $0079A352
+LogChangesDesktop.exe: 0000531C: 23:52:55 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. : Addr: $0079A352
+LogChangesDesktop.exe: 00004A00: 23:53:31 []:>--------------------------------------------------------------<
+LogChangesDesktop.exe: 00004A00: 23:53:31 [TUniServerModule]:Server First Init.
+LogChangesDesktop.exe: 00004A00: 23:53:31 [TUniServerModule]:Debug Mode = ON
+LogChangesDesktop.exe: 00004A00: 23:53:31 [TUniServerModule]:Global Cache Folder Erased. <4> Files deleted.
+LogChangesDesktop.exe: 00004A00: 23:53:31 [TUniServerModule]:Starting HTTP Server on Port: 8074...
+LogChangesDesktop.exe: 00004A00: 23:53:31 [TUniServerModule]:HTTP Server Started on Port: 8074
+LogChangesDesktop.exe: 000026BC: 23:53:40 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. : Addr: $0079A352
+LogChangesDesktop.exe: 00004098: 23:53:41 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. : Addr: $0079A352
+LogChangesDesktop.exe: 000050A0: 23:54:47 []:>--------------------------------------------------------------<
+LogChangesDesktop.exe: 000050A0: 23:54:47 [TUniServerModule]:Server First Init.
+LogChangesDesktop.exe: 000050A0: 23:54:47 [TUniServerModule]:Debug Mode = ON
+LogChangesDesktop.exe: 000050A0: 23:54:47 [TUniServerModule]:Global Cache Folder Erased. <7> Files deleted.
+LogChangesDesktop.exe: 000050A0: 23:54:48 [TUniServerModule]:Starting HTTP Server on Port: 8074...
+LogChangesDesktop.exe: 000050A0: 23:54:48 [TUniServerModule]:HTTP Server Started on Port: 8074
+LogChangesDesktop.exe: 00001CC4: 23:56:10 []:>--------------------------------------------------------------<
+LogChangesDesktop.exe: 00001CC4: 23:56:10 [TUniServerModule]:Server First Init.
+LogChangesDesktop.exe: 00001CC4: 23:56:10 [TUniServerModule]:Debug Mode = ON
+LogChangesDesktop.exe: 00001CC4: 23:56:10 [TUniServerModule]:Global Cache Folder Erased. <6> Files deleted.
+LogChangesDesktop.exe: 00001CC4: 23:56:11 [TUniServerModule]:Starting HTTP Server on Port: 8074...
+LogChangesDesktop.exe: 00001CC4: 23:56:11 [TUniServerModule]:HTTP Server Started on Port: 8074

@@ -1,0 +1,239 @@
+inherited SeaOrderSale: TSeaOrderSale
+  ActiveControl = tbs_search
+  Caption = 'Pesquisa Ordem de Venda'
+  ClientHeight = 685
+  ClientWidth = 425
+  DesignerMasterStyle = 3
+  inherited LayoutMain: TLayout
+    Size.Width = 425.000000000000000000
+    Size.Height = 685.000000000000000000
+    inherited TabControl: TTabControl
+      Size.Width = 425.000000000000000000
+      Size.Height = 685.000000000000000000
+      Sizes = (
+        425s
+        636s
+        425s
+        636s)
+      inherited tbs_search: TTabItem
+        Size.Width = 212.000000000000000000
+        ExplicitSize.cx = 242.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+        inline FmSeaOrderSale: TFmSeaOrderSale
+          Align = Client
+          Size.Width = 425.000000000000000000
+          Size.Height = 636.000000000000000000
+          Size.PlatformDefault = False
+          inherited LayoutFmMain: TLayout
+            Size.Width = 425.000000000000000000
+            Size.Height = 636.000000000000000000
+            inherited lsv_Search: TListView
+              Size.Width = 415.000000000000000000
+              Size.Height = 586.000000000000000000
+              OnItemClick = FmSeaOrderSalelsv_SearchItemClick
+              OnDeletingItem = FmSeaOrderSalelsv_SearchDeletingItem
+            end
+            inherited Ly_Result_top: TLayout
+              Size.Width = 425.000000000000000000
+              inherited Rc_result_top: TRectangle
+                Size.Width = 415.000000000000000000
+                inherited Ly_list_titlle: TLayout
+                  Size.Width = 415.000000000000000000
+                  inherited Lb_name_tittle: TLabel
+                    Size.Width = 309.000000000000000000
+                  end
+                  inherited Sb_search: TSpeedButton
+                    Position.X = 319.000000000000000000
+                    Position.Y = 1.000000000000000000
+                    Size.Height = 48.000000000000000000
+                  end
+                  inherited Sb_Insert: TSpeedButton
+                    Position.X = 367.000000000000000000
+                    Position.Y = 1.000000000000000000
+                    Size.Height = 48.000000000000000000
+                  end
+                end
+              end
+            end
+          end
+        end
+      end
+      inherited tbs_parametro: TTabItem
+        Size.Width = 213.000000000000000000
+        ExplicitSize.cx = 243.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+        inherited Layout1: TLayout
+          Size.Width = 425.000000000000000000
+          inherited Rc_Param_top: TRectangle
+            Size.Width = 415.000000000000000000
+            inherited Layout2: TLayout
+              Size.Width = 415.000000000000000000
+              inherited Label1: TLabel
+                Size.Width = 357.000000000000000000
+              end
+              inherited Sb_Apply: TSpeedButton
+                Position.X = 367.000000000000000000
+                Position.Y = 1.000000000000000000
+                Size.Height = 48.000000000000000000
+              end
+            end
+          end
+        end
+      end
+    end
+    object Rc_Dialog: TRectangle
+      Fill.Color = claWhite
+      Position.X = 39.000000000000000000
+      Position.Y = 400.000000000000000000
+      Size.Width = 345.000000000000000000
+      Size.Height = 185.000000000000000000
+      Size.PlatformDefault = False
+      XRadius = 5.000000000000000000
+      YRadius = 5.000000000000000000
+      object Rc_proc_tittle: TRectangle
+        Align = Top
+        Fill.Color = xFFB7DDEE
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 5.000000000000000000
+        Position.Y = 5.000000000000000000
+        Size.Width = 335.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        XRadius = 5.000000000000000000
+        YRadius = 5.000000000000000000
+        object Lb_edit_product: TLabel
+          Align = Client
+          StyledSettings = [FontColor]
+          Padding.Left = 10.000000000000000000
+          Margins.Left = 5.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Size.Width = 320.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Arial'
+          TextSettings.Font.Size = 16.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.HorzAlign = Center
+          Text = 'Qual opera'#231#227'o deseja executar?'
+          TabOrder = 1
+        end
+      end
+      object FA_in: TFloatAnimation
+        Enabled = True
+        Duration = 0.200000002980232200
+        Interpolation = Sinusoidal
+        PropertyName = 'Position.Y'
+        StartValue = -200.000000000000000000
+        StopValue = 160.000000000000000000
+        Trigger = 'IsVisible=true'
+      end
+      object Ly_botao_edit_product: TLayout
+        Align = Bottom
+        Position.Y = 136.000000000000000000
+        Size.Width = 345.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Sb_cancel: TButton
+          Align = Right
+          StyledSettings = [Style, FontColor]
+          Margins.Left = 5.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 20.000000000000000000
+          Margins.Bottom = 5.000000000000000000
+          Position.X = 224.000000000000000000
+          Position.Y = 5.000000000000000000
+          Size.Width = 101.000000000000000000
+          Size.Height = 39.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = 'Cancelar'
+          TextSettings.Font.Family = 'Arial'
+          TextSettings.Font.Size = 14.000000000000000000
+          OnClick = Sb_cancelClick
+        end
+      end
+      object Gpl_edit_product: TGridPanelLayout
+        Align = Client
+        Size.Width = 345.000000000000000000
+        Size.Height = 96.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        ColumnCollection = <
+          item
+            Value = 100.000000000000000000
+          end>
+        ControlCollection = <
+          item
+            Column = 0
+            Control = sb_EditOrderSale
+            Row = 0
+          end
+          item
+            Column = 0
+            Control = Sb_SendOrderSale
+            Row = 1
+          end>
+        RowCollection = <
+          item
+            Value = 50.000000000000000000
+          end
+          item
+            Value = 50.000000000000000000
+          end
+          item
+            SizeStyle = Auto
+          end>
+        object sb_EditOrderSale: TSpeedButton
+          Align = Center
+          StyledSettings = [Style, FontColor]
+          Margins.Left = 20.000000000000000000
+          Margins.Top = 20.000000000000000000
+          Margins.Right = 20.000000000000000000
+          Margins.Bottom = 20.000000000000000000
+          Size.Width = 325.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Editar o Pedido'
+          TextSettings.Font.Family = 'Arial'
+          TextSettings.Font.Size = 16.000000000000000000
+          OnClick = sb_EditOrderSaleClick
+        end
+        object Sb_SendOrderSale: TSpeedButton
+          Align = Center
+          StyledSettings = [Family, Style, FontColor]
+          Size.Width = 345.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Enviar para Internet'
+          TextSettings.Font.Size = 16.000000000000000000
+          OnClick = Sb_SendOrderSaleClick
+        end
+      end
+      object AniIndicator: TAniIndicator
+        Align = Client
+        Size.Width = 345.000000000000000000
+        Size.Height = 96.000000000000000000
+        Size.PlatformDefault = False
+        Visible = False
+      end
+    end
+  end
+  inherited Rc_process_Show: TRectangle
+    inherited Rc_process_frame: TRectangle
+      inherited Rc_process_tittle: TRectangle
+        inherited img_cloud: TImage
+          MultiResBitmap.Height = 72
+          MultiResBitmap.Width = 72
+        end
+      end
+    end
+  end
+  inherited GestureManager1: TGestureManager
+    Left = 232
+    Top = 176
+  end
+end

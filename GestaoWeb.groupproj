@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{E9163BFD-BEFB-4BF7-9CAC-5689FE2CFB82}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="gestao.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="UzaaWeb.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="gestao">
+        <MSBuild Projects="gestao.dproj"/>
+    </Target>
+    <Target Name="gestao:Clean">
+        <MSBuild Projects="gestao.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="gestao:Make">
+        <MSBuild Projects="gestao.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="UzaaWeb">
+        <MSBuild Projects="UzaaWeb.dproj"/>
+    </Target>
+    <Target Name="UzaaWeb:Clean">
+        <MSBuild Projects="UzaaWeb.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="UzaaWeb:Make">
+        <MSBuild Projects="UzaaWeb.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="gestao;UzaaWeb"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="gestao:Clean;UzaaWeb:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="gestao:Make;UzaaWeb:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

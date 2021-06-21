@@ -1,0 +1,51 @@
+object MsgAlert: TMsgAlert
+  Left = 0
+  Top = 0
+  ClientHeight = 162
+  ClientWidth = 320
+  Caption = 'Mensagem'
+  BorderIcons = []
+  AutoHeight = False
+  FullScreen = False
+  TitleButtons = <>
+  ShowAnimation = 'flip'
+  PixelsPerInch = 96
+  TextHeight = 13
+  ScrollPosition = 0
+  ScrollHeight = 47
+  PlatformData = {}
+  object htm_message: TUnimHTMLFrame
+    AlignWithMargins = True
+    Left = 3
+    Top = 10
+    Width = 314
+    Height = 89
+    Hint = ''
+    Margins.Top = 10
+    Margins.Bottom = 10
+    Align = alClient
+  end
+  object pnl_button: TUnimPanel
+    AlignWithMargins = True
+    Left = 3
+    Top = 112
+    Width = 314
+    Height = 47
+    Hint = ''
+    Align = alBottom
+    ExplicitLeft = -2
+    object btn_ok: TUnimButton
+      AlignWithMargins = True
+      Left = 51
+      Top = 4
+      Width = 212
+      Height = 39
+      Hint = ''
+      Margins.Left = 50
+      Margins.Right = 50
+      Align = alClient
+      Caption = 'OK'
+      OnClick = btn_okClick
+    end
+  end
+end

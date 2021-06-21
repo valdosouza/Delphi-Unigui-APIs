@@ -1,0 +1,53 @@
+inherited TasSincronize_iPhone55in: TTasSincronize_iPhone55in
+  ClientHeight = 716
+  ClientWidth = 414
+  DesignerMasterStyle = 0
+  inherited LayoutMain: TLayout
+    Size.Width = 414.000000000000000000
+    Size.Height = 716.000000000000000000
+    inherited Ly_Result_top: TLayout
+      Size.Width = 414.000000000000000000
+      inherited Rc_result_top: TRectangle
+        Size.Width = 414.000000000000000000
+        inherited Ly_list_titlle: TLayout
+          Size.Width = 414.000000000000000000
+          inherited Lb_name_tittle: TLabel
+            Size.Width = 360.000000000000000000
+          end
+          inherited Sb_Sync: TSpeedButton
+            Position.X = 370.000000000000000000
+            Position.Y = 3.000000000000000000
+            Size.Width = 44.000000000000000000
+            Size.Height = 44.000000000000000000
+          end
+        end
+      end
+    end
+    inherited Lst_Proc_log: TListBox
+      Size.Width = 414.000000000000000000
+      Size.Height = 584.000000000000000000
+      Viewport.Width = 414.000000000000000000
+      Viewport.Height = 584.000000000000000000
+    end
+    inherited Label1: TLabel
+      Size.Width = 414.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+    end
+    inherited Chbx_forced_rece: TCheckBox
+      Size.Width = 414.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+    end
+    inherited ChBx_forced_send: TCheckBox
+      Size.Width = 414.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+    end
+    inherited Rc_proc_out: TRectangle
+      inherited Rc_proc_tittle: TRectangle
+        inherited img_cloud: TImage
+          MultiResBitmap.Height = 72
+          MultiResBitmap.Width = 72
+        end
+      end
+    end
+  end
+end

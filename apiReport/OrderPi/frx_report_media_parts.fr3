@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<inherited Version="5.4.6" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Padrão" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="43076,475621412" ReportOptions.Description.Text="" ReportOptions.LastChange="43495,7395790972" ScriptLanguage="PascalScript" ScriptText.Text="&#13;&#10;begin&#13;&#10;end." OnStartReport="frxBaseOnStartReport">
+  <Datasets>
+    <item DataSet="frxDBaseReport" DataSetName="frxDBaseReport"/>
+  </Datasets>
+  <Variables>
+    <item Name=" CabecalhoEmpresa"/>
+    <item Name="NomeFantasia"/>
+    <item Name="DocFiscal"/>
+    <item Name="Endereco"/>
+    <item Name="Fones"/>
+    <item Name="email"/>
+    <item Name="website"/>
+    <item Name="Titulo"/>
+    <item Name=" Footer"/>
+    <item Name="SumProduct"/>
+    <item Name="SumService"/>
+    <item Name=" General"/>
+    <item Name="StrConnection"/>
+  </Variables>
+  <inherited Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <inherited Name="Page1" PaperWidth="210" PaperHeight="297" PaperSize="9" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <inherited Name="PageFooter1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="23" Left="0" Top="423,30736" Width="718,1107">
+      <inherited Name="Memo39" Left="150" Top="2" Width="136,03154" Height="17" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[&#60;Date&#62;] -[&#60;Time&#62;]">
+        <Formats>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+          <item FormatStr="mm.dd.yyyy" Kind="fkDateTime"/>
+          <item/>
+        </Formats>
+      </inherited>
+      <inherited Name="Memo40" Left="665,50371" Top="2,22047" Width="45" Height="17" DisplayFormat.Kind="fkDateTime" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[&#60;Page&#62;]/[&#60;TotalPages&#62;]"/>
+      <inherited Name="Memo41" Left="596,50371" Top="2,22046999999998" Width="64" Height="17" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Pagina Nº"/>
+      <inherited Name="Memo42" Left="4" Top="2" Width="139" Height="17" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Relatório emitido em:"/>
+    </inherited>
+    <inherited Name="PageHeader1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="129" Left="0" Top="18,89765" Width="718,1107">
+      <inherited Name="lbTitulo" Align="baWidth" Left="0" Top="111" Width="718,1107" Height="17" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="12" Frame.TopLine.Width="2" Frame.BottomLine.Width="2" ParentFont="False" Text="[Titulo]"/>
+      <inherited Name="Logo" Left="7" Top="4" Width="150" Height="104" HightQuality="False" Transparent="False" TransparentColor="16777215"/>
+      <inherited Name="lbDocFiscal" Left="162" Top="20" Width="539" Height="17" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="[DocFiscal]"/>
+      <inherited Name="lbEndereco" Left="162" Top="39" Width="539" Height="17" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="[Endereco]"/>
+      <inherited Name="lbFones" Left="162" Top="57" Width="539" Height="17" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="[Fones]"/>
+      <inherited Name="lbWebSites" Left="162" Top="93" Width="539" Height="17" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="[website]"/>
+      <inherited Name="lbemail" Left="162" Top="75" Width="539" Height="17" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="[email]"/>
+      <inherited Name="lbNomeFantasia" Left="161,74026" Top="0" Width="539" Height="17" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="[NomeFantasia]"/>
+    </inherited>
+    <TfrxGroupHeader Name="GroupHeader1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="64,25201" Left="0" Top="207,87415" Width="718,1107" Condition="frxDBaseReport.&#34;dt_insertion&#34;">
+      <TfrxMemoView Name="frxDBaseReportdt_insertion" Left="41,57483" Top="14" Width="98,26778" Height="18,89765" DataField="dt_insertion" DataSet="frxDBaseReport" DataSetName="frxDBaseReport" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0" ParentFont="False" WordWrap="False" Text="[frxDBaseReport.&#34;dt_insertion&#34;]"/>
+      <TfrxMemoView Name="Memo1" Left="3,77953" Top="14" Width="34,01577" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="DIA : "/>
+      <TfrxMemoView Name="Memo2" Left="3,77952756" Top="36,67718" Width="154,96062992" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Veículo de Comunicação"/>
+      <TfrxMemoView Name="Memo3" Left="164,40944882" Top="36,67718" Width="154,96062992" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Anunciante"/>
+      <TfrxMemoView Name="Memo4" Left="325,03937008" Top="36,67718" Width="154,96062992" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Título da Peça"/>
+      <TfrxMemoView Name="Memo5" Left="483,77952756" Top="36,67718" Width="120,94488189" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Posição"/>
+      <TfrxMemoView Name="Memo6" Left="612,28346457" Top="36,89765" Width="102,04724409" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Tamanho"/>
+      <TfrxLineView Name="Line1" Left="0" Top="59,35436" Width="718,11023622" Height="0" Color="0" Frame.Typ="4"/>
+    </TfrxGroupHeader>
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="22,67718" Left="0" Top="294,80334" Width="718,1107" ColumnWidth="0" ColumnGap="0" DataSet="frxDBaseReport" DataSetName="frxDBaseReport" RowCount="0">
+      <TfrxMemoView Name="frxDBaseReportbroadcaster" Left="3,77952756" Top="3,77953" Width="154,96062992" Height="18,89765" DataField="broadcaster" DataSet="frxDBaseReport" DataSetName="frxDBaseReport" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" WordWrap="False" Text="[frxDBaseReport.&#34;broadcaster&#34;]"/>
+      <TfrxMemoView Name="frxDBaseReportadvetiser" Left="164,40944882" Top="3,77953000000002" Width="154,96062992" Height="18,89765" DataField="advetiser" DataSet="frxDBaseReport" DataSetName="frxDBaseReport" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" WordWrap="False" Text="[frxDBaseReport.&#34;advetiser&#34;]"/>
+      <TfrxMemoView Name="frxDBaseReporttittle" Left="325,03937008" Top="3,77953000000002" Width="154,96062992" Height="18,89765" DataField="tittle" DataSet="frxDBaseReport" DataSetName="frxDBaseReport" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" WordWrap="False" Text="[frxDBaseReport.&#34;tittle&#34;]"/>
+      <TfrxMemoView Name="frxDBaseReportdescription" Left="483,77952756" Top="0" Width="120,94488189" Height="18,89765" DataField="description" DataSet="frxDBaseReport" DataSetName="frxDBaseReport" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" WordWrap="False" Text="[frxDBaseReport.&#34;description&#34;]"/>
+      <TfrxMemoView Name="frxDBaseReportparts_format" Left="612,283464566929" Top="0" Width="102,047244094488" Height="18,89765" DataField="parts_format" DataSet="frxDBaseReport" DataSetName="frxDBaseReport" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" WordWrap="False" Text="[frxDBaseReport.&#34;parts_format&#34;]"/>
+    </TfrxMasterData>
+    <TfrxGroupFooter Name="GroupFooter1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="22,67718" Left="0" Top="340,1577" Width="718,1107">
+      <TfrxMemoView Name="Memo7" Left="612,28346457" Top="0" Width="102,04724409" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[SUM(&#60;frxDBaseReport.&#34;qt_insertion&#34;&#62;,MasterData1)]"/>
+      <TfrxLineView Name="Line2" Left="0" Top="21,11812" Width="718,11023622" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxMemoView Name="Memo8" Left="464,20501" Top="0" Width="143,62203992" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Número de Inserções"/>
+    </TfrxGroupFooter>
+  </inherited>
+</inherited>

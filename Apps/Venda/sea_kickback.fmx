@@ -1,0 +1,53 @@
+inherited SeaKickback: TSeaKickback
+  Caption = 'Pesquisa Comiss'#227'o'
+  ClientHeight = 533
+  DesignerMasterStyle = 3
+  inherited LayoutMain: TLayout
+    Size.Height = 533.000000000000000000
+    inherited Rc_process_Show: TRectangle
+      inherited Rc_process_frame: TRectangle
+        inherited Rc_process_tittle: TRectangle
+          inherited img_cloud: TImage
+            MultiResBitmap.Height = 72
+            MultiResBitmap.Width = 72
+          end
+        end
+      end
+    end
+    inherited TabControl: TTabControl
+      Size.Height = 533.000000000000000000
+      Sizes = (
+        485s
+        484s
+        485s
+        484s)
+      inherited tbs_search: TTabItem
+        ExplicitSize.cx = 242.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+        object lsv_search: TListView
+          ItemAppearanceClassName = 'TListItemAppearance'
+          ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+          HeaderAppearanceClassName = 'TListHeaderObjects'
+          FooterAppearanceClassName = 'TListHeaderObjects'
+          Align = Client
+          Size.Width = 485.000000000000000000
+          Size.Height = 484.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+        end
+      end
+      inherited tbs_parametro: TTabItem
+        ExplicitSize.cx = 243.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+      end
+    end
+  end
+  inherited ImageList: TImageList
+    Left = 40
+    Top = 328
+  end
+  inherited ActionList: TActionList
+    Left = 136
+    Top = 320
+  end
+end

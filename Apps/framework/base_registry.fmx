@@ -1,0 +1,170 @@
+inherited BaseRegistry: TBaseRegistry
+  Caption = 'Cadastros'
+  ClientWidth = 492
+  OnCreate = FormCreate
+  OnShow = FormShow
+  DesignerMasterStyle = 3
+  inherited LayoutMain: TLayout
+    Size.Width = 492.000000000000000000
+    inherited Rc_process_Show: TRectangle
+      inherited Rc_process_frame: TRectangle
+        inherited Rc_process_tittle: TRectangle
+          inherited img_cloud: TImage
+            MultiResBitmap.Height = 72
+            MultiResBitmap.Width = 72
+          end
+        end
+      end
+    end
+    object Ly_Result_top: TLayout [1]
+      Align = Top
+      Size.Width = 492.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object Rc_result_top: TRectangle
+        Align = Client
+        Fill.Color = xFFB7DDEE
+        Margins.Left = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Size.Width = 482.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        XRadius = 5.000000000000000000
+        YRadius = 5.000000000000000000
+        object Ly_list_titlle: TLayout
+          Align = Client
+          Size.Width = 482.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object img_top: TImage
+            MultiResBitmap.Height = 96
+            MultiResBitmap.Width = 96
+            MultiResBitmap = <
+              item
+                Width = 96
+                Height = 96
+                PNG = {
+                  89504E470D0A1A0A0000000D4948445200000060000000600806000000E29877
+                  38000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                  038749444154785EED9BCBCB4D5118C63F4A9921B9E51A85222365200346A284
+                  E43651A25C26CA400A2303332213060CE436F01FF017A01413E51A0694BBDC2F
+                  CFF3395FF97CEF397BADBDF77BDEFD9D9E5FFDDA06F67AF63AEF77F65E7BAD75
+                  FA841042082184104208218410420821841042F42C235AC76E310B6E81CBE102
+                  38019257F01EBC0E2FC1A7D083E8FC3066C2CBF027FC5DE00F78014E8375119D
+                  1FCA56F8115A9DEDE43BB80156253A3F94FDD0EA5CAABFE05E5896E8FC50F897
+                  67752A577E08EB602ED1F9A1F09E5BE66BDFCE3770324C253A3F1C3EF0AC8E54
+                  F12C4C253A3F140EF552461BB97E83136111D1F9598C6C1DEB84E36C8F7647C1
+                  945149747E161E17CA971C2F56B48E9D88CECFC2A3007CC3F422A5EDE8FC2C3C
+                  0A30F07AEF41CA3D383A3F0B8F02880C3C0AC0892D2F5EB68E9D88CECFC2A300
+                  9C55F422A5EDE8FC2C3C0A70A375F480D3C54544E787C369008F17A1AF30E501
+                  1B9DDF082E42AB13553C035389CE0F673AFC00AD8E94F135CC190246E73782CD
+                  D0EA4CAEBC9DAC81B944E737827D90F3E956C752E4B9BB6059A2F31BC146F81E
+                  5A1DECE45BB81656253ABF1170819B0BDD5CF0B63AFBAFFC3FE7E1145817D1F9
+                  6DE9F6B694197013E4ACE24238F060E31BE65DC8713617539E410FA2F3851042
+                  08218410C2FD456C125C04B99B602EE4A6A9A990F3EA63E068C8B74FCEB57337
+                  3297139FC3C7F03EE40AD41D58E752E07A78128E87CCE7645B37F35D990FB99B
+                  F82A7C02FF7FCD2F2B3F902B700F9C07ABB20AE64C57D79D5F1BFC062D8327E0
+                  23685DBC870FE071B814966531E43CBFD57E9175E45782B79623F021B42EB09B
+                  F2C3380C794DB92C819FA0D56EAA55F2B399033953C87BA67531917E81E7E06C
+                  9803A7ABADF6722D9B9FC458781A7E87567893E42EE653900FF954B8F5DC6AAB
+                  8C65F23BB21ABE80565893E56866254C817F601C0159ED943527BF2D87609525
+                  BD6839C43C08533800AD36AA98933F8463D06A74387A1416310E7E86D6F9554D
+                  C91FC4766835349CDD068BB806AD73EB3025BF1FFE188D0BD25623C359FED0AE
+                  686FCF6E689D5B8766BEB5377427ACED09DE20F8A0DDF1F79F6DB9D53A7A9092
+                  DFCF6D6855B017BC093BC1392AEBBCBA1C926F4DC6F1F6D38BDF00C2BEF161DB
+                  0EFE108FE3782F86E45B0560A57A99A21960EFFE0FCAD74F9482510182510182
+                  5101825101825101825101825101825101841042082184104208218410420821
+                  8410420817FAFAFE005B51E9B6A263E2F70000000049454E44AE426082}
+                FileName = 'C:\gestaoweb\Apps\MaterialDesigner\used\ic_group_black_48dp.png'
+              end>
+            Align = Left
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 5.000000000000000000
+            Size.Width = 46.000000000000000000
+            Size.Height = 40.000000000000000000
+            Size.PlatformDefault = False
+          end
+          object Lb_title: TLabel
+            Align = Client
+            AutoSize = True
+            StyledSettings = [Family, FontColor]
+            Size.Width = 290.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 26.000000000000000000
+            Text = 'Titulo'
+            TabOrder = 1
+          end
+          object Sb_Cancel: TSpeedButton
+            Align = Right
+            Margins.Left = 10.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Position.X = 424.000000000000000000
+            Position.Y = 1.000000000000000000
+            Size.Width = 48.000000000000000000
+            Size.Height = 48.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'stoptoolbutton'
+            Text = 'Sb_Cancel'
+            OnClick = Sb_CancelClick
+          end
+          object Sb_Save: TSpeedButton
+            Align = Right
+            Margins.Left = 10.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Position.X = 356.000000000000000000
+            Position.Y = 1.000000000000000000
+            Size.Width = 48.000000000000000000
+            Size.Height = 48.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'composetoolbutton'
+            Text = 'Sb_Cancel'
+            OnClick = Sb_SaveClick
+          end
+        end
+        object Ly_quick_search: TLayout
+          Align = Client
+          Size.Width = 509.000000000000000000
+          Size.Height = 45.000000000000000000
+          Size.PlatformDefault = False
+          Visible = False
+          TabOrder = 1
+          object E_busca: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Client
+            TabOrder = 0
+            Size.Width = 451.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+          end
+          object Sb_back: TSpeedButton
+            Align = Left
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 5.000000000000000000
+            Size.Width = 48.000000000000000000
+            Size.Height = 48.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'priortoolbutton'
+          end
+        end
+        object ShadowEffect1: TShadowEffect
+          Distance = 3.000000000000000000
+          Direction = 45.000000000000000000
+          Softness = 0.300000011920929000
+          Opacity = 0.600000023841857900
+          ShadowColor = claBlack
+        end
+      end
+    end
+  end
+end

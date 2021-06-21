@@ -1,0 +1,796 @@
+inherited TasOrderConsignment_LgXhdpiPh: TTasOrderConsignment_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 0
+  inherited LayoutMain: TLayout
+    Size.Width = 450.000000000000000000
+    Size.Height = 695.000000000000000000
+    inherited Rc_process_Show: TRectangle
+      inherited Rc_process_frame: TRectangle
+        inherited Rc_process_tittle: TRectangle
+          inherited img_cloud: TImage
+            MultiResBitmap.Height = 72
+            MultiResBitmap.Width = 72
+          end
+        end
+      end
+    end
+    inherited pg_manager: TTabControl
+      Size.Width = 450.000000000000000000
+      Size.Height = 695.000000000000000000
+      Sizes = (
+        450s
+        646s
+        450s
+        646s
+        450s
+        646s
+        450s
+        646s)
+      inherited tbs_manager: TTabItem
+        Size.Width = 65.000000000000000000
+        ExplicitSize.cx = 57.000000000000000000
+        ExplicitSize.cy = 26.000000000000000000
+        inherited Ly_Result_top: TLayout
+          Size.Width = 450.000000000000000000
+          inherited Rc_result_top: TRectangle
+            Size.Width = 440.000000000000000000
+            inherited Ly_list_titlle: TLayout
+              Size.Width = 440.000000000000000000
+              inherited img_top: TImage
+                MultiResBitmap.Height = 72
+                MultiResBitmap.Width = 72
+              end
+              inherited Lb_title: TLabel
+                Size.Width = 326.000000000000000000
+              end
+              inherited Sb_Cancel: TSpeedButton
+                Position.X = 387.000000000000000000
+                StyleLookup = 'deletetoolbutton'
+              end
+            end
+          end
+        end
+        inherited Ly_customer: TLayout
+          Size.Width = 430.000000000000000000
+          inherited Rc_customer: TRectangle
+            Size.Width = 430.000000000000000000
+            inherited Ly_customer_img: TLayout
+              inherited im_customer: TImage
+                MultiResBitmap.Height = 96
+                MultiResBitmap.Width = 96
+              end
+            end
+            inherited Ly_customer_text: TLayout
+              Size.Width = 357.000000000000000000
+              inherited Ly_customer_text_tittle: TLayout
+                Size.Width = 357.000000000000000000
+                inherited lb_Customer: TLabel
+                  Size.Width = 352.000000000000000000
+                  TextSettings.Font.Size = 14.000000000000000000
+                end
+              end
+              inherited Ly_customer_text_body: TLayout
+                Size.Width = 357.000000000000000000
+                inherited E_customer_name: TLabel
+                  Size.Width = 352.000000000000000000
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                end
+                inherited E_customer_nick: TLabel
+                  Size.Width = 352.000000000000000000
+                  TextSettings.Font.Size = 11.000000000000000000
+                end
+              end
+            end
+          end
+        end
+        inherited Ly_product: TLayout
+          Size.Width = 430.000000000000000000
+          inherited Rc_product: TRectangle
+            Size.Width = 430.000000000000000000
+            inherited Ly_product_img: TLayout
+              inherited im_Itens: TImage
+                MultiResBitmap.Height = 72
+                MultiResBitmap.Width = 72
+              end
+            end
+            inherited Ly_product_text: TLayout
+              Size.Width = 357.000000000000000000
+              inherited Ly_product_text_tittle: TLayout
+                Size.Width = 357.000000000000000000
+                inherited Lb_Qtde_product: TLabel
+                  Size.Width = 352.000000000000000000
+                end
+              end
+              inherited Ly_product_text_body: TLayout
+                Size.Width = 357.000000000000000000
+                inherited E_Qtde_product: TLabel
+                  Size.Width = 352.000000000000000000
+                end
+              end
+            end
+          end
+        end
+        inherited Ly_pay: TLayout
+          Size.Width = 430.000000000000000000
+          inherited Rc_pay: TRectangle
+            Size.Width = 430.000000000000000000
+            inherited E_Value_product: TLabel
+              Size.Width = 425.000000000000000000
+              TextSettings.Font.Size = 14.000000000000000000
+            end
+          end
+        end
+        inherited Ly_rmv: TLayout
+          Size.Width = 430.000000000000000000
+          inherited Rc_rmv: TRectangle
+            Size.Width = 430.000000000000000000
+            inherited Ly_rmv_img: TLayout
+              inherited im_rmv: TImage
+                MultiResBitmap.Height = 72
+                MultiResBitmap.Width = 72
+              end
+            end
+            inherited Ly_rmv_text: TLayout
+              Size.Width = 357.000000000000000000
+              inherited Layout4: TLayout
+                Size.Width = 357.000000000000000000
+                inherited Label1: TLabel
+                  Size.Width = 352.000000000000000000
+                  TextSettings.Font.Size = 14.000000000000000000
+                end
+              end
+              inherited Layout5: TLayout
+                Size.Width = 357.000000000000000000
+                inherited E_Qtde_Saida: TLabel
+                  Size.Width = 352.000000000000000000
+                end
+              end
+            end
+          end
+        end
+        inherited Ly_add: TLayout
+          Size.Width = 430.000000000000000000
+          inherited Rc_add: TRectangle
+            Size.Width = 430.000000000000000000
+            inherited Ly_add_img: TLayout
+              inherited im_add: TImage
+                MultiResBitmap.Height = 72
+                MultiResBitmap.Width = 72
+              end
+            end
+            inherited Ly_add_text: TLayout
+              Size.Width = 357.000000000000000000
+              inherited Layout9: TLayout
+                Size.Width = 357.000000000000000000
+                inherited Label3: TLabel
+                  Size.Width = 352.000000000000000000
+                  TextSettings.Font.Size = 14.000000000000000000
+                end
+              end
+              inherited Layout10: TLayout
+                Size.Width = 357.000000000000000000
+                inherited E_Qtde_Entrada: TLabel
+                  Size.Width = 352.000000000000000000
+                end
+              end
+            end
+          end
+        end
+      end
+      inherited tbs_add: TTabItem
+        Size.Width = 63.000000000000000000
+        ExplicitSize.cx = 46.000000000000000000
+        ExplicitSize.cy = 26.000000000000000000
+        inherited lsv_Search: TListView
+          Size.Width = 450.000000000000000000
+          Size.Height = 646.000000000000000000
+          inherited pg_add: TTabControl
+            Size.Width = 450.000000000000000000
+            Size.Height = 646.000000000000000000
+            Sizes = (
+              450s
+              597s
+              450s
+              597s
+              450s
+              597s
+              450s
+              597s)
+            inherited tbs_add_lista: TTabItem
+              Size.Width = 40.000000000000000000
+              ExplicitSize.cx = 44.000000000000000000
+              ExplicitSize.cy = 26.000000000000000000
+              inherited Ly_add_lista: TLayout
+                Size.Width = 450.000000000000000000
+                Size.Height = 597.000000000000000000
+                inherited Lsv_add_lista: TListView
+                  Size.Width = 450.000000000000000000
+                  Size.Height = 547.000000000000000000
+                  ItemAppearanceObjects.ItemEditObjects.ObjectsCollection = <
+                    item
+                      AppearanceObjectName = 'Text1'
+                      AppearanceClassName = 'TTextObjectAppearance'
+                      Appearance.Width = 575.000000000000000000
+                    end>
+                end
+                inherited Ly_add_lista_top: TLayout
+                  Size.Width = 450.000000000000000000
+                  inherited Rc_add_lista_top: TRectangle
+                    Size.Width = 440.000000000000000000
+                    inherited Ly_add_lista_tittle: TLayout
+                      Size.Width = 440.000000000000000000
+                      inherited Lb_add_list: TLabel
+                        Size.Width = 334.000000000000000000
+                      end
+                      inherited Sb_add_list_new: TSpeedButton
+                        Position.X = 392.000000000000000000
+                      end
+                    end
+                  end
+                end
+              end
+            end
+            inherited tbs_add_lista_items: TTabItem
+              Size.Width = 76.000000000000000000
+              ExplicitSize.cx = 73.000000000000000000
+              ExplicitSize.cy = 26.000000000000000000
+              inherited Ly_add_items: TLayout
+                Size.Width = 450.000000000000000000
+                Size.Height = 597.000000000000000000
+                inherited Ly_add_items_top: TLayout
+                  Size.Width = 450.000000000000000000
+                  inherited Rc_add_items_top: TRectangle
+                    Size.Width = 440.000000000000000000
+                    inherited Ly_add_order_items: TLayout
+                      Size.Width = 440.000000000000000000
+                      inherited Lb_add_items_tittle: TLabel
+                        Size.Width = 334.000000000000000000
+                        TextSettings.Font.StyleExt = {00070000000000000004000000}
+                      end
+                      inherited Sb_add_items_new: TSpeedButton
+                        Position.X = 392.000000000000000000
+                      end
+                    end
+                  end
+                end
+                inherited Ly_add_items_selected: TLayout
+                  Size.Width = 450.000000000000000000
+                  inherited Rc_add_items_selected: TRectangle
+                    Size.Width = 440.000000000000000000
+                    inherited Lb_add_items_subtotal_value: TLabel
+                      Size.Width = 430.000000000000000000
+                    end
+                  end
+                end
+                inherited Lsv_add_items: TListView
+                  Size.Width = 450.000000000000000000
+                  Size.Height = 508.000000000000000000
+                end
+              end
+            end
+            inherited tbs_add_search_items: TTabItem
+              Size.Width = 101.000000000000000000
+              ExplicitSize.cx = 95.000000000000000000
+              ExplicitSize.cy = 26.000000000000000000
+              inherited FmAddSeaProduct: TFmSeaProduct
+                Size.Width = 450.000000000000000000
+                Size.Height = 597.000000000000000000
+                inherited LayoutMain: TLayout
+                  Size.Width = 450.000000000000000000
+                  Size.Height = 597.000000000000000000
+                  inherited lsv_Search: TListView
+                    Size.Width = 450.000000000000000000
+                    Size.Height = 458.000000000000000000
+                  end
+                  inherited Ly_Result_top: TLayout
+                    Size.Width = 450.000000000000000000
+                    inherited Rc_result_top: TRectangle
+                      Size.Width = 440.000000000000000000
+                      inherited Ly_list_titlle: TLayout
+                        Size.Width = 440.000000000000000000
+                        inherited Lb_name_tittle: TLabel
+                          Size.Width = 382.000000000000000000
+                        end
+                        inherited Sb_search: TSpeedButton
+                          Position.X = 392.000000000000000000
+                          Size.Height = 50.000000000000000000
+                        end
+                      end
+                    end
+                  end
+                  inherited Ly_selected: TLayout
+                    Size.Width = 450.000000000000000000
+                    inherited Rc_selected: TRectangle
+                      Size.Width = 440.000000000000000000
+                      inherited Ly_id_produto: TLayout
+                        Size.Width = 440.000000000000000000
+                        inherited Lb_desc_produto: TLabel
+                          Size.Width = 349.000000000000000000
+                        end
+                      end
+                      inherited Ly_vl_preco: TLayout
+                        Size.Width = 440.000000000000000000
+                        inherited Gpl_botao: TGridPanelLayout
+                          Size.Width = 440.000000000000000000
+                          ControlCollection = <
+                            item
+                              Column = 0
+                              Control = FmAddSeaProduct.Sb_tab_01
+                              Row = 0
+                            end
+                            item
+                              Column = 1
+                              Control = FmAddSeaProduct.Sb_tab_03
+                              Row = 0
+                            end
+                            item
+                              Column = 2
+                              Control = FmAddSeaProduct.Sb_tab_04
+                              Row = 0
+                            end
+                            item
+                              Column = 0
+                              Control = FmAddSeaProduct.Sb_tab_05
+                              Row = 1
+                            end
+                            item
+                              Column = 1
+                              Control = FmAddSeaProduct.Sb_tab_06
+                              Row = 1
+                            end
+                            item
+                              Column = 2
+                              Control = FmAddSeaProduct.Sb_tab_07
+                              Row = 1
+                            end>
+                          inherited Sb_tab_01: TButton
+                            Size.Width = 142.651992797851600000
+                          end
+                          inherited Sb_tab_03: TButton
+                            Size.Width = 142.651992797851600000
+                          end
+                          inherited Sb_tab_04: TButton
+                            Size.Width = 142.696014404296900000
+                          end
+                          inherited Sb_tab_05: TButton
+                            Size.Width = 142.651992797851600000
+                          end
+                          inherited Sb_tab_06: TButton
+                            Size.Width = 142.651992797851600000
+                          end
+                          inherited Sb_tab_07: TButton
+                            Size.Width = 142.696014404296900000
+                          end
+                        end
+                      end
+                    end
+                  end
+                end
+              end
+            end
+            inherited tbs_add_edit_items: TTabItem
+              Size.Width = 76.000000000000000000
+              ExplicitSize.cx = 75.000000000000000000
+              ExplicitSize.cy = 26.000000000000000000
+              inherited Rc_proc_tittle: TRectangle
+                Size.Width = 440.000000000000000000
+                inherited Lb_edit_product_desc: TLabel
+                  Size.Width = 366.000000000000000000
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                end
+              end
+              inherited GPL_Ins_Product: TGridPanelLayout
+                Size.Width = 450.000000000000000000
+                inherited Lb_vl_unit_product: TLabel
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                end
+                inherited Label2: TLabel
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                end
+              end
+              inherited Ly_botao_edit_product: TLayout
+                Size.Width = 450.000000000000000000
+                inherited Sb_canc_edit_product: TButton
+                  Position.X = 350.000000000000000000
+                end
+                inherited Sb_conf_edit_product: TButton
+                  Position.X = 260.000000000000000000
+                end
+              end
+            end
+          end
+        end
+      end
+      inherited tbs_rmv: TTabItem
+        Size.Width = 63.000000000000000000
+        ExplicitSize.cx = 63.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+        inherited pg_rmv: TTabControl
+          Size.Width = 450.000000000000000000
+          Size.Height = 646.000000000000000000
+          Sizes = (
+            450s
+            597s
+            450s
+            597s
+            450s
+            597s
+            450s
+            597s)
+          inherited tbs_rmv_lista: TTabItem
+            ExplicitSize.cx = 44.000000000000000000
+            ExplicitSize.cy = 26.000000000000000000
+            inherited Ly_rmv_lista: TLayout
+              Size.Width = 450.000000000000000000
+              Size.Height = 597.000000000000000000
+              inherited Lsv_rmv_lista: TListView
+                Size.Width = 450.000000000000000000
+                Size.Height = 547.000000000000000000
+              end
+              inherited Ly_rmv_lista_top: TLayout
+                Size.Width = 450.000000000000000000
+                inherited Rc_rmv_lista_top: TRectangle
+                  Size.Width = 440.000000000000000000
+                  inherited Ly_rmv_lista_tittle: TLayout
+                    Size.Width = 440.000000000000000000
+                    inherited Lb_rmv_list: TLabel
+                      Size.Width = 218.000000000000000000
+                    end
+                    inherited Sb_rmv_list_new: TSpeedButton
+                      Position.X = 392.000000000000000000
+                    end
+                    inherited Sb_imprimir: TSpeedButton
+                      Position.X = 276.000000000000000000
+                    end
+                    inherited Sb_TakePicture: TSpeedButton
+                      Position.X = 334.000000000000000000
+                    end
+                  end
+                end
+              end
+            end
+          end
+          inherited tbs_rmv_lista_items: TTabItem
+            ExplicitSize.cx = 73.000000000000000000
+            ExplicitSize.cy = 26.000000000000000000
+            inherited Ly_rmv_items: TLayout
+              Size.Width = 450.000000000000000000
+              Size.Height = 597.000000000000000000
+              inherited Ly_rmv_items_top: TLayout
+                Size.Width = 450.000000000000000000
+                inherited Rc_rmv_items_top: TRectangle
+                  Size.Width = 440.000000000000000000
+                  inherited Ly_rmv_order_items: TLayout
+                    Size.Width = 440.000000000000000000
+                    inherited Lb_rmv_itens_tittle: TLabel
+                      Size.Width = 334.000000000000000000
+                      TextSettings.Font.StyleExt = {00070000000000000004000000}
+                    end
+                    inherited Sb_rmv_itens_new: TSpeedButton
+                      Position.X = 392.000000000000000000
+                    end
+                  end
+                end
+              end
+              inherited pg_rmv_lista_items: TTabControl
+                Size.Width = 450.000000000000000000
+                Size.Height = 547.000000000000000000
+                Sizes = (
+                  450s
+                  498s
+                  450s
+                  498s
+                  450s
+                  498s)
+                inherited tbs_rmv_lista_itens_venda: TTabItem
+                  ExplicitSize.cx = 53.000000000000000000
+                  ExplicitSize.cy = 26.000000000000000000
+                  inherited Lsv_rmv_lista_itens_sale: TListView
+                    Size.Width = 450.000000000000000000
+                    Size.Height = 457.000000000000000000
+                  end
+                  inherited Ly_rmv_items_sale_selected: TLayout
+                    Size.Width = 450.000000000000000000
+                    inherited Rc_rmv_items_sale_selected: TRectangle
+                      Size.Width = 440.000000000000000000
+                      inherited Lb_rmv_items_sale_subtotal_value: TLabel
+                        Size.Width = 430.000000000000000000
+                      end
+                    end
+                  end
+                end
+                inherited tbs_rmv_lista_itens_dev: TTabItem
+                  ExplicitSize.cx = 76.000000000000000000
+                  ExplicitSize.cy = 26.000000000000000000
+                  inherited Lsv_rmv_lista_itens_devo: TListView
+                    Size.Width = 450.000000000000000000
+                    Size.Height = 459.000000000000000000
+                  end
+                  inherited Ly_rmv_items_devo_selected: TLayout
+                    Size.Width = 450.000000000000000000
+                    inherited Rc_rmv_items_devo_selected: TRectangle
+                      Size.Width = 440.000000000000000000
+                      inherited Lb_rmv_items_devo_subtotal_value: TLabel
+                        Size.Width = 430.000000000000000000
+                      end
+                    end
+                  end
+                end
+                inherited tbs_rmv_fechamento: TTabItem
+                  ExplicitSize.cx = 150.000000000000000000
+                  ExplicitSize.cy = 49.000000000000000000
+                  inherited Ly_rmv_fechamento: TLayout
+                    Size.Width = 450.000000000000000000
+                    Size.Height = 498.000000000000000000
+                    inherited Rc_rmv_fechamento: TRectangle
+                      Size.Width = 440.000000000000000000
+                      Size.Height = 488.000000000000000000
+                      inherited Ly_rmv_fechamento_vl_Pedido: TLayout
+                        Size.Width = 430.000000000000000000
+                        inherited Rc_rmv_fechamento_vl_Pedido: TRectangle
+                          Size.Width = 430.000000000000000000
+                          inherited Lb_rmv_fechamento_vl_Pedido: TLabel
+                            Size.Width = 250.000000000000000000
+                            TextSettings.Font.StyleExt = {00090000000000000004000000}
+                          end
+                          inherited E_rmv_fechamento_vl_pedido: TEdit
+                            TextSettings.Font.StyleExt = {00070000000000000004000000}
+                            Position.X = 260.000000000000000000
+                          end
+                        end
+                      end
+                      inherited Ly_rmv_fechamento_vl_troco: TLayout
+                        Size.Width = 430.000000000000000000
+                        inherited Rc_rmv_fechamento_vl_troco: TRectangle
+                          Size.Width = 430.000000000000000000
+                          inherited Lb_rmv_fechamento_vl_troco: TLabel
+                            Size.Width = 250.000000000000000000
+                            TextSettings.Font.StyleExt = {00090000000000000004000000}
+                          end
+                          inherited E_rmv_fechamento_vl_troco: TEdit
+                            TextSettings.Font.StyleExt = {00070000000000000004000000}
+                            Position.X = 260.000000000000000000
+                          end
+                        end
+                      end
+                      inherited Ly_rmv_fechamento_vl_recebido: TLayout
+                        Size.Width = 430.000000000000000000
+                        inherited Rc_rmv_fechamento_vl_recebido: TRectangle
+                          Size.Width = 430.000000000000000000
+                          inherited Lb_rmv_fechamento_vl_recebido: TLabel
+                            Size.Width = 250.000000000000000000
+                            TextSettings.Font.StyleExt = {00090000000000000004000000}
+                          end
+                          inherited E_rmv_fechamento_vl_recebido: TEdit
+                            TextSettings.Font.StyleExt = {00070000000000000004000000}
+                            Position.X = 260.000000000000000000
+                          end
+                        end
+                      end
+                      inherited Layout2: TLayout
+                        Size.Width = 440.000000000000000000
+                        inherited Sb_rmv_fechamento_confirma: TSpeedButton
+                          Margins.Right = 5.000000000000000000
+                          Position.X = 290.000000000000000000
+                          StyleLookup = 'buttonstyle'
+                        end
+                      end
+                      inherited Ly_rmv_fechamento_vl_falta_pagar: TLayout
+                        Size.Width = 430.000000000000000000
+                        inherited Rc_rmv_fechamento_vl_falta_pagar: TRectangle
+                          Size.Width = 430.000000000000000000
+                          inherited Lb_rmv_fechamento_vl_falta_pagar: TLabel
+                            Size.Width = 250.000000000000000000
+                            TextSettings.Font.StyleExt = {00090000000000000004000000}
+                          end
+                          inherited E_rmv_fechamento_vl_falta_pagar: TEdit
+                            TextSettings.Font.StyleExt = {00070000000000000004000000}
+                            Position.X = 260.000000000000000000
+                          end
+                        end
+                      end
+                    end
+                  end
+                end
+              end
+            end
+          end
+          inherited tbs_rmv_balance_items: TTabItem
+            ExplicitSize.cx = 101.000000000000000000
+            ExplicitSize.cy = 26.000000000000000000
+            inherited Ly_rmv_balance_itens: TLayout
+              Size.Width = 450.000000000000000000
+              inherited Rc_rmv_balance_itens: TRectangle
+                Size.Width = 440.000000000000000000
+                inherited Ly_rmv_balance_itens_tittle: TLayout
+                  Size.Width = 440.000000000000000000
+                  inherited Lb_rmv_balance_items_tittle: TLabel
+                    Size.Width = 334.000000000000000000
+                  end
+                  inherited Sb_rmv_balance_items_search: TSpeedButton
+                    Position.X = 392.000000000000000000
+                  end
+                end
+              end
+            end
+            inherited Lsv_rmv_balance_items: TListView
+              Size.Width = 450.000000000000000000
+              Size.Height = 547.000000000000000000
+            end
+          end
+          inherited tbs_rmv_confirm: TTabItem
+            ExplicitSize.cx = 64.000000000000000000
+            ExplicitSize.cy = 26.000000000000000000
+            inherited Ly_rmv_confirm_product: TLayout
+              Size.Width = 450.000000000000000000
+              inherited Rc_rmv_confirm_top: TRectangle
+                Size.Width = 440.000000000000000000
+                inherited Rc_rmv_confirm_top_linha_1: TLayout
+                  Size.Width = 440.000000000000000000
+                  inherited Lb_rmv_confirm_desc_prod: TLabel
+                    Size.Width = 381.000000000000000000
+                    TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  end
+                end
+                inherited Rc_rmv_confirm_top_linha_2: TLayout
+                  Size.Width = 440.000000000000000000
+                  inherited Label5: TLabel
+                    Size.Width = 287.000000000000000000
+                  end
+                  inherited Lb_rmv_confirm_vl_unit: TLabel
+                    Position.X = 307.000000000000000000
+                    TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  end
+                end
+              end
+            end
+            inherited Layout8: TLayout
+              Size.Width = 450.000000000000000000
+              inherited Rc_rmv_contagem_local: TRectangle
+                Size.Width = 440.000000000000000000
+                inherited Lb_rmv_contagem_local: TLabel
+                  StyledSettings = [FontColor]
+                  Size.Width = 260.000000000000000000
+                end
+                inherited Sp_rmv_contagem_local: TSpinBox
+                  Min = 1.000000000000000000
+                  Value = 1.000000000000000000
+                  Position.X = 270.000000000000000000
+                end
+              end
+            end
+            inherited Layout11: TLayout
+              Size.Width = 450.000000000000000000
+              inherited Rc_rmv_saldo_consignado: TRectangle
+                Size.Width = 440.000000000000000000
+                inherited Lb_rmv_saldo_consignado: TLabel
+                  StyledSettings = [Style, FontColor]
+                  Size.Width = 260.000000000000000000
+                end
+                inherited E_rmv_saldo_consignado: TEdit
+                  Position.X = 270.000000000000000000
+                end
+              end
+            end
+            inherited Layout12: TLayout
+              Size.Width = 450.000000000000000000
+              inherited Rc_rmv_quantidade_devolvida: TRectangle
+                Size.Width = 440.000000000000000000
+                inherited Lb_rmv_quantidade_devolvida: TLabel
+                  StyledSettings = [FontColor]
+                  Size.Width = 260.000000000000000000
+                end
+                inherited Sp_rmv_quantidade_devolvida: TSpinBox
+                  Min = 1.000000000000000000
+                  Value = 1.000000000000000000
+                  Position.X = 270.000000000000000000
+                end
+              end
+            end
+            inherited Layout13: TLayout
+              Size.Width = 450.000000000000000000
+              inherited Sb_rmv_confirm_ok: TButton
+                Position.X = 200.000000000000000000
+              end
+              inherited Sb_rmv_confirm_cancel: TButton
+                Position.X = 325.000000000000000000
+              end
+            end
+            inherited Layout1: TLayout
+              Size.Width = 450.000000000000000000
+              inherited Rc_rmv_quantidade_venda: TRectangle
+                Size.Width = 440.000000000000000000
+                inherited Lb_rmv_quantidade_venda: TLabel
+                  StyledSettings = [FontColor]
+                  Size.Width = 260.000000000000000000
+                end
+                inherited E_rmv_quantidade_venda: TEdit
+                  Position.X = 270.000000000000000000
+                end
+              end
+            end
+          end
+        end
+      end
+      inherited tbs_product: TTabItem
+        Size.Width = 71.000000000000000000
+        ExplicitSize.cx = 61.000000000000000000
+        ExplicitSize.cy = 26.000000000000000000
+        inherited pg_product: TTabControl
+          Size.Width = 450.000000000000000000
+          Size.Height = 646.000000000000000000
+          Sizes = (
+            450s
+            597s
+            450s
+            597s)
+          inherited tbs_product_balance: TTabItem
+            ExplicitSize.cx = 50.000000000000000000
+            ExplicitSize.cy = 26.000000000000000000
+            inherited Ly_product_balance: TLayout
+              Size.Width = 450.000000000000000000
+              Size.Height = 597.000000000000000000
+              inherited Ly_product_balance_top: TLayout
+                Size.Width = 450.000000000000000000
+                inherited Rc_product_balance_top: TRectangle
+                  Size.Width = 450.000000000000000000
+                  inherited Ly_product_balance_Tittle: TLayout
+                    Size.Width = 450.000000000000000000
+                    inherited Lb_product_balance_tittle: TLabel
+                      StyledSettings = [Size, Style, FontColor]
+                      Size.Width = 344.000000000000000000
+                      TextSettings.Font.Family = 'Arial'
+                    end
+                    inherited Sb_product_balance_search: TSpeedButton
+                      Position.X = 402.000000000000000000
+                    end
+                  end
+                end
+              end
+              inherited Lsv_product_balance: TListView
+                Size.Width = 450.000000000000000000
+                Size.Height = 547.000000000000000000
+              end
+            end
+          end
+          inherited tbs_product_statement: TTabItem
+            ExplicitSize.cx = 99.000000000000000000
+            ExplicitSize.cy = 26.000000000000000000
+            inherited Ly_product_statement: TLayout
+              Size.Width = 450.000000000000000000
+              Size.Height = 597.000000000000000000
+              inherited Ly_product_statement_top: TLayout
+                Size.Width = 450.000000000000000000
+                inherited Rc_product_statement_top: TRectangle
+                  Size.Width = 450.000000000000000000
+                  inherited Ly_product_statement_Tittle: TLayout
+                    Size.Width = 450.000000000000000000
+                    inherited Lb_product_statement_tittle: TLabel
+                      StyledSettings = [Style, FontColor]
+                      Size.Width = 344.000000000000000000
+                    end
+                    inherited Sb_product_statement_search: TSpeedButton
+                      Position.X = 402.000000000000000000
+                    end
+                  end
+                end
+              end
+              inherited Rc_product_statement: TRectangle
+                Size.Width = 440.000000000000000000
+                inherited Lb_product_statement_Desc: TLabel
+                  Size.Width = 425.000000000000000000
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                end
+              end
+              inherited Lsv_product_statement: TListView
+                Size.Width = 450.000000000000000000
+                Size.Height = 507.000000000000000000
+              end
+            end
+          end
+        end
+      end
+    end
+  end
+end

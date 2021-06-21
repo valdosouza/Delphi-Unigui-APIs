@@ -1,0 +1,39 @@
+Módulo de Chamados
+	Vai permitir melhor interação entre
+		Clientes e a Setes
+		Entre os colaboradores da Setes
+	Vai ser possivel Registrar
+		As conversas por assunto 
+		As evoluções das conversas para Proposta/Tarefas/Progressos
+		As propostas para serem aprovadas pelo Cliente
+		As tarefas para acompanhamento geral Setes/Clinte
+		Os progresso vinculados às tarefas para acompanhamento.
+		Faturamento das propostas aprovadas.
+	Vai ser possivel controlar
+		Assuntos pendentes/Resolvidos
+		Propostas aprovadas ou não 
+		Tarefas Pendentes/Finalizadas
+		Progressos de Cada Tarefas
+		
+Módulo Software House
+	Vair permitir 
+		Cadastrar Clientes
+			Modulos Utilizados 
+Módulo Financeiro
+	
+		
+Módulo de Parceria
+	Vai permitir 
+		Que cada integrante saiba 
+			Em quantos clientes ele tem participação
+			Qual o percentual de participação para cada Cliente
+			Qual cliente pagou os valores devidos
+		
+	Vai ser possivel Registrar
+		O percentual de participação de cada parceiro por cliente
+		O valor devido ao parceiro conforme o cliente pagar os valores devidos
+		O valor repassados ao parceiro.
+		
+		
+		
+		

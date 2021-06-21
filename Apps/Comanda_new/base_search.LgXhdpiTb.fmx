@@ -1,0 +1,33 @@
+inherited BaseSearch_LgXhdpiTb: TBaseSearch_LgXhdpiTb
+  ClientHeight = 829
+  ClientWidth = 480
+  DesignerMasterStyle = 0
+  inherited LayoutMain: TLayout
+    Size.Width = 480.000000000000000000
+    Size.Height = 829.000000000000000000
+    inherited lsv_Search: TListView
+      Size.Width = 480.000000000000000000
+      Size.Height = 779.000000000000000000
+    end
+    inherited Ly_Result_top: TLayout
+      Size.Width = 480.000000000000000000
+      inherited Rc_result_top: TRectangle
+        Size.Width = 480.000000000000000000
+        inherited Ly_list_titlle: TLayout
+          inherited Sb_search: TSpeedButton
+            Size.Height = 50.000000000000000000
+          end
+          inherited Sb_Insert: TSpeedButton
+            Size.Height = 50.000000000000000000
+          end
+        end
+        inherited Ly_quick_search: TLayout
+          Size.Width = 480.000000000000000000
+          inherited E_busca: TEdit
+            Size.Width = 432.000000000000000000
+          end
+        end
+      end
+    end
+  end
+end

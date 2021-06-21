@@ -1,0 +1,2 @@
+tas_order_items:
+    UniSession.AddJS('setTimeout(function(){'+ FrMerchandise.DBLCB_Lista.JSName +'.focus()}, 100)');

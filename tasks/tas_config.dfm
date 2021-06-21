@@ -1,0 +1,95 @@
+inherited TasConfig: TTasConfig
+  Caption = 'TasConfig'
+  PixelsPerInch = 96
+  TextHeight = 13
+  object pnl_botton: TUniPanel [0]
+    Left = 0
+    Top = 234
+    Width = 578
+    Height = 64
+    Hint = ''
+    Align = alBottom
+    TabOrder = 0
+    BorderStyle = ubsFrameLowered
+    Caption = ''
+    ExplicitTop = 240
+    object SB_Apply: TUniSpeedButton
+      AlignWithMargins = True
+      Left = 195
+      Top = 5
+      Width = 91
+      Height = 54
+      Hint = ''
+      Margins.Left = 1
+      Margins.Right = 1
+      Caption = 'Aplicar'
+      Align = alLeft
+      ParentFont = False
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clNavy
+      Font.Name = 'Arial'
+      ParentColor = False
+      Color = clWindow
+      IconAlign = iaTop
+      TabOrder = 1
+      OnClick = SB_ApplyClick
+      ExplicitTop = 6
+    end
+    object SB_Ok: TUniSpeedButton
+      AlignWithMargins = True
+      Left = 5
+      Top = 5
+      Width = 93
+      Height = 54
+      Hint = ''
+      Margins.Right = 1
+      Caption = 'Ok'
+      Align = alLeft
+      ParentFont = False
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clNavy
+      Font.Name = 'Arial'
+      ParentColor = False
+      Color = clWindow
+      IconAlign = iaTop
+      TabOrder = 2
+      OnClick = SB_OkClick
+      ExplicitTop = 6
+    end
+    object SB_Cancel: TUniSpeedButton
+      AlignWithMargins = True
+      Left = 100
+      Top = 5
+      Width = 93
+      Height = 54
+      Hint = ''
+      Margins.Left = 1
+      Margins.Right = 1
+      Caption = 'Cancelar'
+      Align = alLeft
+      ParentFont = False
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clNavy
+      Font.Name = 'Arial'
+      ParentColor = False
+      Color = clWindow
+      IconAlign = iaTop
+      TabOrder = 3
+      OnClick = SB_CancelClick
+      ExplicitLeft = 102
+      ExplicitTop = 6
+    end
+  end
+  object pnl_body: TUniPanel [1]
+    Left = 0
+    Top = 0
+    Width = 578
+    Height = 234
+    Hint = ''
+    Align = alClient
+    TabOrder = 1
+    BorderStyle = ubsFrameRaised
+    Caption = ''
+    ExplicitTop = -2
+  end
+end

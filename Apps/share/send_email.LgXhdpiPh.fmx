@@ -1,0 +1,41 @@
+inherited SendEmail_LgXhdpiPh: TSendEmail_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 0
+  inherited LayoutMain: TLayout
+    Size.Width = 450.000000000000000000
+    Size.Height = 695.000000000000000000
+    inherited Rc_process_out: TRectangle
+      inherited Rc_process_frame: TRectangle
+        inherited Rc_process_tittle: TRectangle
+          inherited img_cloud: TImage
+            MultiResBitmap.Height = 72
+            MultiResBitmap.Width = 72
+          end
+        end
+      end
+    end
+    inherited Layout1: TLayout
+      inherited Memo1: TMemo
+        Size.Height = 151.000000000000000000
+        Viewport.Width = 248.000000000000000000
+        Viewport.Height = 151.000000000000000000
+      end
+      inherited Lb_Progresso: TLabel
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+      inherited Layout2: TLayout
+        Position.Y = 168.000000000000000000
+        Size.Height = 56.000000000000000000
+        inherited Sb_Cancelar: TSpeedButton
+          Size.Height = 46.000000000000000000
+          StyleLookup = 'buttonstyle'
+        end
+        inherited Sb_Send: TSpeedButton
+          Size.Height = 46.000000000000000000
+          StyleLookup = 'buttonstyle'
+        end
+      end
+    end
+  end
+end

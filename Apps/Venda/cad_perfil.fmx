@@ -1,0 +1,278 @@
+inherited CadPerfil: TCadPerfil
+  Caption = 'BaseRegistry1'
+  ClientHeight = 450
+  ClientWidth = 490
+  DesignerMasterStyle = 0
+  inherited LayoutMain: TLayout
+    Size.Width = 490.000000000000000000
+    Size.Height = 450.000000000000000000
+    inherited pnl_topo: TPanel
+      Size.Width = 490.000000000000000000
+      inherited btn_cancel: TImage
+        MultiResBitmap.Height = 96
+        MultiResBitmap.Width = 96
+        Position.X = 423.000000000000000000
+      end
+      inherited btn_save: TImage
+        MultiResBitmap.Height = 96
+        MultiResBitmap.Width = 96
+        Position.X = 360.000000000000000000
+      end
+      inherited img_top: TImage
+        MultiResBitmap.Height = 96
+        MultiResBitmap.Width = 96
+        MultiResBitmap = <
+          item
+            Width = 96
+            Height = 96
+            PNG = {
+              89504E470D0A1A0A0000000D4948445200000060000000600806000000E29877
+              38000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              035A49444154785EED9C498BD4401886C77D5F0E8288077745DCD08317517039
+              A9FF403C29FE13454511845144F1A6FF406F8A072F2A8882CB415C515C4070C7
+              05D4E79DCE402335637727E9AA24EF030F95C34092FAD295FABEAACC8031C618
+              638C31C618638C31C618636ACF98ACAD023370376EC375B81867A2F8884FF12E
+              5EC14BF8194D012CC7F3F80DFF74E8573C874BD1F4C8143C86BF30D4C99DF813
+              8FE264345DB00CEF61A8537B5143D312341DB01EDF61A823F3F816F5EE30A3A0
+              27BF8CCE1F5641F02F6104A66291C3CE486A38F23B21805EB8A10E2BC32368DA
+              D05433CF6CA75B353BF250D486E6F9A18E2AD3B36840D96C374956517EC1E918
+              95B1591B935DA8A4ABDF4CC39DADC378A41000D5766211F3DC43A4108098C951
+              F4C42C8500A8AA198B98E71E228572B4A684135A877D47E79ED43A8C430ABF80
+              46934200B498128B0F591B8D1402A095AC583CC9DA68A410803B591B0315E6A2
+              924200AE666D0CB47EDC78540ED01A6EA85C50A65AB457361C95147E01AAC95C
+              6C1DF6950BA8C01BD0EE05CDC9434F6A19FEC04568DAD02249A8B3CAF0209A7F
+              D032A16625A10E2BD2DB1835FB4D19AD5269E13CD47145F81A17A219055528DF
+              60A803F3A8CE5F83A60354A5548216EAC85ED4B0E3976E97E89D7018F3CC8E34
+              DB39841EF373A0F78216D0952F843A39A4FEF60C46AFF7FF8F2A6D4F57C6AC35
+              DCF6EDE9B351A8AAA9C2DAF0F6F4CBE824CB18638C31C6189324292762137105
+              AE427D3FA05ACE029C8B735089994A0CE35025874FF81E55747B898FF111DEC7
+              87A8924672A4148079A82C77136EC4B558D48E397DFCA1CF9F6EE075BC86AFB0
+              D1E8C9DD8CFA34E901866A3A65AA731EC72D98C2DA78DFD067A827B0CC85976E
+              D5FAC349DC80B54443C91EBC89A10E48C95BB817636D182E140D33FBF005866E
+              36659FE3011C8F9544636B8CB1BD68750F5BB1326825EB34FEC6D00D55D55398
+              FC07DEF3B10AE37CAF6A6D59F79824BA306D350F5D789D7C864A089342FFCD4A
+              1967E882EBA8DE0BBAE76418C4D085D6D964BEB45F89757BE176A2EE7935E6A2
+              88147C3F5669774551E89E9527E4A288006CCFDA26B2236B7BA68827577B7266
+              B50E1BC777CCF57F2E8A0880C6C32693AB0F1B55864D110720320E40641C80C8
+              380091710022E30018638C31C618638C31C618638C31C694CAC0C05FC3501558
+              A891CD4A0000000049454E44AE426082}
+            FileName = 
+              'C:\gestaoweb\Apps\MaterialDesigner\social\2x_web\ic_person_black' +
+              '_48dp.png'
+          end>
+      end
+      inherited Lb_title: TLabel
+        Size.Width = 290.000000000000000000
+        Text = 'Perfil'
+      end
+    end
+    object Pnl_Perfil: TPanel
+      Align = Top
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 75.000000000000000000
+      Size.Width = 470.000000000000000000
+      Size.Height = 143.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      object Lb_Nome: TLabel
+        Position.X = 15.000000000000000000
+        Position.Y = 25.000000000000000000
+        Size.Width = 426.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Nome'
+        object Rrc_Name: TRoundRect
+          Anchors = [akLeft, akTop, akRight]
+          Fill.Color = claWhite
+          Position.X = 2.000000000000000000
+          Position.Y = 18.000000000000000000
+          Size.Width = 426.000000000000000000
+          Size.Height = 34.000000000000000000
+          Size.PlatformDefault = False
+          object ShadowEffect1: TShadowEffect
+            Distance = 10.000000000000000000
+            Direction = 60.000000000000000000
+            Softness = 3.000000000000000000
+            Opacity = 0.600000023841857900
+            ShadowColor = claGainsboro
+          end
+          object E_Name: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Anchors = [akLeft, akTop, akRight]
+            TabOrder = 0
+            Position.X = 14.000000000000000000
+            Position.Y = 4.000000000000000000
+            Size.Width = 398.000000000000000000
+            Size.Height = 25.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+      end
+      object Lb_Perfil: TLabel
+        Position.X = 6.000000000000000000
+        Position.Y = 4.000000000000000000
+        Text = 'Dados Pessoais'
+      end
+      object Lb_Email: TLabel
+        Position.X = 15.000000000000000000
+        Position.Y = 81.000000000000000000
+        Size.Width = 426.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'e-mail'
+        TabOrder = 3
+        object Rrc_Email: TRoundRect
+          Anchors = [akLeft, akTop, akRight]
+          Fill.Color = claWhite
+          Position.X = 2.000000000000000000
+          Position.Y = 19.000000000000000000
+          Size.Width = 426.000000000000000000
+          Size.Height = 34.000000000000000000
+          Size.PlatformDefault = False
+          object ShadowEffect2: TShadowEffect
+            Distance = 10.000000000000000000
+            Direction = 60.000000000000000000
+            Softness = 3.000000000000000000
+            Opacity = 0.600000023841857900
+            ShadowColor = claGainsboro
+          end
+          object e_Email: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Anchors = [akLeft, akTop, akRight]
+            TabOrder = 0
+            KeyboardType = EmailAddress
+            Position.X = 13.000000000000000000
+            Position.Y = 4.000000000000000000
+            Size.Width = 406.000000000000000000
+            Size.Height = 25.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+      end
+    end
+    object Pnl_Change_Pass: TPanel
+      Align = Top
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 228.000000000000000000
+      Size.Width = 470.000000000000000000
+      Size.Height = 214.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object Lb_ChangePass: TLabel
+        Position.X = 7.000000000000000000
+        Position.Y = 6.000000000000000000
+        Text = 'Troca de Senha'
+      end
+      object Lb_Confim_Pass: TLabel
+        Position.X = 15.000000000000000000
+        Position.Y = 144.000000000000000000
+        Size.Width = 434.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Confirme a Senha'
+        object Rrc_Confirm_Pass: TRoundRect
+          Anchors = [akLeft, akTop, akRight]
+          Fill.Color = claWhite
+          Position.Y = 17.000000000000000000
+          Size.Width = 434.000000000000000000
+          Size.Height = 34.000000000000000000
+          Size.PlatformDefault = False
+          object ShadowEffect5: TShadowEffect
+            Distance = 10.000000000000000000
+            Direction = 60.000000000000000000
+            Softness = 3.000000000000000000
+            Opacity = 0.600000023841857900
+            ShadowColor = claGainsboro
+          end
+          object E_Confim_Pass: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Anchors = [akLeft, akTop, akRight]
+            TabOrder = 0
+            Password = True
+            Position.X = 12.000000000000000000
+            Position.Y = 5.000000000000000000
+            Size.Width = 407.000000000000000000
+            Size.Height = 25.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+      end
+      object Lb_Current_pass: TLabel
+        Position.X = 15.000000000000000000
+        Position.Y = 33.000000000000000000
+        Size.Width = 426.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Senha Atual'
+        TabOrder = 7
+        object Rrc_Current_Pass: TRoundRect
+          Anchors = [akLeft, akTop, akRight]
+          Fill.Color = claWhite
+          Position.Y = 19.000000000000000000
+          Size.Width = 433.000000000000000000
+          Size.Height = 34.000000000000000000
+          Size.PlatformDefault = False
+          object ShadowEffect3: TShadowEffect
+            Distance = 10.000000000000000000
+            Direction = 60.000000000000000000
+            Softness = 3.000000000000000000
+            Opacity = 0.600000023841857900
+            ShadowColor = claGainsboro
+          end
+          object E_Current_pass: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Anchors = [akLeft, akTop, akRight]
+            TabOrder = 0
+            Password = True
+            Position.X = 15.000000000000000000
+            Position.Y = 3.000000000000000000
+            Size.Width = 406.000000000000000000
+            Size.Height = 27.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+      end
+      object Lb_New_Pass: TLabel
+        Position.X = 15.000000000000000000
+        Position.Y = 89.000000000000000000
+        Size.Width = 434.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Nova Senha'
+        TabOrder = 8
+        object Rrc_New_Pass: TRoundRect
+          Anchors = [akLeft, akTop, akRight]
+          Fill.Color = claWhite
+          Position.Y = 19.000000000000000000
+          Size.Width = 434.000000000000000000
+          Size.Height = 34.000000000000000000
+          Size.PlatformDefault = False
+          object ShadowEffect4: TShadowEffect
+            Distance = 10.000000000000000000
+            Direction = 60.000000000000000000
+            Softness = 3.000000000000000000
+            Opacity = 0.600000023841857900
+            ShadowColor = claGainsboro
+          end
+          object E_New_Pass: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Anchors = [akLeft, akTop, akRight]
+            TabOrder = 0
+            Password = True
+            Position.X = 14.000000000000000000
+            Position.Y = 5.000000000000000000
+            Size.Width = 404.000000000000000000
+            Size.Height = 25.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+      end
+    end
+  end
+end

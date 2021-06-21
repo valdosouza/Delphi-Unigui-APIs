@@ -1,0 +1,71 @@
+--Cadastro de Situação
+create table tb_situation(
+  id 				int(11) not null,
+  tb_institution_id int(11) not null,
+  description 		varchar(100),
+  modulo			varchar(50),
+  flag_01			char(1),
+  flag_02			char(1),
+  flag_03			char(1),
+  flag_04			char(1), 
+  created_at 		datetime DEFAULT NULL,
+  updated_at 		datetime DEFAULT NULL    
+)
+
+--Ordem de Produção
+create table tb_order_production(
+  id 				int(11) not null,
+  tb_order_id 		int(11) not null,
+  tb_institution_id int(11) not null,
+  number 			int(11),
+  dt_start  		date,
+  dt_end  			date,
+  tb_product_id 	int(11) not null,
+  tb_situation_id	int(11) not null,
+  qtty_forecast     numeric(10,3),
+  created_at 		datetime DEFAULT NULL,
+  updated_at 		datetime DEFAULT NULL  
+)
+  
+--Processos da Ordem de Produção
+create table tb_order_production_process(
+  tb_order_id 		int(11) not null,
+  tb_institution_id int(11) not null,
+  stage  			int(11) not null,
+  tb_stock_id_out   int(11) not null,
+  tb_stock_id_in    int(11) not null, 
+  tb_situation_id	int(11) not null,
+  dt_start  		date,
+  dt_end  			date,
+  qtty			    numeric(10,3),  
+  created_at 		datetime DEFAULT NULL,
+  updated_at 		datetime DEFAULT NULL  
+);
+
+--Ordem de Transferencia
+create table tb_order_Stock_transfer(
+  id 				int(11) not null,
+  tb_order_id 		int(11) not null,
+  tb_institution_id int(11) not null,
+  number 			int(11),
+  tb_stock_id_out	int(11), 
+  tb_stock_id_in	int(11),  
+  created_at 		datetime DEFAULT NULL,
+  updated_at 		datetime DEFAULT NULL  
+);
+
+---Cadastro do colaborador
+CREATE TABLE tb_collaborator (
+  id 				int(11) not null,
+  tb_institution_id int(11) not null,	
+  gender			char(1),
+  dt_admission	date,
+  dt_resignation  date,
+  salary			numeric(10,3),
+  pis_number		varchar(25),
+  rg_number		varchar(25),
+  dt_birth		char(5),
+  note			blob
+  created_at 		datetime DEFAULT NULL,
+  updated_at 		datetime DEFAULT NULL
+);

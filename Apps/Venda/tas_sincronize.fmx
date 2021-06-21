@@ -1,0 +1,608 @@
+inherited TasSincronize: TTasSincronize
+  Caption = 'Sincronizar dados'
+  ClientHeight = 607
+  ClientWidth = 435
+  DesignerMasterStyle = 3
+  inherited LayoutMain: TLayout
+    Size.Width = 435.000000000000000000
+    Size.Height = 607.000000000000000000
+    object Ly_Result_top: TLayout
+      Align = Top
+      Size.Width = 435.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object Rc_result_top: TRectangle
+        Align = Client
+        Fill.Color = xFFB7DDEE
+        Margins.Left = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Size.Width = 425.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        XRadius = 5.000000000000000000
+        YRadius = 5.000000000000000000
+        object Ly_list_titlle: TLayout
+          Align = Client
+          Size.Width = 425.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object Lb_name_tittle: TLabel
+            Align = Client
+            StyledSettings = [Style, FontColor]
+            Margins.Left = 10.000000000000000000
+            Size.Width = 367.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Family = 'Arial'
+            TextSettings.Font.Size = 14.000000000000000000
+            Text = 'Sincronizar dados'
+            TabOrder = 0
+          end
+          object Sb_Sync: TSpeedButton
+            Align = Right
+            Position.X = 377.000000000000000000
+            Position.Y = 1.000000000000000000
+            Size.Width = 48.000000000000000000
+            Size.Height = 48.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'refreshtoolbutton'
+            Text = 'Sb_Sincronizar'
+            OnClick = Sb_SyncClick
+          end
+        end
+        object ShadowEffect1: TShadowEffect
+          Distance = 3.000000000000000000
+          Direction = 45.000000000000000000
+          Softness = 0.300000011920929000
+          Opacity = 0.600000023841857900
+          ShadowColor = claBlack
+        end
+      end
+    end
+    object tbc_geral: TTabControl
+      Align = Client
+      Margins.Top = 5.000000000000000000
+      Size.Width = 435.000000000000000000
+      Size.Height = 552.000000000000000000
+      Size.PlatformDefault = False
+      TabHeight = 49.000000000000000000
+      TabIndex = 1
+      TabOrder = 1
+      TabPosition = PlatformDefault
+      Sizes = (
+        435s
+        503s
+        435s
+        503s)
+      object tab_sincronizacao: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Size.Width = 217.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'Sincroniza'#231#227'o'
+        ExplicitSize.cx = 93.000000000000000000
+        ExplicitSize.cy = 26.000000000000000000
+        object Lst_Proc_log: TListBox
+          Align = Client
+          Padding.Top = 22.000000000000000000
+          Size.Width = 435.000000000000000000
+          Size.Height = 481.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          DisableFocusEffect = True
+          DefaultItemStyles.ItemStyle = ''
+          DefaultItemStyles.GroupHeaderStyle = ''
+          DefaultItemStyles.GroupFooterStyle = ''
+          Viewport.Width = 435.000000000000000000
+          Viewport.Height = 481.000000000000000000
+        end
+        object Label1: TLabel
+          Align = Top
+          StyledSettings = [Size, FontColor]
+          Padding.Left = 10.000000000000000000
+          Size.Width = 435.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Arial'
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          Text = 'Acompanhamento do Processo'
+          TabOrder = 2
+        end
+      end
+      object tab_opcoes: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = True
+        Size.Width = 218.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'Configura'#231#245'es'
+        ExplicitSize.cx = 61.000000000000000000
+        ExplicitSize.cy = 26.000000000000000000
+        object VertScrollBox1: TVertScrollBox
+          Align = Client
+          Size.Width = 435.000000000000000000
+          Size.Height = 503.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          Viewport.Width = 435.000000000000000000
+          Viewport.Height = 503.000000000000000000
+          object Label2: TLabel
+            Align = Top
+            StyledSettings = [Size, FontColor]
+            Padding.Left = 10.000000000000000000
+            Size.Width = 435.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Family = 'Arial'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.HorzAlign = Center
+            Text = 'Sincronia'
+            TabOrder = 0
+          end
+          object Label7: TLabel
+            Align = Top
+            StyledSettings = [Size, FontColor]
+            Padding.Left = 10.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Position.Y = 247.000000000000000000
+            Size.Width = 435.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Family = 'Arial'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.HorzAlign = Center
+            Text = 'Restaura'#231#227'o'
+            TabOrder = 1
+          end
+          object Rc_row_1: TRectangle
+            Align = Top
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 27.000000000000000000
+            Size.Width = 425.000000000000000000
+            Size.Height = 40.000000000000000000
+            Size.PlatformDefault = False
+            XRadius = 5.000000000000000000
+            YRadius = 5.000000000000000000
+            object Swch_restart_all: TSwitch
+              Align = Left
+              IsChecked = False
+              Margins.Left = 5.000000000000000000
+              Margins.Top = 5.000000000000000000
+              Margins.Bottom = 5.000000000000000000
+              Position.X = 5.000000000000000000
+              Position.Y = 7.000000000000000000
+              Size.Width = 44.000000000000000000
+              Size.Height = 26.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+            end
+            object Label3: TLabel
+              Align = Client
+              StyledSettings = [Style, FontColor]
+              Margins.Left = 5.000000000000000000
+              Margins.Top = 5.000000000000000000
+              Margins.Right = 5.000000000000000000
+              Margins.Bottom = 5.000000000000000000
+              Size.Width = 366.000000000000000000
+              Size.Height = 30.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Family = 'Arial'
+              Text = 'Reiniciar todos os dados de  recebimento'
+              TabOrder = 1
+            end
+          end
+          object Rc_row_2: TRectangle
+            Align = Top
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 72.000000000000000000
+            Size.Width = 425.000000000000000000
+            Size.Height = 40.000000000000000000
+            Size.PlatformDefault = False
+            XRadius = 5.000000000000000000
+            YRadius = 5.000000000000000000
+            object Swch_restart_product: TSwitch
+              Align = Left
+              IsChecked = False
+              Margins.Left = 5.000000000000000000
+              Margins.Top = 5.000000000000000000
+              Margins.Bottom = 5.000000000000000000
+              Position.X = 5.000000000000000000
+              Position.Y = 7.000000000000000000
+              Size.Width = 44.000000000000000000
+              Size.Height = 26.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+            end
+            object Label4: TLabel
+              Align = Client
+              StyledSettings = [Style, FontColor]
+              Margins.Left = 5.000000000000000000
+              Margins.Top = 5.000000000000000000
+              Margins.Right = 5.000000000000000000
+              Margins.Bottom = 5.000000000000000000
+              Size.Width = 366.000000000000000000
+              Size.Height = 30.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Family = 'Arial'
+              Text = 'Reiniciar dados de produtos para recebimento'
+              TabOrder = 1
+            end
+          end
+          object Rc_row_3: TRectangle
+            Align = Top
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 117.000000000000000000
+            Size.Width = 425.000000000000000000
+            Size.Height = 40.000000000000000000
+            Size.PlatformDefault = False
+            XRadius = 5.000000000000000000
+            YRadius = 5.000000000000000000
+            object Swch_restart_Customer: TSwitch
+              Align = Left
+              IsChecked = False
+              Margins.Left = 5.000000000000000000
+              Margins.Top = 5.000000000000000000
+              Margins.Bottom = 5.000000000000000000
+              Position.X = 5.000000000000000000
+              Position.Y = 7.000000000000000000
+              Size.Width = 44.000000000000000000
+              Size.Height = 26.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+            end
+            object Label5: TLabel
+              Align = Client
+              StyledSettings = [Style, FontColor]
+              Margins.Left = 5.000000000000000000
+              Margins.Top = 5.000000000000000000
+              Margins.Right = 5.000000000000000000
+              Margins.Bottom = 5.000000000000000000
+              Size.Width = 366.000000000000000000
+              Size.Height = 30.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Family = 'Arial'
+              Text = 'Reiniciar apenas dados de clientes para recebimento'
+              TabOrder = 1
+            end
+          end
+          object Rc_row_4: TRectangle
+            Align = Top
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 162.000000000000000000
+            Size.Width = 425.000000000000000000
+            Size.Height = 80.000000000000000000
+            Size.PlatformDefault = False
+            XRadius = 5.000000000000000000
+            YRadius = 5.000000000000000000
+            object Ly_row_4_1: TLayout
+              Align = Top
+              Size.Width = 425.000000000000000000
+              Size.Height = 40.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              object Label6: TLabel
+                Align = Client
+                StyledSettings = [Style, FontColor]
+                Margins.Left = 5.000000000000000000
+                Margins.Top = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Margins.Bottom = 5.000000000000000000
+                Size.Width = 366.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Family = 'Arial'
+                Text = 'Atualizar a partir da data e hora Abaixo'
+                TabOrder = 1
+              end
+              object Swch_setTimeTo: TSwitch
+                Align = Left
+                IsChecked = False
+                Margins.Left = 5.000000000000000000
+                Margins.Top = 5.000000000000000000
+                Margins.Bottom = 5.000000000000000000
+                Position.X = 5.000000000000000000
+                Position.Y = 7.000000000000000000
+                Size.Width = 44.000000000000000000
+                Size.Height = 26.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 0
+              end
+            end
+            object GridPanelLayout1: TGridPanelLayout
+              Align = Client
+              Size.Width = 425.000000000000000000
+              Size.Height = 40.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+              ColumnCollection = <
+                item
+                  Value = 70.000000000000000000
+                end
+                item
+                  Value = 30.000000000000000000
+                end>
+              ControlCollection = <
+                item
+                  Column = 0
+                  Control = E_DataTime_Sincronia
+                  Row = 0
+                end
+                item
+                  Column = 1
+                  Control = E_Time_Sincronia
+                  Row = 0
+                end>
+              RowCollection = <
+                item
+                  Value = 100.000000000000000000
+                end
+                item
+                  SizeStyle = Auto
+                end>
+              object E_DataTime_Sincronia: TDateEdit
+                Date = 44358.000000000000000000
+                TodayDefault = True
+                Align = Client
+                Margins.Left = 50.000000000000000000
+                Margins.Top = 5.000000000000000000
+                Margins.Right = 50.000000000000000000
+                Margins.Bottom = 5.000000000000000000
+                Size.Width = 197.500000000000000000
+                Size.Height = 32.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 2
+                TextSettings.HorzAlign = Center
+              end
+              object E_Time_Sincronia: TTimeEdit
+                Time = 0.005789513888888890
+                Align = Client
+                Margins.Left = 10.000000000000000000
+                Margins.Top = 5.000000000000000000
+                Margins.Right = 10.000000000000000000
+                Margins.Bottom = 5.000000000000000000
+                Size.Width = 107.500000000000000000
+                Size.Height = 32.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.HorzAlign = Center
+                TabOrder = 3
+              end
+            end
+          end
+          object Rc_row_6: TRectangle
+            Align = Top
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 319.000000000000000000
+            Size.Width = 425.000000000000000000
+            Size.Height = 40.000000000000000000
+            Size.PlatformDefault = False
+            XRadius = 5.000000000000000000
+            YRadius = 5.000000000000000000
+            object Swch_Rec_Consignment: TSwitch
+              Align = Left
+              IsChecked = False
+              Margins.Left = 5.000000000000000000
+              Margins.Top = 5.000000000000000000
+              Margins.Bottom = 5.000000000000000000
+              Position.X = 5.000000000000000000
+              Position.Y = 7.000000000000000000
+              Size.Width = 44.000000000000000000
+              Size.Height = 26.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+            end
+            object Label8: TLabel
+              Align = Client
+              StyledSettings = [Style, FontColor]
+              Margins.Left = 5.000000000000000000
+              Margins.Top = 5.000000000000000000
+              Margins.Right = 5.000000000000000000
+              Margins.Bottom = 5.000000000000000000
+              Size.Width = 366.000000000000000000
+              Size.Height = 30.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Family = 'Arial'
+              Text = 'Restaurar Consigna'#231#227'o '
+              TabOrder = 1
+            end
+          end
+          object Rc_row_7: TRectangle
+            Align = Top
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 364.000000000000000000
+            Size.Width = 425.000000000000000000
+            Size.Height = 40.000000000000000000
+            Size.PlatformDefault = False
+            XRadius = 5.000000000000000000
+            YRadius = 5.000000000000000000
+            object Swch_Rec_Financial: TSwitch
+              Align = Left
+              IsChecked = False
+              Margins.Left = 5.000000000000000000
+              Margins.Top = 5.000000000000000000
+              Margins.Bottom = 5.000000000000000000
+              Position.X = 5.000000000000000000
+              Position.Y = 7.000000000000000000
+              Size.Width = 44.000000000000000000
+              Size.Height = 26.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+            end
+            object Label10: TLabel
+              Align = Client
+              StyledSettings = [Style, FontColor]
+              Margins.Left = 5.000000000000000000
+              Margins.Top = 5.000000000000000000
+              Margins.Right = 5.000000000000000000
+              Margins.Bottom = 5.000000000000000000
+              Size.Width = 366.000000000000000000
+              Size.Height = 30.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Family = 'Arial'
+              Text = 'Restaurar Financeiro '
+              TabOrder = 1
+            end
+          end
+          object Rc_row_8: TRectangle
+            Align = Top
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 409.000000000000000000
+            Size.Width = 425.000000000000000000
+            Size.Height = 40.000000000000000000
+            Size.PlatformDefault = False
+            XRadius = 5.000000000000000000
+            YRadius = 5.000000000000000000
+            object Swch_Rec_Kickback: TSwitch
+              Align = Left
+              IsChecked = False
+              Margins.Left = 5.000000000000000000
+              Margins.Top = 5.000000000000000000
+              Margins.Bottom = 5.000000000000000000
+              Position.X = 5.000000000000000000
+              Position.Y = 7.000000000000000000
+              Size.Width = 44.000000000000000000
+              Size.Height = 26.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+            end
+            object Label9: TLabel
+              Align = Client
+              StyledSettings = [Style, FontColor]
+              Margins.Left = 5.000000000000000000
+              Margins.Top = 5.000000000000000000
+              Margins.Right = 5.000000000000000000
+              Margins.Bottom = 5.000000000000000000
+              Size.Width = 366.000000000000000000
+              Size.Height = 30.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Family = 'Arial'
+              Text = 'Restaurar Comiss'#227'o'
+              TabOrder = 1
+            end
+          end
+          object Rc_row_5: TRectangle
+            Align = Top
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 274.000000000000000000
+            Size.Width = 425.000000000000000000
+            Size.Height = 40.000000000000000000
+            Size.PlatformDefault = False
+            XRadius = 5.000000000000000000
+            YRadius = 5.000000000000000000
+            object Swch_Rec_Order_Sale: TSwitch
+              Align = Left
+              IsChecked = False
+              Margins.Left = 5.000000000000000000
+              Margins.Top = 5.000000000000000000
+              Margins.Bottom = 5.000000000000000000
+              Position.X = 5.000000000000000000
+              Position.Y = 7.000000000000000000
+              Size.Width = 44.000000000000000000
+              Size.Height = 26.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+            end
+            object Label11: TLabel
+              Align = Client
+              StyledSettings = [Style, FontColor]
+              Margins.Left = 5.000000000000000000
+              Margins.Top = 5.000000000000000000
+              Margins.Right = 5.000000000000000000
+              Margins.Bottom = 5.000000000000000000
+              Size.Width = 366.000000000000000000
+              Size.Height = 30.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Family = 'Arial'
+              Text = 'Restaurar Venda'
+              TabOrder = 1
+            end
+          end
+          object Rc_row_9: TRectangle
+            Align = Top
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 454.000000000000000000
+            Size.Width = 425.000000000000000000
+            Size.Height = 40.000000000000000000
+            Size.PlatformDefault = False
+            XRadius = 5.000000000000000000
+            YRadius = 5.000000000000000000
+            object Swch_Rec_Stock_Statement: TSwitch
+              Align = Left
+              IsChecked = False
+              Margins.Left = 5.000000000000000000
+              Margins.Top = 5.000000000000000000
+              Margins.Bottom = 5.000000000000000000
+              Position.X = 5.000000000000000000
+              Position.Y = 7.000000000000000000
+              Size.Width = 44.000000000000000000
+              Size.Height = 26.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+            end
+            object Label12: TLabel
+              Align = Client
+              StyledSettings = [Style, FontColor]
+              Margins.Left = 5.000000000000000000
+              Margins.Top = 5.000000000000000000
+              Margins.Right = 5.000000000000000000
+              Margins.Bottom = 5.000000000000000000
+              Size.Width = 366.000000000000000000
+              Size.Height = 30.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Family = 'Arial'
+              Text = 'Restaurar Movimeto Estoque'
+              TabOrder = 1
+            end
+          end
+        end
+      end
+    end
+  end
+  inherited Rc_process_Show: TRectangle
+    inherited Rc_process_frame: TRectangle
+      inherited Rc_process_tittle: TRectangle
+        inherited img_cloud: TImage
+          MultiResBitmap.Height = 72
+          MultiResBitmap.Width = 72
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,113 @@
+inherited CadUser_LgXhdpiPh: TCadUser_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 0
+  inherited LayoutMain: TLayout
+    Size.Width = 450.000000000000000000
+    Size.Height = 695.000000000000000000
+    inherited Rc_process_Show: TRectangle
+      inherited Rc_process_frame: TRectangle
+        inherited Rc_process_tittle: TRectangle
+          inherited img_cloud: TImage
+            MultiResBitmap.Height = 72
+            MultiResBitmap.Width = 72
+          end
+        end
+      end
+    end
+    inherited Ly_Result_top: TLayout
+      Size.Width = 450.000000000000000000
+      inherited Rc_result_top: TRectangle
+        Size.Width = 440.000000000000000000
+        inherited Ly_list_titlle: TLayout
+          Size.Width = 440.000000000000000000
+          inherited img_top: TImage
+            MultiResBitmap.Height = 96
+            MultiResBitmap.Width = 96
+          end
+          inherited Lb_title: TLabel
+            Size.Width = 248.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+          end
+          inherited Sb_Cancel: TSpeedButton
+            Position.X = 382.000000000000000000
+            Size.Height = 50.000000000000000000
+            StyleLookup = 'deletetoolbutton'
+          end
+          inherited Sb_Save: TSpeedButton
+            Position.X = 314.000000000000000000
+            Size.Height = 50.000000000000000000
+            StyleLookup = 'donetoolbutton'
+          end
+        end
+        inherited Ly_quick_search: TLayout
+          inherited E_busca: TEdit
+            Size.Height = 45.000000000000000000
+          end
+          inherited Sb_back: TSpeedButton
+            Size.Height = 35.000000000000000000
+          end
+        end
+      end
+    end
+    inherited Pnl_Dados: TLayout
+      Size.Width = 430.000000000000000000
+      inherited Rrc_Name: TLayout
+        Size.Width = 430.000000000000000000
+        inherited E_Name: TEdit
+          Size.Width = 420.000000000000000000
+        end
+        inherited Lb_Nome: TLabel
+          Size.Width = 425.000000000000000000
+        end
+      end
+      inherited Rrc_Email: TLayout
+        Size.Width = 430.000000000000000000
+        inherited e_Email: TEdit
+          Size.Width = 420.000000000000000000
+        end
+        inherited Lb_Email: TLabel
+          Size.Width = 425.000000000000000000
+        end
+      end
+      inherited Lb_Dados: TLabel
+        Size.Width = 425.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+    end
+    inherited Pnl_Change_Pass: TLayout
+      Size.Width = 430.000000000000000000
+      inherited Lb_ChangePass: TLabel
+        Size.Width = 425.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+      inherited Rrc_Current_Pass: TLayout
+        Size.Width = 430.000000000000000000
+        inherited E_Current_pass: TEdit
+          Size.Width = 420.000000000000000000
+        end
+        inherited Lb_Current_pass: TLabel
+          Size.Width = 425.000000000000000000
+        end
+      end
+      inherited Rrc_New_Pass: TLayout
+        Size.Width = 430.000000000000000000
+        inherited E_New_Pass: TEdit
+          Size.Width = 420.000000000000000000
+        end
+        inherited Lb_New_Pass: TLabel
+          Size.Width = 425.000000000000000000
+        end
+      end
+      inherited Rrc_Confirm_Pass: TLayout
+        Size.Width = 430.000000000000000000
+        inherited E_Confim_Pass: TEdit
+          Size.Width = 420.000000000000000000
+        end
+        inherited Lb_Confim_Pass: TLabel
+          Size.Width = 425.000000000000000000
+        end
+      end
+    end
+  end
+end

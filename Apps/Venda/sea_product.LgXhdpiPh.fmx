@@ -1,0 +1,158 @@
+inherited SeaProduct_LgXhdpiPh: TSeaProduct_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 0
+  inherited LayoutMain: TLayout
+    Size.Width = 450.000000000000000000
+    Size.Height = 695.000000000000000000
+    inherited FmAddSeaProduct: TFmSeaProduct
+      Size.Width = 450.000000000000000000
+      Size.Height = 695.000000000000000000
+      inherited LayoutMain: TLayout
+        Size.Width = 450.000000000000000000
+        Size.Height = 695.000000000000000000
+        inherited lsv_Search: TListView
+          Size.Width = 450.000000000000000000
+          Size.Height = 556.000000000000000000
+          ItemAppearanceObjects.ItemObjects.ObjectsCollection = <
+            item
+              AppearanceObjectName = 'Produto'
+              AppearanceClassName = 'TTextObjectAppearance'
+              Appearance.Font.Family = 'Arial'
+              Appearance.Font.Size = 11.000000000000000000
+              Appearance.TextAlign = Leading
+              Appearance.Width = 369.000000000000000000
+              Appearance.Height = 22.000000000000000000
+              Appearance.PlaceOffset.X = 46.000000000000000000
+              Appearance.PlaceOffset.Y = 3.000000000000000000
+            end
+            item
+              AppearanceObjectName = 'Embalagem'
+              AppearanceClassName = 'TTextObjectAppearance'
+              Appearance.Font.Family = 'Arial'
+              Appearance.Font.Size = 11.000000000000000000
+              Appearance.TextAlign = Leading
+              Appearance.Width = 228.000000000000000000
+              Appearance.Height = 22.000000000000000000
+              Appearance.PlaceOffset.X = 3.000000000000000000
+              Appearance.PlaceOffset.Y = 25.000000000000000000
+            end
+            item
+              AppearanceObjectName = 'Estoque'
+              AppearanceClassName = 'TTextObjectAppearance'
+              Appearance.Font.Family = 'Arial'
+              Appearance.Font.Size = 11.000000000000000000
+              Appearance.TextAlign = Leading
+              Appearance.Width = 185.000000000000000000
+              Appearance.Height = 22.000000000000000000
+              Appearance.PlaceOffset.X = 230.000000000000000000
+              Appearance.PlaceOffset.Y = 25.000000000000000000
+            end
+            item
+              AppearanceObjectName = 'Codigo'
+              AppearanceClassName = 'TTextObjectAppearance'
+              Appearance.Font.Family = 'Arial'
+              Appearance.Font.Size = 11.000000000000000000
+              Appearance.Font.StyleExt = {00070000000000000004000000}
+              Appearance.TextAlign = Leading
+              Appearance.Width = 42.000000000000000000
+              Appearance.Height = 22.000000000000000000
+              Appearance.PlaceOffset.Y = 3.000000000000000000
+            end>
+        end
+        inherited Ly_Result_top: TLayout
+          Size.Width = 450.000000000000000000
+          inherited Rc_result_top: TRectangle
+            Size.Width = 440.000000000000000000
+            inherited Ly_list_titlle: TLayout
+              Size.Width = 440.000000000000000000
+              inherited Lb_name_tittle: TLabel
+                Size.Width = 382.000000000000000000
+              end
+              inherited Sb_search: TSpeedButton
+                Position.X = 392.000000000000000000
+              end
+            end
+          end
+        end
+        inherited Ly_selected: TLayout
+          Size.Width = 450.000000000000000000
+          inherited Rc_selected: TRectangle
+            Size.Width = 440.000000000000000000
+            inherited Ly_id_produto: TLayout
+              Size.Width = 440.000000000000000000
+              inherited Lb_desc_produto: TLabel
+                Size.Width = 349.000000000000000000
+              end
+            end
+            inherited Ly_vl_preco: TLayout
+              Size.Width = 440.000000000000000000
+              inherited Gpl_botao: TGridPanelLayout
+                Size.Width = 440.000000000000000000
+                ControlCollection = <
+                  item
+                    Column = 0
+                    Control = FmAddSeaProduct.Sb_tab_01
+                    Row = 0
+                  end
+                  item
+                    Column = 1
+                    Control = FmAddSeaProduct.Sb_tab_03
+                    Row = 0
+                  end
+                  item
+                    Column = 2
+                    Control = FmAddSeaProduct.Sb_tab_04
+                    Row = 0
+                  end
+                  item
+                    Column = 0
+                    Control = FmAddSeaProduct.Sb_tab_05
+                    Row = 1
+                  end
+                  item
+                    Column = 1
+                    Control = FmAddSeaProduct.Sb_tab_06
+                    Row = 1
+                  end
+                  item
+                    Column = 2
+                    Control = FmAddSeaProduct.Sb_tab_07
+                    Row = 1
+                  end>
+                inherited Sb_tab_01: TButton
+                  Size.Width = 142.651992797851600000
+                end
+                inherited Sb_tab_03: TButton
+                  Size.Width = 142.651992797851600000
+                end
+                inherited Sb_tab_04: TButton
+                  Size.Width = 142.696014404296900000
+                end
+                inherited Sb_tab_05: TButton
+                  Size.Width = 142.651992797851600000
+                end
+                inherited Sb_tab_06: TButton
+                  Size.Width = 142.651992797851600000
+                end
+                inherited Sb_tab_07: TButton
+                  Size.Width = 142.696014404296900000
+                end
+              end
+            end
+          end
+        end
+      end
+    end
+  end
+  inherited Rc_process_Show: TRectangle
+    inherited Rc_process_frame: TRectangle
+      inherited Rc_process_tittle: TRectangle
+        inherited img_cloud: TImage
+          MultiResBitmap.Height = 72
+          MultiResBitmap.Width = 72
+        end
+      end
+    end
+  end
+end

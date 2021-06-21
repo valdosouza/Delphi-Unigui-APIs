@@ -1,0 +1,130 @@
+inherited SeaProduct: TSeaProduct
+  Caption = 'Pesquisa Produtos'
+  ClientHeight = 632
+  ClientWidth = 371
+  OnCreate = FormCreate
+  DesignerMasterStyle = 3
+  inherited LayoutMain: TLayout
+    Size.Width = 371.000000000000000000
+    Size.Height = 632.000000000000000000
+    inline FmAddSeaProduct: TFmSeaProduct
+      Align = Client
+      Size.Width = 371.000000000000000000
+      Size.Height = 632.000000000000000000
+      Size.PlatformDefault = False
+      inherited LayoutMain: TLayout
+        Size.Width = 371.000000000000000000
+        Size.Height = 632.000000000000000000
+        inherited lsv_Search: TListView
+          Size.Width = 371.000000000000000000
+          Size.Height = 493.000000000000000000
+        end
+        inherited Ly_Result_top: TLayout
+          Size.Width = 371.000000000000000000
+          inherited Rc_result_top: TRectangle
+            Size.Width = 361.000000000000000000
+            inherited Ly_list_titlle: TLayout
+              Size.Width = 361.000000000000000000
+              inherited Lb_name_tittle: TLabel
+                StyledSettings = [Size, Style, FontColor]
+                Size.Width = 303.000000000000000000
+                TextSettings.Font.Family = 'Arial'
+              end
+              inherited Sb_search: TSpeedButton
+                Position.X = 313.000000000000000000
+                Position.Y = 1.000000000000000000
+                Size.Height = 48.000000000000000000
+              end
+              inherited Sb_back_product_callback: TSpeedButton
+                Position.Y = 1.000000000000000000
+                Size.Height = 48.000000000000000000
+              end
+            end
+          end
+        end
+        inherited Ly_selected: TLayout
+          Size.Width = 371.000000000000000000
+          inherited Rc_selected: TRectangle
+            Size.Width = 361.000000000000000000
+            inherited Ly_id_produto: TLayout
+              Size.Width = 361.000000000000000000
+              inherited Lb_desc_produto: TLabel
+                Size.Width = 270.000000000000000000
+                TextSettings.Font.Size = 10.000000000000000000
+              end
+              inherited Lb_cod_produto: TLabel
+                StyledSettings = [Style, FontColor]
+                TextSettings.Font.Size = 10.000000000000000000
+              end
+            end
+            inherited Ly_vl_preco: TLayout
+              Size.Width = 361.000000000000000000
+              inherited Gpl_botao: TGridPanelLayout
+                Size.Width = 361.000000000000000000
+                ControlCollection = <
+                  item
+                    Column = 0
+                    Control = FmAddSeaProduct.Sb_tab_01
+                    Row = 0
+                  end
+                  item
+                    Column = 1
+                    Control = FmAddSeaProduct.Sb_tab_03
+                    Row = 0
+                  end
+                  item
+                    Column = 2
+                    Control = FmAddSeaProduct.Sb_tab_04
+                    Row = 0
+                  end
+                  item
+                    Column = 0
+                    Control = FmAddSeaProduct.Sb_tab_05
+                    Row = 1
+                  end
+                  item
+                    Column = 1
+                    Control = FmAddSeaProduct.Sb_tab_06
+                    Row = 1
+                  end
+                  item
+                    Column = 2
+                    Control = FmAddSeaProduct.Sb_tab_07
+                    Row = 1
+                  end>
+                inherited Sb_tab_01: TButton
+                  Size.Width = 116.321296691894500000
+                end
+                inherited Sb_tab_03: TButton
+                  Size.Width = 116.321296691894500000
+                end
+                inherited Sb_tab_04: TButton
+                  Size.Width = 116.357406616210900000
+                end
+                inherited Sb_tab_05: TButton
+                  Size.Width = 116.321296691894500000
+                end
+                inherited Sb_tab_06: TButton
+                  Size.Width = 116.321296691894500000
+                end
+                inherited Sb_tab_07: TButton
+                  Size.Width = 116.357406616210900000
+                end
+              end
+            end
+          end
+        end
+      end
+    end
+  end
+  inherited Rc_process_Show: TRectangle
+    inherited Rc_process_frame: TRectangle
+      inherited Rc_process_tittle: TRectangle
+        inherited img_cloud: TImage
+          MultiResBitmap.Height = 72
+          MultiResBitmap.Width = 72
+        end
+      end
+    end
+  end
+end

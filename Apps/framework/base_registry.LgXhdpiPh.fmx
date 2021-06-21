@@ -1,0 +1,57 @@
+inherited BaseRegistry_LgXhdpiPh: TBaseRegistry_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 0
+  inherited LayoutMain: TLayout
+    Size.Width = 450.000000000000000000
+    Size.Height = 695.000000000000000000
+    inherited Rc_process_Show: TRectangle
+      inherited Rc_process_frame: TRectangle
+        inherited Rc_process_tittle: TRectangle
+          inherited img_cloud: TImage
+            MultiResBitmap.Height = 72
+            MultiResBitmap.Width = 72
+          end
+        end
+      end
+    end
+    inherited Ly_Result_top: TLayout
+      Size.Width = 450.000000000000000000
+      inherited Rc_result_top: TRectangle
+        Margins.Top = 5.000000000000000000
+        Size.Width = 440.000000000000000000
+        Size.Height = 45.000000000000000000
+        inherited Ly_list_titlle: TLayout
+          Size.Width = 440.000000000000000000
+          Size.Height = 45.000000000000000000
+          inherited img_top: TImage
+            MultiResBitmap.Height = 96
+            MultiResBitmap.Width = 96
+            Size.Height = 35.000000000000000000
+          end
+          inherited Lb_title: TLabel
+            Size.Width = 248.000000000000000000
+            Size.Height = 45.000000000000000000
+          end
+          inherited Sb_Cancel: TSpeedButton
+            Position.X = 382.000000000000000000
+            StyleLookup = 'deletetoolbutton'
+          end
+          inherited Sb_Save: TSpeedButton
+            Position.X = 314.000000000000000000
+            StyleLookup = 'donetoolbutton'
+            Text = 'Sb_Save'
+          end
+        end
+        inherited Ly_quick_search: TLayout
+          inherited E_busca: TEdit
+            Size.Height = 45.000000000000000000
+          end
+          inherited Sb_back: TSpeedButton
+            Size.Height = 35.000000000000000000
+          end
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,18 @@
+ConsultaCNPJ.exe: 00007004: 08:30:40 []:>--------------------------------------------------------------<
+ConsultaCNPJ.exe: 00007004: 08:30:40 [TUniServerModule]:Server First Init.
+ConsultaCNPJ.exe: 00007004: 08:30:40 [TUniServerModule]:Debug Mode = ON
+ConsultaCNPJ.exe: 00007004: 08:30:40 [TUniServerModule]:Starting HTTP Server on Port: 8077...
+ConsultaCNPJ.exe: 00007004: 08:30:40 [TUniServerModule]:HTTP Server Started on Port: 8077
+ConsultaCNPJ.exe: 00005D94: 17:53:04 []:>--------------------------------------------------------------<
+ConsultaCNPJ.exe: 00005D94: 17:53:04 [TUniServerModule]:Server First Init.
+ConsultaCNPJ.exe: 00005D94: 17:53:04 [TUniServerModule]:Debug Mode = ON
+ConsultaCNPJ.exe: 00005D94: 17:53:04 [TUniServerModule]:Global Cache Folder Erased. <1> Files deleted.
+ConsultaCNPJ.exe: 00005D94: 17:53:04 [TUniServerModule]:Starting HTTP Server on Port: 8077...
+ConsultaCNPJ.exe: 00005D94: 17:53:04 [TUniServerModule]:HTTP Server Started on Port: 8077
+ConsultaCNPJ.exe: 000072E0: 18:15:10 []:>--------------------------------------------------------------<
+ConsultaCNPJ.exe: 000072E0: 18:15:10 [TUniServerModule]:Server First Init.
+ConsultaCNPJ.exe: 000072E0: 18:15:10 [TUniServerModule]:Debug Mode = ON
+ConsultaCNPJ.exe: 000072E0: 18:15:10 [TUniServerModule]:Global Cache Folder Erased. <2> Files deleted.
+ConsultaCNPJ.exe: 000072E0: 18:15:10 [TUniServerModule]:Starting HTTP Server on Port: 8077...
+ConsultaCNPJ.exe: 000072E0: 18:15:10 [TUniServerModule]:HTTP Server Started on Port: 8077
+ConsultaCNPJ.exe: 000047DC: 18:15:18 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. : Addr: $0078B666

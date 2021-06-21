@@ -1,0 +1,236 @@
+inherited SeaCommand: TSeaCommand
+  Caption = 'Pesquisa Ordem de Venda'
+  ClientHeight = 489
+  ClientWidth = 425
+  DesignerMasterStyle = 3
+  inherited LayoutMain: TLayout
+    Size.Width = 425.000000000000000000
+    Size.Height = 489.000000000000000000
+    inherited StyleBook1: TStyleBook
+      Left = 128
+      Top = 448
+    end
+    inherited lsv_Search: TListView
+      OnUpdateObjects = lsv_SearchUpdateObjects
+      Size.Width = 425.000000000000000000
+      Size.Height = 439.000000000000000000
+      ItemAppearance.ItemHeight = 65
+      ItemAppearanceObjects.ItemObjects.ObjectsCollection = <
+        item
+          AppearanceObjectName = 'NomeCliente'
+          AppearanceClassName = 'TTextObjectAppearance'
+          Appearance.Font.Family = 'Arial'
+          Appearance.Font.StyleExt = {00070000000000000004000000}
+          Appearance.TextAlign = Leading
+          Appearance.Width = 387.000000000000000000
+          Appearance.Height = 20.000000000000000000
+          Appearance.PlaceOffset.X = 4.000000000000000000
+          Appearance.PlaceOffset.Y = 3.000000000000000000
+        end
+        item
+          AppearanceObjectName = 'NumeroComanda'
+          AppearanceClassName = 'TTextObjectAppearance'
+          Appearance.Font.Family = 'Arial'
+          Appearance.Font.StyleExt = {00090000000000000004000000}
+          Appearance.TextAlign = Leading
+          Appearance.TextColor = claDarkblue
+          Appearance.Width = 388.000000000000000000
+          Appearance.Height = 20.000000000000000000
+          Appearance.PlaceOffset.X = 3.000000000000000000
+          Appearance.PlaceOffset.Y = 22.000000000000000000
+        end
+        item
+          AppearanceObjectName = 'NumeroTelefone'
+          AppearanceClassName = 'TTextObjectAppearance'
+          Appearance.Font.Family = 'Arial'
+          Appearance.Font.StyleExt = {00070000000000000004000000}
+          Appearance.TextAlign = Leading
+          Appearance.TextColor = claRed
+          Appearance.Width = 388.000000000000000000
+          Appearance.Height = 20.000000000000000000
+          Appearance.PlaceOffset.X = 3.000000000000000000
+          Appearance.PlaceOffset.Y = 41.000000000000000000
+        end>
+      ItemAppearanceObjects.ItemEditObjects.ObjectsCollection = <
+        item
+          AppearanceObjectName = 'Text1'
+          AppearanceClassName = 'TTextObjectAppearance'
+          Appearance.Width = 575.000000000000000000
+        end>
+    end
+    inherited Ly_Result_top: TLayout
+      Size.Width = 425.000000000000000000
+      inherited Rc_result_top: TRectangle
+        Size.Width = 425.000000000000000000
+        inherited Ly_list_titlle: TLayout
+          Size.Width = 425.000000000000000000
+          inherited Lb_name_tittle: TLabel
+            StyledSettings = [Style, FontColor]
+            Size.Width = 319.000000000000000000
+            TextSettings.Font.Family = 'Arial'
+            TextSettings.Font.Size = 14.000000000000000000
+            Text = 'Lista de Comandas'
+          end
+          inherited Sb_search: TSpeedButton
+            Position.X = 329.000000000000000000
+          end
+          inherited Sb_Insert: TSpeedButton
+            Position.X = 377.000000000000000000
+            OnClick = Sb_InsertClick
+          end
+        end
+        inherited Ly_quick_search: TLayout
+          Size.Width = 603.000000000000000000
+          inherited E_busca: TEdit
+            Size.Width = 555.000000000000000000
+          end
+          inherited Sb_back: TSpeedButton
+            Position.Y = 1.000000000000000000
+            Size.Height = 48.000000000000000000
+          end
+        end
+      end
+    end
+    object Rc_Dialog: TRectangle
+      Fill.Color = claWhite
+      Position.X = 39.000000000000000000
+      Position.Y = -200.000000000000000000
+      Size.Width = 345.000000000000000000
+      Size.Height = 185.000000000000000000
+      Size.PlatformDefault = False
+      XRadius = 5.000000000000000000
+      YRadius = 5.000000000000000000
+      object Rc_proc_tittle: TRectangle
+        Align = Top
+        Fill.Color = xFFB7DDEE
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 5.000000000000000000
+        Position.Y = 5.000000000000000000
+        Size.Width = 335.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        XRadius = 5.000000000000000000
+        YRadius = 5.000000000000000000
+        object Lb_edit_product: TLabel
+          Align = Client
+          StyledSettings = [FontColor]
+          Padding.Left = 10.000000000000000000
+          Margins.Left = 5.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Size.Width = 320.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Arial'
+          TextSettings.Font.Size = 16.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.HorzAlign = Center
+          Text = 'Qual opera'#231#227'o deseja executar?'
+          TabOrder = 1
+        end
+      end
+      object FA_in: TFloatAnimation
+        Enabled = True
+        Duration = 0.200000002980232200
+        Interpolation = Sinusoidal
+        PropertyName = 'Position.Y'
+        StartValue = -200.000000000000000000
+        StopValue = 160.000000000000000000
+        Trigger = 'IsVisible=true'
+      end
+      object Ly_botao_edit_product: TLayout
+        Align = Bottom
+        Position.Y = 136.000000000000000000
+        Size.Width = 345.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Sb_cancel: TButton
+          Align = Right
+          StyledSettings = [Style, FontColor]
+          Margins.Left = 5.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 20.000000000000000000
+          Margins.Bottom = 5.000000000000000000
+          Position.X = 224.000000000000000000
+          Position.Y = 5.000000000000000000
+          Size.Width = 101.000000000000000000
+          Size.Height = 39.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = 'Cancelar'
+          TextSettings.Font.Family = 'Arial'
+          TextSettings.Font.Size = 14.000000000000000000
+          OnClick = Sb_cancelClick
+        end
+      end
+      object Gpl_edit_product: TGridPanelLayout
+        Align = Client
+        Size.Width = 345.000000000000000000
+        Size.Height = 96.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        ColumnCollection = <
+          item
+            Value = 100.000000000000000000
+          end>
+        ControlCollection = <
+          item
+            Column = 0
+            Control = sb_EditOrderSale
+            Row = 0
+          end>
+        RowCollection = <
+          item
+            Value = 50.000000000000000000
+          end
+          item
+            Value = 50.000000000000000000
+          end
+          item
+            SizeStyle = Auto
+          end>
+        object sb_EditOrderSale: TSpeedButton
+          Align = Center
+          StyledSettings = [Style, FontColor]
+          Margins.Left = 20.000000000000000000
+          Margins.Top = 20.000000000000000000
+          Margins.Right = 20.000000000000000000
+          Margins.Bottom = 20.000000000000000000
+          Size.Width = 325.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Editar o Pedido'
+          TextSettings.Font.Family = 'Arial'
+          TextSettings.Font.Size = 16.000000000000000000
+          OnClick = sb_EditOrderSaleClick
+        end
+      end
+      object AniIndicator: TAniIndicator
+        Align = Client
+        Size.Width = 345.000000000000000000
+        Size.Height = 96.000000000000000000
+        Size.PlatformDefault = False
+        Visible = False
+      end
+    end
+  end
+  inherited Lang1: TLang
+    Top = 444
+  end
+  inherited ImageList: TImageList
+    Left = 24
+    Top = 432
+  end
+  inherited GestureManager1: TGestureManager
+    Left = 336
+    Top = 424
+  end
+  object Qr_Comanda: TFDQuery
+    Connection = UMM.DB
+    Left = 240
+    Top = 234
+  end
+end

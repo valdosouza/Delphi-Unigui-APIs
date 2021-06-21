@@ -1,0 +1,126 @@
+inherited SeaOrderSale_LgXhdpiPh: TSeaOrderSale_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 0
+  inherited LayoutMain: TLayout
+    Size.Width = 450.000000000000000000
+    Size.Height = 695.000000000000000000
+    inherited TabControl: TTabControl
+      Size.Width = 450.000000000000000000
+      Size.Height = 695.000000000000000000
+      Sizes = (
+        450s
+        646s
+        450s
+        646s)
+      inherited tbs_search: TTabItem
+        Size.Width = 225.000000000000000000
+        ExplicitSize.cx = 242.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+        inherited FmSeaOrderSale: TFmSeaOrderSale
+          Size.Width = 450.000000000000000000
+          Size.Height = 646.000000000000000000
+          inherited LayoutFmMain: TLayout
+            Size.Width = 450.000000000000000000
+            Size.Height = 646.000000000000000000
+            inherited lsv_Search: TListView
+              Size.Width = 440.000000000000000000
+              Size.Height = 596.000000000000000000
+            end
+            inherited Ly_Result_top: TLayout
+              Size.Width = 450.000000000000000000
+              inherited Rc_result_top: TRectangle
+                Size.Width = 440.000000000000000000
+                inherited Ly_list_titlle: TLayout
+                  Size.Width = 440.000000000000000000
+                  inherited Lb_name_tittle: TLabel
+                    Size.Width = 334.000000000000000000
+                  end
+                  inherited Sb_search: TSpeedButton
+                    Position.X = 344.000000000000000000
+                  end
+                  inherited Sb_Insert: TSpeedButton
+                    Position.X = 392.000000000000000000
+                  end
+                end
+              end
+            end
+          end
+        end
+      end
+      inherited tbs_parametro: TTabItem
+        Size.Width = 225.000000000000000000
+        ExplicitSize.cx = 243.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+        inherited Layout1: TLayout
+          Size.Width = 450.000000000000000000
+          inherited Rc_Param_top: TRectangle
+            Size.Width = 440.000000000000000000
+            inherited Layout2: TLayout
+              Size.Width = 440.000000000000000000
+              inherited Label1: TLabel
+                Size.Width = 382.000000000000000000
+              end
+              inherited Sb_Apply: TSpeedButton
+                Position.X = 392.000000000000000000
+                Size.Height = 50.000000000000000000
+              end
+            end
+          end
+        end
+      end
+    end
+    inherited Rc_Dialog: TRectangle
+      Position.X = 38.000000000000000000
+      Size.Width = 290.000000000000000000
+      inherited Rc_proc_tittle: TRectangle
+        Size.Width = 280.000000000000000000
+        inherited Lb_edit_product: TLabel
+          Size.Width = 265.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+        end
+      end
+      inherited Ly_botao_edit_product: TLayout
+        Position.Y = 135.000000000000000000
+        Size.Width = 290.000000000000000000
+        Size.Height = 50.000000000000000000
+        inherited Sb_cancel: TButton
+          Position.X = 169.000000000000000000
+          Size.Height = 40.000000000000000000
+        end
+      end
+      inherited Gpl_edit_product: TGridPanelLayout
+        Size.Width = 290.000000000000000000
+        Size.Height = 95.000000000000000000
+        inherited sb_EditOrderSale: TSpeedButton
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 10.000000000000000000
+          Size.Width = 270.000000000000000000
+          Size.Height = 39.000000000000000000
+          StyleLookup = 'buttonstyle'
+        end
+        inherited Sb_SendOrderSale: TSpeedButton
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 10.000000000000000000
+          Size.Width = 270.000000000000000000
+          Size.Height = 39.000000000000000000
+          StyleLookup = 'buttonstyle'
+        end
+      end
+    end
+  end
+  inherited Rc_process_Show: TRectangle
+    inherited Rc_process_frame: TRectangle
+      inherited Rc_process_tittle: TRectangle
+        inherited img_cloud: TImage
+          MultiResBitmap.Height = 72
+          MultiResBitmap.Width = 72
+        end
+      end
+    end
+  end
+end

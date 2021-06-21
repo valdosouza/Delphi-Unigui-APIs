@@ -1,0 +1,41 @@
+inherited ListaComboCity_LgXhdpiPh: TListaComboCity_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 0
+  inherited LayoutMain: TLayout
+    Size.Width = 450.000000000000000000
+    Size.Height = 695.000000000000000000
+    inherited Rc_process_Show: TRectangle
+      inherited Rc_process_frame: TRectangle
+        inherited Rc_process_tittle: TRectangle
+          inherited img_cloud: TImage
+            MultiResBitmap.Height = 72
+            MultiResBitmap.Width = 72
+          end
+        end
+      end
+    end
+    inherited Ly_Result_top: TLayout
+      Size.Width = 450.000000000000000000
+      inherited Rc_result_top: TRectangle
+        Size.Width = 440.000000000000000000
+        inherited Ly_list_titlle: TLayout
+          Size.Width = 440.000000000000000000
+          inherited Lb_name_tittle: TLabel
+            Size.Width = 430.000000000000000000
+          end
+        end
+      end
+      inherited Ly_quick_search: TLayout
+        Size.Width = 450.000000000000000000
+        inherited E_busca: TEdit
+          Size.Width = 450.000000000000000000
+        end
+      end
+    end
+    inherited lsv_Search: TListView
+      Size.Width = 450.000000000000000000
+      Size.Height = 615.000000000000000000
+    end
+  end
+end

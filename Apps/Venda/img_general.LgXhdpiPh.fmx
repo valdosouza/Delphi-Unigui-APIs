@@ -1,0 +1,39 @@
+inherited ImgGeneral_LgXhdpiPh: TImgGeneral_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 0
+  inherited LayoutMain: TLayout
+    Size.Width = 450.000000000000000000
+    Size.Height = 695.000000000000000000
+    inherited Rc_process_Show: TRectangle
+      Size.Height = 50.000000000000000000
+      inherited Rc_process_frame: TRectangle
+        inherited Rc_process_tittle: TRectangle
+          inherited img_cloud: TImage
+            MultiResBitmap.Height = 72
+            MultiResBitmap.Width = 72
+          end
+        end
+      end
+    end
+    inherited Image: TImage
+      Size.Width = 450.000000000000000000
+      Size.Height = 645.000000000000000000
+    end
+    inherited Ly_Result_top: TLayout
+      Size.Width = 450.000000000000000000
+      inherited Rc_result_top: TRectangle
+        Size.Width = 440.000000000000000000
+        inherited Ly_list_titlle: TLayout
+          Size.Width = 440.000000000000000000
+          inherited Lb_title: TLabel
+            Size.Width = 377.000000000000000000
+          end
+          inherited Sb_Cancel: TSpeedButton
+            Position.X = 387.000000000000000000
+          end
+        end
+      end
+    end
+  end
+end

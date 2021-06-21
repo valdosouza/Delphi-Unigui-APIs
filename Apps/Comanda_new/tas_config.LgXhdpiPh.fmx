@@ -1,0 +1,61 @@
+inherited TasConfig_LgXhdpiPh: TTasConfig_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 0
+  inherited LayoutMain: TLayout
+    Size.Width = 450.000000000000000000
+    Size.Height = 695.000000000000000000
+    inherited Ly_Result_top: TLayout
+      Size.Width = 450.000000000000000000
+      inherited Rc_result_top: TRectangle
+        Size.Width = 450.000000000000000000
+        inherited Ly_list_titlle: TLayout
+          Size.Width = 450.000000000000000000
+          inherited img_top: TImage
+            MultiResBitmap.Height = 96
+            MultiResBitmap.Width = 96
+          end
+          inherited Lb_title: TLabel
+            Size.Width = 326.000000000000000000
+          end
+          inherited Sb_Cancel: TSpeedButton
+            Position.X = 402.000000000000000000
+            Position.Y = 1.000000000000000000
+            Size.Width = 48.000000000000000000
+            Size.Height = 48.000000000000000000
+            StyleLookup = 'deletetoolbutton'
+          end
+          inherited Sb_Save: TSpeedButton
+            Position.X = 392.000000000000000000
+            Position.Y = 1.000000000000000000
+            Size.Width = 48.000000000000000000
+            Size.Height = 48.000000000000000000
+            StyleLookup = 'donetoolbutton'
+          end
+        end
+      end
+    end
+    inherited Ly_device_print: TLayout
+      Size.Width = 450.000000000000000000
+      inherited Lb_device_print: TLabel
+        StyledSettings = [Size, FontColor]
+        Size.Width = 446.000000000000000000
+        TextSettings.Font.Family = 'Arial'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+      inherited Cb_device_print: TComboBox
+        Size.Width = 441.000000000000000000
+        Size.Height = 32.000000000000000000
+        StyleLookup = 'comboboxstyle'
+      end
+    end
+    inherited Ly_Buttons: TLayout
+      Size.Width = 450.000000000000000000
+      inherited Sb_device_test: TSpeedButton
+        StyledSettings = [Style, FontColor]
+        Size.Width = 125.000000000000000000
+        TextSettings.Font.Family = 'Arial'
+      end
+    end
+  end
+end

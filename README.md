@@ -1,7 +1,7 @@
 # Sistema ERP - Delphi-Unigui e APi's
 
 Neste projeto você vai encontrar vários módulos todos eles interligados.
-Está estrutura em várias camadas, seguindo a linha do MVC, porém com camadas especificas.
+Está estrutura em várias camadas, seguindo a linha do MVC, porém com camadas especificas fortemente Baseada em POO
 
 # Api Auth
   Como o próprio nome diz, essa Api faz a autenticação dos usuarios.
@@ -20,6 +20,7 @@ Está estrutura em várias camadas, seguindo a linha do MVC, porém com camadas 
   A partir da raiz do projeto, vai encontrar um sistema estruturado da seguinte forma
     Telas e heranças gráficas
     Camadas de Model/Controle compartilhada
+    Vários Módulos em desenvolvimentos porém com arquitetura bem definidads
     
 # Roteador de Dados
   É responsabel por ler o banco de dados Firebird e reecompacta-los para ser enviado para uma nova base de dados MySql

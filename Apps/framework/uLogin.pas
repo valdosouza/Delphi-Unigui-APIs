@@ -99,10 +99,7 @@ begin
     E_Password.Text := GetConfigINI('MOBILE','PASS');
   End;
   {$IFDEF DEBUG}
-  //E_Email.Text := 'santos.adriano177@gmail.com';
-  E_Email.Text := 'francisco@winkert.com.br';
-  //E_Email.Text := 'juliojuliobrito@gmail.com';
-  //E_Email.Text := 'rodrigodoces@yahoo.com.br';
+  E_Email.Text := '@';
   E_Password.Text := '12345';
   {$ENDIF}
   CloseSplash;
@@ -250,9 +247,9 @@ begin
       Result := False;
       SetConfigINI('MOBILE','VENDEDOR','0');
       TDialogService.ShowMessage(
-            concat('A T E N « √ O!',
+            concat('A T E N √á √É O!',
                    Char(10),Char(13),Char(10),Char(13),
-                   'Este usu·rio n„o foi registrado como vendedor.',
+                   'Este usu√°rio n√£o foi registrado como vendedor.',
                    Char(10),Char(13),
                    'Verifique e tente novamente.',
                    char(10),Char(13)
@@ -339,7 +336,7 @@ begin
   LcCtrlInstitution := TCtrlMobInstitution.Create(self);
 
   LcCtrlInstitution.getList;
-  updateProcess('Consultando ⁄ltima Venda');
+  updateProcess('Consultando √öltima Venda');
   Result := True;
   //Regsitra o Ultimo pedido enviado para a internet;
   I := 0;
@@ -405,7 +402,7 @@ Var
 begin
   Try
     Result := False;
-    //Desabilita o Bot„o
+    //Desabilita o Bot√£o
     Par.Estabelecimento := UMM.GInstitution.Registro.Codigo;
     Par.email           := E_Email.Text;
     Par.password        := E_Password.Text;
@@ -425,7 +422,7 @@ begin
       updateProcess('Validando dispositivo');
       if ValidateDevice(Par.Dispositivo) then
       Begin
-        //Consulta quantos estabelecimentos o usuario est· registrado
+        //Consulta quantos estabelecimentos o usuario est√° registrado
         updateProcess('Consultando Estabelecimentos');
         if validaGetInstitution then
           GetInstitution;
@@ -436,9 +433,9 @@ begin
     BEgin
       TDialogService.PreferredMode := TDialogService.TPreferredMode.Platform;
       TDialogService.ShowMessage(
-            concat('A T E N « √ O!',
+            concat('A T E N √á √É O!',
                    Char(10),Char(13),Char(10),Char(13),
-                   'Usu·rio ou senha inv·lidos.',
+                   'Usu√°rio ou senha inv√°lidos.',
                    Char(10),Char(13),
                   'Verifique e tente novamente'
                   )
@@ -528,9 +525,9 @@ begin
   Begin
     TDialogService.PreferredMode := TDialogService.TPreferredMode.Platform;
     TDialogService.ShowMessage(
-          concat('A T E N « √ O!',
+          concat('A T E N √á √É O!',
                  Char(10),Char(13),Char(10),Char(13),
-                 'N„o foi possivel localizar o usu·rio',
+                 'N√£o foi possivel localizar o usu√°rio',
                  Char(10),Char(13),
                  'Feche o aplicativo e acesse novamente.',
                  char(10),Char(13)
@@ -547,9 +544,9 @@ begin
     Result := False;
     TDialogService.PreferredMode := TDialogService.TPreferredMode.Platform;
     TDialogService.ShowMessage(
-          concat('A T E N « √ O!',
+          concat('A T E N √á √É O!',
                  Char(10),Char(13),Char(10),Char(13),
-                 'N„o foi registrado o dispotivo no Servidor',
+                 'N√£o foi registrado o dispotivo no Servidor',
                  Char(10),Char(13),
                  'Solicite ao Administrador este registro.',
                  char(10),Char(13)
@@ -572,9 +569,9 @@ begin
   if (E_Email.Text = '') then
   begin
     TDialogService.ShowMessage(
-            concat('A T E N « √ O!',
+            concat('A T E N √á √É O!',
                   Char(10),Char(13),Char(10),Char(13),
-                  'Campo e-mail n„o informado.',
+                  'Campo e-mail n√£o informado.',
                   Char(10),Char(13),
                   'Verifique e tente novamente'
             )
@@ -587,9 +584,9 @@ begin
   if (E_Password.Text = '') then
   Begin
     TDialogService.ShowMessage(
-           concat('A T E N « √ O!',
+           concat('A T E N √á √É O!',
                   Char(10),Char(13),Char(10),Char(13),
-                  'Campo senha n„o informado.',
+                  'Campo senha n√£o informado.',
                   Char(10),Char(13),
                   'Verifique e tente novamente'
                  )

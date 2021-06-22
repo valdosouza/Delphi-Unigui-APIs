@@ -167,7 +167,7 @@ Var
 begin
   Try
     Result := False;
-    //Desabilita o Bot„o
+    //Desabilita o Bot√£o
     LcPar := TPrmAuthLogin.Create;
     LcPar.Estabelecimento := UMM.GInstitution.registro.Codigo;
     LcPar.email := email.Text;
@@ -187,8 +187,8 @@ begin
     end
     else
     BEgin
-      msg := 'A T E N « √ O!' + #13 + #13 +
-             'Usu·rio ou senha inv·lidos.'+ #13 +
+      msg := 'A T E N √á √É O!' + #13 + #13 +
+             'Usu√°rio ou senha inv√°lidos.'+ #13 +
              'Verifique e tente novamente.';
       Pnl_login.Visible := True;
       MessageDlg(msg, mtWarning, [mbOK],
@@ -243,10 +243,7 @@ begin
   Begin
     pnl_login.Visible := True;
     {$IFDEF DEBUG}
-      //email.Text := 'atagir@yahoo.com.br';
-      email.Text := 'contato@ggescapamentos.com.br';
-      //email.Text := 'viterley@hotmail.com';
-      //email.Text := 'rodrigodoces@yahoo.com.br';
+      //email.Text := '@';
       senha.text := '12345';
     {$ENDIF}
     UniSession.AddJS('setTimeout(function(){'+ UniLogin.email.JSName +'.focus()}, 100)');
@@ -281,8 +278,8 @@ begin
   //Valida o conteudo do campo email
   if (email.Text = '') then
   begin
-    msg := 'A T E N « √ O!' + #13 + #13 +
-           'Campo e-mail n„o informado.'#13 +
+    msg := 'A T E N √á √É O!' + #13 + #13 +
+           'Campo e-mail n√£o informado.'#13 +
            'Verifique e tente novamente.';
     MessageDlg(msg, mtWarning, [mbOK],
       procedure(Sender: TComponent; Res: Integer)
@@ -296,8 +293,8 @@ begin
   //Valida o conteudo do campo Senha
   if (senha.Text = '') then
   Begin
-    msg := 'A T E N « √ O!' + #13 + #13 +
-           'Campo senha n„o informado.'+ #13 +
+    msg := 'A T E N √á √É O!' + #13 + #13 +
+           'Campo senha n√£o informado.'+ #13 +
            'Verifique e tente novamente.';
     MessageDlg(msg, mtWarning, [mbOK],
       procedure(Sender: TComponent; Res: Integer)
@@ -307,7 +304,7 @@ begin
       end
     );
   end;
-  //Valida se o email digitado est· correto
+  //Valida se o email digitado est√° correto
   UMM.GInstitution.User.Mailing.Registro.Email := email.Text;
   if not UMM.GInstitution.User.Mailing.Valida then
   Begin

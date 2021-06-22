@@ -1,7 +1,7 @@
 # Sistema ERP - Delphi-Unigui e APi's
 
 Neste projeto você vai encontrar vários módulos todos eles interligados.
-Está estrutura em várias camadas, seguindo a linha do MVC, porém com camadas especificas fortemente Baseada em POO
+Está estruturado em várias camadas, seguindo a linha do MVC, porém com camadas especificas fortemente Baseada em POO
 
 # Api Auth
   Como o próprio nome diz, essa Api faz a autenticação dos usuarios.
